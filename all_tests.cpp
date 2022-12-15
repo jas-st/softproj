@@ -134,9 +134,10 @@ int main(int argc, char **argv) {
           }
         }
         qs_s=stat/sqrt(var);
-
-        if (0.216 < qs_s) {
-          if (qs_s < 9.348) {
+        cout << qs_s << "\t";
+        
+        if (-1.96 < qs_s) {
+          if (qs_s < 1.96) {
             cout << 1 << endl;
           } else {
             cout << 0 << endl;
