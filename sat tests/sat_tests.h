@@ -64,7 +64,7 @@ double sat_test_cas2(Sequence Seq1, Sequence Seq2, Eigen::Matrix4d H, int n) {
 }
 
 double chi_test(Sequence Seq1, Sequence Seq2, Eigen::Matrix4d H, int n) {
-    //z_val for one sided confidence interval for alpha=0.05
+  
     Eigen::Vector4d seq1_freqs = Seq1.nucl_freqs/n;
     Eigen::Vector4d seq2_freqs = Seq2.nucl_freqs/n;
 
