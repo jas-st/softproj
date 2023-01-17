@@ -1,8 +1,8 @@
-#include "file_bio.h"
-#include "sat_tests2.h"
+#include "lib/file_bio.h"
+#include "lib/sat_tests2.h"
 
-#include "../lib/div_mat.h"
-#include "../lib/stats.h"
+#include "lib/div_mat.h"
+#include "lib/stats.h"
 
 using namespace std;
 
