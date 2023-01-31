@@ -1,13 +1,14 @@
 zz <- file("log.Rout", open="wt")
 sink(zz, type="message")
 
+
+library(scales)
 library(tidyverse)
 library(ape)
 library(Biostrings)
 library(ggtree)
 library(ggpubr)
 library(scales)
-
 
 
 args <- commandArgs()
@@ -20,21 +21,19 @@ k<-args[10]
 folder<-strsplit(raw_results_file, "/")[[1]][1]
 
 # treename<-"tree.nwk"
-# n<-500
-# k<-1
-# raw_results<-"results_raw_tree.tsv"
+# n<-10000
+# k<-10
+# raw_results_file<-"results_tree/results_raw_tree.csv"
 # results<-"results_tree.csv"
-#   
-results_raw_tree <- read_delim(raw_results_file, 
-                              delim = "\t", escape_double = FALSE, 
-                              col_types = cols(`Sat test Cassius 1` = col_number(), 
-                              `Sat test Cassius 2` = col_number(), 
-                              Stuart_test = col_number(), `Internal Symmetry` = col_number(), 
-                              Proposed_test = col_number(), `Chi test` = col_number(), 
-                              Bowker_test = col_number()), trim_ws = TRUE)
 
-result_tree_rename<-results_raw_tree%>%dplyr::rename(Sequences="Sequences compared", Sat_test_Cassius1="Sat test Cassius 1", Sat_test_Cassius2="Sat test Cassius 2", 
-                                                Chi_test="Chi test", Internal_Symmetry="Internal Symmetry")
+results_raw_tree <- read_csv(raw_results_file, 
+                             col_types = cols(Sat_test_Cassius1 = col_number(), 
+                                              Sat_test_Cassius2 = col_number(), 
+                                              Chi_test = col_number(), Bowker_test = col_number(), 
+                                              Stuart_test = col_number(), Internal_Symmetry = col_number(), 
+                                              Proposed_test = col_number(), Alignment_Length = col_number()))
+
+result_tree_rename<-results_raw_tree%>%dplyr::rename(Sequences="Sequences compared")
 
 
 result_tree<-result_tree_rename%>%filter(Sequences!="Sequences compared")
@@ -46,7 +45,7 @@ seq_labels<-unlist(tree["tip.label"])
 
 colnames_ts<-c("Sat test Cassius 1", "Sat test Cassius 2", "Chi test", "Bowker ts", "Stuart ts", "IS ts", "QS ts")
 
-pairs<-strsplit(str_sub(result_tree$Sequences, start=2, end=-2), ",")
+pairs<-strsplit(str_sub(result_tree$Sequences, start=2, end=-2), ";")
 pairs<-lapply(pairs, unlist)
 pair_1<-unlist(lapply(pairs,function(x) x[1]))
 pair_2<-unlist(lapply(pairs,function(x) x[2]))
@@ -59,8 +58,8 @@ QS_pv<-2*(1-pnorm(abs(result_tree$Proposed_test),mean=0,sd=1)) #standardnormalve
 Bowker_pv<-pchisq(q=result_tree$Bowker_test, df=6, lower.tail=FALSE)#chi square vert mit df=6 #nicht ganz sicher of two sided oder one sided??????
 Stuart_pv<-pchisq(q=result_tree$Stuart_test, df=3, lower.tail=FALSE)#chi square vert mit df=3
 IS_pv<-pchisq(q=result_tree$Internal_Symmetry, df=3, lower.tail=FALSE)#chi square vert mit df=3
-Sat_cassius1_pv<-pnorm(result_tree$Sat_test_Cassius1, 0, sd=sqrt(3/n), lower.tail=FALSE)
-Sat_cassius2_pv<-pnorm(result_tree$Sat_test_Cassius2, 0, sd=sqrt(3/n), lower.tail=FALSE)
+Sat_cassius1_pv<-pnorm(result_tree$Sat_test_Cassius1, 0, sd=sqrt(3/result_tree$Alignment_Length), lower.tail=FALSE)
+Sat_cassius2_pv<-pnorm(result_tree$Sat_test_Cassius2, 0, sd=sqrt(3/result_tree$Alignment_Length), lower.tail=FALSE)
 Chi_Test_pv<-pchisq(q=result_tree$Chi_test, df=9, lower.tail=FALSE)
 
 results_pv_all<-data.frame(Pair=result_tree$Sequences, pair_1, pair_2, Bowker_pv, Bowker_ts=result_tree$Bowker_test,Stuart_pv,Stuart_ts=result_tree$Stuart_test, 
@@ -83,7 +82,7 @@ heat_success<-function(pair_1, pair_2, test_pv, reject=TRUE, seq_lables=seq_labe
   test<-test%>%mutate(test_rej=factor(ifelse(test_pv>=0.05, 0, 1), levels=c(0,1), ordered=TRUE))
   #shape_values<-ifelse(reject==TRUE, c(1,4), c(4,1))
   test%>%ggplot(aes(x=pair_1, y=pair_2))+geom_tile(aes(fill=test_pv))+
-    scale_fill_gradient2(low = "white", high = muted("green"), midpoint=0.05)+
+    scale_fill_gradient(high="blue",low="red", limits=c(0,1), guide = guide_colorbar(draw.ulim = TRUE, draw.llim = TRUE)) +
     geom_point(aes(shape=test_rej), size=3)+
     labs(x="sequence", y="sequence", fill="p-value", shape="H0")+
     scale_shape_manual(labels=c("keep H0", "reject H0"), values=c(1,4), drop=F)
@@ -94,7 +93,7 @@ colored_tree <- function(tree, pair_1, pair_2, test_pv){
   pair_2_index<-mapply(function(x) which(x==seq_labels), pair_2)
   paths<-mapply(function(x,y) get.path(tree, x,y), pair_1_index, pair_2_index)
   rej_paths<-mapply(function(x) ifelse(x>=0.05,0,1), test_pv )
-  
+
   edges<-sort(unique(unlist(paths)))
   edges_rej<-c(rep(0,length(edges)))
   freq<-table(unlist(paths))
@@ -103,62 +102,87 @@ colored_tree <- function(tree, pair_1, pair_2, test_pv){
       if(i %in% paths[j][[1]]){
         edges_rej[i]=edges_rej[i]+rej_paths[j]
       }
-      edges_rej[i]=edges_rej[i]/freq[i]
     }
+    edges_rej[i]=edges_rej[i]/freq[i]
   }
+  print(edges_rej)
   d1<-data.frame(node=edges, color=edges_rej)
   ggtree(tree, layout="slanted") %<+% d1 + aes(color=edges_rej)+ 
-    geom_tiplab(offset=0.2, colour="black", size=5) +
-    scale_color_gradient2(low = muted("green"), mid="orange", high = muted("red"), midpoint = 0.5, limits=c(0,1), na.value = NA)+
+    geom_tiplab(colour="black", size=5) +
+    scale_colour_gradient2(low="blue", mid="#FF0099", high="red",midpoint=0.5, limits=c(0,1), guide = guide_colorbar(draw.ulim = TRUE, draw.llim = TRUE))+
     labs(color="H0 rejected (freq)")+
-    geom_label(aes(label=round(edges_rej,4)))
+    geom_label(aes(x=branch, label=round(edges_rej,4)))
 }
 
 
-pdf(paste(folder, "plot_Bowker_test.pdf", sep="/"),width = 13, height = 7)
+pdf(paste(folder, "plot_Bowker_test.pdf", sep="/"),width = 13, height = 14)
 p<-ggarrange(
   colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv),
-  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv, reject=TRUE)
+  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv, reject=TRUE),
+  results_pv_all%>%ggplot(aes(x=Bowker_ts))+
+    geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+  
+    stat_function(fun = dchisq, args = list(df=6))+
+    facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
   )
 annotate_figure(p,top=text_grob("Bowker Test", face = "bold", size = 14))
 dev.off()
 
-pdf(paste(folder, "plot_Stuart_test.pdf", sep="/"),width = 13, height = 7)
+pdf(paste(folder, "plot_Stuart_test.pdf", sep="/"),width = 13, height = 14)
 p<-ggarrange(
   colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Stuart_pv),
-  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Stuart_pv, reject=TRUE)
+  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Stuart_pv, reject=TRUE),
+  results_pv_all%>%ggplot(aes(x=Stuart_ts))+
+    geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+    stat_function(fun = dchisq, args = list(df=3))+
+    facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
 )
 annotate_figure(p,top=text_grob("Stuart Test", face = "bold", size = 14))
 dev.off()
 
-pdf(paste(folder, "plot_IS_test.pdf", sep="/"),width = 13, height = 7)
+pdf(paste(folder, "plot_IS_test.pdf", sep="/"),width = 13, height = 14)
 p<-ggarrange(
   colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$IS_pv),
-  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$IS_pv, reject=TRUE)
+  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$IS_pv, reject=TRUE),
+  results_pv_all%>%ggplot(aes(x=IS_ts))+
+    geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+    stat_function(fun = dchisq, args = list(df=3))+
+    facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")+labs(x="test statistic")
 )
 annotate_figure(p,top=text_grob("IS Test", face = "bold", size = 14))
 dev.off()
 
-pdf(paste(folder, "plot_QS_test.pdf", sep="/"),width = 13, height = 7)
+pdf(paste(folder, "plot_QS_test.pdf", sep="/"),width = 13, height = 14)
 p<-ggarrange(
   colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv),
-  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv, reject=TRUE)
+  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv, reject=TRUE),
+  results_pv_all%>%ggplot(aes(x=QS_ts))+
+    geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+    stat_function(fun = dnorm, args = list(mean = 0, sd = 1))+
+    facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
 )
 annotate_figure(p,top=text_grob("QS Test", face = "bold", size = 14))
 dev.off()
 
-pdf(paste(folder, "plot_Sat_Cassius1_test.pdf", sep="/"),width = 13, height = 7)
+pdf(paste(folder, "plot_Sat_Cassius1_test.pdf", sep="/"),width = 13, height = 14)
 p<-ggarrange(
   colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius1_pv),
-  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius1_pv, reject=TRUE)
+  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius1_pv, reject=TRUE),
+  results_pv_all%>%ggplot(aes(x=Sat_test_Cassius1))+
+    geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+    stat_function(fun = dnorm, args = list(mean = 0, sd = sqrt(3/n)))+
+    facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
 )
 annotate_figure(p,top=text_grob("Saturation Test Cassius 1", face = "bold", size = 14))
 dev.off()
 
-pdf(paste(folder, "plot_Sat_Cassius2_test.pdf", sep="/"),width = 13, height = 7)
+pdf(paste(folder, "plot_Sat_Cassius2_test.pdf", sep="/"),width = 13, height = 14)
 p<-ggarrange(
   colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius2_pv),
-  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius2_pv, reject=TRUE)
+  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius2_pv, reject=TRUE),
+  results_pv_all%>%ggplot(aes(x=Sat_test_Cassius2))+
+    geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+    stat_function(fun = dnorm, args = list(mean = 0, sd = sqrt(3/n)))+
+    facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
 )
 annotate_figure(p,top=text_grob("Saturation Test Cassius 2", face = "bold", size = 14))
 dev.off()
@@ -166,7 +190,11 @@ dev.off()
 pdf(paste(folder, "plot_Chi_test.pdf", sep="/"),width = 13, height = 7)
 p<-ggarrange(
   colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Chi_Test_pv),
-  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Chi_Test_pv, reject=TRUE)
+  heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Chi_Test_pv, reject=TRUE),
+  results_pv_all%>%ggplot(aes(x=Chi_test))+
+    geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+    stat_function(fun = dchisq, args = list(df=9))+
+    facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
 )
 annotate_figure(p,top=text_grob("Chi Test", face = "bold", size = 14))
 dev.off()
@@ -175,20 +203,56 @@ dev.off()
 write.csv(results_pv_all, results_file, row.names = FALSE)
 
 
+results_pv_all%>%ggplot(aes(x=Bowker_ts))+
+  geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+  
+  stat_function(fun = dchisq, args = list(df=6))+
+  facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
+
+
+results_pv_all%>%ggplot(aes(x=Stuart_ts))+
+  geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+  stat_function(fun = dchisq, args = list(df=3))+
+  facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
+
+results_pv_all%>%ggplot(aes(x=IS_ts))+
+  geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+  stat_function(fun = dchisq, args = list(df=3))+
+  facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
+
+results_pv_all%>%ggplot(aes(x=QS_ts))+
+  geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1))+
+  facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
+
+results_pv_all%>%ggplot(aes(x=Sat_test_Cassius1))+
+  geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+  stat_function(fun = dnorm, args = list(mean = 0, sd = sqrt(3/n)))+
+  facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
+
+results_pv_all%>%ggplot(aes(x=Sat_test_Cassius2))+
+  geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+  stat_function(fun = dnorm, args = list(mean = 0, sd = sqrt(3/n)))+
+  facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
+
+results_pv_all%>%ggplot(aes(x=Chi_test))+
+  geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
+  stat_function(fun = dchisq, args = list(df=9))+
+  facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
+
 #test failed/success
 
-Bowker_success<-mapply(function(x) ifelse(x>=0.05,"success","failed"), Bowker_pv)
-Stuart_success<-mapply(function(x) ifelse(x>=0.05,"success","failed"), Stuart_pv)
-IS_success<-mapply(function(x) ifelse(x>=0.05,"success","failed"), IS_pv)
-QS_success<-mapply(function(x) ifelse(x>=0.05,"success","failed"), QS_pv)
+Bowker_success<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,"retain","reject"), Bowker_pv)
+Stuart_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), Stuart_pv)
+IS_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), IS_pv)
+QS_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), QS_pv)
 Reversibility_test<-data.frame(Pair=results_pv_all$Pair, Simulation=results_pv_all$simulation,
                                Bowker_success, Stuart_success, IS_success, QS_success)
 
 write.csv(Reversibility_test, paste(folder, "results_rev_test.csv", sep="/"),row.names = FALSE)
 
-Sat_cassius1_success<-mapply(function(x) ifelse(x>=0.05,"failed", "success"), Sat_cassius1_pv)
-Sat_cassius2_success<-mapply(function(x) ifelse(x>=0.05,"failed", "success"), Sat_cassius2_pv)
-Chi_success<-mapply(function(x) ifelse(x>=0.05,"failed", "success"), Chi_Test_pv)
+Sat_cassius1_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), Sat_cassius1_pv)
+Sat_cassius2_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), Sat_cassius2_pv)
+Chi_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), Chi_Test_pv)
 Saturation_test<-data.frame(Pair=results_pv_all$Pair, Simulation=results_pv_all$simulation,
                             Sat_cassius1_success, Sat_cassius2_success, Chi_success)
 
