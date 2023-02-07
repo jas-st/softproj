@@ -11,12 +11,16 @@ int main(int argc, char **argv) {
     string file_name;
     Alignment alignment;
     string extension;
+    bool sat_tests = false;
 
     //read in flag argument -F for the file name with sequences
+    //read in flag argument -s for saturation tests, default - false
     int i = 1;
     while(i < argc) {
         if (strcmp( argv[i], "-F") == 0){
             file_name = argv[i+1];
+        } else if (strcmp( argv[i], "-s") == 0){
+            sat_tests = true;
         }
         i++;
     }
@@ -52,10 +56,15 @@ int main(int argc, char **argv) {
     double int_sym;
 
     // print column names
-    std::cout << "Sequences compared" << ',' <<"Sat_test_Cassius1" << ',' << "Sat_test_Cassius2"
-    << ',' << "Chi_test" << ',' << "Bowker_test" << ',' << "Stuart_test" << ',' << "Internal_Symmetry"
-    << ',' << "Proposed_test" << ',' << "Alignment_Length" << endl;
+    std::cout << "Sequences compared" << ',';
+    if (sat_tests) {
+        std::cout << "Sat_test_Cassius1" << ',' << "Sat_test_Cassius2"
+                  << ',' << "Chi_test" << ',';
+    }
 
+    std::cout << "Bowker_test"   << ',' << "Stuart_test"      << ',' << "Internal_Symmetry"
+       << ',' << "Proposed_test" << ',' << "Alignment_Length" << endl;
+    
     for (int i=0; i<size; i++) {
         for (int j=i+1; j<size; j++) {
             Sequence seq1 = sequences[i];
@@ -77,14 +86,16 @@ int main(int argc, char **argv) {
             }
 
             //Saturation tests
-            double cas1 = sat_test_cas1(H, n, alignment.global_freqs);
-            double cas2 = sat_test_cas2(seq1, seq2, H, n);
-            double chi = chi_test_draft(seq1, seq2, H, n);
+            if (sat_tests) {
+                double cas1 = sat_test_cas1(H, n, alignment.global_freqs);
+                double cas2 = sat_test_cas2(seq1, seq2, H, n);
+                double chi = chi_test_draft(seq1, seq2, H, n);
 
 
-            std::cout << cas1 << ',';
-            std::cout << cas2 << ',';
-            std::cout << chi  << ',';
+                std::cout << cas1 << ',';
+                std::cout << cas2 << ',';
+                std::cout << chi  << ',';
+            }
 
             //Bowker Test
             m = get_m(H);
