@@ -76,3 +76,24 @@ double chi_test(Sequence Seq1, Sequence Seq2, Eigen::Matrix4d H, int n) {
     return stat;
 
 }
+
+double chi_test_draft(Sequence Seq1, Sequence Seq2, Eigen::Matrix4d H, int n) {
+
+    Eigen::Vector4d seq1_freqs_al = Seq1.nucl_freqs_al;
+    Eigen::Vector4d seq2_freqs_al = Seq2.nucl_freqs_al;
+
+    double stat = 0;
+    double div;
+    double crit_val = 19.023;
+
+
+    for(int i = 0; i<4; i++) {
+        for(int j = 0; j<4; j++) {
+
+            div = std::pow(H(i,j)-(seq1_freqs_al(i)*seq2_freqs_al(j)/n),2);
+            stat += div/(seq1_freqs_al(i)*seq2_freqs_al(j)/n);
+        }
+
+    }
+
+    return stat;
