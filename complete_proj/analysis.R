@@ -226,7 +226,7 @@ venn_data<-data.frame(Pair=result_tree$Sequences, Bowker=Bowker_rej, Stuart=Stua
 
 for (pair in unique(venn_data$Pair)){
   venn_pair<-venn_data%>%filter(Pair==pair)
-  plot(ggvenn(venn_pair, c("Bowker", "Stuart", "QS"))+labs(title=pair) +
+  plot(ggvenn(venn_pair, c("Bowker", "Stuart", "QS"), show_percentage = FALSE)+labs(title=pair) +
          theme(plot.title = element_text(hjust = 0.5)))
 }
 
