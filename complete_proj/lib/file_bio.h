@@ -4,6 +4,7 @@
 #include <vector>
 #include <map>
 #include <string.h>
+#include <set>
 
 #include "Sequence.h"
 #include <eigen-3.4.0/Eigen/Dense>
@@ -38,11 +39,12 @@ Alignment seqs_read(std::string file_name, std::string extension) {
     }
 
     while(getline(seq_file, line)) {
+        auto first = line.find_first_not_of( " \f\n\r\t\v" );
         if (strcmp(extension.c_str(), "nex") == 0 ) {
             if (counter1 < 6) {
                 counter1 += 1;
             }
-            else if(strcmp(line.c_str(), ";") == 0 | line.empty()) {
+            else if(first == line.npos) {
                 break;
             }
         } else {
@@ -58,6 +60,10 @@ Alignment seqs_read(std::string file_name, std::string extension) {
             std::istringstream s(line);
             s >> id >> seq;
             new_seq = id;
+            std::replace(id.begin(), id.end(), '/', '_');
+            std::replace(id.begin(), id.end(), '|', '_');
+            std::replace(id.begin(), id.end(), '?', '_');
+            id.erase(std::remove(id.begin(), id.end(), '\''), id.end());
 
             for(int i=0; i<seq.length();i++) {
                 if (seq[i] != '-') {
