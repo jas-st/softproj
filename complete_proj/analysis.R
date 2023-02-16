@@ -7,6 +7,9 @@ library(ape)
 library(Biostrings)
 library(ggtree)
 library(ggpubr)
+library(ggvenn)
+library(tidytree)
+library(treeio)
 library(scales)})
 
 
@@ -18,7 +21,7 @@ results_file<-args[9]
 k<-args[10]
 
 folder<-strsplit(raw_results_file, "/")[[1]][1]
-# 
+
 # treename<-"sym_tree_nequal.nwk"
 # n<-1000000
 # k<-100
@@ -43,8 +46,6 @@ result_tree$simulation<-rep(seq(1,k), each=length(unique(result_tree$Sequences))
 tree <- read.tree(treename)
 p <- ggtree(tree) + geom_tiplab()
 seq_labels<-unlist(tree["tip.label"])
-
-colnames_ts<-c("Sat test Cassius 1", "Sat test Cassius 2", "Chi test", "Bowker ts", "Stuart ts", "IS ts", "QS ts")
 
 pairs<-strsplit(str_sub(result_tree$Sequences, start=2, end=-2), ";")
 pairs<-lapply(pairs, unlist)
@@ -92,7 +93,7 @@ heat_success<-function(pair_1, pair_2, test_pv, reject=TRUE, seq_lables=seq_labe
     )
 }
 
-edges_rejected_freq <- function(tree, pair_1, pair_2, test_pv){
+edges_rejected_freq <- function(tree, pair_1, pair_2, test_pv, freq_true){
   pair_1_index<-mapply(function(x) which(x==seq_labels), pair_1)
   pair_2_index<-mapply(function(x) which(x==seq_labels), pair_2)
   paths<-mapply(function(x,y) get.path(tree, x,y), pair_1_index, pair_2_index)
@@ -107,17 +108,15 @@ edges_rejected_freq <- function(tree, pair_1, pair_2, test_pv){
         edges_rej[i]=edges_rej[i]+rej_paths[j]
       }
     }
-    edges_rej[i]=edges_rej[i]/freq[i]
+    if(freq_true==TRUE) edges_rej[i]=edges_rej[i]/freq[i]
   }
-  print(edges_rej)
   d1<-data.frame(node=edges, edges_rej=edges_rej)
   return(d1)
 }
   
   
 colored_tree <- function(tree, pair_1, pair_2, test_pv){
-  d1<-edges_rejected_freq(tree, pair_1, pair_2, test_pv)
-  print(d1)
+  d1<-edges_rejected_freq(tree, pair_1, pair_2, test_pv, TRUE)
   ggtree(tree, layout="slanted") + geom_tiplab(colour="black", size=5)+
     geom_label(aes(x=branch, label=round(d1$edges_rej,4)))+
     labs(title="H0 rejected (freq) on each edge")
@@ -216,6 +215,25 @@ annotate_figure(p,top=text_grob("Chi Test", face = "bold", size = 14))
 dev.off()
 
 
+## Venn diagramm
+# create dataframe with number of rejects for each pair
+Bowker_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,FALSE,TRUE), Bowker_pv)
+Stuart_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,FALSE,TRUE), Stuart_pv)
+IS_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,FALSE,TRUE), IS_pv)
+QS_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,FALSE,TRUE), QS_pv)
+
+venn_data<-data.frame(Pair=result_tree$Sequences, Bowker=Bowker_rej, Stuart=Stuart_rej, IS=IS_rej, QS=QS_rej)
+
+for (pair in unique(venn_data$Pair)){
+  venn_pair<-venn_data%>%filter(Pair==pair)
+  plot(ggvenn(venn_pair, c("Bowker", "Stuart", "QS"))+labs(title=pair) +
+         theme(plot.title = element_text(hjust = 0.5)))
+}
+
+
+#facet wrap- only useful for less than ~ 6 taxa
+#venn_data%>%ggplot()+geom_venn(aes(A=Bowker, B=Stuart, C=QS), show_percentage=FALSE)+ facet_wrap(~Pair, nrow=4)+ theme_void()
+
 ## write result csv tables 
 
 write.csv(results_pv_all, results_file, row.names = FALSE)
@@ -239,3 +257,22 @@ Saturation_test<-data.frame(Pair=results_pv_all$Pair, Simulation=results_pv_all$
 
 write.csv(Saturation_test, paste(folder, "results_sat_test.csv", sep="/"),row.names = FALSE)
 
+## save trees in file with labels for H0 rejection of every test
+
+Bowker_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv, TRUE)
+Stuart_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Stuart_pv, TRUE)
+IS_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$IS_pv, TRUE)
+QS_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv, TRUE)
+Sat1_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius1_pv, TRUE)
+Sat2_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius2_pv, TRUE)
+Chi_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Chi_Test_pv, TRUE)
+
+labels_dataframe<-data.frame(node=Bowker_edge_freq$node, Bowker_freq=Bowker_edge_freq$edges_rej,
+                             Stuart_freq=Stuart_edge_freq$edges_rej, IS_freq=IS_edge_freq$edges_rej,
+                             QS_freq=QS_edge_freq$edges_rej, Sat1_req=Sat1_edge_freq$edges_rej,
+                             Sat2_freq=Sat2_edge_freq$edges_rej, Chi_rej=Chi_edge_freq$edges_rej)
+
+y<-full_join(tree, labels_dataframe, by = 'node')
+
+outputfile<-paste(str_sub(treename, start=0, end=-5), ".tree", sep="")
+write.beast(y, file=paste(folder, outputfile, sep="/"))
