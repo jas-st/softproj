@@ -38,7 +38,7 @@ R must be installed as well as the following packages:
 
 ### IQ-Tree
 
-The software uses the AliSim extension, as well as ModelFinder, contained in the IQ-TREE software. The user has to have IQ-TREE with AliSim installed.(or include iqtree executable in the software???)
+The software uses the AliSim extension, as well as ModelFinder, contained in the IQ-TREE software. The user has to have IQ-TREE with AliSim installed and be able to run IQ-TREE by simply entering `iqtree`.(or include iqtree executable in the software??? or provide an option of specifiying the iqtree path)
 
 There is otherwise no installation needed, simply run the desired bash script in the command line, providing the needed input files.
 
