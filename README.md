@@ -11,8 +11,8 @@ softproj\
 │   `analysis_biological.sh` - Bash script for the analysis of real data\
 └───bin\
 │--------   │   `analysis.R` - the R script\
-│--------   │   `comp.cpp` - the C++ script\
-│--------   │   `comp` - the compiled C++ script\
+│--------   │   `all_tests.cpp` - the C++ script\
+│--------   │   `all_tests.out` - the compiled C++ script\
 │--------   └───lib - all libraries and header files needed for the C++ script\
 │----------------       │   headerfile1.h\
 │----------------       │   headerfile2.h\
