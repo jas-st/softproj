@@ -10,20 +10,37 @@ softproj\
 │   `analysis_simulation.sh` - Bash script for the analysis of simulated data\
 │   `analysis_biological.sh` - Bash script for the analysis of real data\
 └───bin\
---------   │   `analysis.R` - the R script\
---------   │   `comp.cpp` - the C++ script\
---------   │   `comp` - the compiled C++ script\
---------   └───lib - all libraries and header files needed for the C++ script\
-----------------       │   headerfile1.h\
-----------------       │   headerfile2.h\
-----------------       │   headerfile3.h\
+│--------   │   `analysis.R` - the R script\
+│--------   │   `comp.cpp` - the C++ script\
+│--------   │   `comp` - the compiled C++ script\
+│--------   └───lib - all libraries and header files needed for the C++ script\
+│----------------       │   headerfile1.h\
+│----------------       │   headerfile2.h\
+│----------------       │   headerfile3.h\
+└───test_input
 
+## Installation & Dependencies
 
-## Installation & Requirements
-R Script - built under R 4.2.2 (list whichh packages are needed?)\
-C++ Script - compiled with g++ 9.4.0
+The software requires **R** and **IQ-Tree** to run. 
 
-There is no installation needed, simply run the desired bash script in the command line, providing the needed input files.
+### R Script - built under R 4.2.2
+
+R must be installed as well as the following packages:
+- scales
+- tidyverse
+- ape
+- Biostrings
+- ggtree
+- ggpubr
+- ggvenn
+- tidytree
+- treeio
+
+### IQ-Tree
+
+The software uses the AliSim extension, as well as ModelFinder, contained in the IQ-TREE software. The user has to have IQ-TREE with AliSim installed.(or include iqtree executable in the software???)
+
+There is otherwise no installation needed, simply run the desired bash script in the command line, providing the needed input files.
 
 ## Usage
 To start, open a terminal (cmd/Powershell in Windows) and navigate to the path of the program.
@@ -31,7 +48,7 @@ To start, open a terminal (cmd/Powershell in Windows) and navigate to the path o
 #### `analysis_simulation.sh`
 The analysis of simulated data requires a tree file and the parameters for the simulation.
 ```sh
-    bash analysis_simulation.sh -t treefile.tree -m JC -n 1000 -k 100 -s true
+bash analysis_simulation.sh -t treefile.tree -m JC -n 1000 -k 100 -s true
 ```
 - -t - the tree file in standard Newick format
 - -m - specifies a substitution model to use for the simulation (default: JC)
@@ -41,6 +58,7 @@ The analysis of simulated data requires a tree file and the parameters for the s
 
 #### `analysis_biological.sh`
 The analysis of real data requires the multiple sequence alignment file and optionally a tree file. If there is no tree file provided to program will ask to run IQ-Tree for the ML Tree and use that for further computations.
+
 ```sh
 bash analysis_biological.sh -a alignment.phy -t treefile.tree -s true
 ```
@@ -67,3 +85,23 @@ Additionally one PDF file for each of the tests computed:
 
 And lastly the result tree with added labels for each test in NEXUS format.
 - `<treename>.tree`
+
+## Example Input
+
+To test if everything is working correctly, there is a test input provided with an example tree file and example alignment. To run the software open a terminal and navigate to the directory, then execute the following commands:
+
+### Simulation Study
+
+For the simulation study:
+```
+bash analysis_simulation.sh -t test_input/example-treefile.tree -m JC -n 1000 -k 100 -s true
+```
+If everything worked there should be a new folder called `results_example-treefile`, containing all of the outputs.
+
+### Biological Study
+
+For the biological study:
+```
+bash analysis_biological.sh -a test_input/example-alignment.phy -t example-treefile.tree -s true
+```
+If everything worked there should be a new folder called `results_example-alignment`, containing all of the outputs.
