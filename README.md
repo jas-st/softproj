@@ -62,7 +62,6 @@ The analysis of real data requires the multiple sequence alignment file and opti
 ```sh
 bash analysis_biological.sh -a alignment.phy -t treefile.tree -s true
 ```
-(the order of the parameters is important)
 - -a - specifies the sequence alignment file in PHYLIP or NEX format
 - -t (optional) - the tree file in standard Newick format
 - -s (optional) - can be true or false, if true it will also compute the saturation tests (default: false)
