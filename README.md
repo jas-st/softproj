@@ -51,7 +51,7 @@ The analysis of simulated data requires a tree file and the parameters for the s
 bash analysis_simulation.sh -t treefile.tree -m JC -n 1000 -k 100 -s true
 ```
 - -t - the tree file in standard Newick format
-- -m - specifies a substitution model to use for the simulation (default: JC)
+- -m - specifies a substitution model to use for the simulation (default: JC), all possible options can be seen in [substitution models for alisim](http://www.iqtree.org/doc/Substitution-Models)
 - -n - specifies the length of the root sequence (default: 500)
 - -k - specifies how many simulations to be ran (default: 1)
 - -s (optional) - can be true or false, if true it will also compute the saturation tests (default: false)
