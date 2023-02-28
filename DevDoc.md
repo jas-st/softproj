@@ -80,7 +80,7 @@ Used for calculating p-values and decisions of test statistics and plotting the 
   
 #### Usage
 ```
-analysis.R <treefile> <n> <raw_test_statistcs> <k> <s>
+Rscript analysis.R <treefile> <n> <raw_test_statistcs> <k> <s>
 ```  
 #### Parameters
 - `treefile` - treefile either in Newick format or 
