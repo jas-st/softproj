@@ -127,6 +127,8 @@ Additionally for the biological study if there more than 50 species, a compresse
 
 Lastly the result tree with added labels on the branches for all test rejections in NEXUS format:
 - `annotated_<name>.tree`
+  
+All command line messages in the process will be saved in `simulation.log` or `biological.log`.
 
 ## Example Input
 
