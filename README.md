@@ -153,7 +153,7 @@ If everything worked there should be a new folder called `results_example-alignm
 ## References 
   
 [Gubela, 2022] Gubela, N. (2022). A test for reversibility of markov chains in molecular
-evolution. 
+evolution.  
 [Kalyaanamoorthy et al., 2017] Kalyaanamoorthy, S., Minh, B., Wong, T., von Haeseler,
 A., and Jermiin, L. (2017). Modelfinder: Fast model selection for accurate phylogenetic
 estimates. Nature Methods, 14.  
