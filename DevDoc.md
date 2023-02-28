@@ -49,11 +49,11 @@ Location: `bin\lib\Sequence.h`
 
 ##### Attributes
 
-- `[std::string]` id - the name of the sequence
-- `[std::string]` seq - the nucleotide sequence
-- `[double]` length - length of the sequence
-- `[Eigen::Vector4d]` nucl_freqs - nucleotide frequencies of the sequence
-- `[Eigen::Vector4d]` nucl_freqs_align - nucleotide frequencies of the sequence, based on an alignment
+- `[std::string]` **id** - the name of the sequence
+- `[std::string]` **seq** - the nucleotide sequence
+- `[double]` **length** - length of the sequence
+- `[Eigen::Vector4d]` **nucl_freqs** - nucleotide frequencies of the sequence
+- `[Eigen::Vector4d]` **nucl_freqs_align** - nucleotide frequencies of the sequence, based on an alignment
 
 ##### Constructors 
 ```
@@ -68,8 +68,8 @@ Location: `bin\lib\Sequence.h`
 
 ##### Attributes
 
-- `[std::vector<Sequence>]` sequences - a vector that stores objects of class `Sequence`
-- `[Eigen::Vector4d]` global_freqs - global nucleotide distribution for the whole alignment
+- `[std::vector<Sequence>]` **sequences** - a vector that stores objects of class `Sequence`
+- `[Eigen::Vector4d]` **global_freqs** - global nucleotide distribution for the whole alignment
 
 ##### Constructors 
 ```
@@ -79,28 +79,215 @@ Default constructor, intializes an object with empty attributes.
 
 
 ### *seqs_read()*
-Function for reading in sequences from an alignment.  
+Function for reading in sequences from an alignment. It creates an `Alignment` object, storing all sequences as its attribute, as well as the global alignment. For each sequence it also calculates its nucleotide distribution.    
 Location: `bin\lib\file_handling.h` 
+  
+```
+seqs_read(std::string file_name, std::string extension)
+```
 
 ##### Parameters
+- `[std::string]` **file_name** - name of the input file
+- `[std::string]` **extension** - file extension
  
 ##### Returns
+An `Alignment` object.
 
-### *get_m()*
-Function for reading in sequences from an alignment.  
-Location: `bin\lib\file_handling.h` 
+### *div_mat()*  
+Function for calculation the sample diversity matrix of two sequences.  
+Location: `bin\lib\div_mat.h`   
+Author : [Gubela, 2022]
+
+``` 
+div_mat(string seq1, string seq2)
+```
+  
+##### Parameters
+- `[std::string]` **seq1** - first sequence
+- `[std::string]` **seq2** - second sequence
+ 
+##### Returns
+An `Eigen::Matrix4d` object.
+  
+### *bowker_stat()*  
+Function for calculating the Bowker test as m<sup>T</sup>*B<sup>-1</sup>*m.  
+Location: `bin\lib\stats.h`   
+Author : [Gubela, 2022}
+  
+```
+bowker_stat(Eigen::Matrix<double, 6, 1> m, Eigen::Matrix<double, 6, 6>  B)
+```
 
 ##### Parameters
+- `[Eigen::Matrix<double, 6, 1>]` **m** - vector with the absolute differences of the off diagonal entries of the sample diversity matrix
+- `[Eigen::Matrix<double, 6, 6>] **B** - diagonal matrix with the sums of the off diagonal entries of the sample diversity matrix
  
 ##### Returns
+A `double` type.
+
+  
+### *get_m()*  
+Function for calculating *m* for the computation of the Bowker statistic. 
+Location: `bin\lib\stats.h`   
+Author : [Gubela, 2022] 
+
+```
+get_m(Eigen::Matrix4d H)
+```  
+  
+##### Parameters
+- `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
+ 
+##### Returns
+An Eigen::Matrix<double, 6, 1> object.
+
 
 ### *get_B()*
-Function for reading in sequences from an alignment.  
-Location: `bin\lib\file_handling.h` 
+Function for calculating *B* for the computation of the Bowker statistic. 
+Location: `bin\lib\file_handling.h`  
+Author : [Gubela, 2022] 
 
+```
+get_B(Eigen::Matrix4d H)
+```
+  
 ##### Parameters
+- `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
  
 ##### Returns
+An Eigen::Matrix<double, 6, 6> object.
+  
+  
+### *stuart_stat()*  
+Function for calculating the Stuart test as D<sup>T</sup>*V<sup>-1</sup>*D.  
+Location: `bin\lib\stats.h`   
+Author : [Gubela, 2022}
+  
+```
+stuart_stat(Eigen::Matrix<double, 3, 1> D, Eigen::Matrix<double, 3, 3>  V)
+```
+
+##### Parameters
+- `[Eigen::Matrix<double, 3, 1>]` **D** - vector calculated using the vector from **get_m()**
+- `[Eigen::Matrix<double, 3, 3>] **V** - matrix calculated using the matrix from **get_B()**
+ 
+##### Returns
+A `double` type.
+  
+  
+### *get_V()*
+Function for calculating *V* for the computation of the Stuart statistic. 
+Location: `bin\lib\file_handling.h`  
+Author : [Gubela, 2022] 
+
+```
+get_V(Eigen::Matrix<double, 6, 6> B)
+```
+  
+##### Parameters
+- `[Eigen::Matrix<double, 6, 6> ]` **B** - the matrix calculated using **get_B()**
+ 
+##### Returns
+An Eigen::Matrix<double, 3, 3> object.
+
+
+### *get_D()*
+Function for calculating *D* for the computation of the Stuart statistic. 
+Location: `bin\lib\file_handling.h`  
+Author : [Gubela, 2022] 
+
+```
+get_D(Eigen::Matrix<double, 6, 6> m)
+```
+  
+##### Parameters
+- `[Eigen::Matrix<double, 6, 1> ]` **m** - the vector calculated using **get_m()**
+ 
+##### Returns
+An Eigen::Matrix<double, 3, 3> object.
+  
+### *intsym_stat()*  
+Function for calculating the Internal Symmetry test as Bowker - Stuart.   
+Location: `bin\lib\stats.h`   
+Author : [Gubela, 2022]
+  
+```
+intsym_stat(double bowk, double stu)
+```
+
+##### Parameters
+- `[double]` **bowk** - the Bowker test statistic
+- `[double] **stu** - the Stuart test statistic
+ 
+##### Returns
+A `double` type.
+  
+### *get_d()*
+Function for calculating differences of the products of the 4 different Kolmogorov cycles. 
+Location: `bin\lib\stats.h`  
+Author : [Gubela, 2022] 
+
+```
+get_d(Eigen::Matrix4d H)
+```
+  
+##### Parameters
+- `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
+ 
+##### Returns
+An Eigen::Matrix<double, 4, 1> object.
+  
+### *get_var()*
+Function for calculating the variance of the **d<sub>i</sub>** (differenes in the Kolmogorov cycles). 
+Location: `bin\lib\stats.h`  
+Author : [Gubela, 2022] 
+
+```
+get_var(Eigen::Matrix<double, 4, 4> P, int N, int d1)
+```
+  
+##### Parameters
+- `[Eigen::Matrix4d]` **P** - frequency matrix, calculated as the sample diversity matrix of two sequences divided by the sequence length
+- `[int]' **N** - the sequence length
+- `[int]' **d1** - index of the **d<sub>i</sub>** differences
+ 
+##### Returns
+A double type
+  
+### *get_covar()*
+Function for calculating the covariance of **d<sub>i</sub>** and **d<sub>j</sub>**  (differenes in the Kolmogorov cycles). 
+Location: `bin\lib\stats.h`  
+Author : [Gubela, 2022] 
+
+```
+get_covar(Eigen::Matrix<double, 4, 4> P, int N, int d1, int d2)
+```
+  
+##### Parameters
+- `[Eigen::Matrix4d]` **P** - frequency matrix, calculated as the sample diversity matrix of two sequences divided by the sequence length
+- `[int]' **N** - the sequence length
+- `[int]' **d1** - index of the **d<sub>i</sub>** difference
+- `[int]' **d2** - index of the **d<sub>j</sub>** difference
+ 
+##### Returns
+A double type
+  
+### *sat_test_cas1()*  
+Function for calculating the Saturation Test by Cassius with global frequences  
+Location: `bin\lib\sat_tests.h`   
+  
+```
+sat_test_cas1(Eigen::Matrix4d H, int n, Eigen::Vector4d freqs) 
+```
+
+##### Parameters
+- `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
+- `[int] **n** - the sequence alignment length
+- `[Eigen::Vector4d]` **freqs** - global nucleteotide aboslute frequencies
+ 
+##### Returns
+A `double` type.
+  
 
 
 
@@ -158,3 +345,6 @@ coloured_tree(tree, seq_pair, test_pv)
 - `seq_pairs` - data frame column or character vector that contains the sequence pairs
 - `test_pv`- data frame column or numeric vector that contains the p-values
   
+## References 
+  
+[Gubela, 2022] Gubela, N. (2022). A test for reversibility of markov chains in molecular evolution. 
