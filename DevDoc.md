@@ -3,75 +3,47 @@
 ## Bash 
 
 ### `analysis_simulation.sh`
-
-##### Syntax 
-```
-bash analysis_simulation.sh -t <tree> [OPTIONS]
-```
-
-##### Required parameters
-- `-t` - tree file in Newick format
-
-##### Options
-- `-m` - substitution model for sequence simulation, by default JC 
-- `-n` - sequence length, by default 500
-- `-k` - number of simulations, by default 1
-- `-s` - apply staturation tests true or false, by default false
+Bash script that acts like a wrapper around the different functions of this workflow. 
 
 ##### Usage 
 ```
-bash analysis_simulation.sh -t tree.nwk -m JC -n 1000 -k 100  -s true
+bash analysis\_simulation.sh -t <treename>.nwk -m JC -n 1000 -k 100  -s true
 ```
+
+##### Parameters
+- `t` - tree file in Newick format `<treename>.nwk`
+- `m` - substitution model for sequence simulation `<m>`, by default JC 
+- `n` - sequece length `<n>`, by default 500
+- `k` - number of simulations `<k>`, by default 1
+- `s` - apply staturation tests true or false `<s>`, by default false
 
 ##### Structure
-- Call Alisim
-```
-iqtree2 --alisim $treename-alignment -m $matrix -t ${t} --length $seq_len --num-alignments $k -seed 123 >> $dir/results_$treename/
-```
-- Call C++ Script
-- Call R Script
+1. read in the command line arguments
+2. create directory results_<treename>, where all results will be saved
+3. create a new directory `alignment_alisim`
+4. call the IQ-Tree command (save command line output to `simulation.log`): 
 
+```
+  iqtree2 –alisim alignment -m <model> -t <treename>.nwk –length <n> –num-alignments <k> 
+```
+5. loop trough all alignment simulation files in `alignment_alisim`
+6. apply C++ script by using command:
+```
+  ./all_tests.out -F <treename>.nwk -s <s>
+```
+7. save raw test results in results_<treename>/results_raw_<treename>.csv
+8. call R script on the raw test results:
+```
+  analysis.R <treename>.nwk <n> results_<treename>/results_raw_<treename>.csv <k> <s>
+```
+9. delete directory with simulated alignments `alignment_alisim`
+  
+  
 ### `analysis_biological.sh`
-
-##### Synthax
-```
-bash analysis_biological.sh -a <alignment> [OPTIONS]
-```
-
-##### Required parameters
-- `-a` - multiple sequence alignment in Phylip or NEX format
-
-##### Options
-- `-t`
-- `-iqtr`
-- `-m`
-- `-s`
-
-##### Structure
-- Call C++ Script
-- Call IQ-TREE 
-- Call R Script
 
 ## C++
 
 ### *Sequence*
-Class for storing sequences.   
-Location: `bin\lib\Sequence.h` 
-
-##### Constructors 
-```
-Sequence(std::string seq_id, std::string seq_str, Eigen::Vector4d seq_freq)
-```
-
-##### Parameters
-- `id` - sequence id/name/etc
-- `seq` - nucleotide sequnce
-- `nucl_freqs` - vector
-
-##### Methods
-
-
-### *Alignment*
 Class for storing sequences  
 
 ##### Syntax
@@ -89,6 +61,8 @@ Sequence(std::string seq_id, std::string seq_str, Eigen::Vector4d seq_freq)
 
 ##### Methods
 
+
+
 ### *seqs_read*
 
 Function for reading in sequences in an Alignment object.
@@ -101,7 +75,21 @@ Alignment seqs_read(std::string file_name, std::string extension)
 #### Parameters
 
 
-## R
+## R file: analysis_visualisation_simulation.R / analysis_visualisation_biological.R
+Used for calculating p-values and decisions of test statistics and plotting the results with 4 different visualsations. 
+  
+#### Usage
+```
+analysis.R <treefile> <n> <raw_test_statistcs> <k> <s>
+```  
+#### Parameters
+- `treefile` - treefile either in Newick format or 
+- `n`- sequence length
+- `raw_test_statistcs` - path to .csv file with raw test statistics
+- `k` - number of simulations
+- `s` - true/false saturation test
+
+Includes functions:
 
 ### *head_success*
 Function for plotting a heatmap to visualize the pairwise p-values and decision results. 
@@ -140,4 +128,4 @@ coloured_tree(tree, seq_pair, test_pv)
 - `tree`- ggtree object
 - `seq_pairs` - data frame column or character vector that contains the sequence pairs
 - `test_pv`- data frame column or numeric vector that contains the p-values
-
+  
