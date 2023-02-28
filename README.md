@@ -1,5 +1,6 @@
 # User Level Documentation
 ### _Application of a test for reversibility of Markov chains in molecular evolution_
+Authors: Luzia Berchtold (11813328), Zhasmina Stoyanova (11806556)
 
 Pipeline for the application of the tests Bowker, Stuart, Internal Symmetry and Quasi-symmetry on simulated or biological data. The software is executable on the command line. It comprises two bash scripts, which serve as a link between a C++ program and an R Script for the analysis of the provided data.  
 The program uses IQ-TREE to simulate an alignment (AliSim) provided a tree topology or it can call IQ-TREE to compute a maximum-likelihood tree provided an alignment.
