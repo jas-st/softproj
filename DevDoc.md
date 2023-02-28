@@ -1,14 +1,14 @@
 # Developer Level Documentation
 
 ## Bash 
-Bash script that acts like a wrapper around the different functions of this workflow.
+Bash scripts that acts like a wrapper around the different functions of this workflow.
 
 ### `analysis_simulation.sh`
 Bash script for performing a simulation study.
 
 ##### Usage 
 ```
-bash analysis\_simulation.sh -t <treename>.nwk -m JC -n 1000 -k 100  -s true
+bash analysis_simulation.sh -t <treename>.nwk -m JC -n 1000 -k 100  -s true
 ```
 
 ##### Parameters
@@ -20,7 +20,7 @@ bash analysis\_simulation.sh -t <treename>.nwk -m JC -n 1000 -k 100  -s true
 
 ##### Structure
 1. read in the command line arguments
-2. create directory results_<treename>, where all results will be saved
+2. create directory `results_<treename>`, where all results will be saved
 3. create a new directory `alignment_alisim`
 4. call the IQ-Tree command (save command line output to `simulation.log`): 
 
@@ -32,7 +32,7 @@ bash analysis\_simulation.sh -t <treename>.nwk -m JC -n 1000 -k 100  -s true
 ```
   ./all_tests.out -F <treename>-alignment_*.phy -s <s>
 ```
-7. save raw test results in results_<treename>/results_raw_<treename>.csv
+7. save raw test results in `results_<treename>/results_raw_<treename>.csv`
 8. call R script on the raw test results:
 ```
   analysis_visualisation_simulation.R <treename>.nwk <n> results_<treename>/results_raw_<treename>.csv <k> <s>
@@ -61,15 +61,15 @@ bash analysis_biological.sh -a <alignment>.phy -iqtr -m GTR -s true
 
 ##### Structure
 1. read in the command line arguments
-2. create directory results_<alignment>, where all results will be saved
+2. create directory `results_<alignment>`, where all results will be saved
 3. copy the alignment file in this directory
 4. call the C++ script by using command:
 ```
   ./all_tests.out -F <alignment>.phy -s <s>
 ```
-5. save raw test results in results_<alignment>/results_raw_<alignment>.csv
-6.1. if no treefile or no `-iqtr`flag provided - end here
-6.2. if option `-iqtr` provided, create a new directory <alignment>_IQTREE, move <alignment>.phy there and call IQ-TREE by using command:
+5. save raw test results in `results_<alignment>/results_raw_<alignment>.csv`  
+6.1. if no tree file or no `-iqtr`flag provided - end here  
+6.2. if option `-iqtr` provided, create a new directory `<alignment>_IQTREE`, move <alignment>.phy there and call IQ-TREE by using command:
 ```
   iqtree2 -s <alignment>.phy -m <m> --redo-tree -quiet
 ```
@@ -90,7 +90,7 @@ Location: `bin\lib\Sequence.h`
 - `[std::string]` **seq** - the nucleotide sequence
 - `[double]` **length** - length of the sequence
 - `[Eigen::Vector4d]` **nucl_freqs** - nucleotide frequencies of the sequence
-- `[Eigen::Vector4d]` **nucl_freqs_align** - nucleotide frequencies of the sequence, based on an alignment
+- `[Eigen::Vector4d]` **nucl_freqs_align** - nucleotide frequencies of the sequence, counting only non-gaps in an alignment
 
 ##### Constructors 
 ```
@@ -133,7 +133,7 @@ An `Alignment` object.
 ### *div_mat()*  
 Function for calculation the sample diversity matrix of two sequences.  
 Location: `bin\lib\div_mat.h`   
-Author : [Gubela, 2022]
+Author: [Gubela, 2022]
 
 ``` 
 div_mat(string seq1, string seq2)
@@ -149,7 +149,7 @@ An `Eigen::Matrix4d` object.
 ### *bowker_stat()*  
 Function for calculating the Bowker test as m<sup>T</sup>*B<sup>-1</sup>*m.  
 Location: `bin\lib\stats.h`   
-Author : [Gubela, 2022}
+Author: [Gubela, 2022}
   
 ```
 bowker_stat(Eigen::Matrix<double, 6, 1> m, Eigen::Matrix<double, 6, 6>  B)
@@ -157,7 +157,7 @@ bowker_stat(Eigen::Matrix<double, 6, 1> m, Eigen::Matrix<double, 6, 6>  B)
 
 ##### Parameters
 - `[Eigen::Matrix<double, 6, 1>]` **m** - vector with the absolute differences of the off diagonal entries of the sample diversity matrix
-- `[Eigen::Matrix<double, 6, 6>] **B** - diagonal matrix with the sums of the off diagonal entries of the sample diversity matrix
+- `[Eigen::Matrix<double, 6, 6>]` **B** - diagonal matrix with the sums of the off diagonal entries of the sample diversity matrix
  
 ##### Returns
 A `double` type.
