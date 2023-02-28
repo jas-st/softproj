@@ -1,7 +1,7 @@
 # Developer Level Documentation
 ### _Application of a test for reversibility of Markov chains in molecular evolution_
 Authors: Luzia Berchtold (11813328), Zhasmina Stoyanova (11806556)  
-Code can be found in the following repository: [Github](https://github.com/jas-st/softproj)(https://github.com/jas-st/softproj)
+Code can be found in the following repository: https://github.com/jas-st/softproj
 
 ## Bash 
 Bash scripts that acts like a wrapper around the different functions of this workflow.
