@@ -164,9 +164,9 @@ A `double` type.
 
   
 ### *get_m()*  
-Function for calculating *m* for the computation of the Bowker statistic. 
+Function for calculating *m* for the computation of the Bowker statistic.  
 Location: `bin\lib\stats.h`   
-Author : [Gubela, 2022] 
+Author: [Gubela, 2022] 
 
 ```
 get_m(Eigen::Matrix4d H)
@@ -180,9 +180,9 @@ An `Eigen::Matrix<double, 6, 1>` object.
 
 
 ### *get_B()*
-Function for calculating *B* for the computation of the Bowker statistic. 
-Location: `bin\lib\file_handling.h`  
-Author : [Gubela, 2022] 
+Function for calculating *B* for the computation of the Bowker statistic.  
+Location: `bin\lib\stats.h`  
+Author: [Gubela, 2022] 
 
 ```
 get_B(Eigen::Matrix4d H)
@@ -198,7 +198,7 @@ An `Eigen::Matrix<double, 6, 6>` object.
 ### *stuart_stat()*  
 Function for calculating the Stuart test as D<sup>T</sup>*V<sup>-1</sup>*D.  
 Location: `bin\lib\stats.h`   
-Author : [Gubela, 2022}
+Author: [Gubela, 2022}
   
 ```
 stuart_stat(Eigen::Matrix<double, 3, 1> D, Eigen::Matrix<double, 3, 3>  V)
@@ -213,8 +213,8 @@ A `double` type.
   
   
 ### *get_V()*
-Function for calculating *V* for the computation of the Stuart statistic. 
-Location: `bin\lib\file_handling.h`  
+Function for calculating *V* for the computation of the Stuart statistic.  
+Location: `bin\lib\stats.h`  
 Author : [Gubela, 2022] 
 
 ```
@@ -225,11 +225,11 @@ get_V(Eigen::Matrix<double, 6, 6> B)
 - `[Eigen::Matrix<double, 6, 6> ]` **B** - the matrix calculated using **get_B()**
  
 ##### Returns
-An Eigen::Matrix<double, 3, 3> object.
+An `Eigen::Matrix<double, 3, 3>` object.
 
 
 ### *get_D()*
-Function for calculating *D* for the computation of the Stuart statistic. 
+Function for calculating *D* for the computation of the Stuart statistic.  
 Location: `bin\lib\file_handling.h`  
 Author : [Gubela, 2022] 
 
@@ -241,12 +241,11 @@ get_D(Eigen::Matrix<double, 6, 6> m)
 - `[Eigen::Matrix<double, 6, 1> ]` **m** - the vector calculated using **get_m()**
  
 ##### Returns
-An Eigen::Matrix<double, 3, 3> object.
+An `Eigen::Matrix<double, 3, 3>` object.
   
 ### *intsym_stat()*  
-Function for calculating the Internal Symmetry test as Bowker - Stuart.   
+Function for calculating the Internal Symmetry test as *Bowker - Stuart*.   
 Location: `bin\lib\stats.h`   
-Author : [Gubela, 2022]
   
 ```
 intsym_stat(double bowk, double stu)
@@ -260,7 +259,7 @@ intsym_stat(double bowk, double stu)
 A `double` type.
   
 ### *get_d()*
-Function for calculating differences of the products of the 4 different Kolmogorov cycles. 
+Function for calculating differences of the products of the 4 different Kolmogorov cycles.  
 Location: `bin\lib\stats.h`  
 Author : [Gubela, 2022] 
 
@@ -272,10 +271,10 @@ get_d(Eigen::Matrix4d H)
 - `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
  
 ##### Returns
-An Eigen::Matrix<double, 4, 1> object.
+An `Eigen::Matrix<double, 4, 1>` object.
   
 ### *get_var()*
-Function for calculating the variance of the **d<sub>i</sub>** (differenes in the Kolmogorov cycles). 
+Function for calculating the variance of the **d<sub>i</sub>** (differenes in the Kolmogorov cycles).   
 Location: `bin\lib\stats.h`  
 Author : [Gubela, 2022] 
 
@@ -285,14 +284,14 @@ get_var(Eigen::Matrix<double, 4, 4> P, int N, int d1)
   
 ##### Parameters
 - `[Eigen::Matrix4d]` **P** - frequency matrix, calculated as the sample diversity matrix of two sequences divided by the sequence length
-- `[int]' **N** - the sequence length
-- `[int]' **d1** - index of the **d<sub>i</sub>** differences
+- `[int]` **N** - the sequence length
+- `[int]` **d1** - index of the **d<sub>i</sub>** differences
  
 ##### Returns
-A double type
+A `double` type
   
 ### *get_covar()*
-Function for calculating the covariance of **d<sub>i</sub>** and **d<sub>j</sub>**  (differenes in the Kolmogorov cycles). 
+Function for calculating the covariance of **d<sub>i</sub>** and **d<sub>j</sub>**  (differences in the Kolmogorov cycles).   
 Location: `bin\lib\stats.h`  
 Author : [Gubela, 2022] 
 
@@ -302,12 +301,12 @@ get_covar(Eigen::Matrix<double, 4, 4> P, int N, int d1, int d2)
   
 ##### Parameters
 - `[Eigen::Matrix4d]` **P** - frequency matrix, calculated as the sample diversity matrix of two sequences divided by the sequence length
-- `[int]' **N** - the sequence length
-- `[int]' **d1** - index of the **d<sub>i</sub>** difference
-- `[int]' **d2** - index of the **d<sub>j</sub>** difference
+- `[int]` **N** - the sequence length
+- `[int]` **d1** - index of the **d<sub>i</sub>** difference
+- `[int]` **d2** - index of the **d<sub>j</sub>** difference
  
 ##### Returns
-A double type
+A `double` type
   
 ### *sat_test_cas1()*  
 Function for calculating the Saturation Test by Cassius with global frequences  
