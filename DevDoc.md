@@ -1,9 +1,10 @@
 # Developer Level Documentation
 
 ## Bash 
+Bash script that acts like a wrapper around the different functions of this workflow.
 
 ### `analysis_simulation.sh`
-Bash script that acts like a wrapper around the different functions of this workflow. 
+Bash script for performing a simulation study.
 
 ##### Usage 
 ```
@@ -11,11 +12,11 @@ bash analysis\_simulation.sh -t <treename>.nwk -m JC -n 1000 -k 100  -s true
 ```
 
 ##### Parameters
-- `t` - tree file in Newick format `<treename>.nwk`
-- `m` - substitution model for sequence simulation `<m>`, by default JC 
-- `n` - sequece length `<n>`, by default 500
-- `k` - number of simulations `<k>`, by default 1
-- `s` - apply staturation tests true or false `<s>`, by default false
+- `-t` - tree file in Newick format `<treename>.nwk`
+- `-m` - substitution model for sequence simulation `<m>`, by default JC 
+- `-n` - sequece length `<n>`, by default 500
+- `-k` - number of simulations `<k>`, by default 1
+- `-s` - apply staturation tests true or false `<s>`, by default false
 
 ##### Structure
 1. read in the command line arguments
@@ -29,17 +30,53 @@ bash analysis\_simulation.sh -t <treename>.nwk -m JC -n 1000 -k 100  -s true
 5. loop trough all alignment simulation files in `alignment_alisim`
 6. apply C++ script by using command:
 ```
-  ./all_tests.out -F <treename>.nwk -s <s>
+  ./all_tests.out -F <treename>-alignment_*.phy -s <s>
 ```
 7. save raw test results in results_<treename>/results_raw_<treename>.csv
 8. call R script on the raw test results:
 ```
-  analysis.R <treename>.nwk <n> results_<treename>/results_raw_<treename>.csv <k> <s>
+  analysis_visualisation_simulation.R <treename>.nwk <n> results_<treename>/results_raw_<treename>.csv <k> <s>
 ```
 9. delete directory with simulated alignments `alignment_alisim`
   
   
 ### `analysis_biological.sh`
+Bash script for performing a biological study.
+
+##### Usage 
+```
+bash analysis_biological.sh -a <alignment>.phy -t <treename>.nwk -s true
+```
+or
+```
+bash analysis_biological.sh -a <alignment>.phy -iqtr -m GTR -s true
+```
+
+##### Parameters
+- `-a` - multiple sequence alignment file in Phylip or NEX format `<alignment>.phy`
+- `-t` - tree file in Newick format `<treename>.nwk`
+- `-iqtr` - specifies whether to call IQ-TREE to compute the ML tree
+- `-m` - substitution model for IQ-TREE to use if `-iqtr`flag present `<m>`, by default none (if none IQ-TREE ModelFinder will be called)
+- `-s` - apply staturation tests true or false `<s>`, by default false
+
+##### Structure
+1. read in the command line arguments
+2. create directory results_<alignment>, where all results will be saved
+3. copy the alignment file in this directory
+4. call the C++ script by using command:
+```
+  ./all_tests.out -F <alignment>.phy -s <s>
+```
+5. save raw test results in results_<alignment>/results_raw_<alignment>.csv
+6.1. if no treefile or no `-iqtr`flag provided - end here
+6.2. if option `-iqtr` provided, create a new directory <alignment>_IQTREE, move <alignment>.phy there and call IQ-TREE by using command:
+```
+  iqtree2 -s <alignment>.phy -m <m> --redo-tree -quiet
+```
+7. call R script on the raw test results using the provided tree file or the one inferred with IQ-TREE:
+```
+  analysis_visualisation_biological.R <treename>.nwk results_<treename>/results_raw_<treename>.csv <s>
+```
 
 ## C++
 
