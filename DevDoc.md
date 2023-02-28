@@ -44,35 +44,64 @@ bash analysis\_simulation.sh -t <treename>.nwk -m JC -n 1000 -k 100  -s true
 ## C++
 
 ### *Sequence*
-Class for storing sequences  
+Class for storing sequences.   
+Location: `bin\lib\Sequence.h` 
 
-##### Syntax
-Location: `bin\lib\Sequence.h`  
+##### Attributes
+
+- `[std::string]` id - the name of the sequence
+- `[std::string]` seq - the nucleotide sequence
+- `[double]` length - length of the sequence
+- `[Eigen::Vector4d]` nucl_freqs - nucleotide frequencies of the sequence
+- `[Eigen::Vector4d]` nucl_freqs_align - nucleotide frequencies of the sequence, based on an alignment
+
+##### Constructors 
 ```
-#include<'Sequence.h'>
-
 Sequence(std::string seq_id, std::string seq_str, Eigen::Vector4d seq_freq)
 ```
+Initializes an object with a specified `id` - **seq_id**, nucleotide sequence `seq` - **seq_str** and a nucleotide frequency vector `nucl_freqs` - **seq_freq**
+
+
+### *Alignment*
+Class for storing an alignment.  
+Location: `bin\lib\Sequence.h` 
+
+##### Attributes
+
+- `[std::vector<Sequence>]` sequences - a vector that stores objects of class `Sequence`
+- `[Eigen::Vector4d]` global_freqs - global nucleotide distribution for the whole alignment
+
+##### Constructors 
+```
+Alignment()
+```
+Default constructor, intializes an object with empty attributes.
+
+
+### *seqs_read()*
+Function for reading in sequences from an alignment.  
+Location: `bin\lib\file_handling.h` 
 
 ##### Parameters
-- `id` - sequence id/name/etc
-- `seq` - nucleotide sequnce
-- `nucl_freqs` - vector
+ 
+##### Returns
 
-##### Methods
+### *get_m()*
+Function for reading in sequences from an alignment.  
+Location: `bin\lib\file_handling.h` 
 
+##### Parameters
+ 
+##### Returns
 
+### *get_B()*
+Function for reading in sequences from an alignment.  
+Location: `bin\lib\file_handling.h` 
 
-### *seqs_read*
+##### Parameters
+ 
+##### Returns
 
-Function for reading in sequences in an Alignment object.
-
-#### Usage
-```
-Alignment seqs_read(std::string file_name, std::string extension)
-```
-
-#### Parameters
 
 
 ## R file: analysis_visualisation_simulation.R / analysis_visualisation_biological.R
