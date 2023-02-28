@@ -4,19 +4,53 @@
 
 ### `analysis_simulation.sh`
 
+##### Syntax 
+```
+bash analysis_simulation.sh -t <tree> [OPTIONS]
+```
+
+##### Required parameters
+- `-t` - tree file in Newick format
+
+##### Options
+- `-m` - substitution model for sequence simulation, by default JC 
+- `-n` - sequence length, by default 500
+- `-k` - number of simulations, by default 1
+- `-s` - apply staturation tests true or false, by default false
+
 ##### Usage 
 ```
-bash analysis\_simulation.sh -t tree.nwk -m JC -n 1000 -k 100  -s true
+bash analysis_simulation.sh -t tree.nwk -m JC -n 1000 -k 100  -s true
 ```
 
-##### Parameters
-- `t` - tree file in Newick format, necessary
-- `m` - substitution model for sequence simulation, by default JC
-- `n` - sequece length, by default 500
-- `k` - number of simulations, by default 1
-- `s` - apply staturation tests true or false, by default false
+##### Structure
+- Call Alisim
+```
+iqtree2 --alisim $treename-alignment -m $matrix -t ${t} --length $seq_len --num-alignments $k -seed 123 >> $dir/results_$treename/
+```
+- Call C++ Script
+- Call R Script
 
 ### `analysis_biological.sh`
+
+##### Synthax
+```
+bash analysis_biological.sh -a <alignment> [OPTIONS]
+```
+
+##### Required parameters
+- `-a` - multiple sequence alignment in Phylip or NEX format
+
+##### Options
+- `-t`
+- `-iqtr`
+- `-m`
+- `-s`
+
+##### Structure
+- Call C++ Script
+- Call IQ-TREE 
+- Call R Script
 
 ## C++
 
@@ -39,6 +73,23 @@ Sequence(std::string seq_id, std::string seq_str, Eigen::Vector4d seq_freq)
 ##### Methods
 
 
+### *Alignment*
+Class for storing sequences  
+
+##### Syntax
+Location: `bin\lib\Sequence.h`  
+```
+#include<'Sequence.h'>
+
+Sequence(std::string seq_id, std::string seq_str, Eigen::Vector4d seq_freq)
+```
+
+##### Parameters
+- `id` - sequence id/name/etc
+- `seq` - nucleotide sequnce
+- `nucl_freqs` - vector
+
+##### Methods
 
 ### *seqs_read*
 
