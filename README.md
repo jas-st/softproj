@@ -147,3 +147,22 @@ For the biological study:
 bash analysis_biological.sh -a test_input/example-alignment.phy -t test_input/example-treefile-bio.nwk -s true
 ```
 If everything worked there should be a new folder called `results_example-alignment`, containing all of the outputs.
+  
+## References 
+  
+[Gubela, 2022] Gubela, N. (2022). A test for reversibility of markov chains in molecular
+evolution. 
+[Kalyaanamoorthy et al., 2017] Kalyaanamoorthy, S., Minh, B., Wong, T., von Haeseler,
+A., and Jermiin, L. (2017). Modelfinder: Fast model selection for accurate phylogenetic
+estimates. Nature Methods, 14.  
+[Ly-Trong et al., 2021] Ly-Trong, N., Naser-Khdour, S., Lanfear, R., and Minh, B. Q.
+(2021). Alisim: A fast and versatile phylogenetic sequence simulator for the gen-
+omic era. bioRxiv.  
+[Wang et al., 2020] Wang, L.-G., Lam, T. T.-Y., Xu, S., Dai, Z., Zhou, L., Feng, T., Guo, P.,
+Dunn, C. W., Jones, B. R., Bradley, T., Zhu, H., Guan, Y., Jiang, Y., and Yu, G. (2020).
+treeio: an r package for phylogenetic tree input and output with richly annotated and
+associated data. Molecular Biology and Evolution, 37:599–603.  
+[Wickham, 2016] Wickham, H. (2016). ggplot2: Elegant Graphics for Data Analysis.
+Springer-Verlag New York.  
+[Yan, 2021] Yan, L. (2021). ggvenn: Draw Venn Diagram by ’ggplot2’. R package version
+0.1.9.
