@@ -98,7 +98,7 @@ bash analysis_biological.sh -a alignment.phy -iqtr -m GTR -s true
 ```
 - -a - specifies the sequence alignment file in PHYLIP or NEX format
 - -iqtr - specifies whether to call IQ-TREE to compute the ML tree
-- -m (optional) - specifies the model for IQ-TREE to use (default: none, IQ-TREE will call ModelFinder to infer which model to use, [substitution models](http://www.iqtree.org/doc/Substitution-Models))
+- -m (optional) - specifies the model for IQ-TREE to use (default: none, if none IQ-TREE will call ModelFinder to infer which model to use, [all substitution models](http://www.iqtree.org/doc/Substitution-Models))
 - -s (optional) - can be true or false, if true it will also compute the saturation tests (default: false)
 
 If there is no tree file provided and IQ-TREE is not called, the program will compute only the raw test statistics.
