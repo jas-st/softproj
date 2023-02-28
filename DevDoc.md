@@ -139,7 +139,7 @@ get_m(Eigen::Matrix4d H)
 - `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
  
 ##### Returns
-An Eigen::Matrix<double, 6, 1> object.
+An `Eigen::Matrix<double, 6, 1>` object.
 
 
 ### *get_B()*
@@ -155,7 +155,7 @@ get_B(Eigen::Matrix4d H)
 - `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
  
 ##### Returns
-An Eigen::Matrix<double, 6, 6> object.
+An `Eigen::Matrix<double, 6, 6>` object.
   
   
 ### *stuart_stat()*  
@@ -169,7 +169,7 @@ stuart_stat(Eigen::Matrix<double, 3, 1> D, Eigen::Matrix<double, 3, 3>  V)
 
 ##### Parameters
 - `[Eigen::Matrix<double, 3, 1>]` **D** - vector calculated using the vector from **get_m()**
-- `[Eigen::Matrix<double, 3, 3>] **V** - matrix calculated using the matrix from **get_B()**
+- `[Eigen::Matrix<double, 3, 3>]` **V** - matrix calculated using the matrix from **get_B()**
  
 ##### Returns
 A `double` type.
@@ -217,7 +217,7 @@ intsym_stat(double bowk, double stu)
 
 ##### Parameters
 - `[double]` **bowk** - the Bowker test statistic
-- `[double] **stu** - the Stuart test statistic
+- `[double]` **stu** - the Stuart test statistic
  
 ##### Returns
 A `double` type.
@@ -283,12 +283,44 @@ sat_test_cas1(Eigen::Matrix4d H, int n, Eigen::Vector4d freqs)
 ##### Parameters
 - `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
 - `[int] **n** - the sequence alignment length
-- `[Eigen::Vector4d]` **freqs** - global nucleteotide aboslute frequencies
+- `[Eigen::Vector4d]` **freqs** - global nucleteotide absolute frequencies
  
 ##### Returns
 A `double` type.
   
+### *sat_test_cas2()*  
+Function for calculating the Saturation Test by Cassius with local frequences from the alignments 
+Location: `bin\lib\sat_tests.h`   
+  
+```
+sat_test_cas2(Sequence Seq1, Sequence Seq2, Eigen::Matrix4d H, int n)
+```
 
+##### Parameters
+- `[Sequence]` **Seq1** - the first sequence
+- `[Sequence]` **Seq2** - the second sequence
+- `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
+- `[int] **n** - the sequence alignment length
+ 
+##### Returns
+A `double` type.
+
+### *chi_test()*  
+Function for calculating the Chi<sup>2</sup> Saturation Test by Cassius with global frequences  
+Location: `bin\lib\sat_tests.h`   
+  
+```
+chi_test(Sequence Seq1, Sequence Seq2, Eigen::Matrix4d H, int n) 
+```
+
+##### Parameters
+- `[Sequence]` **Seq1** - the first sequence
+- `[Sequence]` **Seq2** - the second sequence
+- `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
+- `[int] **n** - the sequence alignment length
+ 
+##### Returns
+A `double` type.
 
 
 ## R file: analysis_visualisation_simulation.R / analysis_visualisation_biological.R
@@ -332,18 +364,31 @@ edjes_rejected_freq(tree, seq_pair, test_pv)
 - `seq_pairs` - data frame column or character vector that contains the sequence pairs
 - `test_pv`- data frame column or numeric vector that contains the p-values
 
-### *coloured_tree*
-Function for plotting a coloured tree. Calculates edges_rej data frame and uses the values as colour and label in the treeplot.
+### *get_longest_path()*
+Function for getting the longest path in a tree. 
 
 ##### Usage 
 ```
-coloured_tree(tree, seq_pair, test_pv)
+get_longest_path(tree)
 ```
 
 ##### Parameters
 - `tree`- ggtree object
-- `seq_pairs` - data frame column or character vector that contains the sequence pairs
-- `test_pv`- data frame column or numeric vector that contains the p-values
+  
+  
+### *compressed_tree()*
+Function for computing a compressed tree from the tree resulting from **coloured_tree()**. It collapses those nodes, whose immediate children have a rejection frequency lower than 0.3 and are sufficiently away from the root (30% of the length of the longest path). Additionally saves the collapsed nodes in a list.
+
+##### Usage 
+```
+compressed_tree(tree, col_tree, freq_threshold, min_root_distance)
+```
+
+##### Parameters
+- `tree`- ggtree object
+- `col_tree` - the object returned by the **coloured_tree()** function
+- `freq_threshold`- the frequency based on which to collapse the trees
+- `min_root_distance` - the minimum distance between the root and the collapsed nodes
   
 ## References 
   
