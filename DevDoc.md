@@ -55,13 +55,11 @@ bash analysis_biological.sh -a <alignment> [OPTIONS]
 ## C++
 
 ### *Sequence*
-Class for storing sequences  
+Class for storing sequences.   
+Location: `bin\lib\Sequence.h` 
 
-##### Syntax
-Location: `bin\lib\Sequence.h`  
+##### Constructors 
 ```
-#include<'Sequence.h'>
-
 Sequence(std::string seq_id, std::string seq_str, Eigen::Vector4d seq_freq)
 ```
 
