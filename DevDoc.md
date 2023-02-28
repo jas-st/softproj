@@ -318,14 +318,14 @@ sat_test_cas1(Eigen::Matrix4d H, int n, Eigen::Vector4d freqs)
 
 ##### Parameters
 - `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
-- `[int] **n** - the sequence alignment length
-- `[Eigen::Vector4d]` **freqs** - global nucleteotide absolute frequencies
+- `[int]` **n** - the sequence alignment length
+- `[Eigen::Vector4d]` **freqs** - global nucletotide absolute frequencies
  
 ##### Returns
 A `double` type.
   
 ### *sat_test_cas2()*  
-Function for calculating the Saturation Test by Cassius with local frequences from the alignments 
+Function for calculating the Saturation Test by Cassius with local frequences from the alignments  
 Location: `bin\lib\sat_tests.h`   
   
 ```
@@ -336,13 +336,13 @@ sat_test_cas2(Sequence Seq1, Sequence Seq2, Eigen::Matrix4d H, int n)
 - `[Sequence]` **Seq1** - the first sequence
 - `[Sequence]` **Seq2** - the second sequence
 - `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
-- `[int] **n** - the sequence alignment length
+- `[int]` **n** - the sequence alignment length
  
 ##### Returns
 A `double` type.
 
 ### *chi_test()*  
-Function for calculating the Chi<sup>2</sup> Saturation Test by Cassius with global frequences  
+Function for calculating the Chi<sup>2</sup> Saturation Test by Cassius with global frequences   
 Location: `bin\lib\sat_tests.h`   
   
 ```
@@ -353,7 +353,7 @@ chi_test(Sequence Seq1, Sequence Seq2, Eigen::Matrix4d H, int n)
 - `[Sequence]` **Seq1** - the first sequence
 - `[Sequence]` **Seq2** - the second sequence
 - `[Eigen::Matrix4d]` **H** - the sample diversity matrix of two sequences
-- `[int] **n** - the sequence alignment length
+- `[int]` **n** - the sequence alignment length
  
 ##### Returns
 A `double` type.
@@ -375,7 +375,7 @@ Rscript analysis.R <treefile> <n> <raw_test_statistcs> <k> <s>
 
 Includes functions:
 
-### *head_success*
+### *heat_success()*
 Function for plotting a heatmap to visualize the pairwise p-values and decision results. 
 
 ##### Usage 
@@ -387,7 +387,7 @@ heat_sucess(seq_pair, test)
 - `seq_pair` - data frame column or character vector that contains the sequence pairs
 - `test_pv`- data frame column or numeric vector that contains the p-values
 
-### *edges_rej*
+### *edges_rej()*
 Function for mapping the pairwise test results on the tree. Returns a dataframe with edge id (from the ggtree object) in the first column and frequency of rejections in the second.
 
 ##### Usage 
@@ -413,7 +413,7 @@ get_longest_path(tree)
   
   
 ### *compressed_tree()*
-Function for computing a compressed tree from the tree resulting from **coloured_tree()**. It collapses those nodes, whose immediate children have a rejection frequency lower than 0.3 and are sufficiently away from the root (30% of the length of the longest path). Additionally saves the collapsed nodes in a list.
+Function for computing a compressed tree from the plot resulting from **coloured_tree()**. It collapses those nodes, whose immediate children have a rejection frequency lower than 0.3 and are sufficiently away from the root (30% of the length of the longest path). Additionally saves the collapsed nodes in a list.
 
 ##### Usage 
 ```
