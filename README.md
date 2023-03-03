@@ -95,10 +95,10 @@ bash analysis_biological.sh -a alignment.phy -t treename.nwk -s true
 If no tree file is available, there is an option to call IQ-TREE to compute the ML tree and to use it in the downstream analysis.
 
 ```sh
-bash analysis_biological.sh -a alignment.phy -iqtr -m GTR -s true
+bash analysis_biological.sh -a alignment.phy -I -m GTR -s true
 ```
 - -a - specifies the sequence alignment file in PHYLIP or NEX format
-- -iqtr - specifies whether to call IQ-TREE to compute the ML tree
+- -I - specifies whether to call IQ-TREE to compute the ML tree
 - -m (optional) - specifies the model for IQ-TREE to use (default: none, if none IQ-TREE will call ModelFinder to infer which model to use, [all substitution models](http://www.iqtree.org/doc/Substitution-Models))
 - -s (optional) - can be true or false, if true it will also compute the saturation tests (default: false)
 
