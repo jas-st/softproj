@@ -115,14 +115,14 @@ Both scripts produce up to 4 `.csv` files.
 - `results_sat_test.csv` - contains the results of the decision for each pair and each saturation test (if chosen)
 
 Additionally one PDF file for each of the tests computed:
-- `plot_Bowker_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Bowker test (simulation study) 
-- `plot_Stuart_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Stuart test (simulation study) 
-- `plot_IS_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Test for Internal Symmetry (simulation study) 
-- `plot_QS_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Test for Quasi-Symmetry (simulation study) 
-- `plot_Sat_Cassius1_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Cassius' Test for Saturation 1 (simulation study) 
-- `plot_Sat_Cassius2_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Cassius' Test for Saturation 1 (simulation study) 
-- `plot_Sat_Chi_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Chi-square Test for Saturation (simulation study) 
-- 'venn_diag.pdf' - Venn diagram for each pair (simulation study)/ all pairs combined (biological study), comparing the number of rejections in Bowker, Stuart and Quasi-Symmetry Test
+- `plot_Bowker_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Bowker test 
+- `plot_Stuart_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Stuart test 
+- `plot_IS_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Test for Internal Symmetry 
+- `plot_QS_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Test for Quasi-Symmetry
+- `plot_Sat_Cassius1_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Cassius' Test for Saturation 1 
+- `plot_Sat_Cassius2_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Cassius' Test for Saturation 2
+- `plot_Sat_Chi_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Chi-square Test for Saturation 
+- `venn_diag.pdf` - Venn diagram for each pair (simulation study)/ all pairs combined (biological study), comparing the number of rejections in Bowker, Stuart and Quasi-Symmetry Test
   
 Additionally for the biological study if there more than 50 species, a compressed tree separated in smaller subtrees is computed and saved in the PDF files.
 
