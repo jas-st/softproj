@@ -106,7 +106,7 @@ If there is no tree file provided and IQ-TREE is not called, the program will co
 
 ## Output
 
-The output is saved in a new folder created by the program, called `results_<treename>` (simulation study) or `results_alignment` (biological study), depending on the input file. The outputs are described with <name> as placeholder, depending on the input file. New runs override the contents of previous ones, if the folder is not moved.
+The output is saved in a new folder created by the program, called `results_<treename>` (simulation study) or `results_<alignment>` (biological study), depending on the input file. The outputs are described with `<name>` as placeholder, depending on the input file. New runs override the contents of previous ones, if the folder is not moved.
 
 Both scripts produce up to 4 `.csv` files.
 - `results_raw_<name>.csv` - contains the raw values of the test statistics for each pair and for every test (saturation tests if chosen) 
