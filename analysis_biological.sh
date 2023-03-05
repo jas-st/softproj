@@ -18,7 +18,7 @@ do
       ##ERROR: Please provide an alignment file
     esac
 done
-  
+
 #set additional variables and default options
 alignment_name=${alignment_file%.*};
 alignment_name=${alignment_name##*/};
@@ -65,8 +65,8 @@ fi
 #C++ script - Test Statistics computation
 echo "-------------------------------------"
 echo "...Calculating test statistics..."
-#./exec -F "$alignment_file" -s $s> results_$alignment_name/results_raw_${alignment_name}.csv;
-touch ./results_$alignment_name/${alignment_name}_tests.csv;
+./all_tests.out -F "$alignment_file" -s $s> results_$alignment_name/results_raw_${alignment_name}.csv;
+#touch ./results_$alignment_name/${alignment_name}_tests.csv;
 echo "Computation done!"
 
 if [ -n "$treefile" ]; then
@@ -78,11 +78,4 @@ if [ -n "$treefile" ]; then
 	echo "Computation done!"
 fi
 
-echo "Duration in seconds:" $(( SECONDS - start )); 
-
-
-
-   
-	
-
-
+echo "Duration in seconds:" $(( SECONDS - start ));
