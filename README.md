@@ -25,6 +25,9 @@ Each test is applied pairwise on each unique sequence pair of the MSA. There is 
 RevTest\
 │   `analysis_simulation.sh` - Bash script for the analysis of simulated data\
 │   `analysis_biological.sh` - Bash script for the analysis of real data\
+│   example_treefile.nwk - Example tree file for performing a test simulation study\
+│   example_alignment.nex - Example tree file for performing a test biological study\
+│   example_treefile_bio.nwk - Example tree file for performing a test biological study\
 └───bin\
 │--------   │   `analysis.R` - the R script\
 │--------   │   `all_tests.cpp` - the C++ script\
@@ -34,7 +37,6 @@ RevTest\
 │----------------       │   sat_tests.hpp - the implementations of the three saturation tests\
 │----------------       │   file_handling.hpp - code for reading in the files\
 │----------------       │   Sequence.hpp - declarations of used class structures\
-└───test_input - example input for testing
 
 ## Installation & Dependencies
 
@@ -139,7 +141,7 @@ To test if everything is working correctly, there is a test input provided with 
 
 For the simulation study:
 ```
-bash analysis_simulation.sh -t test_input/example-treefile.nwk -m JC -n 1000 -k 50 -s true
+bash analysis_simulation.sh -t example_treefile.nwk -m JC -n 1000 -k 50 -s true
 ```
 If everything worked there should be a new folder called `results_example-treefile`, containing all of the outputs.
 
@@ -147,9 +149,9 @@ If everything worked there should be a new folder called `results_example-treefi
 
 For the biological study:
 ```
-bash analysis_biological.sh -a test_input/example-alignment.phy -t test_input/example-treefile-bio.nwk -s true
+bash analysis_biological.sh -a example_alignment.nex -t example_treefile_bio.nwk -s true
 ```
-If everything worked there should be a new folder called `results_example-alignment`, containing all of the outputs.
+If everything worked there should be a new folder called `results_example_alignment`, containing all of the outputs.
 
 ## References
 
