@@ -45,14 +45,14 @@ if [ -z "$treefile" ]; then
     	    echo "Using ML-Tree computed with IQ-TREE and ModelFinder."
     	    echo "-------------------------------"
     	    echo "...Running IQ-TREE..."
-    	    touch ${alignment_file##*/}.treefile
-    	    #iqtree2 -s "${alignment_name##*/}" --redo-tree -quiet;
+    	    #touch ${alignment_file##*/}.treefile
+    	    ../../iqtree2 -s "${alignment_file##*/}" --redo-tree >> tree_inference.log;
     	else
     	    echo "Using ML-Tree computed with IQ-TREE and the "${model}" model."
     	    echo "-------------------------------"
     	    echo "...Running IQ-TREE..."
-    	    #iqtree2 -s "${alignment_name##*/}" -m "${model}" --redo-tree -quiet;
-    	    touch ${alignment_file##*/}.treefile
+    	    ../../iqtree2 -s "${alignment_file##*/}" -m "${model}" --redo-tree >> tree_inference.log;
+    	    #touch ${alignment_file##*/}.treefile
     	fi
     	treefile=results_$alignment_name/IQTree_Results/${alignment_file##*/}.treefile;
     	echo "Finished!"
@@ -65,7 +65,7 @@ fi
 #C++ script - Test Statistics computation
 echo "-------------------------------------"
 echo "...Calculating test statistics..."
-./all_tests.out -F "$alignment_file" -s $s> results_$alignment_name/results_raw_${alignment_name}.csv;
+./bin/all_tests.out -F "$alignment_file" -s $s> results_$alignment_name/results_raw_${alignment_name}.csv;
 #touch ./results_$alignment_name/${alignment_name}_tests.csv;
 echo "Computation done!"
 
@@ -73,8 +73,8 @@ if [ -n "$treefile" ]; then
 	#R Script - Analysis & Visualisation
 	echo "-------------------------------------"
 	echo "...Running R Script..."
-	#Rscript analysis_visualisation_biological.R $treefile results_$alignment_name/results_raw_${alignment_name}.csv $s;
-	touch ./results_$alignment_name/${alignment_name}_tests.pdf;
+	Rscript ./bin/analysis_visualisation_biological.R $treefile results_$alignment_name/results_raw_${alignment_name}.csv $s >> r_log.log;
+	#touch ./results_$alignment_name/${alignment_name}_tests.pdf;
 	echo "Computation done!"
 fi
 
