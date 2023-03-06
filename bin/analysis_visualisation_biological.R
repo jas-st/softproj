@@ -14,22 +14,10 @@ suppressPackageStartupMessages({
 args <- commandArgs()
 treename <- args[6]
 raw_results_file<- args[7]
-results_file<-args[8]
-s<-args[9]
+s<-args[8]
 
 #directory for the results
-folder<-strsplit(results_file, "/")[[1]][1]
-
-raw_results_file <- "brown_results.csv"
-raw_results_file <- "anderson_results.csv"
-raw_results_file <- "faircloth_results.csv"
-raw_results_file <- "worobey_results.csv"
-treename <- "brown.treefile"
-treename <- "anderson.treefile"
-treename <- "faircloth.treefile"
-treename <- "worobey.treefile"
-folder <- "brown_results"
-s <- "true"
+folder<-strsplit(raw_results_file, "/")[[1]][1]
 
 #read in the table
 if (s=="true") {
@@ -49,30 +37,25 @@ if (s=="true") {
 #clean up data and remove all pairs where computation failed/ was not possible
 result_tree <- na.omit(results_raw_tree)
 
-#in case smth failed w the c++ reading in - remove all paris with ; or end
-
-#TODO: stats for omitted rows
+#stats for omitted rows
 omitted <- round(100-nrow(result_tree)/nrow(results_raw_tree)*100,2)
-
-#TODO: remove
-result_tree<-result_tree%>%dplyr::rename(Sequences="Sequences compared")
 
 #read in tree
 tree <- read.tree(treename)
 #midpoint root
-midpoint_tree <- midpoint(tree)
+tree <- midpoint(tree, node.labels="deleted")
 #extract labels from tree
 seq_labels<-unlist(tree["tip.label"])
 
-#SANITY CHECK tree plot with labels
-#p <- ggtree(tree) + geom_tiplab()
+#SANITY CHECK: plot tree with node labels
+#ggtree(tree) + geom_text(aes(label=node), hjust=-.3)
 
 pairs<-strsplit(str_sub(result_tree$Sequences, start=2, end=-2), ";")
 pairs<-lapply(pairs, unlist)
 pair_1<-unlist(lapply(pairs,function(x) x[1]))
 pair_1<-gsub("\\*","_",pair_1)
 pair_2<-unlist(lapply(pairs,function(x) x[2]))
-pair_2<-gsub("\\*","_",pair_1)
+pair_2<-gsub("\\*","_",pair_2)
 result_tree$seq_1<-pair_1
 result_tree$seq_2<-pair_2
 
@@ -96,7 +79,7 @@ if (s=="true") {
                                IS_pv, IS_ts=result_tree$Internal_Symmetry, QS_pv, QS_ts=result_tree$Proposed_test)
 }
 
-
+#######----------------FUNCTIONS--------------------
 heat_success_bio<-function(pair_1, pair_2, test_pv, reject=TRUE, seq_lables=seq_labels){
   pair_1_tmp<-c(pair_1, pair_2)
   pair_2_tmp<-c(pair_2, pair_1)
@@ -112,9 +95,9 @@ heat_success_bio<-function(pair_1, pair_2, test_pv, reject=TRUE, seq_lables=seq_
     #geom_point(aes(shape=test_rej), size=3)+
     labs(x="Sequence", y="Sequence", fill="p-value", shape="H0")+
     #scale_shape_manual(labels=c("keep H0", "reject H0"), values=c(1,4), drop=F) +
-    #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-    theme(axis.text.x=element_blank(),axis.ticks.x=element_blank(), 
-          axis.text.y=element_blank(),axis.ticks.y=element_blank())
+    #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+    theme(axis.text.x=element_blank(),
+          axis.ticks.x=element_blank())
 }
 
 heat_success<-function(pair_1, pair_2, test_pv, reject=TRUE, seq_lables=seq_labels){
@@ -148,8 +131,6 @@ get_longest_path <- function(tree) {
   }
   return (max_path)
 }
-
-
 
 edges_rejected_freq <- function(tree, pair_1, pair_2, test_pv, freq_true){
   pair_1_index<-mapply(function(x) which(x==seq_labels), pair_1)
@@ -209,6 +190,7 @@ compressed_tree <- function(tree, col_tree, freq_threshold, max_root_distance) {
   Nleaf <- length(unlist(tree['tip.label']))
   Nint <- as.numeric(tree['Nnode'])
   tree_root <- getRoot(tree)
+  collapse_list_cleaned <- c()
   collapse_list <- c()
 
   for (node_tmp in (Nleaf+1):(Nleaf+Nint)) {
@@ -259,203 +241,467 @@ compressed_tree <- function(tree, col_tree, freq_threshold, max_root_distance) {
       collapse_list <- append(collapse_list, node_tmp)
     }
   }
-  return (list(col_tree, collapse_list))
-}
-
-a <- ceiling(0.28*get_longest_path(tree))
-
-p1<-colored_tree_clean(tree, results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv)
-p1 + labs(title = "H0 rejected (freq) on each edge, QS Test, Arbitrary root")
-p2<-colored_tree_clean(midpoint_tree, results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv)
-p2 + labs(title = "H0 rejected (freq) on each edge, Bowker Test, Midpoint root")
-pqls <- compressed_tree(tree,p1,0.3,a)
-pqls <- compressed_tree(midpoint_tree,p2,0.3,a-3)
-pq <- pqls[[1]]
-pql <- pqls[[2]]
-
-pq + 
-  labs(title = "Bowker Test, Compressed Tree, Arbitrary root") +
-  #labs(title = "Bowker Test, Compressed Tree, Midpoint root") +
-  geom_label(data=subset(pq$data, branch.length > 0.005 & !(node %in% pql)), aes(x=branch, label=edge_rej)) +
-  geom_point2(data=subset(pq$data,node %in% pql),shape=21, size = 7, fill='yellow') + 
-  geom_text(data=subset(pq$data,node %in% pql), aes(label=node), fontface='bold') 
-
-subtrees <- list()
-for (cl in pql) {
-  b <- viewClade(p2, cl) + 
-    labs(color="", title = paste("Node ",toString(cl))) + 
-    theme(legend.position = "none")
-  subtrees <- append(subtrees, list(b))
-}
-gridExtra::grid.arrange(grobs = subtrees)
-
-
-ggtree(midpoint_tree) + geom_text(aes(label=node), hjust=-.3)
-
-
-
-
-
-pdf(paste(folder, "plot_Bowker_test.pdf", sep="/"),width = 30, height = 30)
-
-p <- colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv)
-heat_success_bio(results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv, reject=TRUE) +
-  ggtitle(paste("Bowker Test, omitted pairs: ", toString(omitted), "%"))
+  #remove descendants of collapsed nodes
+  collapse_list_cleaned <- collapse_list
+  for (nd in collapse_list) {
+    root_path <- get.path(tree, nd, tree_root)
+    if (any(collapse_list[collapse_list!=nd] %in% get.path(tree, nd, tree_root))) {
+      collapse_list_cleaned <- collapse_list_cleaned[collapse_list_cleaned!=nd]
+    }
+  }
   
+  return (list(col_tree, collapse_list_cleaned))
+}
 
-#annotate_figure(p,top=text_grob("Bowker Test", face = "bold", size = 14))
+#tree length
+Nleaf <- length(unlist(tree['tip.label']))
+
+
+######-------------PLOTS-------------------###############
+#---------------------------------------BOWKER----------------------------------
+if (Nleaf > 50) {
+  #threshold for the collapsing
+  a <- ceiling(0.28*get_longest_path(tree))
+  
+  h1<-heat_success_bio(results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv, reject=TRUE) +
+    ggtitle(paste("Bowker Test, omitted pairs: ", toString(omitted), "%"))
+  p1<-colored_tree_clean(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, Bowker Test, Midpoint root") + 
+    geom_tiplab(colour="black", size=3, align = FALSE) 
+  
+  p2_list <- compressed_tree(tree,p1,0.3,a-1)
+  p2 <- p2_list[[1]]
+  p2_col <- p2_list[[2]]
+  
+  if (length(p2_col) > 0) {
+    p2 <- p2 + 
+      labs(title = "Bowker Test, Compressed Tree, Midpoint root") +
+      geom_label(data=subset(p2$data, branch.length > 0.005 & !(node %in% p2_col)), aes(x=branch, label=edge_rej)) +
+      geom_point2(data=subset(p2$data,node %in% p2_col),shape=21, size = 7, fill='yellow') + 
+      geom_text(data=subset(p2$data,node %in% p2_col), aes(label=node), fontface='bold') 
+  
+    subtrees <- list()
+    for (cl in p2_col) {
+      b <- viewClade(p1, cl) + 
+        labs(color="", title = paste("Node ",toString(cl))) + 
+        theme(legend.position = "none")
+      subtrees <- append(subtrees, list(b))
+    }
+    p3 <- gridExtra::grid.arrange(grobs = subtrees, top="Collapsed Nodes")
+  }
+  
+  p1 <- p1 + geom_label(data=subset(p1$data, branch.length > 0.005), aes(x=branch, label=edge_rej))
+} else {
+  p1<-colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, Bowker Test, Midpoint root")
+  h1<-heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv, reject=TRUE) +
+    ggtitle(paste("Bowker Test, omitted pairs: ", toString(omitted), "%"))
+}
+pdf(paste(folder, "plot_Bowker_test.pdf", sep="/"),width = 13, height = 14)
+h1
+p1
+if (Nleaf > 50 & length(p2_col)>0) {
+  print(p2)
+  plot(p3)
+} else {
+  txt1="No compressed tree."
+  txt2="Less than 50 species or no collapsed clades."
+  plot.new()
+  text(x=.1,y=.8,txt1, cex=0.7)
+  text(x=.1, y=.7, txt2, cex=0.7)
+}
 dev.off()
 
+#---------------------------------------STUART----------------------------------
+if (Nleaf > 50) {
+  #threshold for the collapsing
+  a <- ceiling(0.28*get_longest_path(tree))
+  
+  h1<-heat_success_bio(results_pv$pair_1, results_pv$pair_2, results_pv$Stuart_pv, reject=TRUE) +
+    ggtitle(paste("Stuart Test, omitted pairs: ", toString(omitted), "%"))
+  p1<-colored_tree_clean(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Stuart_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, Stuart Test, Midpoint root") + 
+    geom_tiplab(colour="black", size=3, align = FALSE) 
+  
+  p2_list <- compressed_tree(tree,p1,0.3,a-1)
+  p2 <- p2_list[[1]]
+  p2_col <- p2_list[[2]]
+  
+  if (length(p2_col) > 0) {
+    p2 <- p2 + 
+      labs(title = "Stuart Test, Compressed Tree, Midpoint root") +
+      geom_label(data=subset(p2$data, branch.length > 0.005 & !(node %in% p2_col)), aes(x=branch, label=edge_rej)) +
+      geom_point2(data=subset(p2$data,node %in% p2_col),shape=21, size = 7, fill='yellow') + 
+      geom_text(data=subset(p2$data,node %in% p2_col), aes(label=node), fontface='bold') 
+  
+    subtrees <- list()
+    for (cl in p2_col) {
+      b <- viewClade(p1, cl) + 
+        labs(color="", title = paste("Node ",toString(cl))) + 
+        theme(legend.position = "none")
+      subtrees <- append(subtrees, list(b))
+    }
+    p3 <- gridExtra::grid.arrange(grobs = subtrees, top="Collapsed Nodes")
+  }
+  
+  p1 <- p1 + geom_label(data=subset(p1$data, branch.length > 0.005), aes(x=branch, label=edge_rej))
+} else {
+  p1<-colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Stuart_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, Stuart Test, Midpoint root")
+  h1<-heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Stuart_pv, reject=TRUE) +
+    ggtitle(paste("Stuart Test, omitted pairs: ", toString(omitted), "%"))
+}
 pdf(paste(folder, "plot_Stuart_test.pdf", sep="/"),width = 13, height = 14)
-
-p<-colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Stuart_pv)
-heat_success_bio(results_pv$pair_1, results_pv$pair_2, results_pv$Stuart_pv, reject=TRUE)  +
-  ggtitle("Stuart Test")
-results_pv_all%>%ggplot(aes(x=Stuart_ts))+
-  geom_histogram(bins = 40, aes(y = after_stat(!!str2lang("density"))))+
-  stat_function(fun = dchisq, args = list(df=3))
-
-#annotate_figure(p,top=text_grob("Stuart Test", face = "bold", size = 14))
+h1
+p1
+if (Nleaf > 50 & length(p2_col)>0) {
+  print(p2)
+  plot(p3)
+} else {
+  txt1="No compressed tree."
+  txt2="Less than 50 species or no collapsed clades."
+  plot.new()
+  text(x=.1,y=.8,txt1, cex=0.7)
+  text(x=.1, y=.7, txt2, cex=0.7)
+}
 dev.off()
 
-# pdf(paste(folder, "plot_IS_test.pdf", sep="/"),width = 13, height = 14)
-# p<-ggarrange(
-#   p<-colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$IS_pv),
-heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$IS_pv, reject=TRUE) +
-  ggtitle("IS Test")
-#   results_pv_all%>%ggplot(aes(x=IS_ts))+
-#     geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
-#     stat_function(fun = dchisq, args = list(df=3))+
-#     facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")+labs(x="test statistic")
-# )
-# annotate_figure(p,top=text_grob("IS Test", face = "bold", size = 14))
-# dev.off()
-# 
-# pdf(paste(folder, "plot_QS_test.pdf", sep="/"),width = 13, height = 14)
-# p<-ggarrange(
-#   p<-colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv),
-   heat_success_bio(results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv, reject=TRUE) +
-     ggtitle("QS Test")
-#   results_pv_all%>%ggplot(aes(x=QS_ts))+
-#     geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
-#     stat_function(fun = dnorm, args = list(mean = 0, sd = 1))+
-#     facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
-# )
-# annotate_figure(p,top=text_grob("QS Test", face = "bold", size = 14))
-# dev.off()
-# 
-# pdf(paste(folder, "plot_Sat_Cassius1_test.pdf", sep="/"),width = 13, height = 14)
-# p<-ggarrange(
-#   colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius1_pv),
-#   heat_success_bio(results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius1_pv, reject=TRUE)
-#   results_pv_all%>%ggplot(aes(x=Sat_test_Cassius1))+
-#     geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
-#     stat_function(fun = dnorm, args = list(mean = 0, sd = sqrt(3/n)))+
-#     facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
-# )
-# annotate_figure(p,top=text_grob("Saturation Test Cassius 1", face = "bold", size = 14))
-# dev.off()
-# 
-# pdf(paste(folder, "plot_Sat_Cassius2_test.pdf", sep="/"),width = 13, height = 14)
-# p<-ggarrange(
-#   colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius2_pv),
-#   heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius2_pv, reject=TRUE),
-#   results_pv_all%>%ggplot(aes(x=Sat_test_Cassius2))+
-#     geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
-#     stat_function(fun = dnorm, args = list(mean = 0, sd = sqrt(3/n)))+
-#     facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
-# )
-# annotate_figure(p,top=text_grob("Saturation Test Cassius 2", face = "bold", size = 14))
-# dev.off()
-# 
-# pdf(paste(folder, "plot_Chi_test.pdf", sep="/"),width = 13, height = 7)
-# p<-ggarrange(
-#   colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Chi_Test_pv),
-#   heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Chi_Test_pv, reject=TRUE),
-#   results_pv_all%>%ggplot(aes(x=Chi_test))+
-#     geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
-#     stat_function(fun = dchisq, args = list(df=9))+
-#     facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
-# )
-# annotate_figure(p,top=text_grob("Chi Test", face = "bold", size = 14))
-# dev.off()
+#---------------------------------------IS----------------------------------
+if (Nleaf > 50) {
+  #threshold for the collapsing
+  a <- ceiling(0.28*get_longest_path(tree))
+  
+  h1<-heat_success_bio(results_pv$pair_1, results_pv$pair_2, results_pv$IS_pv, reject=TRUE) +
+    ggtitle(paste("IS Test, omitted pairs: ", toString(omitted), "%"))
+  p1<-colored_tree_clean(tree, results_pv$pair_1, results_pv$pair_2, results_pv$IS_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, IS Test, Midpoint root") + 
+    geom_tiplab(colour="black", size=3, align = FALSE) 
+  
+  p2_list <- compressed_tree(tree,p1,0.3,a-1)
+  p2 <- p2_list[[1]]
+  p2_col <- p2_list[[2]]
+  
+  if (length(p2_col) > 0) {
+    p2 <- p2 + 
+      labs(title = "IS Test, Compressed Tree, Midpoint root") +
+      geom_label(data=subset(p2$data, branch.length > 0.005 & !(node %in% p2_col)), aes(x=branch, label=edge_rej)) +
+      geom_point2(data=subset(p2$data,node %in% p2_col),shape=21, size = 7, fill='yellow') + 
+      geom_text(data=subset(p2$data,node %in% p2_col), aes(label=node), fontface='bold') 
+  
+    subtrees <- list()
+    for (cl in p2_col) {
+      b <- viewClade(p1, cl) + 
+        labs(color="", title = paste("Node ",toString(cl))) + 
+        theme(legend.position = "none")
+      subtrees <- append(subtrees, list(b))
+    }
+    p3 <- gridExtra::grid.arrange(grobs = subtrees, top="Collapsed Nodes")
+  }
+  
+  p1 <- p1 + geom_label(data=subset(p1$data, branch.length > 0.005), aes(x=branch, label=edge_rej))
+} else {
+  p1<-colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$IS_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, IS Test, Midpoint root")
+  h1<-heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$IS_pv, reject=TRUE) +
+    ggtitle(paste("IS Test, omitted pairs: ", toString(omitted), "%"))
+}
+pdf(paste(folder, "plot_IS_test.pdf", sep="/"),width = 13, height = 14)
+h1
+p1
+if (Nleaf > 50 & length(p2_col)>0) {
+  print(p2)
+  plot(p3)
+} else {
+  txt1="No compressed tree."
+  txt2="Less than 50 species or no collapsed clades."
+  plot.new()
+  text(x=.1,y=.8,txt1, cex=0.7)
+  text(x=.1, y=.7, txt2, cex=0.7)
+}
+dev.off()
+
+#---------------------------------------QS----------------------------------
+if (Nleaf > 50) {
+  #threshold for the collapsing
+  a <- ceiling(0.28*get_longest_path(tree))
+  
+  h1<-heat_success_bio(results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv, reject=TRUE) +
+    ggtitle(paste("QS Test, omitted pairs: ", toString(omitted), "%"))
+  p1<-colored_tree_clean(tree, results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, QS Test, Midpoint root") + 
+    geom_tiplab(colour="black", size=3, align = FALSE) 
+  
+  p2_list <- compressed_tree(tree,p1,0.3,a-1)
+  p2 <- p2_list[[1]]
+  p2_col <- p2_list[[2]]
+  
+  if (length(p2_col) > 0) {
+    p2 <- p2 + 
+      labs(title = "QS Test, Compressed Tree, Midpoint root") +
+      geom_label(data=subset(p2$data, branch.length > 0.005 & !(node %in% p2_col)), aes(x=branch, label=edge_rej)) +
+      geom_point2(data=subset(p2$data,node %in% p2_col),shape=21, size = 7, fill='yellow') + 
+      geom_text(data=subset(p2$data,node %in% p2_col), aes(label=node), fontface='bold') 
+  
+    subtrees <- list()
+    for (cl in p2_col) {
+      b <- viewClade(p1, cl) + 
+        labs(color="", title = paste("Node ",toString(cl))) + 
+        theme(legend.position = "none")
+      subtrees <- append(subtrees, list(b))
+    }
+    p3 <- gridExtra::grid.arrange(grobs = subtrees, top="Collapsed Nodes")
+  }
+  
+  p1 <- p1 + geom_label(data=subset(p1$data, branch.length > 0.005), aes(x=branch, label=edge_rej))
+} else {
+  p1<-colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, QS Test, Midpoint root")
+  h1<-heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv, reject=TRUE) +
+    ggtitle(paste("QS Test, omitted pairs: ", toString(omitted), "%"))
+}
+pdf(paste(folder, "plot_QS_test.pdf", sep="/"),width = 13, height = 14)
+h1
+p1
+if (Nleaf > 50 & length(p2_col)>0) {
+  print(p2)
+  plot(p3)
+} else {
+  txt1="No compressed tree."
+  txt2="Less than 50 species or no collapsed clades."
+  plot.new()
+  text(x=.1,y=.8,txt1, cex=0.7)
+  text(x=.1, y=.7, txt2, cex=0.7)
+}
+dev.off()
+
+#---------------------------------------SAT1----------------------------------
+if (Nleaf > 50) {
+  #threshold for the collapsing
+  a <- ceiling(0.28*get_longest_path(tree))
+  
+  h1<-heat_success_bio(results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius1_pv, reject=TRUE) +
+    ggtitle(paste("Saturation Test Cassius 1, omitted pairs: ", toString(omitted), "%"))
+  p1<-colored_tree_clean(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius1_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, Saturation Test Cassius 1, Midpoint root") + 
+    geom_tiplab(colour="black", size=3, align = FALSE) 
+  
+  p2_list <- compressed_tree(tree,p1,0.3,a-1)
+  p2 <- p2_list[[1]]
+  p2_col <- p2_list[[2]]
+  
+  if (length(p2_col) > 0) {
+    p2 <- p2 + 
+      labs(title = "Saturation Test Cassius 1, Compressed Tree, Midpoint root") +
+      geom_label(data=subset(p2$data, branch.length > 0.005 & !(node %in% p2_col)), aes(x=branch, label=edge_rej)) +
+      geom_point2(data=subset(p2$data,node %in% p2_col),shape=21, size = 7, fill='yellow') + 
+      geom_text(data=subset(p2$data,node %in% p2_col), aes(label=node), fontface='bold') 
+  
+    subtrees <- list()
+    for (cl in p2_col) {
+      b <- viewClade(p1, cl) + 
+        labs(color="", title = paste("Node ",toString(cl))) + 
+        theme(legend.position = "none")
+      subtrees <- append(subtrees, list(b))
+    }
+    p3 <- gridExtra::grid.arrange(grobs = subtrees, top="Collapsed Nodes")
+  }
+  p1 <- p1 + geom_label(data=subset(p1$data, branch.length > 0.005), aes(x=branch, label=edge_rej))
+  
+} else {
+  p1<-colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius1_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, Saturation Test Cassius 1, Midpoint root")
+  h1<-heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius1_pv, reject=TRUE) +
+    ggtitle(paste("Saturation Test Cassius 1, omitted pairs: ", toString(omitted), "%"))
+}
+pdf(paste(folder, "plot_Sat_Cassius1_test.pdf", sep="/"),width = 13, height = 14)
+h1
+p1
+if (Nleaf > 50 & length(p2_col)>0) {
+  print(p2)
+  plot(p3)
+} else {
+  txt1="No compressed tree."
+  txt2="Less than 50 species or no collapsed clades."
+  plot.new()
+  text(x=.1,y=.8,txt1, cex=0.7)
+  text(x=.1, y=.7, txt2, cex=0.7)
+  }
+
+dev.off()
+
+#---------------------------------------SAT2----------------------------------
+if (Nleaf > 50) {
+  #threshold for the collapsing
+  a <- ceiling(0.28*get_longest_path(tree))
+  
+  h1<-heat_success_bio(results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius2_pv, reject=TRUE) +
+    ggtitle(paste("Saturation Test Cassius 2, omitted pairs: ", toString(omitted), "%"))
+  p1<-colored_tree_clean(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius2_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, Saturation Test Cassius 2, Midpoint root") + 
+    geom_tiplab(colour="black", size=3, align = FALSE) 
+  
+  p2_list <- compressed_tree(tree,p1,0.3,a-1)
+  p2 <- p2_list[[1]]
+  p2_col <- p2_list[[2]]
+  
+  if (length(p2_col) > 0) {
+    p2 <- p2 + 
+      labs(title = "Saturation Test Cassius 2, Compressed Tree, Midpoint root") +
+      geom_label(data=subset(p2$data, branch.length > 0.005 & !(node %in% p2_col)), aes(x=branch, label=edge_rej)) +
+      geom_point2(data=subset(p2$data,node %in% p2_col),shape=21, size = 7, fill='yellow') + 
+      geom_text(data=subset(p2$data,node %in% p2_col), aes(label=node), fontface='bold') 
+
+    subtrees <- list()
+    for (cl in p2_col) {
+      b <- viewClade(p1, cl) + 
+        labs(color="", title = paste("Node ",toString(cl))) + 
+        theme(legend.position = "none")
+      subtrees <- append(subtrees, list(b))
+    }
+    p3 <- gridExtra::grid.arrange(grobs = subtrees, top="Collapsed Nodes")
+  }
+  
+  p1 <- p1 + geom_label(data=subset(p1$data, branch.length > 0.005), aes(x=branch, label=edge_rej))
+  
+} else {
+  p1<-colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius2_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, Saturation Test Cassius 2, Midpoint root")
+  h1<-heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius2_pv, reject=TRUE) +
+    ggtitle(paste("Saturation Test Cassius 2 Test, omitted pairs: ", toString(omitted), "%"))
+}
+pdf(paste(folder, "plot_Sat_Cassius2_test.pdf", sep="/"),width = 13, height = 14)
+h1
+p1
+if (Nleaf > 50 & length(p2_col)>0) {
+  print(p2)
+  plot(p3)
+} else {
+  txt1="No compressed tree."
+  txt2="Less than 50 species or no collapsed clades."
+  plot.new()
+  text(x=.1,y=.8,txt1, cex=0.7)
+  text(x=.1, y=.7, txt2, cex=0.7)
+}
+dev.off()
+
+#---------------------------------------CHI----------------------------------
+if (Nleaf > 50) {
+  #threshold for the collapsing
+  a <- ceiling(0.28*get_longest_path(tree))
+  
+  h1<-heat_success_bio(results_pv$pair_1, results_pv$pair_2, results_pv$Chi_Test_pv, reject=TRUE) +
+    ggtitle(paste("Chi Test, omitted pairs: ", toString(omitted), "%"))
+  p1<-colored_tree_clean(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Chi_Test_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, Chi Test, Midpoint root") + 
+    geom_tiplab(colour="black", size=3, align = FALSE) 
+  
+  p2_list <- compressed_tree(tree,p1,0.3,a-1)
+  p2 <- p2_list[[1]]
+  p2_col <- p2_list[[2]]
+  
+  if (length(p2_col) > 0) {
+    p2 <- p2 + 
+      labs(title = "Chi Test, Compressed Tree, Midpoint root") +
+      geom_label(data=subset(p2$data, branch.length > 0.005 & !(node %in% p2_col)), aes(x=branch, label=edge_rej)) +
+      geom_point2(data=subset(p2$data,node %in% p2_col),shape=21, size = 7, fill='yellow') + 
+      geom_text(data=subset(p2$data,node %in% p2_col), aes(label=node), fontface='bold') 
+  
+    subtrees <- list()
+    for (cl in p2_col) {
+      b <- viewClade(p1, cl) + 
+        labs(color="", title = paste("Node ",toString(cl))) + 
+        theme(legend.position = "none")
+      subtrees <- append(subtrees, list(b))
+    }
+    p3 <- gridExtra::grid.arrange(grobs = subtrees, top="Collapsed Nodes")
+  }
+  
+  p1 <- p1 + geom_label(data=subset(p1$data, branch.length > 0.005), aes(x=branch, label=edge_rej))
+} else {
+  p1<-colored_tree(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Chi_Test_pv)
+  p1<-p1 + labs(title = "H0 rejected (freq) on each edge, Chi Test, Midpoint root")
+  h1<-heat_success(results_pv$pair_1, results_pv$pair_2, results_pv$Chi_Test_pv, reject=TRUE) +
+    ggtitle(paste("Chi Test, omitted pairs: ", toString(omitted), "%"))
+}
+pdf(paste(folder, "plot_Chi_test.pdf", sep="/"),width = 13, height = 14)
+h1
+p1
+if (Nleaf > 50 & length(p2_col)>0) {
+  print(p2)
+  plot(p3)
+} else {
+  txt1="No compressed tree."
+  txt2="Less than 50 species or no collapsed clades."
+  plot.new()
+  text(x=.1,y=.8,txt1, cex=0.7)
+  text(x=.1, y=.7, txt2, cex=0.7)
+}
+dev.off()
+
+#---------------------------------------VENN DIAGRAMM----------------------------------
+# create dataframe with number of rejects for each pair
+Bowker_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,FALSE,TRUE), Bowker_pv)
+Stuart_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,FALSE,TRUE), Stuart_pv)
+IS_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,FALSE,TRUE), IS_pv)
+QS_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,FALSE,TRUE), QS_pv)
+
+venn_data<-data.frame(Pair=result_tree$Sequences, Bowker=Bowker_rej, Stuart=Stuart_rej, IS=IS_rej, QS=QS_rej)
+
+pdf(paste(folder, "venn_diag.pdf", sep="/"),width = 13, height = 14)
+ggvenn(venn_data, c("Bowker", "Stuart", "QS"))
+dev.off()
+
+#-----------------------------RESULTS TESTS STATS + P VALUES------------------------
+results_file<-basename(raw_results_file)
+pat <- "(.*?_.*?)_(.*)"
+results_file <- sub(pat, "\\2", results_file)
+results_file <- paste("results", results_file, sep="_")
+write.csv(results_pv, file = paste(folder, results_file, sep="/"), row.names = FALSE)
 
 
-write.csv(results_pv_all, paste(folder, "results_pv_all.csv", sep="/"), row.names = FALSE)
-
-
-# results_pv_all%>%ggplot(aes(x=Bowker_ts))+
-#   geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+  
-#   stat_function(fun = dchisq, args = list(df=6))+
-#   facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
-# 
-# 
-# results_pv_all%>%ggplot(aes(x=Stuart_ts))+
-#   geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
-#   stat_function(fun = dchisq, args = list(df=3))+
-#   facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
-# 
-# results_pv_all%>%ggplot(aes(x=IS_ts))+
-#   geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
-#   stat_function(fun = dchisq, args = list(df=3))+
-#   facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
-# 
-# results_pv_all%>%ggplot(aes(x=QS_ts))+
-#   geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
-#   stat_function(fun = dnorm, args = list(mean = 0, sd = 1))+
-#   facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
-# 
-# results_pv_all%>%ggplot(aes(x=Sat_test_Cassius1))+
-#   geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
-#   stat_function(fun = dnorm, args = list(mean = 0, sd = sqrt(3/n)))+
-#   facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
-# 
-# results_pv_all%>%ggplot(aes(x=Sat_test_Cassius2))+
-#   geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
-#   stat_function(fun = dnorm, args = list(mean = 0, sd = sqrt(3/n)))+
-#   facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
-# 
-# results_pv_all%>%ggplot(aes(x=Chi_test))+
-#   geom_histogram(aes(y = ..density.., colour=Pair, alpha=0.7))+
-#   stat_function(fun = dchisq, args = list(df=9))+
-#   facet_wrap(~Pair, ncol=2) + theme(legend.position = "none")
-
-#test failed/success
-
+#------------------------------TESTS RETAIN/REJECT----------------------------
 Bowker_success<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,"retain","reject"), Bowker_pv)
 Stuart_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), Stuart_pv)
 IS_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), IS_pv)
 QS_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), QS_pv)
-Reversibility_test<-data.frame(Pair=results_pv_all$Pair,
+Reversibility_test<-data.frame(Pair=results_pv$Pair,
                                Bowker_success, Stuart_success, IS_success, QS_success)
 
 write.csv(Reversibility_test, paste(folder, "results_rev_test.csv", sep="/"),row.names = FALSE)
 
-Sat_cassius1_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), Sat_cassius1_pv)
-Sat_cassius2_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), Sat_cassius2_pv)
-Chi_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), Chi_Test_pv)
-Saturation_test<-data.frame(Pair=results_pv_all$Pair,
-                            Sat_cassius1_success, Sat_cassius2_success, Chi_success)
+#------------------------------SAT TESTS RETAIN/REJECT----------------------------
+if (s=="true") {
+  Sat_cassius1_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), Sat_cassius1_pv)
+  Sat_cassius2_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), Sat_cassius2_pv)
+  Chi_success<-mapply(function(x) ifelse(x>=0.05,"retain","reject"), Chi_Test_pv)
+  Saturation_test<-data.frame(Pair=results_pv$Pair,
+                              Sat_cassius1_success, Sat_cassius2_success, Chi_success)
+  write.csv(Saturation_test, paste(folder, "results_sat_test.csv", sep="/"),row.names = FALSE)
+}
 
-write.csv(Saturation_test, paste(folder, "results_sat_test.csv", sep="/"),row.names = FALSE)
+#---------------------------------------ANNOTATED TREE----------------------------------
 
-labels_dataframe<-data.frame(node=d1$node, Bowker_freq=d1$color)
-y <- full_join(tree, labels_dataframe, by = 'node')
-outputfile<-paste(str_sub(treename, start=0, end=-5), ".tree", sep="")
-write.beast(y, "huh")
+Bowker_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Bowker_pv, TRUE)
+Stuart_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Stuart_pv, TRUE)
+IS_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$IS_pv, TRUE)
+QS_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$QS_pv, TRUE)
+if (s=="true") Sat1_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius1_pv, TRUE)
+if (s=="true") Sat2_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Sat_cassius2_pv, TRUE)
+if (s=="true") Chi_edge_freq<-edges_rejected_freq(tree, results_pv$pair_1, results_pv$pair_2, results_pv$Chi_Test_pv, TRUE)
+
+if (s=="true") {
+  labels_dataframe<-data.frame(parent=Bowker_edge_freq$parent,node=Bowker_edge_freq$node, Bowker_freq=Bowker_edge_freq$edge_rej,
+                               Stuart_freq=Stuart_edge_freq$edge_rej, IS_freq=IS_edge_freq$edge_rej,
+                               QS_freq=QS_edge_freq$edge_rej, Sat1_req=Sat1_edge_freq$edge_rej,
+                               Sat2_freq=Sat2_edge_freq$edge_rej, Chi_rej=Chi_edge_freq$edge_rej)
+} else {
+  labels_dataframe<-data.frame(parent=Bowker_edge_freq$parent,node=Bowker_edge_freq$node, Bowker_freq=Bowker_edge_freq$edge_rej,
+                               Stuart_freq=Stuart_edge_freq$edge_rej, IS_freq=IS_edge_freq$edge_rej,
+                               QS_freq=QS_edge_freq$edge_rej)
+}
+
+y<-full_join(as.tibble(tree), labels_dataframe, by = c("parent",'node'))
 
 
-## Venn diagramm
-# create dataframe with number of rejects for each pair
-
-Bowker_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,TRUE,FALSE), Bowker_pv)
-Stuart_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,TRUE,FALSE), Stuart_pv)
-IS_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,TRUE,FALSE), IS_pv)
-QS_rej<-mapply(function(x) ifelse(!is.na(x) & x>=0.05,TRUE,FALSE), QS_pv)
-
-venn_data<-data.frame(Pair=result_tree$Sequences, Bowker=Bowker_rej, Stuart=Stuart_rej, IS=IS_rej, QS=QS_rej)
-
-ggvenn(venn_data, c("Bowker", "Stuart", "QS"))
-
-sink(type="message")
-close(zz)
+outputfile<-paste(basename(treename), ".tree", sep="")
+write.beast(as.treedata(y), file=paste(folder, outputfile, sep="/"))
