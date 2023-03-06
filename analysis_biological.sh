@@ -46,12 +46,12 @@ if [ -z "$treefile" ]; then
     	    echo "-------------------------------"
     	    echo "...Running IQ-TREE..."
     	    #touch ${alignment_file##*/}.treefile
-    	    ../../iqtree2 -s "${alignment_file##*/}" --redo-tree >> tree_inference.log;
+    	    iqtree2 -s "${alignment_file##*/}" --redo-tree >> tree_inference.log;
     	else
     	    echo "Using ML-Tree computed with IQ-TREE and the "${model}" model."
     	    echo "-------------------------------"
     	    echo "...Running IQ-TREE..."
-    	    ../../iqtree2 -s "${alignment_file##*/}" -m "${model}" --redo-tree >> tree_inference.log;
+    	    iqtree2 -s "${alignment_file##*/}" -m "${model}" --redo-tree >> tree_inference.log;
     	    #touch ${alignment_file##*/}.treefile
     	fi
     	treefile=results_$alignment_name/IQTree_Results/${alignment_file##*/}.treefile;
