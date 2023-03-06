@@ -110,7 +110,7 @@ The output is saved in a new folder created by the program, called `results_<tre
 
 Both scripts produce up to 4 `.csv` files.
 - `results_raw_<name>.csv` - contains the raw values of the test statistics for each pair and for every test (saturation tests if chosen)
-- `results_raw_<name>.csv` - contains the p-values against the null hypotheses with significance 0.05
+- `results_<name>.csv` - contains the p-values against the null hypotheses with significance 0.05
 - `results_rev_test.csv` - contains the results of the decision for each pair and the 4 tests (whether the null hypothesis is retained/rejected)
 - `results_sat_test.csv` - contains the results of the decision for each pair and each saturation test (if chosen)
 
