@@ -73,9 +73,11 @@ if [ -n "$treefile" ]; then
 	#R Script - Analysis & Visualisation
 	echo "-------------------------------------"
 	echo "...Running R Script..."
-	Rscript ./bin/analysis_visualisation_biological.R $treefile results_$alignment_name/results_raw_${alignment_name}.csv $s >> r_log.log;
+	Rscript ./bin/analysis_visualisation_biological.R $treefile results_$alignment_name/results_raw_${alignment_name}.csv $s >> results_$alignment_name/r_log.log;
 	#touch ./results_$alignment_name/${alignment_name}_tests.pdf;
 	echo "Computation done!"
 fi
+
+rm Rplots.pdf || true;
 
 echo "Duration in seconds:" $(( SECONDS - start ));
