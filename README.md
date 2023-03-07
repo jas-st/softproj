@@ -143,7 +143,7 @@ For the simulation study:
 ```
 bash analysis_simulation.sh -t example_treefile.nwk -m JC -n 1000 -k 50 -s true
 ```
-If everything worked there should be a new folder called `results_example-treefile`, containing all of the outputs.
+If everything worked there should be a new folder called `results_example_treefile`, containing all of the outputs.
 
 ### Biological Study
 
