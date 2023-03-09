@@ -89,7 +89,7 @@ echo "Computation Finished!"
 #R Script - Analysis & Visualisation
 echo "-------------------------------------"
 echo "...Running R Script..."
-Rscript bin/analysis.R $treefile $seq_len results_$treename/results_raw_$treename.csv results_$treename/results_$treename.csv $k ${s} | tee -a $logfile;
+Rscript bin/analysis_visualisation_simulation.R $treefile $seq_len results_$treename/results_raw_$treename.csv results_$treename/results_$treename.csv $k ${s} | tee -a $logfile;
 rm -r alignment_alisim;
 mv Rplots.pdf results_$treename/venn_diag.pdf
 echo "Analysis and Visualisation Finished!"
