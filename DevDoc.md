@@ -131,7 +131,7 @@ get_nucleotide_frequencies(std::string seq)
 An `Eigen::Vector4d` object.
 
 ### *check_illegal_chars()*
-Function for proofing the taxa labels for illegal characters. Allowed characters are alphabetical, numerical, ".", "-" and "_".\
+Function for proofing the taxa labels for illegal characters. Allowed characters are alphabetical, numerical, ".", "-", "|", "/" and "_".\
 Location `bin\lib\file_handling.cpp`
 
 ```
