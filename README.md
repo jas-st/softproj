@@ -149,10 +149,16 @@ If everything worked there should be a new folder called `results_example_treefi
 ### Biological Study
 
 For the biological study:
+
+**Example 1, dataset with 30 species.**
 ```
 bash analysis_biological.sh -a example_alignment.nex -t example_treefile_bio.nwk -s true
 ```
-If everything worked there should be a new folder called `results_example_alignment`, containing all of the outputs.
+**Example 2, dataset with 139 species.**
+```
+bash analysis_biological.sh -a example_alignment_long.nex -t example_treefile_bio_long.nwk -s true
+```
+If everything worked there should be new folders called `results_example_alignment` and `results_example_alignment_long`, containing all of the outputs.
 
 ## References
 
