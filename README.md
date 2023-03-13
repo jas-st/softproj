@@ -37,7 +37,7 @@ softproj\
 │----------------       │   sat_tests.hpp - the implementations of the three saturation tests\
 │----------------       │   file_handling.hpp - code for reading in the files\
 │----------------       │   Sequence.hpp - declarations of used class structures\
-<!--└───Results - All our results of both studies-->
+└───Results - All our results of both studies
 
 ## Installation & Dependencies
 
