@@ -29,7 +29,7 @@ fi
 
 #check if alignment file exists
 if [ ! -f "$alignment_file" ]; then
-    echo "$alignment_file does not exist."
+    echo "Alignment file $alignment_file does not exist."
     echo "exiting ...";
     exit
 fi
@@ -45,20 +45,14 @@ echo "Saturation tests: " $s;
 echo "Results in directory: results_"$alignment_name;
 
 mkdir -p results_$alignment_name;
-rm results_$alignment_name/*.pdf || true;
-rm results_$alignment_name/*.csv || true;
-rm results_$alignment_name/*.tree || true;
+rm -f results_$alignment_name/*.pdf;
+rm -f results_$alignment_name/*.csv;
+rm -f results_$alignment_name/*.tree;
 
 if [ -z "$treefile" ]; then
     if [ "$iqtr" = false ] ; then
     	echo -e "No tree file/IQ-TREE option provided. Only computing the test statistics."
     else
-    	if [ ! -f "$treefile" ]; then
-    	    echo "$treefile does not exist."
-    	    echo "exiting ...";
-            exit
-	fi
-	
     	mkdir -p results_$alignment_name/IQTree_Results
     	cp $alignment_file results_$alignment_name/IQTree_Results/;
     	cd results_$alignment_name/IQTree_Results;
@@ -81,6 +75,11 @@ if [ -z "$treefile" ]; then
     	cd ../..;
     fi
 else
+    if [ ! -f "$treefile" ]; then
+       echo "Tree file $treefile does not exist."
+       echo "exiting ...";
+       exit
+    fi
     echo "Using tree: " $treefile;
 fi
 
@@ -100,9 +99,7 @@ if [ -n "$treefile" ]; then
 	echo "Computation done!"
 fi
 
-if [ -f "Rplots.pdf"  ]; then
-    rm Rplots.pdf 
-fi
+rm -f Rplots.pdf;
 
 
 echo "Duration in seconds:" $(( SECONDS - start ));
