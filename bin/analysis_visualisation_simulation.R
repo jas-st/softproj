@@ -2,7 +2,7 @@ options(warn=-1)
 
 suppressPackageStartupMessages({
   if(!require("tidyverse")) install.packages("tidyverse", repos = "http://cran.us.r-project.org"); library(tidyverse)
-  if(!require("BiocManager", quietly = TRUE)) install.packages("BiocManager", repos = "http://cran.us.r-project.org"); BiocManager::install(c("ggtree","treeio"),force = TRUE)
+  if(!require("BiocManager", quietly = TRUE)) install.packages("BiocManager", repos = "http://cran.us.r-project.org"); BiocManager::install(c("ggtree","treeio"))
   library("ggtree")
   library("treeio")
   if(!require("ggpubr")) install.packages("ggpubr", repos = "http://cran.us.r-project.org"); library(ggpubr)
