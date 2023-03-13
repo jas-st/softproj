@@ -83,10 +83,17 @@ else
     echo "Using tree: " $treefile;
 fi
 
+#check operation system for mac (needs different c++ file)
+cfile=all_tests.out
+
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+    cfile=all_tests_mac.out
+fi
+
 #C++ script - Test Statistics computation
 echo "-------------------------------------"
 echo "...Calculating test statistics..."
-./bin/all_tests.out -F "$alignment_file" -s $s> results_$alignment_name/results_raw_${alignment_name}.csv;
+./bin/$cfile -F "$alignment_file" -s $s> results_$alignment_name/results_raw_${alignment_name}.csv;
 #touch ./results_$alignment_name/${alignment_name}_tests.csv;
 echo "Computation done!"
 
