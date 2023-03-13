@@ -29,7 +29,7 @@ if ["$treefile"]; then
 else
     echo "You did not specify the tree file";
     echo "USAGE: bash analysis_simulation.sh -t treefile.nwk -m JC -n 1000 -k 100 -s true";
-    echo "existing ...";
+    echo "exiting ...";
     exit
 fi
 
