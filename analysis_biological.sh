@@ -22,7 +22,7 @@ done
 #check if alignment file provided
 if [ -z "$alignment_file" ]; then
     echo "You did not specify an alignment file!";
-    echo "USAGE: bash analysis_biological.sh -a alignment_file.phy"
+    echo "USAGE: bash analysis_biological.sh -a alignment_file.nex"
     echo "exiting..."
     exit
 fi
