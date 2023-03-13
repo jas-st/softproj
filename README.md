@@ -25,9 +25,13 @@ Each test is applied pairwise on each unique sequence pair of the MSA. There is 
 softproj\
 │   `analysis_simulation.sh` - Bash script for the analysis of simulated data\
 │   `analysis_biological.sh` - Bash script for the analysis of real data\
+│   `README.md` - User Level Documentation\
+│   `DevDoc.md` - Developer Level Documentation\
 │   example_treefile.nwk - Example tree file for performing a test simulation study\
-│   example_alignment.nex - Example tree file for performing a test biological study\
-│   example_treefile_bio.nwk - Example tree file for performing a test biological study\
+│   example_alignment.nex - Example tree file for performing a test biological study (Example 1)\
+│   example_treefile_bio.nwk - Example tree file for performing a test biological study (Example 1)\
+│   example_alignment_long.nex - Example tree file for performing a test biological study (Example 2)\
+│   example_treefile_bio_long.nwk - Example tree file for performing a test biological study (Example 2)\
 └───bin\
 │--------   │   `analysis.R` - the R script\
 │--------   │   `all_tests.cpp` - the C++ script\
@@ -127,7 +131,7 @@ Additionally one PDF file for each of the tests computed:
 - `plot_Sat_Chi_test.pdf` - coloured tree plot, heatmap and distribution of test statistics for Chi-square Test for Saturation
 - `venn_diag.pdf` - Venn diagram for each pair (simulation study)/ all pairs combined (biological study), comparing the number of rejections in Bowker, Stuart and Quasi-Symmetry Test
 
-Additionally for the biological study if there more than 50 species, a compressed tree separated in smaller subtrees is computed and saved in the PDF files.
+Additionally for the biological study if there more than 50 species, a compressed tree separated in smaller subtrees is computed and saved in the PDF files. The distributions of the test statistics are also not computed for the biological study.
 
 Lastly the result tree with added labels on the branches for all test rejections in NEXUS format:
 - `annotated_<name>.tree`
