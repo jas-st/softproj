@@ -38,7 +38,9 @@ echo "Results in directory: results_"$treename | tee -a $logfile;
 echo "This is tree name: $treename" | tee -a $logfile;
 echo "Saturation test:" ${s} | tee -a $logfile;
 
-if ["$t"==""]; then
+if ["$treefile"]; then
+    echo "";
+else
     echo "You did not specify the tree file";
     echo "USAGE: bash analysis_simulation.sh -t treefile.nwk -m JC -n 1000 -k 100 -s true";
     echo "existing ...";
@@ -98,7 +100,7 @@ echo "Computation Finished!"
 #R Script - Analysis & Visualisation
 echo "-------------------------------------"
 echo "...Running R Script..."
-Rscript bin/analysis_visualisation_simulation.R $treefile $seq_len results_$treename/results_raw_$treename.csv results_$treename/results_$treename.csv $k ${s} | tee -a $logfile;
+Rscript bin/analysis_visualisation_simulation.R $treefile $seq_len results_$treename/results_raw_$treename.csv results_$treename/results_$treename.csv $k ${s} >> $logfile;
 rm -r alignment_alisim;
 mv Rplots.pdf results_$treename/venn_diag.pdf
 echo "Analysis and Visualisation Finished!"
