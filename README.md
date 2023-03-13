@@ -99,7 +99,7 @@ bash analysis_biological.sh -a example_alignment.nex -t example_treefile_bio.nwk
 - -t (optional) - the tree file in standard Newick format
 - -s (optional) - can be true or false, if true it will also compute the saturation tests (default: false)
 
-If no tree file is available, there is an option to call IQ-TREE to compute the ML tree and to use it in the downstream analysis.
+When using external tree take care that the names of the taxa are the same both in the tree file as well as in the alignment. If no tree file is available, there is an option to call IQ-TREE to compute the ML tree and to use it in the downstream analysis.
 
 ```sh
 bash analysis_biological.sh -a example_alignment.nex -I -m GTR -s true
