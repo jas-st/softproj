@@ -45,9 +45,9 @@ echo "Saturation tests: " $s;
 echo "Results in directory: results_"$alignment_name;
 
 mkdir -p results_$alignment_name;
-rm -f results_$alignment_name/*.pdf || true;
-rm -f results_$alignment_name/*.csv || true;
-rm -f results_$alignment_name/*.tree || true;
+rm results_$alignment_name/*.pdf || true;
+rm results_$alignment_name/*.csv || true;
+rm results_$alignment_name/*.tree || true;
 
 if [ -z "$treefile" ]; then
     if [ "$iqtr" = false ] ; then
