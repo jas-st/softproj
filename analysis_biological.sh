@@ -19,6 +19,21 @@ do
     esac
 done
 
+#check if alignment file provided
+if [ -z "$alignment_file" ]; then
+    echo "You did not specify an alignment file!";
+    echo "USAGE: bash analysis_biological.sh -a alignment_file.phy"
+    echo "exiting..."
+    exit
+fi
+
+#check if alignment file exists
+if [ ! -f "$alignment_file" ]; then
+    echo "$alignment_file does not exist."
+    echo "exiting ...";
+    exit
+fi
+
 #set additional variables and default options
 alignment_name=${alignment_file%.*};
 alignment_name=${alignment_name##*/};
@@ -38,9 +53,16 @@ if [ -z "$treefile" ]; then
     if [ "$iqtr" = false ] ; then
     	echo -e "No tree file/IQ-TREE option provided. Only computing the test statistics."
     else
+    	if [ ! -f "$treefile" ]; then
+    	    echo "$treefile does not exist."
+    	    echo "exiting ...";
+            exit
+	fi
+	
     	mkdir -p results_$alignment_name/IQTree_Results
     	cp $alignment_file results_$alignment_name/IQTree_Results/;
     	cd results_$alignment_name/IQTree_Results;
+	
     	if [ -z "$model" ] ; then
     	    echo "Using ML-Tree computed with IQ-TREE and ModelFinder."
     	    echo "-------------------------------"
@@ -78,6 +100,9 @@ if [ -n "$treefile" ]; then
 	echo "Computation done!"
 fi
 
-rm Rplots.pdf || true;
+if [ -f "Rplots.pdf"  ]; then
+    rm Rplots.pdf 
+fi
+
 
 echo "Duration in seconds:" $(( SECONDS - start ));
