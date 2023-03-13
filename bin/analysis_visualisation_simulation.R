@@ -37,8 +37,8 @@ if (s=="true") {
 }
 
 #remove column names in between simulations + add column with simulation number
-result_tree_rename<-results_raw_tree%>%dplyr::rename(Sequences="Sequences compared")
-result_tree<-result_tree_rename%>%filter(Sequences!="Sequences compared")
+result_tree_rename<-results_raw_tree%>%dplyr::rename(Sequences="Sequences")
+result_tree<-result_tree_rename%>%filter(Sequences!="Sequences")
 result_tree$simulation<-rep(seq(1,k), each=length(unique(result_tree$Sequences)))
 
 #read in tree file 
