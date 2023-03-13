@@ -38,10 +38,19 @@ echo "Results in directory: results_"$treename | tee -a $logfile;
 echo "This is tree name: $treename" | tee -a $logfile;
 echo "Saturation test:" ${s} | tee -a $logfile;
 
+if ["$t"==""]; then
+    echo "You did not specify the tree file";
+    echo "USAGE: bash analysis_simulation.sh -t treefile.nwk -m JC -n 1000 -k 100 -s true";
+    echo "existing ...";
+    exit
+fi
+
 
 #check if treefile exists
 if [ ! -f "$treefile" ]; then
     echo "$treefile does not exist."
+    echo "exiting ...";
+    exit
 fi
 
 nwktree=$(<"$treefile");
@@ -62,7 +71,7 @@ echo "-------------------------------"
 echo "...Running IQ-TREE alisim..."
 echo '' > results_$treename/results_raw_$treename.csv;
 cd alignment_alisim;
-iqtree2 --alisim $treename-alignment -m $matrix -t ${t} --length $seq_len --num-alignments $k -seed 123  | tee -a $logfile;
+iqtree2 --alisim $treename-alignment -m $matrix -t ${t} --length $seq_len --num-alignments $k -seed 123 >> $logfile;
 cd ..;
 
 echo "Simulations Finished!";
