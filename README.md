@@ -76,7 +76,7 @@ To start, open a terminal and navigate to the path of the program.
 #### `analysis_simulation.sh`
 The analysis of simulated data requires a tree file and the parameters for the simulation.
 ```sh
-bash analysis_simulation.sh -t treefile.tree -m JC -n 1000 -k 100 -s true
+bash analysis_simulation.sh -t example_treefile.tree -m JC -n 1000 -k 100 -s true
 ```
 - -t - the tree file in standard Newick format
 - -m - specifies a substitution model to use for the simulation (default: JC, all possible options can be seen in [substitution models for alisim](http://www.iqtree.org/doc/Substitution-Models))
@@ -97,7 +97,7 @@ bash analysis_biological.sh -a alignment.phy -t treename.nwk -s true
 If no tree file is available, there is an option to call IQ-TREE to compute the ML tree and to use it in the downstream analysis.
 
 ```sh
-bash analysis_biological.sh -a alignment.phy -I -m GTR -s true
+bash analysis_biological.sh -a example_alignment.phy -I -m GTR -s true
 ```
 - -a - specifies the sequence alignment file in PHYLIP or NEX format
 - -I - specifies whether to call IQ-TREE to compute the ML tree
