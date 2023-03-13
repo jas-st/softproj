@@ -22,7 +22,7 @@ Each test is applied pairwise on each unique sequence pair of the MSA. There is 
 
 ## Structure
 
-RevTest\
+softproj\
 │   `analysis_simulation.sh` - Bash script for the analysis of simulated data\
 │   `analysis_biological.sh` - Bash script for the analysis of real data\
 │   example_treefile.nwk - Example tree file for performing a test simulation study\
@@ -37,7 +37,7 @@ RevTest\
 │----------------       │   sat_tests.hpp - the implementations of the three saturation tests\
 │----------------       │   file_handling.hpp - code for reading in the files\
 │----------------       │   Sequence.hpp - declarations of used class structures\
-└───Results - All our results of both studies
+<!--└───Results - All our results of both studies-->
 
 ## Installation & Dependencies
 
