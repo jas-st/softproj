@@ -37,6 +37,7 @@ RevTest\
 │----------------       │   sat_tests.hpp - the implementations of the three saturation tests\
 │----------------       │   file_handling.hpp - code for reading in the files\
 │----------------       │   Sequence.hpp - declarations of used class structures\
+└───Results - All our results of both studies
 
 ## Installation & Dependencies
 
@@ -66,7 +67,7 @@ R must be installed and be able to execute scripts by entering `Rscript`. It use
 
 ### IQ-Tree
 
-The software uses the AliSim extension, as well as ModelFinder, contained in the IQ-TREE software. The user has to have IQ-TREE with AliSim installed and be able to run IQ-TREE by simply entering `iqtree2`.\
+The software uses the AliSim extension, as well as ModelFinder, contained in the IQ-TREE software. The user has to have IQ-TREE with AliSim installed and be able to run IQ-TREE by simply entering `iqtree2`.
 
 There is otherwise no installation needed, simply run the desired bash script in the command line, providing the needed input files.
 
@@ -76,7 +77,7 @@ To start, open a terminal and navigate to the path of the program.
 #### `analysis_simulation.sh`
 The analysis of simulated data requires a tree file and the parameters for the simulation.
 ```sh
-bash analysis_simulation.sh -t example_treefile.tree -m JC -n 1000 -k 100 -s true
+bash analysis_simulation.sh -t example_treefile.nwk -m JC -n 1000 -k 100 -s true
 ```
 - -t - the tree file in standard Newick format
 - -m - specifies a substitution model to use for the simulation (default: JC, all possible options can be seen in [substitution models for alisim](http://www.iqtree.org/doc/Substitution-Models))
@@ -88,7 +89,7 @@ bash analysis_simulation.sh -t example_treefile.tree -m JC -n 1000 -k 100 -s tru
 The analysis of biological data requires the multiple sequence alignment file and optionally a tree file.
 
 ```sh
-bash analysis_biological.sh -a alignment.phy -t treename.nwk -s true
+bash analysis_biological.sh -a example_alignment.nex -t example_treefile_bio.nwk -s true
 ```
 - -a - specifies the sequence alignment file in PHYLIP or NEX format
 - -t (optional) - the tree file in standard Newick format
@@ -97,7 +98,7 @@ bash analysis_biological.sh -a alignment.phy -t treename.nwk -s true
 If no tree file is available, there is an option to call IQ-TREE to compute the ML tree and to use it in the downstream analysis.
 
 ```sh
-bash analysis_biological.sh -a example_alignment.phy -I -m GTR -s true
+bash analysis_biological.sh -a example_alignment.nex -I -m GTR -s true
 ```
 - -a - specifies the sequence alignment file in PHYLIP or NEX format
 - -I - specifies whether to call IQ-TREE to compute the ML tree
