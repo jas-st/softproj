@@ -23,20 +23,6 @@ matrix=${m:-'JC'}
 k=${k:-1}
 dir=$(pwd)
 
-mkdir -p results_$treename;
-rm -f results_$treename/* || true;
-
-#logfile
-touch results_$treename/simulation.log;
-logfile=$dir/results_$treename/simulation.log;
-
-echo "Tree file: " ${t} | tee -a $logfile;
-echo "Length of simulated sequences: " $seq_len | tee -a $logfile;
-echo "Model of substitution: "$matrix | tee -a $logfile;
-echo "Number of simulations: "$k | tee -a $logfile;
-echo "Results in directory: results_"$treename | tee -a $logfile;
-echo "This is tree name: $treename" | tee -a $logfile;
-echo "Saturation test:" ${s} | tee -a $logfile;
 
 if ["$treefile"]; then
     echo "";
@@ -54,6 +40,21 @@ if [ ! -f "$treefile" ]; then
     echo "exiting ...";
     exit
 fi
+
+mkdir -p results_$treename;
+rm -f results_$treename/* || true;
+
+#logfile
+touch results_$treename/simulation.log;
+logfile=$dir/results_$treename/simulation.log;
+
+echo "Tree file: " ${t} | tee -a $logfile;
+echo "Length of simulated sequences: " $seq_len | tee -a $logfile;
+echo "Model of substitution: "$matrix | tee -a $logfile;
+echo "Number of simulations: "$k | tee -a $logfile;
+echo "Results in directory: results_"$treename | tee -a $logfile;
+echo "This is tree name: $treename" | tee -a $logfile;
+echo "Saturation test:" ${s} | tee -a $logfile;
 
 nwktree=$(<"$treefile");
 if [[ $nwktree =~ "aaa" ]]; then
