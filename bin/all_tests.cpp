@@ -11,7 +11,7 @@ int main(int argc, char **argv) {
     string file_name;
     Alignment alignment;
     string extension;
-    bool sat_tests = false;
+    string sat_tests = "false";
 
     //read in flag argument -F for the file name with sequences
     //read in flag argument -s for saturation tests, default - false
@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
         }
         i++;
     }
-
+    
     extension = file_name.substr(file_name.length()-3);
 
 
@@ -56,7 +56,7 @@ int main(int argc, char **argv) {
 
     // print column names
     std::cout << "Sequences" << ',';
-    if (sat_tests) {
+    if (strcmp(sat_tests.c_str(), "true") == 0 )  {
         std::cout << "Sat_test_Cassius1" << ',' << "Sat_test_Cassius2"
                   << ',' << "Chi_test" << ',';
     }
@@ -87,7 +87,7 @@ int main(int argc, char **argv) {
             }
 
             //Saturation tests
-            if (sat_tests) {
+            if (strcmp(sat_tests.c_str(), "true") == 0 )  {
                 double cas1 = sat_test_cas1(H, n, alignment.global_freqs);
                 double cas2 = sat_test_cas2(seq1, seq2, H, n);
                 double chi = chi_test(seq1, seq2, H, n);
