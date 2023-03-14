@@ -2,13 +2,22 @@ options(warn=-1)
 
 suppressPackageStartupMessages({
   if(!require("tidyverse")) install.packages("tidyverse", repos = "http://cran.us.r-project.org"); library(tidyverse)
-  if(!require("BiocManager", quietly = TRUE)) install.packages("BiocManager", repos = "http://cran.us.r-project.org"); BiocManager::install(c("ggtree","treeio"))
-  library("ggtree")
-  library("treeio")
   if(!require("ggpubr")) install.packages("ggpubr", repos = "http://cran.us.r-project.org"); library(ggpubr)
   if(!require("ggvenn")) install.packages("ggvenn", repos = "http://cran.us.r-project.org"); library(ggvenn)
   if(!require("tidytree")) install.packages("tidytree", repos = "http://cran.us.r-project.org"); library(tidytree)
   })
+
+
+suppressWarnings(suppressMessages(
+if(!require("BiocManager", quietly = TRUE))
+{
+    install.packages("BiocManager", repos = "http://cran.us.r-project.org")
+    BiocManager::install(c("ggtree","treeio"))
+}))
+
+suppressWarnings(suppressMessages(library("ggtree")))
+suppressWarnings(suppressMessages(library("treeio")))
+
 
 #read in command line arguments
 args <- commandArgs()

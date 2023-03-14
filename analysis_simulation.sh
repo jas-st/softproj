@@ -11,7 +11,6 @@ do
         m) m=${OPTARG};;
         k) k=${OPTARG};;
         s) s=${OPTARG};;
-        ##ERROR: Please provide an tree file
     esac
 done
 
@@ -21,10 +20,11 @@ treename=${treefile%.*};
 seq_len=${n:-500}
 matrix=${m:-'JC'}
 k=${k:-1}
+s=${s:-false};
 dir=$(pwd)
 
 
-if ["$treefile"]; then
+if [[ $treefile ]]; then
     echo "";
 else
     echo "You did not specify the tree file";
@@ -70,7 +70,7 @@ cp results_$treename/$treefile alignment_alisim/;
 
 
 echo "Simulating alignment with IQ-TREE alisim."
-echo "-------------------------------"
+echo "-------------------------------------"
 echo "...Running IQ-TREE alisim..."
 echo '' > results_$treename/results_raw_$treename.csv;
 cd alignment_alisim;
