@@ -1,0 +1,723 @@
+#NEXUS
+[R-package treeio, Tue Mar 14 01:54:31 2023]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 355;
+	TAXLABELS
+		1918|Human|A/Brevig_Mission/1/1918|USA|H1N1
+		1935|Human|A/bh/1935||H1N1
+		1935|Human|A/Melbourne/1935|Australia|H1N1
+		1935|Human|A/Phila/1935|USA|H1N1
+		1936|Human|A/Henry/1936|USA|H1N1
+		1940|Human|A/Hickox/1940|USA|H1N1
+		1946|Human|A/Cameron/1946|Australia|H1N1
+		1947|Human|A/Monmouth/1947|USA|H1N1
+		1949|Human|A/Netherlands/002K1/1949|Netherlands|H1N1
+		1948|Human|A/Albany/4835/1948|USA|H1N1
+		1949|Human|A/Roma/1949|Italy|H1N1
+		1950|Human|A/Fort_Warren/1/1950|USA|H1N1
+		1950|Human|A/Tientsin/78/1977|China|H1N1_
+		1951|Human|A/Memphis/10/1978|USA|H1N1_
+		1953|Human|A/Maryland/2/1980|USA|H1N1_
+		1954|Human|A/Baylor/4052/1981|USA|H1N1_
+		1955|Human|A/Baylor/11515/1982|USA|H1N1_
+		1956|Human|A/Memphis/49/1983|USA|H1N1_
+		1959|Human|A/Singapore/6/1986|Singapore|H1N1_
+		1960|Human|A/Siena/4/1987|Italy|H1N1_
+		1962|Human|A/Siena/10/1989|Italy|H1N1_
+		1964|Human|A/Texas/36/1991|USA|H1N1_
+		1968|Human|A/Siena/14/1995|Italy|H1N1_
+		1969|Human|A/New_York/626/1996|USA|H1N1_
+		1972|Human|A/New_South_Wales/24/1999|Australia|H1N1_
+		1973|Human|A/South_Canterbury/50/2000|New_Zealand|H1N1_
+		1978|Human|A/Denmark/22/2005|Denmark|H1N1_
+		1979|Human|A/New_York/8/2006|USA|H1N1_
+		1980|Human|A/Texas/UR06-0217/2007|USA|H1N1_
+		1981|Human|A/Florida/UR07-0022/2008|USA|H1N1_
+		1982|Human|A/Arkansas/WRAIR1249P/2009|USA|H1N1_
+		1951|Human|A/Albany/13/1951|USA|H1N1
+		1953|Human|A/Netherlands/001R1/1953|Netherlands|H1N1
+		1954|Human|A/Netherlands/001H1/1954|Netherlands|H1N1
+		1956|Human|A/Netherlands/002Z1/1956|Netherlands|H1N1
+		1979|Human|A/Kiev/59/1979|Ukraine|H1N1
+		1980|Human|A/Nanjing/13/1980|China|H3N2
+		1982|Human|A/Bilthoven/10684/1982|Netherlands|H3N2
+		1983|Human|A/Oslo/13676/1983|Norway|H3N2
+		1984|Human|A/Hong_Kong/4/1984|Hong_Kong|H3N2
+		1988|Human|A/Netherlands/450/1988|Netherlands|H3N2
+		1989|Human|A/Eindhoven/3447/1989|Netherlands|H3N2
+		1993|Human|A/Lyon/23602/1993|France|H3N2
+		1994|Human|A/New_York/753/1994|USA|H3N2
+		1997|Human|A/Siena/1/1997|Italy|H3N2
+		1999|Human|A/Memphis/59/1999|USA|H3N2
+		2002|Human|A/Yokohama/47/2002|Japan|H1N2
+		2003|Human|A/Wyoming/03/2003|USA|H3N2
+		2005|Human|A/Texas/NHRC0001/2005|USA|H3N2
+		2006|Human|A/Sydney/186R/2006|Australia|H3N2
+		2007|Human|A/Sydney/202G/2007|Australia|H3N2
+		2008|Human|A/California/UR07-0063/2008|USA|H3N2
+		2009|Human|A/Nanjing/1/2009|China|H3N2
+		2011|Human|A/California/NHRC0002/2011|USA|H3N2
+		1975|Human|A/Hong_Kong/43/1975|Hong_Kong|H3N2
+		1976|Human|A/Bilthoven/1761/1976|Netherlands|H3N2
+		1977|Human|A/Amsterdam/1609/1977|Netherlands|H3N2
+		1972|Human|A/Udorn/307/1972|Russia|H3N2
+		1973|Human|A/Memphis/1/1973|USA|H3N2
+		1971|Human|A/Bilthoven/21801/1971|Netherlands|H3N2
+		1964|Human|A/Cottbus/1/1964|Germany|H2N2
+		1965|Human|A/Albany/1/65|USA|H2N2
+		1968|Human|A/Philippines/104/68|Philippines|H3N2
+		1969|Human|A/Hong_Kong/3/1969|Hong_Kong|H3N2
+		1970|Human|A/Albany/1/1970|USA|H3N2
+		1963|Human|A/North_Carolina/1/1963|USA|H2N2
+		1960|Human|A/Netherlands/056H1/1960|Netherlands|H2N2
+		1961|Human|A/England/1/61|United_Kingdom|H2N2
+		1962|Human|A/Netherlands/60/62|Netherlands|H2N2
+		1958|Human|A/Albany/6/58|USA|H2N2
+		1957|Human|A/Singapore/1/1957|Singapore|H2N2
+		1959|Human|A/Krasnodar/101/1959|Russia|H2N2
+		1954|Human|A/Malaysia/1954|Malaysia|H1N1
+		1955|Human|A/England/19/1955|United_Kingdom|H1N1
+		1943|Human|A/Weiss/1943|USA|H1N1
+		1945|Human|A/AA/Huston/1945|USA|H1N1
+		1942|Human|A/Bellamy/1942|USA|H1N1
+		1943|Human|A/AA/Marton/1943|USA|H1N1
+		1948|Human|A/Hemsbury/1948|USA|H1N1
+		1979|Swine|A/swine/Belgium/WVL1/1979|Belgium|H1N1
+		1985|Swine|A/swine/France/WVL4/1985|France|H1N1
+		1987|Swine|A/swine/Italy/670/1987|Italy|H1N1
+		1989|Swine|A/swine/Belgium/WVL5/1989|Belgium|H1N1
+		1992|Swine|A/swine/England/195852/1992|United_Kingdom|H1N1
+		1993|Swine|A/swine/England/WVL10/1993|United_Kingdom|H1N1
+		1995|Swine|A/swine/Germany/Vi3161/95|Germany|H3N2
+		1999|Swine|A/swine/Cotes_dArmor/1488/1999|France|H1N1
+		2003|Swine|A/swine/Hong_Kong/NS129/2003|Hong_Kong|H1N1
+		2006|Swine|A/swine/Hong_Kong/421/2006|Hong_Kong|H1N1
+		2005|Swine|A/swine/Hong_Kong/1683/2005|Hong_Kong|H1N1
+		2009|Swine|A/swine/Hong_Kong/3001/2009|Hong_Kong|H1N1
+		2011|Swine|A/swine/Jiangsu/s15/2011|China|H1N1
+		2002|Swine|A/swine/Hong_Kong/1669/2002|Hong_Kong|H1N1
+		1997|Swine|A/swine/Germany/SEC27/97|Germany|H3N2
+		1998|Swine|A/swine/Italy/62/1998|Italy|H1N2
+		1984|Swine|A/swine/France/WVL3/1984|France|H1N1
+		1981|Swine|A/swine/Germany/2/1981|Germany|H1N1
+		1978|Avian|A/duck/Beijing/1/1978|China|H3N6
+		1992|Avian|A/chicken/Victoria/224/1992|Australia|H7N3
+		1994|Avian|A/chicken/Queensland/1994|Australia|H7N3
+		1997|Avian|A/emu/NSW/1742/1997|Australia|H7N4
+		1998|Avian|A/duck/Hokkaido/49/98|Japan|H9N2
+		1999|Avian|A/mallard/Netherlands/5/1999|Netherlands|H2N9
+		2002|Avian|A/chicken/Jilin/hf/2002|China|H5N1
+		2003|Avian|A/goose/Jilin/hb/2003|China|H5N1
+		2004|Avian|A/chicken/zz/02/2004|China|H5N1
+		2007|Avian|A/duck/Hunan/3/2007|China|H5N1
+		2008|Avian|A/whooper_swan/Hokkaido/1/2008|Japan|H5N1
+		2009|Avian|A/whooper_swan/Mongolia/6/2009|Mongolia|H5N1
+		2010|Avian|A/duck/Hokkaido/WZ83/2010|Japan|H5N1
+		2011|Avian|A/peregrine_falcon/Tochigi/15/2011|Japan|H5N1
+		1978|Avian|A/duck/Hong_Kong/278/1978|Hong_Kong|H2N9
+		1980|Avian|A/duck/Australia/749/1980|Australia|H1N1
+		1981|Avian|A/duck/Victoria/24/1981|Australia|H8N4
+		1984|Avian|A/duck/Western_Australia/8108/1984|Australia|H4N6
+		1985|Avian|A/chicken/Victoria/1/1985|Australia|H7N7
+		1994|Avian|A/Chicken/Beijing/1/94|China|H9N2
+		1996|Avian|A/chicken/Shandong/7/96|China|H9N2
+		1997|Avian|A/chicken/Guangdong/5/97|China|H9N2
+		1999|Avian|A/chicken/Hubei/01/1999|China|H9N2
+		2001|Avian|A/chicken/Shantou/1126/2001|China|H9N2
+		2002|Avian|A/chicken/Guangdong/21/02|China|H9N2
+		2003|Avian|A/chicken/HongKong/FY23/03|Hong_Kong|H9N2
+		1969|Avian|A/turkey/England/1969|United_Kingdom|H3N2
+		1973|Avian|A/parrot/Ulster/73|Ireland|H7N1
+		1977|Avian|A/duck/Bavaria/2/1977|Germany|H1N1
+		1979|Avian|A/goose/Leipzig/187-7/1979|Germany|H7N7
+		1980|Avian|A/teal/Iceland/29/1980|Iceland|H7N7
+		1983|Avian|A/mallard/Postdam/178-4/1983|Germany|H2N2
+		1959|Avian|A/tern/South_Africa/1959|South_Africa|H5N3
+		1961|Avian|A/tern/South_Africa/1961|South_Africa|H5N3
+		1963|Avian|A/duck/Ukraine/1/1963|Ukraine|H3N8
+		1965|Avian|A/quail/Italy/1117/1965|Italy|H10N8
+		1977|Avian|A/duck/Hokkaido/5/1977|Japan|H3N2
+		1978|Avian|A/duck/Hong_Kong/365/1978|Hong_Kong|H4N6
+		1979|Avian|A/duck/Hong_Kong/698/1979|Hong_Kong|H5N3
+		1980|Avian|A/duck/Hokkaido/8/1980|Japan|H3N8
+		1959|Avian|A/chicken/Scotland/1959|United_Kingdom|H5N1
+		1960|Avian|A/duck/Ukraine/2/1960|Ukraine|H11N8
+		1956|Avian|A/duck/England/1/1956|United_Kingdom|H11N6
+		1949|Avian|A/chicken/Germany/N/1949|Germany|H10N7
+		1934|Avian|A/chicken/Rostock/45/1934|Germany|H7N1
+		1935|Avian|A/chicken/Brescia/1902|Italy|H7N7
+		1975|Avian|A/shearwater/Australia/751/1975|Australia|H5N3
+		1977|Avian|A/wedge-tailed_shearwater/Western_Australia/405/1977|Australia|H3N8
+		1978|Avian|A/Pacific_black_duck/Western_Australia/699/1978|Australia|H3N8
+		1979|Avian|A/eurasian_coot/Western_Australia/2727/1979|Australia|H6N2
+		1980|Avian|A/black_duck/AUS/4045/1980|Australia|H6N5
+		1992|Avian|A/duck/Victoria/1992|Australia|H3N8
+		1994|Avian|A/duck/Victoria/D23/1994|Australia|H4N2
+		1976|Avian|A/chicken/Victoria/1976|Australia|H7N7
+		1976|Avian|A/duck/New_Zealand/164/76|New_Zealand|H11N3
+		1976|Avian|A/duck/New_Zealand/31/1976|New_Zealand|H4N6
+		1984|Avian|A/duck/NZL/41/1984|New_Zealand|H1N2
+		1984|Avian|A/duck/NZL/76/1984|New_Zealand|H9N1
+		1953|Avian|A/duck/Manitoba/1/1953|Canada|H10N7
+		1969|Avian|A/duck/Pennsylvania/1/1969|USA|H6N1
+		1974|Avian|A/duck/Memphis/928/1974|USA|H3N8
+		1977|Avian|A/pintail_duck/ALB/303/1977|Canada|H10N7
+		1979|Avian|A/turkey/Minnesota/5/1979|USA|H10N8
+		1972|Avian|A/turkey/CO/118899/1972|USA|H5N2
+		1986|Avian|A/sanderling/New_Jersey/766/1986|USA|H2N7
+		1988|Avian|A/ruddy_turnstone/DE/2368/1988|USA|H4N9
+		1989|Avian|A/herring_gull/NJ/406/1989|USA|H5N3
+		1990|Avian|A/semi-palmated_sandpiper/New_Jersey/237/1990|USA|H3N6
+		1991|Avian|A/ruddy_turnstone/Delaware_Bay/231/1991|USA|H6N8
+		1993|Avian|A/ruddy_turnstone/Delaware/34/1993|USA|H2N1
+		1994|Avian|A/ruddy_turnstone/Delaware_Bay/168/1994|USA|mixed
+		1996|Avian|A/ruddy_turnstone/Delaware_Bay/215/1996|USA|mixed
+		1977|Avian|A/gull/Maryland/5/1977|USA|H11N9
+		1974|Avian|A/duck/Memphis/546/1974|USA|H11N9
+		1979|Avian|A/mallard_duck/Alberta/106/1979|Canada|H4N2
+		1975|Avian|A/Canada_goose/Wisconsin/902/1975|USA|H5N2
+		1976|Avian|A/duck/Alberta/35/1976|Canada|H1N1
+		1979|Avian|A/pintail_duck/ALB/238/1979|Canada|H1N1
+		1981|Avian|A/turkey/TX/4-1-81/1981|USA|H9N2
+		1984|Avian|A/mallard_duck/Alberta/630/1984|Canada|H4N2
+		1987|Avian|A/pintail/Alberta/128/1987|Canada|H3N8
+		1988|Avian|A/wigeon/Ohio/379/1988|USA|H5N2
+		1989|Avian|A/mallard/Ohio/129/1989|USA|H4N6
+		1990|Avian|A/herring_gull/New_Jersey/159/1990|USA|H3N6
+		1991|Avian|A/turkey/Colorado/13356/1991|USA|H7N3
+		1995|Avian|A/lesser_scaup/Alberta/206/1995|Canada|H3N8
+		1998|Avian|A/mallard/Alberta/167/1998|Canada|H3N8
+		2002|Avian|A/redhead/Alberta/192/2002|Canada|H3N6
+		2005|Avian|A/mallard/Alberta/11393/2005|Canada|H1N1
+		2006|Avian|A/American_wigeon/Iowa/463998/2006|USA|H5N2
+		2007|Avian|A/northern_pintail/Saskatchewan/22910/2007|Canada|H3N2
+		2008|Avian|A/Stellers_eider/Alaska/44422-107/2008|USA|H1N1
+		2010|Avian|A/northern_shoveler/Mississippi/252/2010|USA|H10N7
+		1977|Avian|A/mallard/Alberta/127/1977|Canada|H1N1
+		1979|Avian|A/pintail/Alberta/1040/1979|Canada|H6N5
+		1985|Avian|A/mallard/Tennessee/11457/1985|USA|H11N9
+		1986|Avian|A/blue-winged_teal/Alberta/427/1986|Canada|H4N6
+		1987|Avian|A/mallard/Ohio/556/1987|USA|mixed
+		1989|Avian|A/red_knot/NJ/325/1989|USA|H7N7
+		1990|Avian|A/ruddy_turnstone/New_Jersey/138/1990|USA|H3N6
+		1991|Avian|A/mallard/Alberta/115/1991|Canada|H3N8
+		1995|Avian|A/chicken/NY/13833-7/1995|USA|H7N2
+		1997|Avian|A/chicken/PA/11767/1997|USA|H7N2
+		1998|Avian|A/goose/NY/8600-3/1998|USA|H7N2
+		2001|Avian|A/chicken/PA/143586/2001|USA|H7N2
+		2004|Avian|A/chicken/MD/MinhMa/2004|USA|H7N2
+		2005|Avian|A/Muscovy_duck/New_York/11646-4/2005|USA|H7N2
+		2006|Avian|A/chicken/New_York/8391-2/2006|USA|H7N2
+		1980|Avian|A/pintail_duck/Alberta/169/1980|Canada|H3N8
+		1975|Avian|A/mallard/WI/42/1975|USA|H5N2
+		1976|Avian|A/duck/Alberta/60/1976|Canada|H12N5
+		1977|Avian|A/pintail_duck/ALB/220/1977|Canada|H4N8
+		1978|Avian|A/mallard_duck/New_York/66861/1978|USA|H2N3
+		1983|Avian|A/chicken/Pennsylvania/4104/1983|USA|H5N2
+		1984|Avian|A/Chicken/Virginia/40018/84|USA|H5N2
+		1979|Avian|A/pintail/Alberta/21/1979|Canada|H7
+		1977|Avian|A/pintail_duck/ALB/159/1977|Canada|H4N6
+		1979|Avian|A/green-winged_teal/ALB/438/1979|Canada|H3N8
+		1980|Avian|A/turkey/Minnesota/833/1980|USA|H4N2
+		1981|Avian|A/duck/Minnesota/1516/1981|USA|H5N2
+		1985|Avian|A/mallard_duck/Alberta/435/1985|Canada|H7N3
+		1986|Avian|A/mallard/Ohio/338/1986|USA|H4N8
+		1987|Avian|A/green-winged_teal/LA/9GW/1987|USA|H11N9
+		1991|Avian|A/mallard/Alberta/126/1991|Canada|H11N9
+		1993|Avian|A/mallard/Ohio/94/1993|USA|H11N3
+		1996|Avian|A/ruddy_turnstone/Delaware_Bay/135/1996|USA|H7N3
+		1998|Avian|A/mallard/MN/14/1998|USA|H2N3
+		2002|Avian|A/blue-winged_teal/Ohio/908/2002|USA|H3N2
+		2003|Avian|A/mallard/Maryland/210/2003|USA|H10N7
+		2005|Avian|A/mallard/Missouri/MO130/2005|USA|H11N3
+		2007|Avian|A/blue-winged_teal/Texas/Sg-00208/2007|USA|mixed
+		2009|Avian|A/mallard/Ohio/1688/2009|USA|H12N5
+		1966|Avian|A/turkey/Wisconsin/1966|USA|H9N2
+		1971|Avian|A/turkey/Oregon/1971|USA|H7N3
+		1967|Avian|A/turkey/Ontario/6118/1967|Australia|H8N4
+		1981|Avian|A/duck/Victoria/23/1981|Australia|H1N1
+		1981|Avian|A/duck/Victoria/30a/1981|Australia|H12N7
+		1983|Avian|A/duck/Australia/341/1983|Australia|H15N8
+		1963|Avian|A/turkey/Canada/1963|Canada|H6N8
+		1980|Avian|A/red-necked_stint/Western_Australia/4126/1980|Australia|H4N8
+		1981|Avian|A/red-necked_stint/Australia/5745/1981|Australia|H12N9
+		1983|Avian|A/red-necked_stint/Western_Australia/4923/1983|Australia|H3N8
+		2004|Avian|A/red-necked_stint/Australia/2/2004|Australia|H4N8
+		2006|Avian|A/slaty-backed_gull/Japan/6KS0191/2006|Japan|H4N8
+		2004|Avian|A/duck/Korea/GJ54/2004|South_Korea|H5N2
+		1977|Avian|A/gull/Maryland/704/1977|USA|H13N6
+		1990|Avian|A/turkey/Minnesota/1012/1990|USA|H13N2
+		1986|Avian|A/herring_gull/DE/475/1986|USA|H13N2
+		1987|Avian|A/laughing_gull/Delaware_Bay/2838/1987|USA|H13N2
+		1980|Avian|A/gull/Minnesota/945/1980|USA|H13N6
+		1978|Avian|A/gull/Maryland/1824/1978|USA|H13N9
+		1979|Avian|A/gull/Maryland/1815/1979|USA|H13N6
+		1998|Avian|A/duck/Siberia/272/1998|Russia|H13N6
+		1999|Avian|A/black-headed_gull/Sweden/5/99|Sweden|H16N3
+		2000|Avian|A/black-headed_gull/Netherlands/1/00|Netherlands|H13N8
+		2004|Avian|A/great_black-headed_gull/Atyrau/743/2004|Kazakhstan|H13N6
+		2006|Avian|A/black_headed_gull/Mongolia/1766/2006|Mongolia|H13N6
+		2008|Avian|A/herring_gull/Mongolia/454/2008|Mongolia|H13N8
+		2009|Avian|A/glaucous-winged_gull/Southcentral_Alaska/9JR0783R0/2009|USA|H16N3
+		1956|Equine|A/equine/Prague/1956|Czech_Republic|H7N7
+		1956|Equine|A/equine/Prague/1/1956|Czech_Republic|H7N7
+		1966|Equine|A/equine/Lexington/1/1966|USA|H7N7
+		2009|Bat|A/bat/Guatemala/153/2009|Guatemala|H17N10
+		2009|Bat|A/bat/Guatemala/164/2009|Guatemala|H17N10
+		2010|Bat|A/bat/Guatemala/060/2010|Guatemala|H17N10
+		1978|Avian|A/blue-winged_teal/ALB/651/1978|Canada|H6N2
+		1963|Equine|A/equine/Uruguay/1/1963|Uruguay|H3N8
+		1971|Equine|A/equine/Sachiyama/1/1971|Japan|H3N8
+		1972|Equine|A/equine/Algiers/1/1972|Algeria|H3N8
+		1973|Equine|A/equine/New_York/49/1973|USA|H7N7
+		1973|Equine|A/equine/London/1416/1973|United_Kingdom|H7N7
+		1975|Equine|A/equine/Kentucky/1a/1975|USA|H7N7
+		1976|Equine|A/equine/Sao_Paulo/4/1976|Brazil|H7N7
+		1977|Equine|A/equine/Argentina/1/1977|Argentina|H7N7
+		1978|Equine|A/equine/Kentucky/1/1978|USA|H3N8
+		1979|Equine|A/equine/Switzerland/1118/1979|Switzerland|H3N8
+		1980|Equine|A/equine/Kentucky/4/1980|USA|H3N8
+		1981|Equine|A/equine/Kentucky/1/1981|USA|H3N8
+		1985|Equine|A/equine/Santiago/1/1985|Chile|H3N8
+		1986|Equine|A/equine/Tennessee/5/1986|USA|H3N8
+		1986|Equine|A/equine/Johannesburg/1/1986|South_Africa|H3N8
+		1988|Equine|A/equine/Kentucky/694/1988|USA|H3N8
+		1989|Equine|A/equine/Rook/93753/1989|United_Kingdom|H3N8
+		1991|Equine|A/equine/Rome/5/1991|Italy|H3N8
+		1992|Equine|A/equine/Austria/421/1992|Austria|H3N8
+		1993|Equine|A/equine/Newmarket/2/1993|United_Kingdom|H3N8
+		1994|Equine|A/equine/Qinghai/1/1994|China|H3N8
+		1990|Equine|A/equine/Kentucky/1277/1990|USA|H3N8
+		1991|Equine|A/equine/Kentucky/1/1991|USA|H3N8
+		1992|Equine|A/equine/Kentucky/1/1992|USA|H3N8
+		1993|Equine|A/equine/Newmarket/1/1993|United_Kingdom|H3N8
+		1997|Equine|A/equine/California/4537/1997|USA|H3N8
+		2003|Equine|A/equine/Wisconsin/1/03|USA|H3N8
+		2005|Equine|A/equine/Virginia/131054-3/2005|USA|H3N8
+		2007|Equine|A/equine/Montana/9233/2007|USA|H3N8
+		2003|Equine|A/equine/Newmarket/5/2003|United_Kingdom|H3N8
+		2007|Equine|A/donkey/Xinjiang/5/2007|China|H3N8
+		2008|Equine|A/equine/Inner_Mongolia/8/2008|China|H3N8
+		1987|Equine|A/equine/Kentucky/1/1987|USA|H3N8
+		2000|Avian|A/semipalmated_sandpiper/Delaware/2109/2000|USA|H11N6
+		2001|Avian|A/cinnamon_teal/Bolivia/4537/2001|Bolivia|H7N3
+		2002|Avian|A/chicken/Chile/176822/02|Chile|H7N3
+		2007|Avian|A/rosy-billed_pochard/Argentina/CIP051-575/2007|Argentina|H6N8
+		2008|Avian|A/rosy-billed_pochard/Argentina/CIP051-925/2008|Argentina|H6N2
+		2007|Avian|A/rosy-billed_pochard/Argentina/CIP051-559/2007|Argentina|H9N2
+		2010|Avian|A/rosy-billed_pochard/Argentina/CIP051-1977/2010|Argentina|H6N2
+		2007|Avian|A/rosy-billed_pochard/Argentina/CIP051-557/2007|Argentina|H6N2
+		1987|Avian|A/duck/LA/17G/1987|USA|H3N8
+		2006|Avian|A/pekin_duck/California/P30/2006|USA|H4N2
+		2009|Avian|A/American_coot/Illinois/3405/2009|USA|H10N3
+		2010|Avian|A/mallard/Mississippi/354/2010|USA|H3N8
+		1930|Swine|A/swine/Iowa/15/1930|USA|H1N1
+		1931|Swine|A/swine/USA/1976/1931|USA|H1N1
+		1935|Swine|A/swine/Ohio/23/1935|USA|H1N1
+		1937|Swine|A/swine/29/1937|USA|H1N1
+		1957|Swine|A/swine/Wisconsin/1/1957|USA|H1N1
+		1961|Swine|A/swine/Wisconsin/1/1961|USA|H1N1
+		1966|Swine|A/swine/Wisconsin/2/1966|USA|H1N1
+		1967|Swine|A/swine/Wisconsin/1/1967|USA|H1N1
+		1970|Swine|A/swine/Wisconsin/2/1970|USA|H1N1
+		1971|Swine|A/swine/Wisconsin/1/1971|USA|H1N1
+		1977|Swine|A/swine/Arizona/148/1977|USA|H1N1
+		1979|Swine|A/swine/Kyoto/3/1979|Japan|H1N1
+		1980|Swine|A/swine/Ehime/1/1980|Japan|H1N2
+		1981|Swine|A/swine/Hokkaido/2/1981|Japan|H1N1
+		1976|Swine|A/swine/Iowa/1/1976|USA|H1N1
+		1979|Swine|A/swine/Hong_Kong/100/1979|Hong_Kong|H1N1
+		1980|Swine|A/swine/Wisconsin/11/1980|USA|H1N1
+		1981|Swine|A/swine/Quebec/192/81|Canada|H1N1
+		1983|Swine|A/swine/Skane/1321/1983|Sweden|H1N1
+		1986|Swine|A/swine/Iowa/1/1986|USA|H1N1
+		1988|Swine|A/swine/Iowa/17672/1988|USA|H1N1
+		1990|Swine|A/swine/Iowa/3421/1990|USA|H1N1
+		1999|Swine|A/Swine/Iowa/533/99_|USA|H3N2
+		2000|Swine|A/Swine/Minnesota/55551/2000|USA|H1N2
+		2001|Swine|A/swine/Minnesota/1192/2001|USA|H1N2
+		2004|Swine|A/swine/Korea/CAS05/2004|South_Korea|H3N2
+		2007|Swine|A/swine/IL/07003243/2007|USA|H1N2
+		2008|Swine|A/swine/Texas/008648/2008|USA|H1N2
+		2005|Swine|A/swine/Guangxi/17/2005|China|H1N2
+		2006|Swine|A/swine/Guangxi/13/2006|China|H1N2
+		2000|Swine|A/swine/North_Carolina/47834/2000|USA|H1N1
+		2001|Swine|A/Swine/North_Carolina/93523/01_|USA|H1N2
+		2008|Swine|A/swine/Illinois/01981/2008|USA|H1N1
+		2009|Swine|A/swine/Illinois/02510/2009|USA|H1N1
+		2010|Swine|A/swine/Pennsylvania/057108-1/2010|USA|H3N2
+		2002|Swine|A/swine/North_Carolina/18161/2002|USA|H1N1
+		2003|Swine|A/swine/Illinois/SG1141/2003|USA|H1N1
+		1991|Swine|A/swine/Maryland/23239/1991|USA|H1N1
+		1993|Swine|A/swine/Hong_Kong/103/1993|Hong_Kong|H1N1
+		1994|Swine|A/swine/Hong_Kong/1795/1994|Hong_Kong|H1N1
+		1999|Swine|A/swine/Hong_Kong/5609/1999|Hong_Kong|H1N2
+		2001|Swine|A/swine/Hong_Kong/8944/2001|Hong_Kong|H1N2
+		2002|Swine|A/swine/Hong_Kong/NS728/2002|Hong_Kong|H1N2
+		2003|Swine|A/swine/Hong_Kong/NS605/2003|Hong_Kong|H1N2
+		2004|Swine|A/swine/Zhejiang/1/2004|China|H1N2
+		1977|Swine|A/swine/Nebraska/123/1977|USA|H1N1
+		1975|Swine|A/swine/Illinois/1/1975|USA|H1N1
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	1918|Human|A/Brevig_Mission/1/1918|USA|H1N1,
+		2	1935|Human|A/bh/1935||H1N1,
+		3	1935|Human|A/Melbourne/1935|Australia|H1N1,
+		4	1935|Human|A/Phila/1935|USA|H1N1,
+		5	1936|Human|A/Henry/1936|USA|H1N1,
+		6	1940|Human|A/Hickox/1940|USA|H1N1,
+		7	1946|Human|A/Cameron/1946|Australia|H1N1,
+		8	1947|Human|A/Monmouth/1947|USA|H1N1,
+		9	1949|Human|A/Netherlands/002K1/1949|Netherlands|H1N1,
+		10	1948|Human|A/Albany/4835/1948|USA|H1N1,
+		11	1949|Human|A/Roma/1949|Italy|H1N1,
+		12	1950|Human|A/Fort_Warren/1/1950|USA|H1N1,
+		13	1950|Human|A/Tientsin/78/1977|China|H1N1_,
+		14	1951|Human|A/Memphis/10/1978|USA|H1N1_,
+		15	1953|Human|A/Maryland/2/1980|USA|H1N1_,
+		16	1954|Human|A/Baylor/4052/1981|USA|H1N1_,
+		17	1955|Human|A/Baylor/11515/1982|USA|H1N1_,
+		18	1956|Human|A/Memphis/49/1983|USA|H1N1_,
+		19	1959|Human|A/Singapore/6/1986|Singapore|H1N1_,
+		20	1960|Human|A/Siena/4/1987|Italy|H1N1_,
+		21	1962|Human|A/Siena/10/1989|Italy|H1N1_,
+		22	1964|Human|A/Texas/36/1991|USA|H1N1_,
+		23	1968|Human|A/Siena/14/1995|Italy|H1N1_,
+		24	1969|Human|A/New_York/626/1996|USA|H1N1_,
+		25	1972|Human|A/New_South_Wales/24/1999|Australia|H1N1_,
+		26	1973|Human|A/South_Canterbury/50/2000|New_Zealand|H1N1_,
+		27	1978|Human|A/Denmark/22/2005|Denmark|H1N1_,
+		28	1979|Human|A/New_York/8/2006|USA|H1N1_,
+		29	1980|Human|A/Texas/UR06-0217/2007|USA|H1N1_,
+		30	1981|Human|A/Florida/UR07-0022/2008|USA|H1N1_,
+		31	1982|Human|A/Arkansas/WRAIR1249P/2009|USA|H1N1_,
+		32	1951|Human|A/Albany/13/1951|USA|H1N1,
+		33	1953|Human|A/Netherlands/001R1/1953|Netherlands|H1N1,
+		34	1954|Human|A/Netherlands/001H1/1954|Netherlands|H1N1,
+		35	1956|Human|A/Netherlands/002Z1/1956|Netherlands|H1N1,
+		36	1979|Human|A/Kiev/59/1979|Ukraine|H1N1,
+		37	1980|Human|A/Nanjing/13/1980|China|H3N2,
+		38	1982|Human|A/Bilthoven/10684/1982|Netherlands|H3N2,
+		39	1983|Human|A/Oslo/13676/1983|Norway|H3N2,
+		40	1984|Human|A/Hong_Kong/4/1984|Hong_Kong|H3N2,
+		41	1988|Human|A/Netherlands/450/1988|Netherlands|H3N2,
+		42	1989|Human|A/Eindhoven/3447/1989|Netherlands|H3N2,
+		43	1993|Human|A/Lyon/23602/1993|France|H3N2,
+		44	1994|Human|A/New_York/753/1994|USA|H3N2,
+		45	1997|Human|A/Siena/1/1997|Italy|H3N2,
+		46	1999|Human|A/Memphis/59/1999|USA|H3N2,
+		47	2002|Human|A/Yokohama/47/2002|Japan|H1N2,
+		48	2003|Human|A/Wyoming/03/2003|USA|H3N2,
+		49	2005|Human|A/Texas/NHRC0001/2005|USA|H3N2,
+		50	2006|Human|A/Sydney/186R/2006|Australia|H3N2,
+		51	2007|Human|A/Sydney/202G/2007|Australia|H3N2,
+		52	2008|Human|A/California/UR07-0063/2008|USA|H3N2,
+		53	2009|Human|A/Nanjing/1/2009|China|H3N2,
+		54	2011|Human|A/California/NHRC0002/2011|USA|H3N2,
+		55	1975|Human|A/Hong_Kong/43/1975|Hong_Kong|H3N2,
+		56	1976|Human|A/Bilthoven/1761/1976|Netherlands|H3N2,
+		57	1977|Human|A/Amsterdam/1609/1977|Netherlands|H3N2,
+		58	1972|Human|A/Udorn/307/1972|Russia|H3N2,
+		59	1973|Human|A/Memphis/1/1973|USA|H3N2,
+		60	1971|Human|A/Bilthoven/21801/1971|Netherlands|H3N2,
+		61	1964|Human|A/Cottbus/1/1964|Germany|H2N2,
+		62	1965|Human|A/Albany/1/65|USA|H2N2,
+		63	1968|Human|A/Philippines/104/68|Philippines|H3N2,
+		64	1969|Human|A/Hong_Kong/3/1969|Hong_Kong|H3N2,
+		65	1970|Human|A/Albany/1/1970|USA|H3N2,
+		66	1963|Human|A/North_Carolina/1/1963|USA|H2N2,
+		67	1960|Human|A/Netherlands/056H1/1960|Netherlands|H2N2,
+		68	1961|Human|A/England/1/61|United_Kingdom|H2N2,
+		69	1962|Human|A/Netherlands/60/62|Netherlands|H2N2,
+		70	1958|Human|A/Albany/6/58|USA|H2N2,
+		71	1957|Human|A/Singapore/1/1957|Singapore|H2N2,
+		72	1959|Human|A/Krasnodar/101/1959|Russia|H2N2,
+		73	1954|Human|A/Malaysia/1954|Malaysia|H1N1,
+		74	1955|Human|A/England/19/1955|United_Kingdom|H1N1,
+		75	1943|Human|A/Weiss/1943|USA|H1N1,
+		76	1945|Human|A/AA/Huston/1945|USA|H1N1,
+		77	1942|Human|A/Bellamy/1942|USA|H1N1,
+		78	1943|Human|A/AA/Marton/1943|USA|H1N1,
+		79	1948|Human|A/Hemsbury/1948|USA|H1N1,
+		80	1979|Swine|A/swine/Belgium/WVL1/1979|Belgium|H1N1,
+		81	1985|Swine|A/swine/France/WVL4/1985|France|H1N1,
+		82	1987|Swine|A/swine/Italy/670/1987|Italy|H1N1,
+		83	1989|Swine|A/swine/Belgium/WVL5/1989|Belgium|H1N1,
+		84	1992|Swine|A/swine/England/195852/1992|United_Kingdom|H1N1,
+		85	1993|Swine|A/swine/England/WVL10/1993|United_Kingdom|H1N1,
+		86	1995|Swine|A/swine/Germany/Vi3161/95|Germany|H3N2,
+		87	1999|Swine|A/swine/Cotes_dArmor/1488/1999|France|H1N1,
+		88	2003|Swine|A/swine/Hong_Kong/NS129/2003|Hong_Kong|H1N1,
+		89	2006|Swine|A/swine/Hong_Kong/421/2006|Hong_Kong|H1N1,
+		90	2005|Swine|A/swine/Hong_Kong/1683/2005|Hong_Kong|H1N1,
+		91	2009|Swine|A/swine/Hong_Kong/3001/2009|Hong_Kong|H1N1,
+		92	2011|Swine|A/swine/Jiangsu/s15/2011|China|H1N1,
+		93	2002|Swine|A/swine/Hong_Kong/1669/2002|Hong_Kong|H1N1,
+		94	1997|Swine|A/swine/Germany/SEC27/97|Germany|H3N2,
+		95	1998|Swine|A/swine/Italy/62/1998|Italy|H1N2,
+		96	1984|Swine|A/swine/France/WVL3/1984|France|H1N1,
+		97	1981|Swine|A/swine/Germany/2/1981|Germany|H1N1,
+		98	1978|Avian|A/duck/Beijing/1/1978|China|H3N6,
+		99	1992|Avian|A/chicken/Victoria/224/1992|Australia|H7N3,
+		100	1994|Avian|A/chicken/Queensland/1994|Australia|H7N3,
+		101	1997|Avian|A/emu/NSW/1742/1997|Australia|H7N4,
+		102	1998|Avian|A/duck/Hokkaido/49/98|Japan|H9N2,
+		103	1999|Avian|A/mallard/Netherlands/5/1999|Netherlands|H2N9,
+		104	2002|Avian|A/chicken/Jilin/hf/2002|China|H5N1,
+		105	2003|Avian|A/goose/Jilin/hb/2003|China|H5N1,
+		106	2004|Avian|A/chicken/zz/02/2004|China|H5N1,
+		107	2007|Avian|A/duck/Hunan/3/2007|China|H5N1,
+		108	2008|Avian|A/whooper_swan/Hokkaido/1/2008|Japan|H5N1,
+		109	2009|Avian|A/whooper_swan/Mongolia/6/2009|Mongolia|H5N1,
+		110	2010|Avian|A/duck/Hokkaido/WZ83/2010|Japan|H5N1,
+		111	2011|Avian|A/peregrine_falcon/Tochigi/15/2011|Japan|H5N1,
+		112	1978|Avian|A/duck/Hong_Kong/278/1978|Hong_Kong|H2N9,
+		113	1980|Avian|A/duck/Australia/749/1980|Australia|H1N1,
+		114	1981|Avian|A/duck/Victoria/24/1981|Australia|H8N4,
+		115	1984|Avian|A/duck/Western_Australia/8108/1984|Australia|H4N6,
+		116	1985|Avian|A/chicken/Victoria/1/1985|Australia|H7N7,
+		117	1994|Avian|A/Chicken/Beijing/1/94|China|H9N2,
+		118	1996|Avian|A/chicken/Shandong/7/96|China|H9N2,
+		119	1997|Avian|A/chicken/Guangdong/5/97|China|H9N2,
+		120	1999|Avian|A/chicken/Hubei/01/1999|China|H9N2,
+		121	2001|Avian|A/chicken/Shantou/1126/2001|China|H9N2,
+		122	2002|Avian|A/chicken/Guangdong/21/02|China|H9N2,
+		123	2003|Avian|A/chicken/HongKong/FY23/03|Hong_Kong|H9N2,
+		124	1969|Avian|A/turkey/England/1969|United_Kingdom|H3N2,
+		125	1973|Avian|A/parrot/Ulster/73|Ireland|H7N1,
+		126	1977|Avian|A/duck/Bavaria/2/1977|Germany|H1N1,
+		127	1979|Avian|A/goose/Leipzig/187-7/1979|Germany|H7N7,
+		128	1980|Avian|A/teal/Iceland/29/1980|Iceland|H7N7,
+		129	1983|Avian|A/mallard/Postdam/178-4/1983|Germany|H2N2,
+		130	1959|Avian|A/tern/South_Africa/1959|South_Africa|H5N3,
+		131	1961|Avian|A/tern/South_Africa/1961|South_Africa|H5N3,
+		132	1963|Avian|A/duck/Ukraine/1/1963|Ukraine|H3N8,
+		133	1965|Avian|A/quail/Italy/1117/1965|Italy|H10N8,
+		134	1977|Avian|A/duck/Hokkaido/5/1977|Japan|H3N2,
+		135	1978|Avian|A/duck/Hong_Kong/365/1978|Hong_Kong|H4N6,
+		136	1979|Avian|A/duck/Hong_Kong/698/1979|Hong_Kong|H5N3,
+		137	1980|Avian|A/duck/Hokkaido/8/1980|Japan|H3N8,
+		138	1959|Avian|A/chicken/Scotland/1959|United_Kingdom|H5N1,
+		139	1960|Avian|A/duck/Ukraine/2/1960|Ukraine|H11N8,
+		140	1956|Avian|A/duck/England/1/1956|United_Kingdom|H11N6,
+		141	1949|Avian|A/chicken/Germany/N/1949|Germany|H10N7,
+		142	1934|Avian|A/chicken/Rostock/45/1934|Germany|H7N1,
+		143	1935|Avian|A/chicken/Brescia/1902|Italy|H7N7,
+		144	1975|Avian|A/shearwater/Australia/751/1975|Australia|H5N3,
+		145	1977|Avian|A/wedge-tailed_shearwater/Western_Australia/405/1977|Australia|H3N8,
+		146	1978|Avian|A/Pacific_black_duck/Western_Australia/699/1978|Australia|H3N8,
+		147	1979|Avian|A/eurasian_coot/Western_Australia/2727/1979|Australia|H6N2,
+		148	1980|Avian|A/black_duck/AUS/4045/1980|Australia|H6N5,
+		149	1992|Avian|A/duck/Victoria/1992|Australia|H3N8,
+		150	1994|Avian|A/duck/Victoria/D23/1994|Australia|H4N2,
+		151	1976|Avian|A/chicken/Victoria/1976|Australia|H7N7,
+		152	1976|Avian|A/duck/New_Zealand/164/76|New_Zealand|H11N3,
+		153	1976|Avian|A/duck/New_Zealand/31/1976|New_Zealand|H4N6,
+		154	1984|Avian|A/duck/NZL/41/1984|New_Zealand|H1N2,
+		155	1984|Avian|A/duck/NZL/76/1984|New_Zealand|H9N1,
+		156	1953|Avian|A/duck/Manitoba/1/1953|Canada|H10N7,
+		157	1969|Avian|A/duck/Pennsylvania/1/1969|USA|H6N1,
+		158	1974|Avian|A/duck/Memphis/928/1974|USA|H3N8,
+		159	1977|Avian|A/pintail_duck/ALB/303/1977|Canada|H10N7,
+		160	1979|Avian|A/turkey/Minnesota/5/1979|USA|H10N8,
+		161	1972|Avian|A/turkey/CO/118899/1972|USA|H5N2,
+		162	1986|Avian|A/sanderling/New_Jersey/766/1986|USA|H2N7,
+		163	1988|Avian|A/ruddy_turnstone/DE/2368/1988|USA|H4N9,
+		164	1989|Avian|A/herring_gull/NJ/406/1989|USA|H5N3,
+		165	1990|Avian|A/semi-palmated_sandpiper/New_Jersey/237/1990|USA|H3N6,
+		166	1991|Avian|A/ruddy_turnstone/Delaware_Bay/231/1991|USA|H6N8,
+		167	1993|Avian|A/ruddy_turnstone/Delaware/34/1993|USA|H2N1,
+		168	1994|Avian|A/ruddy_turnstone/Delaware_Bay/168/1994|USA|mixed,
+		169	1996|Avian|A/ruddy_turnstone/Delaware_Bay/215/1996|USA|mixed,
+		170	1977|Avian|A/gull/Maryland/5/1977|USA|H11N9,
+		171	1974|Avian|A/duck/Memphis/546/1974|USA|H11N9,
+		172	1979|Avian|A/mallard_duck/Alberta/106/1979|Canada|H4N2,
+		173	1975|Avian|A/Canada_goose/Wisconsin/902/1975|USA|H5N2,
+		174	1976|Avian|A/duck/Alberta/35/1976|Canada|H1N1,
+		175	1979|Avian|A/pintail_duck/ALB/238/1979|Canada|H1N1,
+		176	1981|Avian|A/turkey/TX/4-1-81/1981|USA|H9N2,
+		177	1984|Avian|A/mallard_duck/Alberta/630/1984|Canada|H4N2,
+		178	1987|Avian|A/pintail/Alberta/128/1987|Canada|H3N8,
+		179	1988|Avian|A/wigeon/Ohio/379/1988|USA|H5N2,
+		180	1989|Avian|A/mallard/Ohio/129/1989|USA|H4N6,
+		181	1990|Avian|A/herring_gull/New_Jersey/159/1990|USA|H3N6,
+		182	1991|Avian|A/turkey/Colorado/13356/1991|USA|H7N3,
+		183	1995|Avian|A/lesser_scaup/Alberta/206/1995|Canada|H3N8,
+		184	1998|Avian|A/mallard/Alberta/167/1998|Canada|H3N8,
+		185	2002|Avian|A/redhead/Alberta/192/2002|Canada|H3N6,
+		186	2005|Avian|A/mallard/Alberta/11393/2005|Canada|H1N1,
+		187	2006|Avian|A/American_wigeon/Iowa/463998/2006|USA|H5N2,
+		188	2007|Avian|A/northern_pintail/Saskatchewan/22910/2007|Canada|H3N2,
+		189	2008|Avian|A/Stellers_eider/Alaska/44422-107/2008|USA|H1N1,
+		190	2010|Avian|A/northern_shoveler/Mississippi/252/2010|USA|H10N7,
+		191	1977|Avian|A/mallard/Alberta/127/1977|Canada|H1N1,
+		192	1979|Avian|A/pintail/Alberta/1040/1979|Canada|H6N5,
+		193	1985|Avian|A/mallard/Tennessee/11457/1985|USA|H11N9,
+		194	1986|Avian|A/blue-winged_teal/Alberta/427/1986|Canada|H4N6,
+		195	1987|Avian|A/mallard/Ohio/556/1987|USA|mixed,
+		196	1989|Avian|A/red_knot/NJ/325/1989|USA|H7N7,
+		197	1990|Avian|A/ruddy_turnstone/New_Jersey/138/1990|USA|H3N6,
+		198	1991|Avian|A/mallard/Alberta/115/1991|Canada|H3N8,
+		199	1995|Avian|A/chicken/NY/13833-7/1995|USA|H7N2,
+		200	1997|Avian|A/chicken/PA/11767/1997|USA|H7N2,
+		201	1998|Avian|A/goose/NY/8600-3/1998|USA|H7N2,
+		202	2001|Avian|A/chicken/PA/143586/2001|USA|H7N2,
+		203	2004|Avian|A/chicken/MD/MinhMa/2004|USA|H7N2,
+		204	2005|Avian|A/Muscovy_duck/New_York/11646-4/2005|USA|H7N2,
+		205	2006|Avian|A/chicken/New_York/8391-2/2006|USA|H7N2,
+		206	1980|Avian|A/pintail_duck/Alberta/169/1980|Canada|H3N8,
+		207	1975|Avian|A/mallard/WI/42/1975|USA|H5N2,
+		208	1976|Avian|A/duck/Alberta/60/1976|Canada|H12N5,
+		209	1977|Avian|A/pintail_duck/ALB/220/1977|Canada|H4N8,
+		210	1978|Avian|A/mallard_duck/New_York/66861/1978|USA|H2N3,
+		211	1983|Avian|A/chicken/Pennsylvania/4104/1983|USA|H5N2,
+		212	1984|Avian|A/Chicken/Virginia/40018/84|USA|H5N2,
+		213	1979|Avian|A/pintail/Alberta/21/1979|Canada|H7,
+		214	1977|Avian|A/pintail_duck/ALB/159/1977|Canada|H4N6,
+		215	1979|Avian|A/green-winged_teal/ALB/438/1979|Canada|H3N8,
+		216	1980|Avian|A/turkey/Minnesota/833/1980|USA|H4N2,
+		217	1981|Avian|A/duck/Minnesota/1516/1981|USA|H5N2,
+		218	1985|Avian|A/mallard_duck/Alberta/435/1985|Canada|H7N3,
+		219	1986|Avian|A/mallard/Ohio/338/1986|USA|H4N8,
+		220	1987|Avian|A/green-winged_teal/LA/9GW/1987|USA|H11N9,
+		221	1991|Avian|A/mallard/Alberta/126/1991|Canada|H11N9,
+		222	1993|Avian|A/mallard/Ohio/94/1993|USA|H11N3,
+		223	1996|Avian|A/ruddy_turnstone/Delaware_Bay/135/1996|USA|H7N3,
+		224	1998|Avian|A/mallard/MN/14/1998|USA|H2N3,
+		225	2002|Avian|A/blue-winged_teal/Ohio/908/2002|USA|H3N2,
+		226	2003|Avian|A/mallard/Maryland/210/2003|USA|H10N7,
+		227	2005|Avian|A/mallard/Missouri/MO130/2005|USA|H11N3,
+		228	2007|Avian|A/blue-winged_teal/Texas/Sg-00208/2007|USA|mixed,
+		229	2009|Avian|A/mallard/Ohio/1688/2009|USA|H12N5,
+		230	1966|Avian|A/turkey/Wisconsin/1966|USA|H9N2,
+		231	1971|Avian|A/turkey/Oregon/1971|USA|H7N3,
+		232	1967|Avian|A/turkey/Ontario/6118/1967|Australia|H8N4,
+		233	1981|Avian|A/duck/Victoria/23/1981|Australia|H1N1,
+		234	1981|Avian|A/duck/Victoria/30a/1981|Australia|H12N7,
+		235	1983|Avian|A/duck/Australia/341/1983|Australia|H15N8,
+		236	1963|Avian|A/turkey/Canada/1963|Canada|H6N8,
+		237	1980|Avian|A/red-necked_stint/Western_Australia/4126/1980|Australia|H4N8,
+		238	1981|Avian|A/red-necked_stint/Australia/5745/1981|Australia|H12N9,
+		239	1983|Avian|A/red-necked_stint/Western_Australia/4923/1983|Australia|H3N8,
+		240	2004|Avian|A/red-necked_stint/Australia/2/2004|Australia|H4N8,
+		241	2006|Avian|A/slaty-backed_gull/Japan/6KS0191/2006|Japan|H4N8,
+		242	2004|Avian|A/duck/Korea/GJ54/2004|South_Korea|H5N2,
+		243	1977|Avian|A/gull/Maryland/704/1977|USA|H13N6,
+		244	1990|Avian|A/turkey/Minnesota/1012/1990|USA|H13N2,
+		245	1986|Avian|A/herring_gull/DE/475/1986|USA|H13N2,
+		246	1987|Avian|A/laughing_gull/Delaware_Bay/2838/1987|USA|H13N2,
+		247	1980|Avian|A/gull/Minnesota/945/1980|USA|H13N6,
+		248	1978|Avian|A/gull/Maryland/1824/1978|USA|H13N9,
+		249	1979|Avian|A/gull/Maryland/1815/1979|USA|H13N6,
+		250	1998|Avian|A/duck/Siberia/272/1998|Russia|H13N6,
+		251	1999|Avian|A/black-headed_gull/Sweden/5/99|Sweden|H16N3,
+		252	2000|Avian|A/black-headed_gull/Netherlands/1/00|Netherlands|H13N8,
+		253	2004|Avian|A/great_black-headed_gull/Atyrau/743/2004|Kazakhstan|H13N6,
+		254	2006|Avian|A/black_headed_gull/Mongolia/1766/2006|Mongolia|H13N6,
+		255	2008|Avian|A/herring_gull/Mongolia/454/2008|Mongolia|H13N8,
+		256	2009|Avian|A/glaucous-winged_gull/Southcentral_Alaska/9JR0783R0/2009|USA|H16N3,
+		257	1956|Equine|A/equine/Prague/1956|Czech_Republic|H7N7,
+		258	1956|Equine|A/equine/Prague/1/1956|Czech_Republic|H7N7,
+		259	1966|Equine|A/equine/Lexington/1/1966|USA|H7N7,
+		260	2009|Bat|A/bat/Guatemala/153/2009|Guatemala|H17N10,
+		261	2009|Bat|A/bat/Guatemala/164/2009|Guatemala|H17N10,
+		262	2010|Bat|A/bat/Guatemala/060/2010|Guatemala|H17N10,
+		263	1978|Avian|A/blue-winged_teal/ALB/651/1978|Canada|H6N2,
+		264	1963|Equine|A/equine/Uruguay/1/1963|Uruguay|H3N8,
+		265	1971|Equine|A/equine/Sachiyama/1/1971|Japan|H3N8,
+		266	1972|Equine|A/equine/Algiers/1/1972|Algeria|H3N8,
+		267	1973|Equine|A/equine/New_York/49/1973|USA|H7N7,
+		268	1973|Equine|A/equine/London/1416/1973|United_Kingdom|H7N7,
+		269	1975|Equine|A/equine/Kentucky/1a/1975|USA|H7N7,
+		270	1976|Equine|A/equine/Sao_Paulo/4/1976|Brazil|H7N7,
+		271	1977|Equine|A/equine/Argentina/1/1977|Argentina|H7N7,
+		272	1978|Equine|A/equine/Kentucky/1/1978|USA|H3N8,
+		273	1979|Equine|A/equine/Switzerland/1118/1979|Switzerland|H3N8,
+		274	1980|Equine|A/equine/Kentucky/4/1980|USA|H3N8,
+		275	1981|Equine|A/equine/Kentucky/1/1981|USA|H3N8,
+		276	1985|Equine|A/equine/Santiago/1/1985|Chile|H3N8,
+		277	1986|Equine|A/equine/Tennessee/5/1986|USA|H3N8,
+		278	1986|Equine|A/equine/Johannesburg/1/1986|South_Africa|H3N8,
+		279	1988|Equine|A/equine/Kentucky/694/1988|USA|H3N8,
+		280	1989|Equine|A/equine/Rook/93753/1989|United_Kingdom|H3N8,
+		281	1991|Equine|A/equine/Rome/5/1991|Italy|H3N8,
+		282	1992|Equine|A/equine/Austria/421/1992|Austria|H3N8,
+		283	1993|Equine|A/equine/Newmarket/2/1993|United_Kingdom|H3N8,
+		284	1994|Equine|A/equine/Qinghai/1/1994|China|H3N8,
+		285	1990|Equine|A/equine/Kentucky/1277/1990|USA|H3N8,
+		286	1991|Equine|A/equine/Kentucky/1/1991|USA|H3N8,
+		287	1992|Equine|A/equine/Kentucky/1/1992|USA|H3N8,
+		288	1993|Equine|A/equine/Newmarket/1/1993|United_Kingdom|H3N8,
+		289	1997|Equine|A/equine/California/4537/1997|USA|H3N8,
+		290	2003|Equine|A/equine/Wisconsin/1/03|USA|H3N8,
+		291	2005|Equine|A/equine/Virginia/131054-3/2005|USA|H3N8,
+		292	2007|Equine|A/equine/Montana/9233/2007|USA|H3N8,
+		293	2003|Equine|A/equine/Newmarket/5/2003|United_Kingdom|H3N8,
+		294	2007|Equine|A/donkey/Xinjiang/5/2007|China|H3N8,
+		295	2008|Equine|A/equine/Inner_Mongolia/8/2008|China|H3N8,
+		296	1987|Equine|A/equine/Kentucky/1/1987|USA|H3N8,
+		297	2000|Avian|A/semipalmated_sandpiper/Delaware/2109/2000|USA|H11N6,
+		298	2001|Avian|A/cinnamon_teal/Bolivia/4537/2001|Bolivia|H7N3,
+		299	2002|Avian|A/chicken/Chile/176822/02|Chile|H7N3,
+		300	2007|Avian|A/rosy-billed_pochard/Argentina/CIP051-575/2007|Argentina|H6N8,
+		301	2008|Avian|A/rosy-billed_pochard/Argentina/CIP051-925/2008|Argentina|H6N2,
+		302	2007|Avian|A/rosy-billed_pochard/Argentina/CIP051-559/2007|Argentina|H9N2,
+		303	2010|Avian|A/rosy-billed_pochard/Argentina/CIP051-1977/2010|Argentina|H6N2,
+		304	2007|Avian|A/rosy-billed_pochard/Argentina/CIP051-557/2007|Argentina|H6N2,
+		305	1987|Avian|A/duck/LA/17G/1987|USA|H3N8,
+		306	2006|Avian|A/pekin_duck/California/P30/2006|USA|H4N2,
+		307	2009|Avian|A/American_coot/Illinois/3405/2009|USA|H10N3,
+		308	2010|Avian|A/mallard/Mississippi/354/2010|USA|H3N8,
+		309	1930|Swine|A/swine/Iowa/15/1930|USA|H1N1,
+		310	1931|Swine|A/swine/USA/1976/1931|USA|H1N1,
+		311	1935|Swine|A/swine/Ohio/23/1935|USA|H1N1,
+		312	1937|Swine|A/swine/29/1937|USA|H1N1,
+		313	1957|Swine|A/swine/Wisconsin/1/1957|USA|H1N1,
+		314	1961|Swine|A/swine/Wisconsin/1/1961|USA|H1N1,
+		315	1966|Swine|A/swine/Wisconsin/2/1966|USA|H1N1,
+		316	1967|Swine|A/swine/Wisconsin/1/1967|USA|H1N1,
+		317	1970|Swine|A/swine/Wisconsin/2/1970|USA|H1N1,
+		318	1971|Swine|A/swine/Wisconsin/1/1971|USA|H1N1,
+		319	1977|Swine|A/swine/Arizona/148/1977|USA|H1N1,
+		320	1979|Swine|A/swine/Kyoto/3/1979|Japan|H1N1,
+		321	1980|Swine|A/swine/Ehime/1/1980|Japan|H1N2,
+		322	1981|Swine|A/swine/Hokkaido/2/1981|Japan|H1N1,
+		323	1976|Swine|A/swine/Iowa/1/1976|USA|H1N1,
+		324	1979|Swine|A/swine/Hong_Kong/100/1979|Hong_Kong|H1N1,
+		325	1980|Swine|A/swine/Wisconsin/11/1980|USA|H1N1,
+		326	1981|Swine|A/swine/Quebec/192/81|Canada|H1N1,
+		327	1983|Swine|A/swine/Skane/1321/1983|Sweden|H1N1,
+		328	1986|Swine|A/swine/Iowa/1/1986|USA|H1N1,
+		329	1988|Swine|A/swine/Iowa/17672/1988|USA|H1N1,
+		330	1990|Swine|A/swine/Iowa/3421/1990|USA|H1N1,
+		331	1999|Swine|A/Swine/Iowa/533/99_|USA|H3N2,
+		332	2000|Swine|A/Swine/Minnesota/55551/2000|USA|H1N2,
+		333	2001|Swine|A/swine/Minnesota/1192/2001|USA|H1N2,
+		334	2004|Swine|A/swine/Korea/CAS05/2004|South_Korea|H3N2,
+		335	2007|Swine|A/swine/IL/07003243/2007|USA|H1N2,
+		336	2008|Swine|A/swine/Texas/008648/2008|USA|H1N2,
+		337	2005|Swine|A/swine/Guangxi/17/2005|China|H1N2,
+		338	2006|Swine|A/swine/Guangxi/13/2006|China|H1N2,
+		339	2000|Swine|A/swine/North_Carolina/47834/2000|USA|H1N1,
+		340	2001|Swine|A/Swine/North_Carolina/93523/01_|USA|H1N2,
+		341	2008|Swine|A/swine/Illinois/01981/2008|USA|H1N1,
+		342	2009|Swine|A/swine/Illinois/02510/2009|USA|H1N1,
+		343	2010|Swine|A/swine/Pennsylvania/057108-1/2010|USA|H3N2,
+		344	2002|Swine|A/swine/North_Carolina/18161/2002|USA|H1N1,
+		345	2003|Swine|A/swine/Illinois/SG1141/2003|USA|H1N1,
+		346	1991|Swine|A/swine/Maryland/23239/1991|USA|H1N1,
+		347	1993|Swine|A/swine/Hong_Kong/103/1993|Hong_Kong|H1N1,
+		348	1994|Swine|A/swine/Hong_Kong/1795/1994|Hong_Kong|H1N1,
+		349	1999|Swine|A/swine/Hong_Kong/5609/1999|Hong_Kong|H1N2,
+		350	2001|Swine|A/swine/Hong_Kong/8944/2001|Hong_Kong|H1N2,
+		351	2002|Swine|A/swine/Hong_Kong/NS728/2002|Hong_Kong|H1N2,
+		352	2003|Swine|A/swine/Hong_Kong/NS605/2003|Hong_Kong|H1N2,
+		353	2004|Swine|A/swine/Zhejiang/1/2004|China|H1N2,
+		354	1977|Swine|A/swine/Nebraska/123/1977|USA|H1N1,
+		355	1975|Swine|A/swine/Illinois/1/1975|USA|H1N1
+	;
+	TREE * UNTITLED = [&R] ((259[&Bowker_freq=1,Stuart_freq=0.99,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0263423212,(258[&Bowker_freq=0.99,Stuart_freq=1,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0028943255,(257[&Bowker_freq=0.97,Stuart_freq=0.99,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0028576592,(((((1[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.9912e-06,((2[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0125415551,3[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0119893206)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0021333129,((4[&Bowker_freq=0.03,Stuart_freq=0.02,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0026457879,5[&Bowker_freq=0.01,Stuart_freq=0.04,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0069740087)[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0078150555,((77[&Bowker_freq=0.04,Stuart_freq=0.02,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0096684038,((((6[&Bowker_freq=0.02,Stuart_freq=0,IS_freq=0.11,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06,7[&Bowker_freq=0.02,Stuart_freq=0,IS_freq=0.1,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027025083)[&Bowker_freq=0.02,Stuart_freq=0,IS_freq=0.11,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020200445,(8[&Bowker_freq=0.12,Stuart_freq=0.03,IS_freq=0.15,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013500004,9[&Bowker_freq=0.1,Stuart_freq=0.02,IS_freq=0.16,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06)[&Bowker_freq=0.11,Stuart_freq=0.02,IS_freq=0.15,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0055003527)[&Bowker_freq=0.07,Stuart_freq=0.01,IS_freq=0.13,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0077101952,((10[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006720544,(11[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020241128,(12[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.00270478,(13[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013482309,(14[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020316798,(15[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020798911,((16[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013461998,(17[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.001983945,18[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041437948)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0090796172)[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06,((19[&Bowker_freq=0.03,Stuart_freq=0.01,IS_freq=0.07,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034060232,20[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.05,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0055060715)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.06,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.002062209,(21[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.04,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013740045,((22[&Bowker_freq=0.04,Stuart_freq=0.01,IS_freq=0.07,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020165299,(23[&Bowker_freq=0.02,Stuart_freq=0,IS_freq=0.16,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020167731,24[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.08,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027292046)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.12,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0090516869)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.1,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0007038805,(25[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020671583,(26[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034463599,(27[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.002049367,(28[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020560758,(29[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06,(30[&Bowker_freq=0.01,Stuart_freq=0.03,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020356396,31[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034055226)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020309303)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0026984118)[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027345404)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0048401042)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0019731054)[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.015509566)[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020246148)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0047849592)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0104435174)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006247092)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0055064608)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006651846)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027139411)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.001351074)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006710226)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.335e-06,((32[&Bowker_freq=0.03,Stuart_freq=0.01,IS_freq=0.1,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027027744,(33[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013585832,(34[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034171577,(35[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.08,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006532451,((70[&Bowker_freq=0.02,Stuart_freq=0,IS_freq=0.1,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033759367,((66[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0026386142,(((60[&Bowker_freq=0.03,Stuart_freq=0.01,IS_freq=0.2,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0005740613,(((36[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.02,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0059772922,(37[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040975878,((38[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.08,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.000705651,39[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.1,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013158993)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.09,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0083857387,(40[&Bowker_freq=0.03,Stuart_freq=0.01,IS_freq=0.08,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.003423423,((41[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014595105,42[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0026008161)[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0062654094,((43[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013533301,44[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027249719)[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0018957026,(45[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006977698,(46[&Bowker_freq=0.04,Stuart_freq=0.05,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041392721,(47[&Bowker_freq=0.02,Stuart_freq=0.07,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0082243629,(48[&Bowker_freq=0.04,Stuart_freq=0.07,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.001535071,(49[&Bowker_freq=0.05,Stuart_freq=0.04,IS_freq=0.08,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0019042002,(50[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.07,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034047762,(51[&Bowker_freq=0.08,Stuart_freq=0.07,IS_freq=0.08,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013405114,(52[&Bowker_freq=0.03,Stuart_freq=0.07,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033954941,(53[&Bowker_freq=0.07,Stuart_freq=0.08,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013514012,54[&Bowker_freq=0.08,Stuart_freq=0.06,IS_freq=0.11,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020440095)[&Bowker_freq=0.07,Stuart_freq=0.07,IS_freq=0.09,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020289892)[&Bowker_freq=0.06,Stuart_freq=0.07,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.701e-06)[&Bowker_freq=0.06,Stuart_freq=0.07,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027091831)[&Bowker_freq=0.06,Stuart_freq=0.07,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0021693445)[&Bowker_freq=0.06,Stuart_freq=0.07,IS_freq=0.07,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0069168935)[&Bowker_freq=0.06,Stuart_freq=0.07,IS_freq=0.07,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0089228167)[&Bowker_freq=0.05,Stuart_freq=0.07,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0056017427)[&Bowker_freq=0.05,Stuart_freq=0.07,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027645229)[&Bowker_freq=0.05,Stuart_freq=0.06,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0048951038)[&Bowker_freq=0.05,Stuart_freq=0.06,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0136318739)[&Bowker_freq=0.04,Stuart_freq=0.05,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034566253)[&Bowker_freq=0.04,Stuart_freq=0.05,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033807087)[&Bowker_freq=0.04,Stuart_freq=0.04,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0056265682)[&Bowker_freq=0.04,Stuart_freq=0.04,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0044291001)[&Bowker_freq=0.04,Stuart_freq=0.04,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0077432098,(55[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006722234,(56[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.000673833,57[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027111718)[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06)[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.005125658)[&Bowker_freq=0.03,Stuart_freq=0.04,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0037678138,(58[&Bowker_freq=0.03,Stuart_freq=0.01,IS_freq=0.09,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013462129,59[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027150126)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:3.2606e-06)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0021250318)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0184811413,(61[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006724746,62[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020232493)[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.3618e-06)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0007237834,(65[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027057684,(63[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.001347498,64[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006725355)[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.641e-06)[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.006917616)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027590848)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041925194,(67[&Bowker_freq=0.01,Stuart_freq=0,IS_freq=0.08,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006717569,(68[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040639077,69[&Bowker_freq=0.03,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0047680561)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.4084e-06)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.699e-06)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0089434178)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006917216,(71[&Bowker_freq=0.04,Stuart_freq=0,IS_freq=0.1,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013502711,72[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.08,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020285681)[&Bowker_freq=0.03,Stuart_freq=0.01,IS_freq=0.09,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006690339)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027372586)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027432713)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013340882)[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0054736453)[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.5138e-06,(73[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.11,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020187797,74[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0061818752)[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.08,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0054930976)[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0068135292)[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0119987617)[&Bowker_freq=0.03,Stuart_freq=0.02,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0108574512,(75[&Bowker_freq=0.09,Stuart_freq=0.1,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034320599,76[&Bowker_freq=0.05,Stuart_freq=0.04,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020138184)[&Bowker_freq=0.07,Stuart_freq=0.07,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0085072729)[&Bowker_freq=0.03,Stuart_freq=0.02,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0004979722)[&Bowker_freq=0.03,Stuart_freq=0.02,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0004031652,(78[&Bowker_freq=0,Stuart_freq=0,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027881343,79[&Bowker_freq=0,Stuart_freq=0.01,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006437978)[&Bowker_freq=0,Stuart_freq=0,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0057962699)[&Bowker_freq=0.03,Stuart_freq=0.02,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0213809069)[&Bowker_freq=0.03,Stuart_freq=0.02,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0028525966)[&Bowker_freq=0.03,Stuart_freq=0.02,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0347222082)[&Bowker_freq=0.03,Stuart_freq=0.02,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0147191776,((309[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0036635545,310[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0066189187)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0075464842,(311[&Bowker_freq=0.08,Stuart_freq=0.19,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0049284592,(312[&Bowker_freq=0.03,Stuart_freq=0.02,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027652835,(313[&Bowker_freq=0.07,Stuart_freq=0.11,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:4.71667e-05,(314[&Bowker_freq=0.02,Stuart_freq=0.05,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013685503,(315[&Bowker_freq=0.08,Stuart_freq=0.05,IS_freq=0.09,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020353122,((316[&Bowker_freq=0.09,Stuart_freq=0.19,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0181626284,317[&Bowker_freq=0.21,Stuart_freq=0.22,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0137812412)[&Bowker_freq=0.15,Stuart_freq=0.21,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0038311564,(355[&Bowker_freq=0.06,Stuart_freq=0.03,IS_freq=0.08,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0143050438,(318[&Bowker_freq=0.06,Stuart_freq=0.02,IS_freq=0.1,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033281923,(354[&Bowker_freq=0.1,Stuart_freq=0.02,IS_freq=0.12,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0055043244,((319[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034251475,(320[&Bowker_freq=0.24,Stuart_freq=0.13,IS_freq=0.13,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0052759871,(321[&Bowker_freq=0.26,Stuart_freq=0.13,IS_freq=0.13,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0109411057,322[&Bowker_freq=0.05,Stuart_freq=0.06,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0086955167)[&Bowker_freq=0.16,Stuart_freq=0.1,IS_freq=0.09,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0005103916)[&Bowker_freq=0.19,Stuart_freq=0.11,IS_freq=0.11,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.005117655)[&Bowker_freq=0.14,Stuart_freq=0.08,IS_freq=0.09,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034222566,(323[&Bowker_freq=0.13,Stuart_freq=0.09,IS_freq=0.1,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0047825106,(324[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0057764541,((325[&Bowker_freq=0.04,Stuart_freq=0.03,IS_freq=0.04,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006673085,326[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.02,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027232605)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.03,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0036963615,((327[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.04,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0051758912,328[&Bowker_freq=0.02,Stuart_freq=0.01,IS_freq=0.02,QS_freq=0.06,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0080432238)[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.03,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0063166853,(329[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014359469,((330[&Bowker_freq=0.04,Stuart_freq=0.05,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013882802,(((((331[&Bowker_freq=0.15,Stuart_freq=0.13,IS_freq=0.07,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0042289848,332[&Bowker_freq=0.18,Stuart_freq=0.06,IS_freq=0.14,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.008335529)[&Bowker_freq=0.16,Stuart_freq=0.1,IS_freq=0.11,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0005910335,(333[&Bowker_freq=0.17,Stuart_freq=0.1,IS_freq=0.11,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0089662234,(334[&Bowker_freq=0.19,Stuart_freq=0.13,IS_freq=0.11,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0071215475,(335[&Bowker_freq=0.29,Stuart_freq=0.25,IS_freq=0.1,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0077060266,336[&Bowker_freq=0.2,Stuart_freq=0.31,IS_freq=0.04,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0112945909)[&Bowker_freq=0.24,Stuart_freq=0.28,IS_freq=0.07,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0167155594)[&Bowker_freq=0.23,Stuart_freq=0.23,IS_freq=0.08,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0018518308)[&Bowker_freq=0.21,Stuart_freq=0.2,IS_freq=0.09,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014180479)[&Bowker_freq=0.2,Stuart_freq=0.17,IS_freq=0.1,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006811811,(337[&Bowker_freq=0.11,Stuart_freq=0.11,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0056083519,338[&Bowker_freq=0.15,Stuart_freq=0.17,IS_freq=0.05,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0061499503)[&Bowker_freq=0.13,Stuart_freq=0.14,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0119269219)[&Bowker_freq=0.18,Stuart_freq=0.16,IS_freq=0.09,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:3.2341e-06,(339[&Bowker_freq=0.11,Stuart_freq=0.04,IS_freq=0.11,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0060559354,(340[&Bowker_freq=0.16,Stuart_freq=0.04,IS_freq=0.13,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0091023854,(343[&Bowker_freq=0.13,Stuart_freq=0.12,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0145938216,(341[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.5873e-06,342[&Bowker_freq=0.05,Stuart_freq=0.06,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027059959)[&Bowker_freq=0.05,Stuart_freq=0.07,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0037805912)[&Bowker_freq=0.08,Stuart_freq=0.09,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0173772907)[&Bowker_freq=0.1,Stuart_freq=0.08,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0012850485)[&Bowker_freq=0.1,Stuart_freq=0.07,IS_freq=0.07,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014406506)[&Bowker_freq=0.15,Stuart_freq=0.12,IS_freq=0.08,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.5394e-06,(344[&Bowker_freq=0.08,Stuart_freq=0.05,IS_freq=0.08,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0069452552,345[&Bowker_freq=0.17,Stuart_freq=0.08,IS_freq=0.13,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0090773789)[&Bowker_freq=0.13,Stuart_freq=0.06,IS_freq=0.11,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033525116)[&Bowker_freq=0.15,Stuart_freq=0.12,IS_freq=0.08,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0185715868)[&Bowker_freq=0.14,Stuart_freq=0.11,IS_freq=0.08,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013808405,(346[&Bowker_freq=0.06,Stuart_freq=0.11,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0031492973,((347[&Bowker_freq=0.05,Stuart_freq=0.06,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006417155,348[&Bowker_freq=0.06,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027424894)[&Bowker_freq=0.05,Stuart_freq=0.07,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0066591871,((349[&Bowker_freq=0.24,Stuart_freq=0.35,IS_freq=0.02,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0038779391,350[&Bowker_freq=0.22,Stuart_freq=0.28,IS_freq=0.06,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0100137935)[&Bowker_freq=0.23,Stuart_freq=0.32,IS_freq=0.04,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0011711057,(353[&Bowker_freq=0.07,Stuart_freq=0.17,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0115293337,(351[&Bowker_freq=0.16,Stuart_freq=0.23,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006437921,352[&Bowker_freq=0.19,Stuart_freq=0.23,IS_freq=0.05,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020633055)[&Bowker_freq=0.18,Stuart_freq=0.23,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0037934152)[&Bowker_freq=0.14,Stuart_freq=0.21,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0065984018)[&Bowker_freq=0.18,Stuart_freq=0.25,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0187697265)[&Bowker_freq=0.14,Stuart_freq=0.2,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.001179051)[&Bowker_freq=0.13,Stuart_freq=0.19,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0058799124)[&Bowker_freq=0.14,Stuart_freq=0.14,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033218942)[&Bowker_freq=0.13,Stuart_freq=0.14,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0195967496)[&Bowker_freq=0.12,Stuart_freq=0.13,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0053001024)[&Bowker_freq=0.12,Stuart_freq=0.12,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0049012018)[&Bowker_freq=0.12,Stuart_freq=0.12,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0046615906)[&Bowker_freq=0.12,Stuart_freq=0.12,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006595234)[&Bowker_freq=0.12,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.001342052)[&Bowker_freq=0.12,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0042103645)[&Bowker_freq=0.12,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034326667)[&Bowker_freq=0.12,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0089024553)[&Bowker_freq=0.12,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.5745e-06)[&Bowker_freq=0.12,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0075766808)[&Bowker_freq=0.12,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0082395268)[&Bowker_freq=0.12,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0670715642)[&Bowker_freq=0.11,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0048114098)[&Bowker_freq=0.11,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0209548727)[&Bowker_freq=0.11,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0247799368)[&Bowker_freq=0.07,Stuart_freq=0.07,IS_freq=0.07,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0607269888,(305[&Bowker_freq=0.19,Stuart_freq=0.32,IS_freq=0.01,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0346654522,(306[&Bowker_freq=0.36,Stuart_freq=0.45,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0056629296,(307[&Bowker_freq=0.15,Stuart_freq=0.27,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034961333,308[&Bowker_freq=0.22,Stuart_freq=0.36,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0096871016)[&Bowker_freq=0.19,Stuart_freq=0.32,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0092858932)[&Bowker_freq=0.24,Stuart_freq=0.36,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0222680606)[&Bowker_freq=0.23,Stuart_freq=0.35,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.1449592361)[&Bowker_freq=0.08,Stuart_freq=0.08,IS_freq=0.07,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0182664972,((263[&Bowker_freq=0.06,Stuart_freq=0.04,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0162643982,(264[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0036290739,((265[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0120188566,266[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0100992941)[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027947206,(267[&Bowker_freq=0.03,Stuart_freq=0.04,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020187827,(268[&Bowker_freq=0.05,Stuart_freq=0.04,IS_freq=0.03,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033867643,((269[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006715871,(270[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06,271[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.02,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013463248)[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020219988)[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:3.2588e-06,((272[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.01,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013458216,273[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020219176)[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.7437e-06,((274[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013459786,275[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.000672051)[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.8303e-06,(276[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041094888,(277[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027003063,(296[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06,(278[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.01,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006705728,(279[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.4765e-06,((280[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.5873e-06,(281[&Bowker_freq=0.06,Stuart_freq=0.1,IS_freq=0.01,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.9002e-06,(284[&Bowker_freq=0.07,Stuart_freq=0.09,IS_freq=0.02,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0068623155,(282[&Bowker_freq=0.04,Stuart_freq=0.06,IS_freq=0.01,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013471882,283[&Bowker_freq=0.03,Stuart_freq=0.04,IS_freq=0.02,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027105832)[&Bowker_freq=0.04,Stuart_freq=0.05,IS_freq=0.02,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006875643)[&Bowker_freq=0.05,Stuart_freq=0.06,IS_freq=0.02,QS_freq=0.06,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013394385)[&Bowker_freq=0.05,Stuart_freq=0.07,IS_freq=0.02,QS_freq=0.06,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027056502)[&Bowker_freq=0.05,Stuart_freq=0.07,IS_freq=0.02,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.002038795,(285[&Bowker_freq=0.04,Stuart_freq=0.05,IS_freq=0.01,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.6447e-06,(286[&Bowker_freq=0.06,Stuart_freq=0.1,IS_freq=0.01,QS_freq=0.06,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020321529,(287[&Bowker_freq=0.06,Stuart_freq=0.1,IS_freq=0.01,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006753462,(288[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0009813066,(289[&Bowker_freq=0.1,Stuart_freq=0.17,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0010230173,((290[&Bowker_freq=0.2,Stuart_freq=0.33,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:3.2552e-06,(291[&Bowker_freq=0.24,Stuart_freq=0.37,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013454118,292[&Bowker_freq=0.33,Stuart_freq=0.44,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020528454)[&Bowker_freq=0.28,Stuart_freq=0.41,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027259953)[&Bowker_freq=0.25,Stuart_freq=0.38,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033048267,(293[&Bowker_freq=0.21,Stuart_freq=0.34,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0017437547,(294[&Bowker_freq=0.11,Stuart_freq=0.22,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006792409,295[&Bowker_freq=0.1,Stuart_freq=0.22,IS_freq=0,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020273508)[&Bowker_freq=0.1,Stuart_freq=0.22,IS_freq=0,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0072205758)[&Bowker_freq=0.14,Stuart_freq=0.26,IS_freq=0,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0026991112)[&Bowker_freq=0.2,Stuart_freq=0.32,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0046239938)[&Bowker_freq=0.18,Stuart_freq=0.3,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034531994)[&Bowker_freq=0.17,Stuart_freq=0.27,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0031010823)[&Bowker_freq=0.15,Stuart_freq=0.25,IS_freq=0,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006736953)[&Bowker_freq=0.14,Stuart_freq=0.24,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.001352327)[&Bowker_freq=0.13,Stuart_freq=0.22,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0054683141)[&Bowker_freq=0.11,Stuart_freq=0.17,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013459923)[&Bowker_freq=0.1,Stuart_freq=0.16,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033927807)[&Bowker_freq=0.1,Stuart_freq=0.16,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027127186)[&Bowker_freq=0.09,Stuart_freq=0.15,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:3.0333e-06)[&Bowker_freq=0.09,Stuart_freq=0.14,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.004111816)[&Bowker_freq=0.09,Stuart_freq=0.14,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0090127769)[&Bowker_freq=0.08,Stuart_freq=0.13,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033807103)[&Bowker_freq=0.08,Stuart_freq=0.12,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034179661)[&Bowker_freq=0.07,Stuart_freq=0.11,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006722133)[&Bowker_freq=0.07,Stuart_freq=0.11,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:3.1578e-06)[&Bowker_freq=0.07,Stuart_freq=0.11,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.015572088)[&Bowker_freq=0.07,Stuart_freq=0.1,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0025267494)[&Bowker_freq=0.06,Stuart_freq=0.1,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.049423193)[&Bowker_freq=0.06,Stuart_freq=0.1,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0108107359,(304[&Bowker_freq=0.15,Stuart_freq=0.13,IS_freq=0.09,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0351158381,((299[&Bowker_freq=0.09,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0291243686,(297[&Bowker_freq=0.01,Stuart_freq=0.03,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0245769064,298[&Bowker_freq=0.14,Stuart_freq=0.22,IS_freq=0.01,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0132684116)[&Bowker_freq=0.08,Stuart_freq=0.12,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0025585964)[&Bowker_freq=0.08,Stuart_freq=0.11,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0030081061,(303[&Bowker_freq=0.23,Stuart_freq=0.28,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0128049085,(302[&Bowker_freq=0.07,Stuart_freq=0.11,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0172900785,(300[&Bowker_freq=0.18,Stuart_freq=0.27,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034458704,301[&Bowker_freq=0.26,Stuart_freq=0.34,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0105484012)[&Bowker_freq=0.22,Stuart_freq=0.31,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0049720319)[&Bowker_freq=0.17,Stuart_freq=0.24,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0012133599)[&Bowker_freq=0.19,Stuart_freq=0.25,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0144738289)[&Bowker_freq=0.14,Stuart_freq=0.19,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0367793445)[&Bowker_freq=0.14,Stuart_freq=0.18,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0061675787)[&Bowker_freq=0.07,Stuart_freq=0.11,IS_freq=0.01,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.1162662714)[&Bowker_freq=0.09,Stuart_freq=0.1,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0156667701,(((((143[&Bowker_freq=0.11,Stuart_freq=0.11,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0415825082,(142[&Bowker_freq=0.23,Stuart_freq=0.28,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0313515563,(141[&Bowker_freq=0.07,Stuart_freq=0.12,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0302338125,(140[&Bowker_freq=0.43,Stuart_freq=0.61,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.024568767,(((((((97[&Bowker_freq=0.06,Stuart_freq=0.09,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0048870576,(96[&Bowker_freq=0.02,Stuart_freq=0.06,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0043714841,(80[&Bowker_freq=0.02,Stuart_freq=0.05,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.009565205,(81[&Bowker_freq=0.04,Stuart_freq=0.06,IS_freq=0.08,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041215571,(82[&Bowker_freq=0.03,Stuart_freq=0.06,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0007007329,(83[&Bowker_freq=0.05,Stuart_freq=0.05,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0056192125,((84[&Bowker_freq=0.12,Stuart_freq=0.1,IS_freq=0.11,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0025867545,85[&Bowker_freq=0.04,Stuart_freq=0.05,IS_freq=0.08,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.002841391)[&Bowker_freq=0.08,Stuart_freq=0.08,IS_freq=0.1,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.003193782,((86[&Bowker_freq=0.14,Stuart_freq=0.24,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0063652606,(87[&Bowker_freq=0.19,Stuart_freq=0.15,IS_freq=0.23,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0035208825,(93[&Bowker_freq=0.21,Stuart_freq=0.26,IS_freq=0.22,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0042221054,(88[&Bowker_freq=0.18,Stuart_freq=0.2,IS_freq=0.24,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0019996685,(89[&Bowker_freq=0.09,Stuart_freq=0.14,IS_freq=0.16,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040960461,(90[&Bowker_freq=0.16,Stuart_freq=0.24,IS_freq=0.23,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040857248,(91[&Bowker_freq=0.18,Stuart_freq=0.29,IS_freq=0.1,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0102212649,92[&Bowker_freq=0.14,Stuart_freq=0.2,IS_freq=0.16,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0132992994)[&Bowker_freq=0.16,Stuart_freq=0.24,IS_freq=0.13,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0039100376)[&Bowker_freq=0.16,Stuart_freq=0.24,IS_freq=0.16,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020571091)[&Bowker_freq=0.14,Stuart_freq=0.22,IS_freq=0.16,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0048643975)[&Bowker_freq=0.15,Stuart_freq=0.21,IS_freq=0.18,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0019152777)[&Bowker_freq=0.16,Stuart_freq=0.22,IS_freq=0.18,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0042883927)[&Bowker_freq=0.16,Stuart_freq=0.21,IS_freq=0.19,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0217873638)[&Bowker_freq=0.16,Stuart_freq=0.21,IS_freq=0.17,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0015444185,(94[&Bowker_freq=0.13,Stuart_freq=0.16,IS_freq=0.11,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0086075133,95[&Bowker_freq=0.11,Stuart_freq=0.18,IS_freq=0.16,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.012848956)[&Bowker_freq=0.12,Stuart_freq=0.17,IS_freq=0.14,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0079566038)[&Bowker_freq=0.15,Stuart_freq=0.21,IS_freq=0.16,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0028289546)[&Bowker_freq=0.14,Stuart_freq=0.18,IS_freq=0.15,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0119214852)[&Bowker_freq=0.13,Stuart_freq=0.17,IS_freq=0.15,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0007060549)[&Bowker_freq=0.13,Stuart_freq=0.17,IS_freq=0.14,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0047548858)[&Bowker_freq=0.12,Stuart_freq=0.16,IS_freq=0.14,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014945815)[&Bowker_freq=0.12,Stuart_freq=0.15,IS_freq=0.13,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.002032018)[&Bowker_freq=0.11,Stuart_freq=0.14,IS_freq=0.12,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0052963785)[&Bowker_freq=0.11,Stuart_freq=0.14,IS_freq=0.12,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0193385499,((98[&Bowker_freq=0.02,Stuart_freq=0.05,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0229626286,((99[&Bowker_freq=0.04,Stuart_freq=0.04,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.011904009,(100[&Bowker_freq=0.02,Stuart_freq=0.04,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0124691333,101[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0191870243)[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0094395744)[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0117404424,(102[&Bowker_freq=0.11,Stuart_freq=0.1,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.015683742,(103[&Bowker_freq=0.07,Stuart_freq=0.05,IS_freq=0.09,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0112092213,(104[&Bowker_freq=0.16,Stuart_freq=0.2,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0053817792,(105[&Bowker_freq=0.15,Stuart_freq=0.2,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0005813717,(106[&Bowker_freq=0.09,Stuart_freq=0.11,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0047561861,(107[&Bowker_freq=0.14,Stuart_freq=0.14,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.6526e-06,(108[&Bowker_freq=0.11,Stuart_freq=0.11,IS_freq=0.04,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020252244,(109[&Bowker_freq=0.14,Stuart_freq=0.13,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0005535843,(110[&Bowker_freq=0.12,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013400402,111[&Bowker_freq=0.15,Stuart_freq=0.13,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06)[&Bowker_freq=0.14,Stuart_freq=0.12,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0090065532)[&Bowker_freq=0.14,Stuart_freq=0.12,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0049425459)[&Bowker_freq=0.13,Stuart_freq=0.12,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020114465)[&Bowker_freq=0.13,Stuart_freq=0.12,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0097927193)[&Bowker_freq=0.12,Stuart_freq=0.12,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0099422317)[&Bowker_freq=0.13,Stuart_freq=0.13,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0029229955)[&Bowker_freq=0.13,Stuart_freq=0.14,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0321011275)[&Bowker_freq=0.13,Stuart_freq=0.13,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0067872805)[&Bowker_freq=0.12,Stuart_freq=0.13,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0035502772)[&Bowker_freq=0.1,Stuart_freq=0.11,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0294467811)[&Bowker_freq=0.1,Stuart_freq=0.1,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0047954317,((112[&Bowker_freq=0.05,Stuart_freq=0.1,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0055895478,((113[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.02,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013460896,114[&Bowker_freq=0.03,Stuart_freq=0.08,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0061111986)[&Bowker_freq=0.04,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:3.0486e-06,(115[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033061899,116[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0084125472)[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0084105341)[&Bowker_freq=0.03,Stuart_freq=0.06,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0061694896)[&Bowker_freq=0.03,Stuart_freq=0.07,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0119289324,(117[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0055711256,(118[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0065098624,(119[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.005695062,(120[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.13,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0128503457,(121[&Bowker_freq=0.08,Stuart_freq=0.18,IS_freq=0.12,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0094226675,(122[&Bowker_freq=0.02,Stuart_freq=0.06,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0058600292,123[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0058724735)[&Bowker_freq=0.02,Stuart_freq=0.04,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040559541)[&Bowker_freq=0.04,Stuart_freq=0.09,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0114277897)[&Bowker_freq=0.03,Stuart_freq=0.07,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0031240419)[&Bowker_freq=0.03,Stuart_freq=0.06,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0031115147)[&Bowker_freq=0.03,Stuart_freq=0.05,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0083311229)[&Bowker_freq=0.03,Stuart_freq=0.05,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0408890819)[&Bowker_freq=0.03,Stuart_freq=0.06,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.001731117)[&Bowker_freq=0.07,Stuart_freq=0.08,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0019435604)[&Bowker_freq=0.07,Stuart_freq=0.1,IS_freq=0.07,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0026019861,(124[&Bowker_freq=0.13,Stuart_freq=0.23,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0175110445,(125[&Bowker_freq=0.13,Stuart_freq=0.19,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0112834526,126[&Bowker_freq=0.39,Stuart_freq=0.42,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0173509989)[&Bowker_freq=0.27,Stuart_freq=0.31,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0124488249)[&Bowker_freq=0.22,Stuart_freq=0.28,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0050188488)[&Bowker_freq=0.08,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027251124,(127[&Bowker_freq=0.12,Stuart_freq=0.18,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0140129598,(128[&Bowker_freq=0.2,Stuart_freq=0.28,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0185135998,129[&Bowker_freq=0.16,Stuart_freq=0.27,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0101323157)[&Bowker_freq=0.18,Stuart_freq=0.27,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0031458432)[&Bowker_freq=0.16,Stuart_freq=0.24,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0106543158)[&Bowker_freq=0.08,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0111658886,(130[&Bowker_freq=0.19,Stuart_freq=0.22,IS_freq=0.02,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006864047,131[&Bowker_freq=0.17,Stuart_freq=0.19,IS_freq=0.01,QS_freq=0.07,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013293135)[&Bowker_freq=0.18,Stuart_freq=0.21,IS_freq=0.02,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0129276258)[&Bowker_freq=0.09,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0062144331,(132[&Bowker_freq=0.17,Stuart_freq=0.27,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0254361999,(133[&Bowker_freq=0.11,Stuart_freq=0.12,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0283905103,((134[&Bowker_freq=0.16,Stuart_freq=0.19,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0025843459,135[&Bowker_freq=0.14,Stuart_freq=0.18,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.004237538)[&Bowker_freq=0.15,Stuart_freq=0.19,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0055732532,(136[&Bowker_freq=0.17,Stuart_freq=0.26,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027148631,137[&Bowker_freq=0.22,Stuart_freq=0.34,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040892834)[&Bowker_freq=0.2,Stuart_freq=0.3,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0021298937)[&Bowker_freq=0.17,Stuart_freq=0.25,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0101148984)[&Bowker_freq=0.16,Stuart_freq=0.22,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041754705)[&Bowker_freq=0.16,Stuart_freq=0.22,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0032267868)[&Bowker_freq=0.09,Stuart_freq=0.12,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006470207,(138[&Bowker_freq=0.11,Stuart_freq=0.13,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.007879709,139[&Bowker_freq=0.14,Stuart_freq=0.14,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0111456434)[&Bowker_freq=0.13,Stuart_freq=0.14,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0104287222)[&Bowker_freq=0.09,Stuart_freq=0.12,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027021269)[&Bowker_freq=0.09,Stuart_freq=0.13,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.005239163)[&Bowker_freq=0.09,Stuart_freq=0.13,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0127809725)[&Bowker_freq=0.1,Stuart_freq=0.13,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0063655645)[&Bowker_freq=0.1,Stuart_freq=0.13,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0057059536,(((144[&Bowker_freq=0.08,Stuart_freq=0.15,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0095876549,((145[&Bowker_freq=0.13,Stuart_freq=0.17,IS_freq=0.04,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0102765953,(146[&Bowker_freq=0.14,Stuart_freq=0.29,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006700948,147[&Bowker_freq=0.09,Stuart_freq=0.26,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0075246849)[&Bowker_freq=0.11,Stuart_freq=0.28,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.008721068)[&Bowker_freq=0.12,Stuart_freq=0.24,IS_freq=0.01,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033535304,(148[&Bowker_freq=0.12,Stuart_freq=0.12,IS_freq=0.01,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0176457787,(149[&Bowker_freq=0.04,Stuart_freq=0.13,IS_freq=0.01,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0281123157,150[&Bowker_freq=0.02,Stuart_freq=0.07,IS_freq=0.08,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0426627108)[&Bowker_freq=0.03,Stuart_freq=0.11,IS_freq=0.05,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0303294734)[&Bowker_freq=0.06,Stuart_freq=0.11,IS_freq=0.03,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0047611731)[&Bowker_freq=0.09,Stuart_freq=0.18,IS_freq=0.02,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0057808573)[&Bowker_freq=0.09,Stuart_freq=0.17,IS_freq=0.02,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0076500691,(151[&Bowker_freq=0.34,Stuart_freq=0.53,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0110716252,152[&Bowker_freq=0.19,Stuart_freq=0.39,IS_freq=0.02,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0124006237)[&Bowker_freq=0.27,Stuart_freq=0.46,IS_freq=0.01,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0121758584)[&Bowker_freq=0.13,Stuart_freq=0.24,IS_freq=0.02,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0324221377,(155[&Bowker_freq=0.09,Stuart_freq=0.14,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.027667185,(153[&Bowker_freq=0.05,Stuart_freq=0.05,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0077337266,154[&Bowker_freq=0.15,Stuart_freq=0.18,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0226910333)[&Bowker_freq=0.1,Stuart_freq=0.12,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0059532378)[&Bowker_freq=0.1,Stuart_freq=0.13,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0341860804)[&Bowker_freq=0.12,Stuart_freq=0.21,IS_freq=0.02,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0273416854)[&Bowker_freq=0.1,Stuart_freq=0.13,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0071485226,(236[&Bowker_freq=0.06,Stuart_freq=0.06,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0250918763,(((156[&Bowker_freq=0.05,Stuart_freq=0.09,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.004356928,((157[&Bowker_freq=0.04,Stuart_freq=0.06,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0072035061,(158[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.03,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0058379209,(159[&Bowker_freq=0.07,Stuart_freq=0.06,IS_freq=0.04,QS_freq=0.06,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013042389,160[&Bowker_freq=0.08,Stuart_freq=0.07,IS_freq=0.04,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041191074)[&Bowker_freq=0.07,Stuart_freq=0.07,IS_freq=0.04,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0081224324)[&Bowker_freq=0.06,Stuart_freq=0.06,IS_freq=0.04,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0116734633)[&Bowker_freq=0.06,Stuart_freq=0.06,IS_freq=0.03,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0205227836,((161[&Bowker_freq=0.05,Stuart_freq=0.1,IS_freq=0.03,QS_freq=0.06,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0111710057,(170[&Bowker_freq=0.02,Stuart_freq=0.04,IS_freq=0.04,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0019174497,(162[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.05,QS_freq=0.07,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0106221574,((163[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0007471398,(164[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06,165[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.08,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0047521337)[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0.07,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.005390947)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0045874154,(166[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027364436,(167[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0009351403,(168[&Bowker_freq=0.01,Stuart_freq=0.01,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0045097406,169[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0110370126)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0076781395)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0039055967)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0144738338)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.02,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0103172345)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.02,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0196367106)[&Bowker_freq=0.01,Stuart_freq=0.02,IS_freq=0.03,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0180337712)[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0.03,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0311841837,((171[&Bowker_freq=0.15,Stuart_freq=0.19,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0030328287,172[&Bowker_freq=0.07,Stuart_freq=0.1,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0108207328)[&Bowker_freq=0.11,Stuart_freq=0.14,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0231661133,(((173[&Bowker_freq=0.04,Stuart_freq=0.08,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0111247337,((174[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0074465284,((178[&Bowker_freq=0.08,Stuart_freq=0.14,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0117742707,(177[&Bowker_freq=0.15,Stuart_freq=0.26,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0088966697,(175[&Bowker_freq=0.08,Stuart_freq=0.14,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0026927105,176[&Bowker_freq=0.07,Stuart_freq=0.12,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040526187)[&Bowker_freq=0.07,Stuart_freq=0.13,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06)[&Bowker_freq=0.1,Stuart_freq=0.18,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.002803583)[&Bowker_freq=0.1,Stuart_freq=0.17,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0005927765,((179[&Bowker_freq=0.03,Stuart_freq=0.05,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0076572687,(180[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013469957,181[&Bowker_freq=0.02,Stuart_freq=0.02,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027087549)[&Bowker_freq=0.02,Stuart_freq=0.03,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0005510271)[&Bowker_freq=0.02,Stuart_freq=0.04,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0094459298,(182[&Bowker_freq=0.15,Stuart_freq=0.19,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0120331912,(183[&Bowker_freq=0.09,Stuart_freq=0.11,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0090360162,((184[&Bowker_freq=0.08,Stuart_freq=0.03,IS_freq=0.1,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0007774739,185[&Bowker_freq=0.08,Stuart_freq=0.03,IS_freq=0.05,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0039696221)[&Bowker_freq=0.08,Stuart_freq=0.03,IS_freq=0.07,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0019717419,(186[&Bowker_freq=0.09,Stuart_freq=0.05,IS_freq=0.07,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0011218242,(187[&Bowker_freq=0.1,Stuart_freq=0.08,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0052080688,(188[&Bowker_freq=0.03,Stuart_freq=0.03,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014517806,(189[&Bowker_freq=0.06,Stuart_freq=0.04,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0046752115,190[&Bowker_freq=0.04,Stuart_freq=0.05,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0042337015)[&Bowker_freq=0.05,Stuart_freq=0.04,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041364758)[&Bowker_freq=0.05,Stuart_freq=0.04,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0083278364)[&Bowker_freq=0.06,Stuart_freq=0.05,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0046475279)[&Bowker_freq=0.07,Stuart_freq=0.05,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0107331455)[&Bowker_freq=0.07,Stuart_freq=0.05,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0070684204)[&Bowker_freq=0.07,Stuart_freq=0.05,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0070864994)[&Bowker_freq=0.08,Stuart_freq=0.07,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.002002585)[&Bowker_freq=0.07,Stuart_freq=0.06,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0104380851)[&Bowker_freq=0.07,Stuart_freq=0.09,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014146427)[&Bowker_freq=0.07,Stuart_freq=0.09,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.224e-06,(206[&Bowker_freq=0.09,Stuart_freq=0.14,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034435664,((191[&Bowker_freq=0.07,Stuart_freq=0.12,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027129055,192[&Bowker_freq=0.07,Stuart_freq=0.11,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033878846)[&Bowker_freq=0.07,Stuart_freq=0.12,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013767012,((193[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034508751,194[&Bowker_freq=0.1,Stuart_freq=0.15,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0055052323)[&Bowker_freq=0.07,Stuart_freq=0.12,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.000531969,(195[&Bowker_freq=0.04,Stuart_freq=0.07,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034230783,((196[&Bowker_freq=0.04,Stuart_freq=0.04,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06,197[&Bowker_freq=0.04,Stuart_freq=0.04,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0054323629)[&Bowker_freq=0.04,Stuart_freq=0.04,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0042505926,(198[&Bowker_freq=0.03,Stuart_freq=0.05,IS_freq=0.09,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0079443796,(199[&Bowker_freq=0.06,Stuart_freq=0.05,IS_freq=0.12,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.9716e-06,(200[&Bowker_freq=0.03,Stuart_freq=0.04,IS_freq=0.09,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006545857,(201[&Bowker_freq=0.1,Stuart_freq=0.05,IS_freq=0.21,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013201726,(202[&Bowker_freq=0.09,Stuart_freq=0.04,IS_freq=0.27,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006341264,(203[&Bowker_freq=0.04,Stuart_freq=0.02,IS_freq=0.19,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0056130258,(204[&Bowker_freq=0.19,Stuart_freq=0.03,IS_freq=0.33,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0025653664,205[&Bowker_freq=0.2,Stuart_freq=0.05,IS_freq=0.3,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0084367629)[&Bowker_freq=0.2,Stuart_freq=0.04,IS_freq=0.32,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0122394315)[&Bowker_freq=0.14,Stuart_freq=0.03,IS_freq=0.28,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0026570501)[&Bowker_freq=0.13,Stuart_freq=0.04,IS_freq=0.27,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0104932271)[&Bowker_freq=0.12,Stuart_freq=0.04,IS_freq=0.26,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041471618)[&Bowker_freq=0.11,Stuart_freq=0.04,IS_freq=0.23,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020468072)[&Bowker_freq=0.1,Stuart_freq=0.04,IS_freq=0.22,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.020100944)[&Bowker_freq=0.09,Stuart_freq=0.04,IS_freq=0.2,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0039659089)[&Bowker_freq=0.08,Stuart_freq=0.04,IS_freq=0.18,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0061883901)[&Bowker_freq=0.08,Stuart_freq=0.04,IS_freq=0.16,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041751943)[&Bowker_freq=0.08,Stuart_freq=0.05,IS_freq=0.14,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0063030539)[&Bowker_freq=0.08,Stuart_freq=0.06,IS_freq=0.12,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006020593)[&Bowker_freq=0.08,Stuart_freq=0.07,IS_freq=0.12,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020364878)[&Bowker_freq=0.08,Stuart_freq=0.08,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041315628)[&Bowker_freq=0.08,Stuart_freq=0.08,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020260582,(207[&Bowker_freq=0.09,Stuart_freq=0.18,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0060826511,(213[&Bowker_freq=0.03,Stuart_freq=0.09,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0095371612,((208[&Bowker_freq=0.05,Stuart_freq=0.06,IS_freq=0.1,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0055749899,209[&Bowker_freq=0.06,Stuart_freq=0.13,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040307201)[&Bowker_freq=0.06,Stuart_freq=0.1,IS_freq=0.06,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.008077945,(210[&Bowker_freq=0.04,Stuart_freq=0.11,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0089504933,(211[&Bowker_freq=0.04,Stuart_freq=0.06,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0012672993,212[&Bowker_freq=0.04,Stuart_freq=0.06,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027857457)[&Bowker_freq=0.04,Stuart_freq=0.06,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0325419522)[&Bowker_freq=0.04,Stuart_freq=0.07,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.002442515)[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014205501)[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0101121969)[&Bowker_freq=0.05,Stuart_freq=0.1,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.4753e-06)[&Bowker_freq=0.07,Stuart_freq=0.08,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006483857,(214[&Bowker_freq=0.05,Stuart_freq=0.11,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0026935917,(215[&Bowker_freq=0.07,Stuart_freq=0.13,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0047570942,(216[&Bowker_freq=0.06,Stuart_freq=0.12,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0069034284,(217[&Bowker_freq=0.06,Stuart_freq=0.1,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.006084286,(218[&Bowker_freq=0.05,Stuart_freq=0.07,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0099403621,(219[&Bowker_freq=0.06,Stuart_freq=0.11,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0079769985,(220[&Bowker_freq=0.04,Stuart_freq=0.07,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034263223,((221[&Bowker_freq=0.05,Stuart_freq=0.06,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027294515,222[&Bowker_freq=0.03,Stuart_freq=0.07,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.005451198)[&Bowker_freq=0.04,Stuart_freq=0.07,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.001517229,(223[&Bowker_freq=0.07,Stuart_freq=0.09,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0051379154,(224[&Bowker_freq=0.07,Stuart_freq=0.07,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027911939,((225[&Bowker_freq=0.07,Stuart_freq=0.1,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006698772,226[&Bowker_freq=0.06,Stuart_freq=0.11,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040645113)[&Bowker_freq=0.07,Stuart_freq=0.1,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006207295,(227[&Bowker_freq=0.03,Stuart_freq=0.06,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006408683,(228[&Bowker_freq=0.06,Stuart_freq=0.08,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.001325419,229[&Bowker_freq=0.05,Stuart_freq=0.06,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0054854056)[&Bowker_freq=0.06,Stuart_freq=0.07,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0020855565)[&Bowker_freq=0.05,Stuart_freq=0.07,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0076357063)[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0061490304)[&Bowker_freq=0.06,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033603874)[&Bowker_freq=0.06,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0067650004)[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0060955906)[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0016235376)[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013135834)[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034312248)[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0082886971)[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006198762)[&Bowker_freq=0.06,Stuart_freq=0.09,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027574974)[&Bowker_freq=0.05,Stuart_freq=0.09,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034682721)[&Bowker_freq=0.07,Stuart_freq=0.09,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0153750715)[&Bowker_freq=0.07,Stuart_freq=0.09,IS_freq=0.05,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0046549692)[&Bowker_freq=0.06,Stuart_freq=0.08,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.000909024)[&Bowker_freq=0.06,Stuart_freq=0.08,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0123071704)[&Bowker_freq=0.06,Stuart_freq=0.08,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.009320194,(230[&Bowker_freq=0.03,Stuart_freq=0.08,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0136367277,231[&Bowker_freq=0.08,Stuart_freq=0.09,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0264005282)[&Bowker_freq=0.06,Stuart_freq=0.09,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0164997186)[&Bowker_freq=0.06,Stuart_freq=0.08,IS_freq=0.04,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0052744994,(232[&Bowker_freq=0.08,Stuart_freq=0.14,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0215248437,(233[&Bowker_freq=0.48,Stuart_freq=0.47,IS_freq=0.2,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0137372406,(234[&Bowker_freq=0.17,Stuart_freq=0.3,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041171374,235[&Bowker_freq=0.28,Stuart_freq=0.34,IS_freq=0.07,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013335549)[&Bowker_freq=0.23,Stuart_freq=0.32,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0139032546)[&Bowker_freq=0.31,Stuart_freq=0.37,IS_freq=0.11,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0881488276)[&Bowker_freq=0.26,Stuart_freq=0.32,IS_freq=0.1,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0078128442)[&Bowker_freq=0.07,Stuart_freq=0.08,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0126662253)[&Bowker_freq=0.07,Stuart_freq=0.08,IS_freq=0.05,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0269382578)[&Bowker_freq=0.1,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0077195722,(242[&Bowker_freq=0.42,Stuart_freq=0.49,IS_freq=0,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.1193293154,((237[&Bowker_freq=0.02,Stuart_freq=0.05,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0019835173,(238[&Bowker_freq=0.03,Stuart_freq=0.07,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0048024065,239[&Bowker_freq=0.02,Stuart_freq=0.05,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0091208618)[&Bowker_freq=0.03,Stuart_freq=0.06,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014387953)[&Bowker_freq=0.02,Stuart_freq=0.06,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.022289379,(240[&Bowker_freq=0.04,Stuart_freq=0.12,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0036682399,241[&Bowker_freq=0.06,Stuart_freq=0.2,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0073600454)[&Bowker_freq=0.05,Stuart_freq=0.16,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0474515099)[&Bowker_freq=0.03,Stuart_freq=0.1,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.1279200784)[&Bowker_freq=0.1,Stuart_freq=0.16,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0255562372)[&Bowker_freq=0.09,Stuart_freq=0.1,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0166889136,((243[&Bowker_freq=0.03,Stuart_freq=0.02,IS_freq=0.05,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0233634195,((244[&Bowker_freq=0.08,Stuart_freq=0.24,IS_freq=0,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0271066698,(245[&Bowker_freq=0.21,Stuart_freq=0.21,IS_freq=0.03,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0071564127,246[&Bowker_freq=0.13,Stuart_freq=0.11,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0109027006)[&Bowker_freq=0.17,Stuart_freq=0.16,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014348385)[&Bowker_freq=0.14,Stuart_freq=0.19,IS_freq=0.02,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0235470086,(247[&Bowker_freq=0.05,Stuart_freq=0.08,IS_freq=0,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0119300529,(248[&Bowker_freq=0.04,Stuart_freq=0.09,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0012854562,249[&Bowker_freq=0.05,Stuart_freq=0.1,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014027487)[&Bowker_freq=0.05,Stuart_freq=0.09,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0007952857)[&Bowker_freq=0.05,Stuart_freq=0.09,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0046000906)[&Bowker_freq=0.09,Stuart_freq=0.14,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0243871916)[&Bowker_freq=0.08,Stuart_freq=0.12,IS_freq=0.02,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0425600025,(250[&Bowker_freq=0.05,Stuart_freq=0.09,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0275866451,(251[&Bowker_freq=0.03,Stuart_freq=0.05,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0175954005,(252[&Bowker_freq=0.09,Stuart_freq=0.14,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041980103,(253[&Bowker_freq=0.05,Stuart_freq=0.09,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0099002655,(254[&Bowker_freq=0.07,Stuart_freq=0.09,IS_freq=0,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0135625466,(255[&Bowker_freq=0.14,Stuart_freq=0.22,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0034063841,256[&Bowker_freq=0.1,Stuart_freq=0.17,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0063124194)[&Bowker_freq=0.12,Stuart_freq=0.19,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0054608618)[&Bowker_freq=0.11,Stuart_freq=0.16,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0072437874)[&Bowker_freq=0.09,Stuart_freq=0.14,IS_freq=0.01,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0063160909)[&Bowker_freq=0.09,Stuart_freq=0.14,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.015917366)[&Bowker_freq=0.08,Stuart_freq=0.13,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0151461775)[&Bowker_freq=0.08,Stuart_freq=0.12,IS_freq=0.01,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0537802089)[&Bowker_freq=0.08,Stuart_freq=0.12,IS_freq=0.02,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.1011388356)[&Bowker_freq=0.1,Stuart_freq=0.11,IS_freq=0.06,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0282417588)[&Bowker_freq=0.65,Stuart_freq=0.68,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.1684256531)[&Bowker_freq=0.6,Stuart_freq=0.63,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0123352533)[&Bowker_freq=0.51,Stuart_freq=0.55,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0106798761)[&Bowker_freq=0.35,Stuart_freq=0.4,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.2983325,(262[&Bowker_freq=0.1,Stuart_freq=0.09,IS_freq=0.03,QS_freq=0.01,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.053150095,(260[&Bowker_freq=0.48,Stuart_freq=0.56,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06,261[&Bowker_freq=0.48,Stuart_freq=0.56,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.123e-06)[&Bowker_freq=0.48,Stuart_freq=0.56,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.57e-06)[&Bowker_freq=0.35,Stuart_freq=0.4,IS_freq=0.06,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.775700387);
+END;

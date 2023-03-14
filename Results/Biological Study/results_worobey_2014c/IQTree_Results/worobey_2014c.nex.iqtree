@@ -1,0 +1,374 @@
+IQ-TREE 2.2.0 COVID-edition built Jun  1 2022
+
+Input file name: worobey_2014c.nex
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 92643
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 92 sequences with 1416 nucleotide sites
+Number of constant sites: 732 (= 51.6949% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 732 (= 51.6949% of all sites)
+Number of parsimony informative sites: 618
+Number of distinct site patterns: 683
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+I+R2
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+I+I+R2     -14018.005   28420.011 +    0.386   28480.609 +    0.547   29429.084 +    0.639
+TVM+F+I+I+R2     -14022.908   28427.815 -  0.00779   28487.737 -   0.0155   29431.633 +    0.179
+TIM2+F+I+I+R2    -14027.208   28434.416 - 0.000287   28493.665 - 0.000799   29432.979 +   0.0911
+TIM+F+I+I+R2     -14028.115   28436.230 - 0.000116   28495.479 - 0.000323   29434.793 -   0.0368
+TPM2u+F+I+I+R2   -14032.163   28442.326 - 5.51e-06   28500.907 - 2.14e-05   29435.633 -   0.0242
+K3Pu+F+I+I+R2    -14032.859   28443.718 - 2.74e-06   28502.299 - 1.07e-05   29437.025 -    0.012
+GTR+F+I+G4       -14025.923   28433.847 - 0.000382   28493.768 - 0.000759   29437.664 -  0.00875
+GTR+F+I+I+R3     -14015.573   28419.147 +    0.594   28481.112 +    0.425   29438.732 -  0.00513
+TIM2+F+I+G4      -14034.946   28447.892 - 3.41e-07   28506.473 - 1.32e-06   29441.199 -   0.0015
+TVM+F+I+I+R3     -14020.634   28427.267 -   0.0103   28488.547 -   0.0103   29441.596 -  0.00123
+TIM2+F+I+I+R3    -14024.893   28433.786 - 0.000394   28494.384 - 0.000558   29442.859 - 0.000652
+TN+F+I+I+R2      -14036.311   28450.622 -  8.7e-08   28509.203 - 3.38e-07   29443.929 - 0.000382
+TIM+F+I+I+R3     -14025.980   28435.961 - 0.000133   28496.559 - 0.000188   29445.034 -  0.00022
+TPM2u+F+I+I+R3   -14029.834   28441.667 - 7.65e-06   28501.589 - 1.52e-05   29445.485 - 0.000175
+TVM+F+I+G4       -14033.481   28446.961 - 5.42e-07   28506.210 - 1.51e-06   29445.523 - 0.000172
+HKY+F+I+I+R2     -14041.033   28458.066 -  2.1e-09   28515.983 - 1.14e-08   29446.117 - 0.000128
+TIM+F+I+G4       -14037.495   28452.989 - 2.66e-08   28511.570 - 1.03e-07   29446.296 - 0.000117
+K3Pu+F+I+I+R3    -14030.652   28443.304 - 3.38e-06   28503.226 - 6.71e-06   29447.122 - 7.73e-05
+TIM3+F+I+I+R2    -14035.149   28450.299 - 1.02e-07   28509.548 - 2.84e-07   29448.861 - 3.24e-05
+TPM2u+F+I+G4     -14042.452   28460.905 - 5.09e-10   28518.821 - 2.75e-09   29448.956 - 3.09e-05
+TPM3u+F+I+I+R2   -14039.955   28457.910 - 2.27e-09   28516.491 - 8.83e-09   29451.217 - 9.98e-06
+K3Pu+F+I+G4      -14044.537   28465.074 - 6.33e-11   28522.990 - 3.42e-10   29453.125 - 3.85e-06
+TN+F+I+I+R3      -14034.123   28450.247 - 1.05e-07   28510.168 - 2.08e-07   29454.065 -  2.4e-06
+TN+F+I+G4        -14045.289   28466.577 - 2.98e-11   28524.494 - 1.61e-10   29454.629 - 1.81e-06
+HKY+F+I+I+R3     -14038.790   28457.580 - 2.68e-09   28516.829 - 7.46e-09   29456.142 - 8.51e-07
+TIM3+F+I+I+R3    -14032.985   28449.971 -  1.2e-07   28510.569 - 1.71e-07   29459.044 - 1.99e-07
+TIM3+F+I+G4      -14044.242   28466.484 - 3.13e-11   28525.065 - 1.21e-10   29459.791 - 1.37e-07
+TPM3u+F+I+I+R3   -14037.687   28457.375 - 2.97e-09   28517.296 -  5.9e-09   29461.192 - 6.81e-08
+HKY+F+I+G4       -14052.329   28478.658 -  7.1e-14   28535.915 - 5.35e-13   29461.453 - 5.98e-08
+GTR+F+G4         -14042.471   28464.942 - 6.76e-11   28524.190 - 1.88e-10   29463.504 - 2.14e-08
+TPM3u+F+I+G4     -14051.302   28478.605 - 7.29e-14   28536.522 - 3.95e-13   29466.656 - 4.43e-09
+GTR+F+R6         -14018.415   28434.829 - 0.000234   28500.290 - 2.91e-05   29480.692 - 3.97e-12
+GTR+F+R5         -14028.099   28450.199 - 1.07e-07   28514.248 - 2.71e-08   29485.550 -  3.5e-13
+GTR+F+R7         -14018.242   28438.483 - 3.76e-05   28505.373 - 2.29e-06   29494.857 - 3.33e-15
+GTR+F+R4         -14043.904   28477.808 - 1.09e-13   28540.464 -  5.5e-14   29502.649 - 6.78e-17
+GTR+F+R3         -14083.397   28552.793 - 5.66e-30   28614.073 - 5.71e-30   29567.122 - 6.77e-31
+TVMe+I+G4        -14117.113   28608.227 -  5.2e-42   28665.484 - 3.91e-41   29591.022 - 4.37e-36
+TVMe+I+I+R2      -14113.823   28603.647 - 5.13e-41   28661.564 - 2.78e-40   29591.698 - 3.12e-36
+TPM2+I+G4        -14124.995   28619.991 - 1.45e-44   28675.942 -  2.1e-43   29592.275 - 2.34e-36
+TPM2+I+I+R2      -14121.935   28615.870 - 1.14e-43   28672.472 - 1.19e-42   29593.410 - 1.33e-36
+SYM+I+I+R2       -14113.209   28604.418 - 3.49e-41   28662.999 - 1.36e-40   29597.725 - 1.53e-37
+SYM+I+G4         -14117.081   28610.163 - 1.97e-42   28668.080 - 1.07e-41   29598.214 -  1.2e-37
+TIM2e+I+G4       -14124.960   28621.919 - 5.53e-45   28678.521 - 5.77e-44   29599.459 - 6.44e-38
+TIM2e+I+I+R2     -14121.332   28616.664 - 7.65e-44   28673.921 - 5.76e-43   29599.459 - 6.44e-38
+TVMe+I+I+R3      -14110.466   28600.933 - 1.99e-40   28660.182 - 5.55e-40   29599.495 - 6.33e-38
+TPM2+I+I+R3      -14118.563   28613.127 - 4.49e-43   28671.044 - 2.43e-42   29601.178 - 2.73e-38
+SYM+I+I+R3       -14109.922   28601.845 - 1.26e-40   28661.766 - 2.51e-40   29605.663 -  2.9e-39
+TIM2e+I+I+R3     -14118.015   28614.031 - 2.86e-43   28672.611 - 1.11e-42   29607.337 - 1.25e-39
+K3P+I+I+R2       -14132.941   28637.882 - 1.89e-48   28694.484 - 1.97e-47   29615.422 -  2.2e-41
+K3P+I+G4         -14138.027   28646.053 - 3.18e-50   28702.005 - 4.59e-49   29618.338 - 5.12e-42
+TIMe+I+I+R2      -14132.130   28638.260 - 1.56e-48   28695.517 - 1.18e-47   29621.056 - 1.32e-42
+K2P+I+I+R2       -14140.120   28650.240 - 3.92e-51   28706.192 - 5.66e-50   29622.525 - 6.31e-43
+K3P+I+I+R3       -14130.164   28636.328 - 4.11e-48   28694.245 - 2.22e-47   29624.380 -  2.5e-43
+K2P+I+G4         -14144.912   28657.823 - 8.83e-53   28713.128 - 1.77e-51   29624.852 - 1.97e-43
+TIMe+I+G4        -14137.967   28647.935 - 1.24e-50   28704.537 -  1.3e-49   29625.475 - 1.44e-43
+TNe+I+I+R2       -14139.328   28650.657 - 3.18e-51   28707.259 - 3.32e-50   29628.197 -  3.7e-44
+TPM3+I+I+R2      -14139.973   28651.945 - 1.67e-51   28708.547 - 1.74e-50   29629.485 - 1.94e-44
+TIMe+I+I+R3      -14129.478   28636.957 -    3e-48   28695.537 - 1.17e-47   29630.263 - 1.32e-44
+K2P+I+I+R3       -14137.338   28648.675 - 8.56e-51   28705.933 - 6.45e-50   29631.471 -  7.2e-45
+TPM3+I+G4        -14144.804   28659.608 - 3.62e-53   28715.559 - 5.24e-52   29631.892 - 5.84e-45
+TNe+I+G4         -14144.849   28659.698 - 3.46e-53   28715.649 -    5e-52   29631.982 - 5.58e-45
+TIM3e+I+I+R2     -14139.190   28652.380 - 1.34e-51   28709.637 - 1.01e-50   29635.175 - 1.13e-45
+TNe+I+I+R3       -14136.653   28649.305 - 6.25e-51   28707.222 - 3.38e-50   29637.356 -  3.8e-46
+TPM3+I+I+R3      -14137.188   28650.375 - 3.66e-51   28708.292 - 1.98e-50   29638.426 - 2.22e-46
+TIM3e+I+G4       -14144.745   28661.490 - 1.41e-53   28718.093 - 1.47e-52   29639.030 - 1.64e-46
+TIM3e+I+I+R3     -14136.509   28651.018 - 2.65e-51   28709.599 - 1.03e-50   29644.325 - 1.17e-47
+GTR+F+I          -14134.542   28649.083 - 6.98e-51   28708.332 - 1.94e-50   29647.646 - 2.21e-48
+GTR+F+R2         -14166.955   28715.910 - 2.15e-65   28775.832 - 4.27e-65   29719.728 - 4.93e-64
+GTR+F            -15241.626   30861.252 -        0   30919.832 -        0   31854.558 -        0
+F81+F+I+G4       -15626.996   31625.991 -        0   31682.593 -        0   32603.531 -        0
+F81+F+I+I+R2     -15625.723   31625.446 -        0   31682.703 -        0   32608.242 -        0
+F81+F+I+I+R3     -15623.576   31625.151 -        0   31683.732 -        0   32618.458 -        0
+JC+I+G4          -15693.950   31753.899 -        0   31808.562 -        0   32715.673 -        0
+JC+I+I+R2        -15691.934   31751.868 -        0   31807.172 -        0   32718.897 -        0
+JC+I+I+R3        -15689.661   31751.321 -        0   31807.923 -        0   32728.861 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+I+R2
+
+Rate parameter R:
+
+  A-C: 1.8282
+  A-G: 17.2974
+  A-T: 1.0088
+  C-G: 0.4029
+  C-T: 20.6486
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3397
+  pi(C) = 0.1939
+  pi(G) = 0.2342
+  pi(T) = 0.2322
+
+Rate matrix Q:
+
+  A   -0.8997   0.06874    0.7856   0.04543
+  C    0.1204    -1.069    0.0183    0.9298
+  G     1.139   0.01515    -1.199   0.04503
+  T   0.06644    0.7764   0.04541   -0.8883
+
+Model of rate heterogeneity: Invar+Invar+FreeRate with 2 categories
+Proportion of invariable sites: 0.4466
+Site proportion and rates:  (0.2197,0.4205) (0.3337,2.72)
+
+ Category  Relative_rate  Proportion
+  0         0              0.4466
+  1         0.4205         0.2197
+  2         2.72           0.3337
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -13994.5281 (s.e. 375.0548)
+Unconstrained log-likelihood (without tree): -6862.6175
+Number of free parameters (#branches + #model parameters): 192
+Akaike information criterion (AIC) score: 28373.0563
+Corrected Akaike information criterion (AICc) score: 28433.6548
+Bayesian information criterion (BIC) score: 29382.1298
+
+Total tree length (sum of branch lengths): 2.8972
+Sum of internal branch lengths: 1.9732 (68.1067% of tree length)
+
+WARNING: 12 near-zero internal branches (<0.0007) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon '1935|Avian|A/chicken/Brescia/1902|Italy|H7N7' is drawn at root
+
++-----1935|Avian|A/chicken/Brescia/1902|Italy|H7N7
+|
+|      +--1949|Avian|A/chicken/Germany/N/1949|Germany|H10N7
+|   +--|
+|   |  |     +--1976|Avian|A/chicken/Victoria/1976|Australia|H7N7
+|   |  |  +--|
+|   |  |  |  +**1976|Avian|A/duck/Victoria/1976|Australia|H7N7
+|   |  +--|
+|   |     |    +**1985|Avian|A/chicken/Victoria/1985|Australia|H7N7
+|   |     +----|
+|   |          +**1985|Avian|A/starling/Victoria/1985|Australia|H7N7
++---|
+|   |  +--1979|Avian|A/goose/Leipzig/187-7/1979|Germany|H7N7
+|   +--|
+|      |  +--1980|Avian|A/duck/Potsdam/15/1980|Germany|H7N7
+|      +--|
+|         |            +--1997|Avian|A/duck/Shimane/45/1997|Japan|H10N7
+|         |         +--|
+|         |         |  +--1999|Avian|A/duck/Taiwan/4201/99|Taiwan|H7N7
+|         |      +--|
+|         |      |  |     +--2003|Avian|A/mallard/Sweden/S90735/2003|Sweden|H7N7
+|         |      |  |  +--|
+|         |      |  |  |  +--2006|Avian|A/mute_swan/Netherlands/1/2006|Netherlands|H10N7
+|         |      |  +--|
+|         |      |     +--2005|Avian|A/mallard/Sweden/S90597/2005|Sweden|H7N7
+|         |   +--|
+|         |   |  |     +--2000|Avian|A/mallard/Netherlands/02/2000|Netherlands|H10N7
+|         |   |  |  +--|
+|         |   |  |  |  |              +--2002|Avian|A/duck/Mongolia/583/02|Mongolia|H4N7
+|         |   |  |  |  |           +**|
+|         |   |  |  |  |           |  |     +--2004|Avian|A/mallard/Sweden/7206/2004|Sweden|H7N7
+|         |   |  |  |  |           |  |  +--|
+|         |   |  |  |  |           |  |  |  +--2006|Avian|A/mallard/PT/14683/2006|Portugal|H6N7
+|         |   |  |  |  |           |  +--|
+|         |   |  |  |  |           |     +--2005|Avian|A/Anas_crecca/Germany/Wv177/05|Germany|H7N7
+|         |   |  |  |  |        +--|
+|         |   |  |  |  |        |  |  +--2003|Avian|A/mallard/Denmark/64650/03|Denmark|H5N7
+|         |   |  |  |  |        |  +--|
+|         |   |  |  |  |        |     |     +--2006|Avian|A/duck/Shimane/18/2006|Japan|H7N7
+|         |   |  |  |  |        |     |  +--|
+|         |   |  |  |  |        |     |  |  +--2007|Avian|A/duck/Shiga/B149/2007|Japan|H7N7
+|         |   |  |  |  |        |     +--|
+|         |   |  |  |  |        |        |  +--2007|Avian|A/duck/Tsukuba/664/2007|Japan|H7N7
+|         |   |  |  |  |        |        +--|
+|         |   |  |  |  |        |           |  +--2008|Avian|A/duck/Chiba/13/2008|Japan|H7N7
+|         |   |  |  |  |        |           +--|
+|         |   |  |  |  |        |              +--2008|Avian|A/northern_pintail/Aomori/1001/2008|Japan|H7N7
+|         |   |  |  |  |     +--|
+|         |   |  |  |  |     |  |  +--2006|Avian|A/mallard/Bavaria/3/2006|Germany|H10N7
+|         |   |  |  |  |     |  +--|
+|         |   |  |  |  |     |     |  +--2007|Avian|A/mute_swan/Hungary/5973/2007|Hungary|H7N7
+|         |   |  |  |  |     |     +--|
+|         |   |  |  |  |     |        |  +--2009|Avian|A/swan/Slovenia/53/2009|Slovenia|H7N7
+|         |   |  |  |  |     |        +--|
+|         |   |  |  |  |     |           +--2011|Avian|A/swan/Czech_Republic/5416/2011|Czech_Republic|H7N7
+|         |   |  |  |  |  +--|
+|         |   |  |  |  |  |  |  +--2005|Avian|A/mallard/Netherlands/9/2005|Netherlands|H7N7
+|         |   |  |  |  |  |  +--|
+|         |   |  |  |  |  |     +--2006|Avian|A/whooper_swan/Norway/10_438/2006|Norway|H7N7
+|         |   |  |  |  +--|
+|         |   |  |  |     |  +--2003|Avian|A/chicken/Germany/R28/03|Germany|H7N7
+|         |   |  |  |     +--|
+|         |   |  |  |        +--2003|Avian|A/chicken/Netherlands/1/03|Netherlands|H7N7
+|         |   |  +--|
+|         |   |     +--2002|Avian|A/mallard/Sweden/110/2002|Sweden|H11N7
+|         +---|
+|             +--1999|Avian|A/shorebird/Delaware_Bay/267/1999|USA|mixedN7
+|
+|                                                                                                                 +--1977|Avian|A/pintail_duck/ALB/303/1977|Canada|H10N7
+|                                                                                                              +--|
+|                                                                                                              |  +--1979|Avian|A/mallard_duck/Minnesota/19/1979|USA|H10N7
+|                                                                                                           +--|
+|                                                                                                           |  +--1984|Avian|A/redhead_duck/ALB/767/1984|Canada|H10N7
+|                                                                                                        +--|
+|                                                                                                        |  |  +--1986|Avian|A/herring_gull/Delaware/471/1986|USA|H2N7
+|                                                                                                        |  +--|
+|                                                                                                        |     +--1986|Avian|A/laughing_gull/New_Jersey/798/1986|USA|H2N7
+|                                                                                                     +--|
+|                                                                                                     |  |  +--1987|Avian|A/ruddy_turnstone/DE/2764/1987|USA|H10N7
+|                                                                                                     |  +--|
+|                                                                                                     |     +--1989|Avian|A/red_knot/NJ/325/1989|USA|H7N7
+|                                                                                                  +**|
+|                                                                                                  |  +--1988|Avian|A/green-winged_teal/LA/169GW/1988|USA|H10N7
+|                                                                                               +--|
+|                                                                                               |  +--1988|Avian|A/ruddy_turnstone/DE/2378/1988|USA|H7N7
+|                                                                                            +--|
+|                                                                                            |  |  +--1989|Avian|A/mallard/Ohio/122/1989|USA|H10N7
+|                                                                                            |  +**|
+|                                                                                            |     |  +--1995|Avian|A/quail/NJ/25254-22/1995|USA|H10N7
+|                                                                                            |     +--|
+|                                                                                            |        +--1996|Avian|A/shorebird/Delaware_Bay/31/1996|USA|H9N7
+|                                                                                         +--|
+|                                                                                         |  +--1991|Avian|A/turkey/VA/31409/1991|USA|H10N7
+|                                                                                      +--|
+|                                                                                      |  +--1991|Avian|A/duck/Alaska/658/1991|USA|H10N7
+|                                                                                   +--|
+|                                                                                   |  +--1993|Avian|A/pintail/Alberta/129/1993|Canada|H10N7
+|                                                                                +--|
+|                                                                                |  +--1996|Avian|A/emu/California/2092/1996|USA|H10N7
+|                                                                             +--|
+|                                                                             |  |  +--1996|Avian|A/mallard/ALB/196/1996|Canada|H10N7
+|                                                                             |  +**|
+|                                                                             |     |  +--1999|Avian|A/chicken/California/755/1999|USA|H10N7
+|                                                                             |     +--|
+|                                                                             |        +--1999|Avian|A/quail/California/1022/1999|USA|H10N7
+|                                                                          +--|
+|                                                                          |  +--1999|Avian|A/mallard/Minnesota/17/1999|USA|H7N7
+|                                                                       +**|
+|                                                                       |  |  +**2000|Avian|A/blue-winged_teal/Texas/108/2000|USA|H10N7
+|                                                                       |  +--|
+|                                                                       |     +**2000|Avian|A/northern_shoveler/TX/56/2000|USA|H10N7
+|                                                                    +--|
+|                                                                    |  |     +--2000|Avian|A/mallard/Alberta/127/2000|Canada|mixedN7
+|                                                                    |  |  +**|
+|                                                                    |  |  |  |     +--2000|Avian|A/pintail/Alberta/202/2000|Canada|H10N7
+|                                                                    |  |  |  |  +--|
+|                                                                    |  |  |  |  |  +--2007|Avian|A/northern_shoveler/California/44287-162/2007|USA|H10N7
+|                                                                    |  |  |  +**|
+|                                                                    |  |  |     |     +--2003|Avian|A/mallard/Alberta/209/2003|Canada|H10N7
+|                                                                    |  |  |     |  +--|
+|                                                                    |  |  |     |  |  |     +--2006|Avian|A/mallard/Interior_Alaska/6MP0747/2006|USA|mixedN7
+|                                                                    |  |  |     |  |  |  +**|
+|                                                                    |  |  |     |  |  |  |  +--2007|Avian|A/northern_shoveler/California/HKWF96/2007|USA|H10N7
+|                                                                    |  |  |     |  |  +--|
+|                                                                    |  |  |     |  |     |  +--2008|Avian|A/Stellers_eider/Alaska/44422-239/2008|USA|H10N7
+|                                                                    |  |  |     |  |     +--|
+|                                                                    |  |  |     |  |        +--2009|Avian|A/green-winged_teal/California/00083/2009|USA|H10N7
+|                                                                    |  |  |     +--|
+|                                                                    |  |  |        |  +--2003|Avian|A/mallard/Maryland/210/2003|USA|H10N7
+|                                                                    |  |  |        +--|
+|                                                                    |  |  |           +--2004|Avian|A/sanderling/New_Jersey/279/2004|USA|H10N7
+|                                                                    |  +--|
+|                                                                    |     |  +--2001|Avian|A/mallard/Maryland/161/2001|USA|H10N7
+|                                                                    |     +--|
+|                                                                    |        +**2001|Avian|A/ruddy_turnstone/Delaware/1057/2001|USA|H10N7
+|                                                                 +--|
+|                                                                 |  +--2004|Avian|A/ruddy_turnstone/NJ/238/2004|USA|H10N7
+|                                                              +--|
+|                                                              |  +--2006|Avian|A/ring-necked_duck/Michigan/588/2006|USA|mixedN7
+|                                                           +--|
+|                                                           |  |  +--2006|Avian|A/mallard/California/K752/2006|USA|H10N7
+|                                                           |  +**|
+|                                                           |     |  +--2007|Avian|A/mallard/Alberta/8734/07|Canada|H7N7
+|                                                           |     +--|
+|                                                           |        |  +--2008|Avian|A/northern_shoveler/California/9710/2008|USA|H10N7
+|                                                           |        +--|
+|                                                           |           |     +--2009|Avian|A/American_green-winged_teal/Illinois/2975/2009|USA|mixedN7
+|                                                           |           |  +--|
+|                                                           |           |  |  +--2010|Avian|A/northern_shoveler/Mississippi/252/2010|USA|H10N7
+|                                                           |           +--|
+|                                                           |              +**2009|Avian|A/northern_shoveler/Mississippi/09OS643/2009|USA|H7N7
+|                                                        +--|
+|                                                        |  |     +--2007|Avian|A/mallard/Alberta/284/2007|Canada|mixedN7
+|                                                        |  |  +**|
+|                                                        |  |  |  +--2010|Avian|A/northern_shoveler/Mississippi/236/2010|USA|H10N7
+|                                                        |  +--|
+|                                                        |     +--2008|Avian|A/mallard/California/HKWF1971C/2008|USA|H7N7
+|                                                     +--|
+|                                                     |  +--2007|Avian|A/mallard/Minnesota/Sg-00046/2007|USA|MixedN7
+|                                                  +--|
+|                                                  |  |  +**2008|Avian|A/mallard/Illinois/08OS2711/2008|USA|H10N7
+|                                                  |  +--|
+|                                                  |     +--2009|Avian|A/lesser_scaup/Illinois/4115/2009|USA|H10N7
+|        +-----------------------------------------|
+|        |                                         +--2010|Avian|A/mallard/California/1305/2010|USA|H10N7
++--------|
+         |                                +**1956|Equine|A/equine/Prague/1/1956|Czech_Republic|H7N7
+         |                             +--|
+         |                             |  +**1956|Equine|A/equine/Prague/2/1956|Czech_Republic|H7N7
+         +-----------------------------|
+                                       |  +--1966|Equine|A/equine/Lexington/1/1966|USA|H7N7
+                                       +--|
+                                          |  +--1974|Equine|A/Cor/16/1974|USA|H7N7
+                                          +--|
+                                             |  +--1975|Equine|A/equine/Kentucky/1a/1975|USA|H7N7
+                                             +--|
+                                                |     +**1976|Equine|A/equine/Sao_Paulo/4/1976|Brazil|H7N7
+                                                |  +**|
+                                                |  |  |  +--1976|Equine|A/equine/Uruguay/1063/1976|Uruguay|H7N7
+                                                |  |  +**|
+                                                |  |     +--1977|Equine|A/equine/Argentina/1/1977|Argentina|H7N7
+                                                +--|
+                                                   +--1977|Equine|A/equine/Santiago/77|Chile|H7N7
+
+Tree in newick format:
+
+(1935|Avian|A/chicken/Brescia/1902|Italy|H7N7:0.1024486934,((1949|Avian|A/chicken/Germany/N/1949|Germany|H10N7:0.0399977985,((1976|Avian|A/chicken/Victoria/1976|Australia|H7N7:0.0033427057,1976|Avian|A/duck/Victoria/1976|Australia|H7N7:0.0002434381):0.0455614753,(1985|Avian|A/chicken/Victoria/1985|Australia|H7N7:0.0000009980,1985|Avian|A/starling/Victoria/1985|Australia|H7N7:0.0000009980):0.0801804882):0.0412227992):0.0098531499,(1979|Avian|A/goose/Leipzig/187-7/1979|Germany|H7N7:0.0183208371,(1980|Avian|A/duck/Potsdam/15/1980|Germany|H7N7:0.0095449228,((((1997|Avian|A/duck/Shimane/45/1997|Japan|H10N7:0.0023163637,1999|Avian|A/duck/Taiwan/4201/99|Taiwan|H7N7:0.0129958730):0.0109963491,((2003|Avian|A/mallard/Sweden/S90735/2003|Sweden|H7N7:0.0069123274,2006|Avian|A/mute_swan/Netherlands/1/2006|Netherlands|H10N7:0.0244619996):0.0098326305,2005|Avian|A/mallard/Sweden/S90597/2005|Sweden|H7N7:0.0169374587):0.0144541329):0.0012563044,((2000|Avian|A/mallard/Netherlands/02/2000|Netherlands|H10N7:0.0167187038,(((((2002|Avian|A/duck/Mongolia/583/02|Mongolia|H4N7:0.0102436093,((2004|Avian|A/mallard/Sweden/7206/2004|Sweden|H7N7:0.0122218916,2006|Avian|A/mallard/PT/14683/2006|Portugal|H6N7:0.0185041172):0.0008340766,2005|Avian|A/Anas_crecca/Germany/Wv177/05|Germany|H7N7:0.0178337210):0.0039837552):0.0000023762,(2003|Avian|A/mallard/Denmark/64650/03|Denmark|H5N7:0.0185624603,((2006|Avian|A/duck/Shimane/18/2006|Japan|H7N7:0.0035501010,2007|Avian|A/duck/Shiga/B149/2007|Japan|H7N7:0.0058864941):0.0208130266,(2007|Avian|A/duck/Tsukuba/664/2007|Japan|H7N7:0.0047190440,(2008|Avian|A/duck/Chiba/13/2008|Japan|H7N7:0.0080638038,2008|Avian|A/northern_pintail/Aomori/1001/2008|Japan|H7N7:0.0067082417):0.0018551152):0.0205514678):0.0025011243):0.0014982253):0.0021690158,(2006|Avian|A/mallard/Bavaria/3/2006|Germany|H10N7:0.0065917683,(2007|Avian|A/mute_swan/Hungary/5973/2007|Hungary|H7N7:0.0054927064,(2009|Avian|A/swan/Slovenia/53/2009|Slovenia|H7N7:0.0050644022,2011|Avian|A/swan/Czech_Republic/5416/2011|Czech_Republic|H7N7:0.0149736664):0.0101883669):0.0116650149):0.0122655380):0.0022686568,(2005|Avian|A/mallard/Netherlands/9/2005|Netherlands|H7N7:0.0129404978,2006|Avian|A/whooper_swan/Norway/10_438/2006|Norway|H7N7:0.0103661931):0.0227135571):0.0018680131,(2003|Avian|A/chicken/Germany/R28/03|Germany|H7N7:0.0007144235,2003|Avian|A/chicken/Netherlands/1/03|Netherlands|H7N7:0.0007167437):0.0098905308):0.0099043800):0.0020672137,2002|Avian|A/mallard/Sweden/110/2002|Sweden|H11N7:0.0284386718):0.0042411361):0.0071577624,1999|Avian|A/shorebird/Delaware_Bay/267/1999|USA|mixedN7:0.0368212091):0.0635606515):0.0044384530):0.0479210315):0.0637970825,(((((((((((((((((((((((1977|Avian|A/pintail_duck/ALB/303/1977|Canada|H10N7:0.0190260911,1979|Avian|A/mallard_duck/Minnesota/19/1979|USA|H10N7:0.0051407971):0.0017630779,1984|Avian|A/redhead_duck/ALB/767/1984|Canada|H10N7:0.0129559901):0.0027457595,(1986|Avian|A/herring_gull/Delaware/471/1986|USA|H2N7:0.0021387340,1986|Avian|A/laughing_gull/New_Jersey/798/1986|USA|H2N7:0.0007466433):0.0205051604):0.0063408432,(1987|Avian|A/ruddy_turnstone/DE/2764/1987|USA|H10N7:0.0073895573,1989|Avian|A/red_knot/NJ/325/1989|USA|H7N7:0.0167644341):0.0074581818):0.0105744101,1988|Avian|A/green-winged_teal/LA/169GW/1988|USA|H10N7:0.0051365255):0.0006721014,1988|Avian|A/ruddy_turnstone/DE/2378/1988|USA|H7N7:0.0036010733):0.0020330792,(1989|Avian|A/mallard/Ohio/122/1989|USA|H10N7:0.0088931555,(1995|Avian|A/quail/NJ/25254-22/1995|USA|H10N7:0.0125922535,1996|Avian|A/shorebird/Delaware_Bay/31/1996|USA|H9N7:0.0125141035):0.0117893308):0.0000023762):0.0081660516,1991|Avian|A/turkey/VA/31409/1991|USA|H10N7:0.0082701578):0.0043650350,1991|Avian|A/duck/Alaska/658/1991|USA|H10N7:0.0080408987):0.0122579042,1993|Avian|A/pintail/Alberta/129/1993|Canada|H10N7:0.0099237144):0.0091749761,1996|Avian|A/emu/California/2092/1996|USA|H10N7:0.0084602938):0.0036300236,(1996|Avian|A/mallard/ALB/196/1996|Canada|H10N7:0.0014118794,(1999|Avian|A/chicken/California/755/1999|USA|H10N7:0.0022693725,1999|Avian|A/quail/California/1022/1999|USA|H10N7:0.0015077510):0.0084527022):0.0000009980):0.0036699357,1999|Avian|A/mallard/Minnesota/17/1999|USA|H7N7:0.0089049085):0.0014240382,(2000|Avian|A/blue-winged_teal/Texas/108/2000|USA|H10N7:0.0000009980,2000|Avian|A/northern_shoveler/TX/56/2000|USA|H10N7:0.0000009980):0.0050720000):0.0006836446,((2000|Avian|A/mallard/Alberta/127/2000|Canada|mixedN7:0.0014346857,((2000|Avian|A/pintail/Alberta/202/2000|Canada|H10N7:0.0062465746,2007|Avian|A/northern_shoveler/California/44287-162/2007|USA|H10N7:0.0254263790):0.0010305234,((2003|Avian|A/mallard/Alberta/209/2003|Canada|H10N7:0.0077217560,((2006|Avian|A/mallard/Interior_Alaska/6MP0747/2006|USA|mixedN7:0.0083342753,2007|Avian|A/northern_shoveler/California/HKWF96/2007|USA|H10N7:0.0163743291):0.0004593756,(2008|Avian|A/Stellers_eider/Alaska/44422-239/2008|USA|H10N7:0.0075440658,2009|Avian|A/green-winged_teal/California/00083/2009|USA|H10N7:0.0032247694):0.0042049943):0.0155011087):0.0012487821,(2003|Avian|A/mallard/Maryland/210/2003|USA|H10N7:0.0082480056,2004|Avian|A/sanderling/New_Jersey/279/2004|USA|H10N7:0.0096437594):0.0061823234):0.0041608604):0.0000009980):0.0000023739,(2001|Avian|A/mallard/Maryland/161/2001|USA|H10N7:0.0007148536,2001|Avian|A/ruddy_turnstone/Delaware/1057/2001|USA|H10N7:0.0000009980):0.0065215730):0.0007598069):0.0163423911,2004|Avian|A/ruddy_turnstone/NJ/238/2004|USA|H10N7:0.0038519040):0.0015472353,2006|Avian|A/ring-necked_duck/Michigan/588/2006|USA|mixedN7:0.0094548701):0.0057436796,(2006|Avian|A/mallard/California/K752/2006|USA|H10N7:0.0057983158,(2007|Avian|A/mallard/Alberta/8734/07|Canada|H7N7:0.0066364319,(2008|Avian|A/northern_shoveler/California/9710/2008|USA|H10N7:0.0013221773,((2009|Avian|A/American_green-winged_teal/Illinois/2975/2009|USA|mixedN7:0.0021451918,2010|Avian|A/northern_shoveler/Mississippi/252/2010|USA|H10N7:0.0050938768):0.0036074252,2009|Avian|A/northern_shoveler/Mississippi/09OS643/2009|USA|H7N7:0.0000009980):0.0066955211):0.0105687679):0.0020981742):0.0003977990):0.0018175087,((2007|Avian|A/mallard/Alberta/284/2007|Canada|mixedN7:0.0076110315,2010|Avian|A/northern_shoveler/Mississippi/236/2010|USA|H10N7:0.0163869896):0.0004076467,2008|Avian|A/mallard/California/HKWF1971C/2008|USA|H7N7:0.0079270737):0.0036334187):0.0065765410,2007|Avian|A/mallard/Minnesota/Sg-00046/2007|USA|MixedN7:0.0007768183):0.0035969763,(2008|Avian|A/mallard/Illinois/08OS2711/2008|USA|H10N7:0.0007053951,2009|Avian|A/lesser_scaup/Illinois/4115/2009|USA|H10N7:0.0050556142):0.0014074328):0.0023853972,2010|Avian|A/mallard/California/1305/2010|USA|H10N7:0.0041494783):0.6371315368,((1956|Equine|A/equine/Prague/1/1956|Czech_Republic|H7N7:0.0000009980,1956|Equine|A/equine/Prague/2/1956|Czech_Republic|H7N7:0.0000009980):0.0196690431,(1966|Equine|A/equine/Lexington/1/1966|USA|H7N7:0.0015260287,(1974|Equine|A/Cor/16/1974|USA|H7N7:0.0014821856,(1975|Equine|A/equine/Kentucky/1a/1975|USA|H7N7:0.0014788483,((1976|Equine|A/equine/Sao_Paulo/4/1976|Brazil|H7N7:0.0000009980,(1976|Equine|A/equine/Uruguay/1063/1976|Uruguay|H7N7:0.0007341768,1977|Equine|A/equine/Argentina/1/1977|Argentina|H7N7:0.0014719548):0.0000009980):0.0000009980,1977|Equine|A/equine/Santiago/77|Chile|H7N7:0.0022123940):0.0007343093):0.0014725245):0.0137497703):0.0397738583):0.4568250919):0.1395468714);
+
+TIME STAMP
+----------
+
+Date and time: Mon Mar 13 23:20:11 2023
+Total CPU time used: 34.2774 seconds (0h:0m:34s)
+Total wall-clock time used: 38.4055 seconds (0h:0m:38s)
+

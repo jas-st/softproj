@@ -1,0 +1,750 @@
+IQ-TREE multicore version 2.2.0 COVID-edition for Linux 64-bit built Jun  1 2022
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    scotty-ThinkPad-T460 (AVX2, FMA3, 15 GB RAM)
+Command: ../../iqtree2 -s worobey_2014d.nex --redo-tree
+Seed:    937395 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Mar 14 01:01:07 2023
+Kernel:  AVX+FMA - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file worobey_2014d.nex ... Nexus format detected
+Skipping unknown block (SETS)...
+Alignment has 355 sequences with 1497 columns, 808 distinct patterns
+784 parsimony-informative, 79 singleton sites, 634 constant sites
+WARNING: Some sequence names are changed as follows:
+1950|Human|A/Tientsin/78/1977|China|H1N1* -> 1950|Human|A/Tientsin/78/1977|China|H1N1_
+1951|Human|A/Memphis/10/1978|USA|H1N1* -> 1951|Human|A/Memphis/10/1978|USA|H1N1_
+1953|Human|A/Maryland/2/1980|USA|H1N1* -> 1953|Human|A/Maryland/2/1980|USA|H1N1_
+1954|Human|A/Baylor/4052/1981|USA|H1N1* -> 1954|Human|A/Baylor/4052/1981|USA|H1N1_
+1955|Human|A/Baylor/11515/1982|USA|H1N1* -> 1955|Human|A/Baylor/11515/1982|USA|H1N1_
+1956|Human|A/Memphis/49/1983|USA|H1N1* -> 1956|Human|A/Memphis/49/1983|USA|H1N1_
+1959|Human|A/Singapore/6/1986|Singapore|H1N1* -> 1959|Human|A/Singapore/6/1986|Singapore|H1N1_
+1960|Human|A/Siena/4/1987|Italy|H1N1* -> 1960|Human|A/Siena/4/1987|Italy|H1N1_
+1962|Human|A/Siena/10/1989|Italy|H1N1* -> 1962|Human|A/Siena/10/1989|Italy|H1N1_
+1964|Human|A/Texas/36/1991|USA|H1N1* -> 1964|Human|A/Texas/36/1991|USA|H1N1_
+1968|Human|A/Siena/14/1995|Italy|H1N1* -> 1968|Human|A/Siena/14/1995|Italy|H1N1_
+1969|Human|A/New_York/626/1996|USA|H1N1* -> 1969|Human|A/New_York/626/1996|USA|H1N1_
+1972|Human|A/New_South_Wales/24/1999|Australia|H1N1* -> 1972|Human|A/New_South_Wales/24/1999|Australia|H1N1_
+1973|Human|A/South_Canterbury/50/2000|New_Zealand|H1N1* -> 1973|Human|A/South_Canterbury/50/2000|New_Zealand|H1N1_
+1978|Human|A/Denmark/22/2005|Denmark|H1N1* -> 1978|Human|A/Denmark/22/2005|Denmark|H1N1_
+1979|Human|A/New_York/8/2006|USA|H1N1* -> 1979|Human|A/New_York/8/2006|USA|H1N1_
+1980|Human|A/Texas/UR06-0217/2007|USA|H1N1* -> 1980|Human|A/Texas/UR06-0217/2007|USA|H1N1_
+1981|Human|A/Florida/UR07-0022/2008|USA|H1N1* -> 1981|Human|A/Florida/UR07-0022/2008|USA|H1N1_
+1982|Human|A/Arkansas/WRAIR1249P/2009|USA|H1N1* -> 1982|Human|A/Arkansas/WRAIR1249P/2009|USA|H1N1_
+
+                                                                                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000876498 secs using 85% CPU
+   1  1918|Human|A/Brevig_Mission/1/1918|USA|H1N1                                       0.00%    passed     99.70%
+   2  1935|Human|A/bh/1935||H1N1                                                        0.00%    passed     96.82%
+   3  1935|Human|A/Melbourne/1935|Australia|H1N1                                        0.00%    passed     97.50%
+   4  1935|Human|A/Phila/1935|USA|H1N1                                                  0.00%    passed     94.98%
+   5  1936|Human|A/Henry/1936|USA|H1N1                                                  0.00%    passed     95.52%
+   6  1940|Human|A/Hickox/1940|USA|H1N1                                                 0.00%    passed     98.95%
+   7  1942|Human|A/Bellamy/1942|USA|H1N1                                                0.00%    passed     98.91%
+   8  1943|Human|A/AA/Marton/1943|USA|H1N1                                              0.00%    passed     99.61%
+   9  1943|Human|A/Weiss/1943|USA|H1N1                                                  0.00%    passed     90.48%
+  10  1945|Human|A/AA/Huston/1945|USA|H1N1                                              0.00%    passed     95.63%
+  11  1946|Human|A/Cameron/1946|Australia|H1N1                                          0.00%    passed     99.61%
+  12  1947|Human|A/Monmouth/1947|USA|H1N1                                               0.00%    passed     93.64%
+  13  1948|Human|A/Albany/4835/1948|USA|H1N1                                            0.00%    passed     96.78%
+  14  1948|Human|A/Hemsbury/1948|USA|H1N1                                               0.07%    passed     99.03%
+  15  1949|Human|A/Netherlands/002K1/1949|Netherlands|H1N1                              0.07%    passed     95.63%
+  16  1949|Human|A/Roma/1949|Italy|H1N1                                                 0.00%    passed     96.77%
+  17  1950|Human|A/Fort_Warren/1/1950|USA|H1N1                                          0.00%    passed     99.34%
+  18  1951|Human|A/Albany/13/1951|USA|H1N1                                              0.00%    passed     99.04%
+  19  1953|Human|A/Netherlands/001R1/1953|Netherlands|H1N1                              0.00%    passed     96.81%
+  20  1954|Human|A/Malaysia/1954|Malaysia|H1N1                                          0.00%    passed     99.68%
+  21  1954|Human|A/Netherlands/001H1/1954|Netherlands|H1N1                              0.00%    passed     98.17%
+  22  1955|Human|A/England/19/1955|United_Kingdom|H1N1                                  0.00%    passed     98.68%
+  23  1956|Human|A/Netherlands/002Z1/1956|Netherlands|H1N1                              0.00%    passed     98.38%
+  24  1950|Human|A/Tientsin/78/1977|China|H1N1_                                         0.00%    passed     98.49%
+  25  1951|Human|A/Memphis/10/1978|USA|H1N1_                                            0.00%    passed     98.49%
+  26  1979|Human|A/Kiev/59/1979|Ukraine|H1N1                                            0.00%    passed     97.07%
+  27  1953|Human|A/Maryland/2/1980|USA|H1N1_                                            0.00%    passed     96.56%
+  28  1954|Human|A/Baylor/4052/1981|USA|H1N1_                                           0.00%    passed     98.98%
+  29  1955|Human|A/Baylor/11515/1982|USA|H1N1_                                          0.00%    passed     97.76%
+  30  1956|Human|A/Memphis/49/1983|USA|H1N1_                                            0.00%    passed     96.01%
+  31  1959|Human|A/Singapore/6/1986|Singapore|H1N1_                                     0.00%    passed     94.87%
+  32  1960|Human|A/Siena/4/1987|Italy|H1N1_                                             0.00%    passed     97.21%
+  33  1962|Human|A/Siena/10/1989|Italy|H1N1_                                            0.07%    passed     97.63%
+  34  1964|Human|A/Texas/36/1991|USA|H1N1_                                              0.00%    passed     95.24%
+  35  1968|Human|A/Siena/14/1995|Italy|H1N1_                                            0.00%    passed     99.28%
+  36  1969|Human|A/New_York/626/1996|USA|H1N1_                                          0.00%    passed     98.26%
+  37  1972|Human|A/New_South_Wales/24/1999|Australia|H1N1_                              0.00%    passed     99.52%
+  38  1973|Human|A/South_Canterbury/50/2000|New_Zealand|H1N1_                           0.00%    passed     96.41%
+  39  1978|Human|A/Denmark/22/2005|Denmark|H1N1_                                        0.07%    passed     94.32%
+  40  1979|Human|A/New_York/8/2006|USA|H1N1_                                            0.00%    passed     96.46%
+  41  1980|Human|A/Texas/UR06-0217/2007|USA|H1N1_                                       0.00%    passed     96.81%
+  42  1981|Human|A/Florida/UR07-0022/2008|USA|H1N1_                                     0.00%    passed     94.31%
+  43  1982|Human|A/Arkansas/WRAIR1249P/2009|USA|H1N1_                                   0.00%    passed     96.78%
+  44  1957|Human|A/Singapore/1/1957|Singapore|H2N2                                      0.00%    passed     98.31%
+  45  1958|Human|A/Albany/6/58|USA|H2N2                                                 0.00%    passed     99.78%
+  46  1959|Human|A/Krasnodar/101/1959|Russia|H2N2                                       0.00%    passed     99.05%
+  47  1960|Human|A/Netherlands/056H1/1960|Netherlands|H2N2                              0.00%    passed     99.50%
+  48  1961|Human|A/England/1/61|United_Kingdom|H2N2                                     0.00%    passed     96.28%
+  49  1962|Human|A/Netherlands/60/62|Netherlands|H2N2                                   0.00%    passed     93.74%
+  50  1963|Human|A/North_Carolina/1/1963|USA|H2N2                                       0.00%    passed     94.36%
+  51  1964|Human|A/Cottbus/1/1964|Germany|H2N2                                          0.00%    passed     93.98%
+  52  1965|Human|A/Albany/1/65|USA|H2N2                                                 0.00%    passed     97.51%
+  53  1968|Human|A/Philippines/104/68|Philippines|H3N2                                  0.00%    passed     97.07%
+  54  1969|Human|A/Hong_Kong/3/1969|Hong_Kong|H3N2                                      0.00%    passed     95.57%
+  55  1970|Human|A/Albany/1/1970|USA|H3N2                                               0.00%    passed     94.31%
+  56  1971|Human|A/Bilthoven/21801/1971|Netherlands|H3N2                                0.00%    passed     98.38%
+  57  1972|Human|A/Udorn/307/1972|Russia|H3N2                                           0.00%    passed     98.38%
+  58  1973|Human|A/Memphis/1/1973|USA|H3N2                                              0.00%    passed     98.68%
+  59  1975|Human|A/Hong_Kong/43/1975|Hong_Kong|H3N2                                     0.00%    passed     96.69%
+  60  1976|Human|A/Bilthoven/1761/1976|Netherlands|H3N2                                 0.00%    passed     96.71%
+  61  1977|Human|A/Amsterdam/1609/1977|Netherlands|H3N2                                 0.00%    passed     94.66%
+  62  1980|Human|A/Nanjing/13/1980|China|H3N2                                           0.00%    passed     98.38%
+  63  1982|Human|A/Bilthoven/10684/1982|Netherlands|H3N2                                0.00%    passed     93.45%
+  64  1983|Human|A/Oslo/13676/1983|Norway|H3N2                                          0.00%    passed     96.95%
+  65  1984|Human|A/Hong_Kong/4/1984|Hong_Kong|H3N2                                      0.00%    passed     97.23%
+  66  1988|Human|A/Netherlands/450/1988|Netherlands|H3N2                                0.00%    passed     99.52%
+  67  1989|Human|A/Eindhoven/3447/1989|Netherlands|H3N2                                 0.00%    passed     99.82%
+  68  1993|Human|A/Lyon/23602/1993|France|H3N2                                          0.00%    passed     96.32%
+  69  1994|Human|A/New_York/753/1994|USA|H3N2                                           0.00%    passed     95.61%
+  70  1997|Human|A/Siena/1/1997|Italy|H3N2                                              0.00%    passed     92.06%
+  71  1999|Human|A/Memphis/59/1999|USA|H3N2                                             0.00%    passed     83.88%
+  72  2002|Human|A/Yokohama/47/2002|Japan|H1N2                                          0.20%    passed     83.06%
+  73  2003|Human|A/Wyoming/03/2003|USA|H3N2                                             0.00%    passed     82.93%
+  74  2005|Human|A/Texas/NHRC0001/2005|USA|H3N2                                         0.00%    passed     86.90%
+  75  2006|Human|A/Sydney/186R/2006|Australia|H3N2                                      0.00%    passed     79.59%
+  76  2007|Human|A/Sydney/202G/2007|Australia|H3N2                                      0.00%    passed     78.23%
+  77  2008|Human|A/California/UR07-0063/2008|USA|H3N2                                   0.00%    passed     79.06%
+  78  2009|Human|A/Nanjing/1/2009|China|H3N2                                            0.00%    passed     76.30%
+  79  2011|Human|A/California/NHRC0002/2011|USA|H3N2                                    0.00%    passed     81.92%
+  80  1979|Swine|A/swine/Belgium/WVL1/1979|Belgium|H1N1                                 0.20%    passed     98.06%
+  81  1981|Swine|A/swine/Germany/2/1981|Germany|H1N1                                    0.00%    passed     91.08%
+  82  1984|Swine|A/swine/France/WVL3/1984|France|H1N1                                   0.20%    passed     95.30%
+  83  1985|Swine|A/swine/France/WVL4/1985|France|H1N1                                   0.20%    passed     97.81%
+  84  1987|Swine|A/swine/Italy/670/1987|Italy|H1N1                                      0.00%    passed     95.22%
+  85  1989|Swine|A/swine/Belgium/WVL5/1989|Belgium|H1N1                                 0.20%    passed     95.57%
+  86  1992|Swine|A/swine/England/195852/1992|United_Kingdom|H1N1                        0.00%    passed     93.79%
+  87  1993|Swine|A/swine/England/WVL10/1993|United_Kingdom|H1N1                         0.20%    passed     95.98%
+  88  1995|Swine|A/swine/Germany/Vi3161/95|Germany|H3N2                                 0.67%    passed     87.52%
+  89  1997|Swine|A/swine/Germany/SEC27/97|Germany|H3N2                                  0.00%    passed     88.11%
+  90  1998|Swine|A/swine/Italy/62/1998|Italy|H1N2                                       0.20%    passed     84.26%
+  91  1999|Swine|A/swine/Cotes_dArmor/1488/1999|France|H1N1                             0.00%    passed     83.19%
+  92  2003|Swine|A/swine/Hong_Kong/NS129/2003|Hong_Kong|H1N1                            0.00%    passed     79.96%
+  93  2002|Swine|A/swine/Hong_Kong/1669/2002|Hong_Kong|H1N1                             0.00%    passed     67.07%
+  94  2006|Swine|A/swine/Hong_Kong/421/2006|Hong_Kong|H1N1                              0.00%    passed     87.42%
+  95  2005|Swine|A/swine/Hong_Kong/1683/2005|Hong_Kong|H1N1                             0.00%    passed     81.74%
+  96  2009|Swine|A/swine/Hong_Kong/3001/2009|Hong_Kong|H1N1                             0.00%    passed     71.65%
+  97  2011|Swine|A/swine/Jiangsu/s15/2011|China|H1N1                                    0.00%    passed     81.73%
+  98  1956|Equine|A/equine/Prague/1956|Czech_Republic|H7N7                              0.00%    failed      0.82%
+  99  1956|Equine|A/equine/Prague/1/1956|Czech_Republic|H7N7                            0.00%    failed      0.07%
+ 100  1966|Equine|A/equine/Lexington/1/1966|USA|H7N7                                    0.00%    failed      0.03%
+ 101  1930|Swine|A/swine/Iowa/15/1930|USA|H1N1                                          0.00%    passed     95.47%
+ 102  1931|Swine|A/swine/USA/1976/1931|USA|H1N1                                         0.00%    passed     93.74%
+ 103  1935|Swine|A/swine/Ohio/23/1935|USA|H1N1                                          0.00%    passed     82.67%
+ 104  1937|Swine|A/swine/29/1937|USA|H1N1                                               0.00%    passed     96.47%
+ 105  1957|Swine|A/swine/Wisconsin/1/1957|USA|H1N1                                      0.00%    passed     80.81%
+ 106  1961|Swine|A/swine/Wisconsin/1/1961|USA|H1N1                                      0.00%    passed     88.89%
+ 107  1966|Swine|A/swine/Wisconsin/2/1966|USA|H1N1                                      0.00%    passed     89.24%
+ 108  1967|Swine|A/swine/Wisconsin/1/1967|USA|H1N1                                      0.00%    passed     62.84%
+ 109  1970|Swine|A/swine/Wisconsin/2/1970|USA|H1N1                                      0.00%    passed     59.65%
+ 110  1971|Swine|A/swine/Wisconsin/1/1971|USA|H1N1                                      0.00%    passed     94.52%
+ 111  1975|Swine|A/swine/Illinois/1/1975|USA|H1N1                                       0.00%    passed     92.05%
+ 112  1977|Swine|A/swine/Arizona/148/1977|USA|H1N1                                      0.00%    passed     97.11%
+ 113  1976|Swine|A/swine/Iowa/1/1976|USA|H1N1                                           0.00%    passed     84.34%
+ 114  1977|Swine|A/swine/Nebraska/123/1977|USA|H1N1                                     0.00%    passed     95.57%
+ 115  1979|Swine|A/swine/Hong_Kong/100/1979|Hong_Kong|H1N1                              0.00%    passed     98.16%
+ 116  1979|Swine|A/swine/Kyoto/3/1979|Japan|H1N1                                        0.00%    passed     81.18%
+ 117  1980|Swine|A/swine/Ehime/1/1980|Japan|H1N2                                        0.00%    passed     73.72%
+ 118  1980|Swine|A/swine/Wisconsin/11/1980|USA|H1N1                                     0.00%    passed     93.41%
+ 119  1981|Swine|A/swine/Hokkaido/2/1981|Japan|H1N1                                     0.00%    passed     88.87%
+ 120  1981|Swine|A/swine/Quebec/192/81|Canada|H1N1                                      0.00%    passed     93.82%
+ 121  1983|Swine|A/swine/Skane/1321/1983|Sweden|H1N1                                    0.33%    passed     96.83%
+ 122  1986|Swine|A/swine/Iowa/1/1986|USA|H1N1                                           0.00%    passed     99.78%
+ 123  1988|Swine|A/swine/Iowa/17672/1988|USA|H1N1                                       0.00%    passed     89.69%
+ 124  1990|Swine|A/swine/Iowa/3421/1990|USA|H1N1                                        0.00%    passed     86.28%
+ 125  1991|Swine|A/swine/Maryland/23239/1991|USA|H1N1                                   0.00%    passed     75.94%
+ 126  1993|Swine|A/swine/Hong_Kong/103/1993|Hong_Kong|H1N1                              0.00%    passed     83.05%
+ 127  1994|Swine|A/swine/Hong_Kong/1795/1994|Hong_Kong|H1N1                             0.00%    passed     81.02%
+ 128  1999|Swine|A/swine/Hong_Kong/5609/1999|Hong_Kong|H1N2                             0.00%    passed     50.22%
+ 129  1999|Swine|A/Swine/Iowa/533/99_|USA|H3N2                                          0.00%    passed     74.91%
+ 130  2000|Swine|A/Swine/Minnesota/55551/2000|USA|H1N2                                  0.00%    passed     82.90%
+ 131  2000|Swine|A/swine/North_Carolina/47834/2000|USA|H1N1                             0.00%    passed     88.92%
+ 132  2001|Swine|A/Swine/North_Carolina/93523/01_|USA|H1N2                              0.00%    passed     86.14%
+ 133  2001|Swine|A/swine/Minnesota/1192/2001|USA|H1N2                                   0.00%    passed     77.36%
+ 134  2001|Swine|A/swine/Hong_Kong/8944/2001|Hong_Kong|H1N2                             0.00%    passed     56.56%
+ 135  2002|Swine|A/swine/North_Carolina/18161/2002|USA|H1N1                             0.00%    passed     86.08%
+ 136  2002|Swine|A/swine/Hong_Kong/NS728/2002|Hong_Kong|H1N2                            0.00%    passed     58.28%
+ 137  2003|Swine|A/swine/Illinois/SG1141/2003|USA|H1N1                                  0.00%    passed     79.59%
+ 138  2003|Swine|A/swine/Hong_Kong/NS605/2003|Hong_Kong|H1N2                            0.00%    passed     55.59%
+ 139  2004|Swine|A/swine/Korea/CAS05/2004|South_Korea|H3N2                              0.00%    passed     72.59%
+ 140  2004|Swine|A/swine/Zhejiang/1/2004|China|H1N2                                     0.00%    passed     71.95%
+ 141  2005|Swine|A/swine/Guangxi/17/2005|China|H1N2                                     0.00%    passed     76.57%
+ 142  2006|Swine|A/swine/Guangxi/13/2006|China|H1N2                                     0.00%    passed     67.74%
+ 143  2007|Swine|A/swine/IL/07003243/2007|USA|H1N2                                      0.00%    passed     65.44%
+ 144  2008|Swine|A/swine/Illinois/01981/2008|USA|H1N1                                   0.00%    passed     78.94%
+ 145  2008|Swine|A/swine/Texas/008648/2008|USA|H1N2                                     0.00%    passed     56.56%
+ 146  2009|Swine|A/swine/Illinois/02510/2009|USA|H1N1                                   0.00%    passed     81.87%
+ 147  2010|Swine|A/swine/Pennsylvania/057108-1/2010|USA|H3N2                            0.00%    passed     71.18%
+ 148  1934|Avian|A/chicken/Rostock/45/1934|Germany|H7N1                                 0.00%    passed     61.23%
+ 149  1935|Avian|A/chicken/Brescia/1902|Italy|H7N7                                      0.00%    passed     88.19%
+ 150  1949|Avian|A/chicken/Germany/N/1949|Germany|H10N7                                 0.00%    passed     83.36%
+ 151  1953|Avian|A/duck/Manitoba/1/1953|Canada|H10N7                                    0.00%    passed     89.00%
+ 152  1956|Avian|A/duck/England/1/1956|United_Kingdom|H11N6                             0.00%    passed     35.30%
+ 153  1959|Avian|A/chicken/Scotland/1959|United_Kingdom|H5N1                            0.00%    passed     76.87%
+ 154  1959|Avian|A/tern/South_Africa/1959|South_Africa|H5N3                             0.00%    passed     70.34%
+ 155  1960|Avian|A/duck/Ukraine/2/1960|Ukraine|H11N8                                    0.00%    passed     75.96%
+ 156  1961|Avian|A/tern/South_Africa/1961|South_Africa|H5N3                             0.00%    passed     73.08%
+ 157  1963|Avian|A/duck/Ukraine/1/1963|Ukraine|H3N8                                     0.00%    passed     62.13%
+ 158  1963|Avian|A/turkey/Canada/1963|Canada|H6N8                                       0.00%    passed     93.13%
+ 159  1965|Avian|A/quail/Italy/1117/1965|Italy|H10N8                                    0.00%    passed     85.87%
+ 160  1966|Avian|A/turkey/Wisconsin/1966|USA|H9N2                                       0.00%    passed     86.54%
+ 161  1967|Avian|A/turkey/Ontario/6118/1967|Australia|H8N4                              0.00%    passed     80.70%
+ 162  1969|Avian|A/duck/Pennsylvania/1/1969|USA|H6N1                                    0.00%    passed     91.12%
+ 163  1969|Avian|A/turkey/England/1969|United_Kingdom|H3N2                              0.00%    passed     63.91%
+ 164  1971|Avian|A/turkey/Oregon/1971|USA|H7N3                                          0.00%    passed     87.74%
+ 165  1972|Avian|A/turkey/CO/118899/1972|USA|H5N2                                       0.00%    passed     86.05%
+ 166  1973|Avian|A/parrot/Ulster/73|Ireland|H7N1                                        0.00%    passed     73.89%
+ 167  1974|Avian|A/duck/Memphis/546/1974|USA|H11N9                                      0.00%    passed     73.53%
+ 168  1974|Avian|A/duck/Memphis/928/1974|USA|H3N8                                       0.00%    passed     97.69%
+ 169  1975|Avian|A/Canada_goose/Wisconsin/902/1975|USA|H5N2                             0.00%    passed     87.56%
+ 170  1975|Avian|A/mallard/WI/42/1975|USA|H5N2                                          0.00%    passed     72.11%
+ 171  1975|Avian|A/shearwater/Australia/751/1975|Australia|H5N3                         0.00%    passed     75.30%
+ 172  1976|Avian|A/chicken/Victoria/1976|Australia|H7N7                                 0.00%    passed     34.16%
+ 173  1976|Avian|A/duck/Alberta/35/1976|Canada|H1N1                                     0.00%    passed     89.07%
+ 174  1976|Avian|A/duck/Alberta/60/1976|Canada|H12N5                                    0.00%    passed     89.31%
+ 175  1976|Avian|A/duck/New_Zealand/164/76|New_Zealand|H11N3                            0.00%    passed     46.75%
+ 176  1976|Avian|A/duck/New_Zealand/31/1976|New_Zealand|H4N6                            0.00%    passed     89.78%
+ 177  1977|Avian|A/duck/Bavaria/2/1977|Germany|H1N1                                     0.00%    passed     57.81%
+ 178  1977|Avian|A/duck/Hokkaido/5/1977|Japan|H3N2                                      0.00%    passed     72.22%
+ 179  1977|Avian|A/gull/Maryland/704/1977|USA|H13N6                                     0.00%    passed     97.69%
+ 180  1977|Avian|A/mallard/Alberta/127/1977|Canada|H1N1                                 0.00%    passed     79.37%
+ 181  1977|Avian|A/pintail_duck/ALB/159/1977|Canada|H4N6                                0.00%    passed     82.06%
+ 182  1977|Avian|A/pintail_duck/ALB/220/1977|Canada|H4N8                                0.00%    passed     80.15%
+ 183  1977|Avian|A/pintail_duck/ALB/303/1977|Canada|H10N7                               0.00%    passed     93.22%
+ 184  1977|Avian|A/wedge-tailed_shearwater/Western_Australia/405/1977|Australia|H3N8    0.00%    passed     77.54%
+ 185  1978|Avian|A/blue-winged_teal/ALB/651/1978|Canada|H6N2                            0.00%    passed     92.84%
+ 186  1978|Avian|A/duck/Beijing/1/1978|China|H3N6                                       0.00%    passed     98.84%
+ 187  1978|Avian|A/duck/Hong_Kong/278/1978|Hong_Kong|H2N9                               0.00%    passed     90.51%
+ 188  1978|Avian|A/duck/Hong_Kong/365/1978|Hong_Kong|H4N6                               0.00%    passed     74.06%
+ 189  1978|Avian|A/mallard_duck/New_York/66861/1978|USA|H2N3                            0.00%    passed     81.46%
+ 190  1978|Avian|A/Pacific_black_duck/Western_Australia/699/1978|Australia|H3N8         0.00%    passed     58.76%
+ 191  1979|Avian|A/duck/Hong_Kong/698/1979|Hong_Kong|H5N3                               0.00%    passed     65.39%
+ 192  1979|Avian|A/eurasian_coot/Western_Australia/2727/1979|Australia|H6N2             0.00%    passed     57.79%
+ 193  1979|Avian|A/goose/Leipzig/187-7/1979|Germany|H7N7                                0.00%    passed     76.44%
+ 194  1979|Avian|A/green-winged_teal/ALB/438/1979|Canada|H3N8                           0.00%    passed     78.01%
+ 195  1979|Avian|A/mallard_duck/Alberta/106/1979|Canada|H4N2                            0.07%    passed     83.78%
+ 196  1979|Avian|A/pintail_duck/ALB/238/1979|Canada|H1N1                                0.00%    passed     77.26%
+ 197  1979|Avian|A/pintail/Alberta/1040/1979|Canada|H6N5                                0.00%    passed     84.97%
+ 198  1979|Avian|A/pintail/Alberta/21/1979|Canada|H7                                    0.00%    passed     83.70%
+ 199  1979|Avian|A/turkey/Minnesota/5/1979|USA|H10N8                                    0.00%    passed     89.92%
+ 200  1980|Avian|A/black_duck/AUS/4045/1980|Australia|H6N5                              0.00%    passed     74.72%
+ 201  1980|Avian|A/duck/Australia/749/1980|Australia|H1N1                               0.00%    passed     87.59%
+ 202  1980|Avian|A/duck/Hokkaido/8/1980|Japan|H3N8                                      0.00%    passed     53.14%
+ 203  1980|Avian|A/pintail_duck/Alberta/169/1980|Canada|H3N8                            0.00%    passed     77.39%
+ 204  1980|Avian|A/red-necked_stint/Western_Australia/4126/1980|Australia|H4N8          0.00%    passed     91.05%
+ 205  1980|Avian|A/teal/Iceland/29/1980|Iceland|H7N7                                    0.00%    passed     64.43%
+ 206  1980|Avian|A/turkey/Minnesota/833/1980|USA|H4N2                                   0.00%    passed     85.68%
+ 207  1981|Avian|A/duck/Minnesota/1516/1981|USA|H5N2                                    0.00%    passed     83.32%
+ 208  1981|Avian|A/duck/Victoria/23/1981|Australia|H1N1                                 0.00%    passed     42.15%
+ 209  1981|Avian|A/duck/Victoria/24/1981|Australia|H8N4                                 0.00%    passed     91.04%
+ 210  1981|Avian|A/duck/Victoria/30a/1981|Australia|H12N7                               0.00%    passed     80.20%
+ 211  1981|Avian|A/red-necked_stint/Australia/5745/1981|Australia|H12N9                 0.00%    passed     87.80%
+ 212  1981|Avian|A/turkey/TX/4-1-81/1981|USA|H9N2                                       0.00%    passed     80.13%
+ 213  1983|Avian|A/chicken/Pennsylvania/4104/1983|USA|H5N2                              0.00%    passed     91.44%
+ 214  1983|Avian|A/duck/Australia/341/1983|Australia|H15N8                              0.00%    passed     74.09%
+ 215  1983|Avian|A/mallard/Postdam/178-4/1983|Germany|H2N2                              0.00%    passed     66.14%
+ 216  1983|Avian|A/red-necked_stint/Western_Australia/4923/1983|Australia|H3N8          0.00%    passed     92.22%
+ 217  1984|Avian|A/Chicken/Virginia/40018/84|USA|H5N2                                   0.00%    passed     91.44%
+ 218  1984|Avian|A/duck/NZL/41/1984|New_Zealand|H1N2                                    0.00%    passed     70.48%
+ 219  1984|Avian|A/duck/NZL/76/1984|New_Zealand|H9N1                                    0.00%    passed     75.71%
+ 220  1984|Avian|A/duck/Western_Australia/8108/1984|Australia|H4N6                      0.00%    passed     99.22%
+ 221  1984|Avian|A/mallard_duck/Alberta/630/1984|Canada|H4N2                            0.00%    passed     66.23%
+ 222  1985|Avian|A/chicken/Victoria/1/1985|Australia|H7N7                               0.00%    passed     95.17%
+ 223  1985|Avian|A/mallard_duck/Alberta/435/1985|Canada|H7N3                            0.00%    passed     90.63%
+ 224  1985|Avian|A/mallard/Tennessee/11457/1985|USA|H11N9                               0.00%    passed     89.02%
+ 225  1986|Avian|A/blue-winged_teal/Alberta/427/1986|Canada|H4N6                        0.00%    passed     78.57%
+ 226  1986|Avian|A/mallard/Ohio/338/1986|USA|H4N8                                       0.00%    passed     86.90%
+ 227  1986|Avian|A/sanderling/New_Jersey/766/1986|USA|H2N7                              0.00%    passed     97.95%
+ 228  1987|Avian|A/green-winged_teal/LA/9GW/1987|USA|H11N9                              0.00%    passed     93.53%
+ 229  1987|Avian|A/mallard/Ohio/556/1987|USA|mixed                                      0.00%    passed     89.84%
+ 230  1987|Avian|A/pintail/Alberta/128/1987|Canada|H3N8                                 0.00%    passed     77.26%
+ 231  1987|Avian|A/duck/LA/17G/1987|USA|H3N8                                            0.00%    passed     56.70%
+ 232  1988|Avian|A/ruddy_turnstone/DE/2368/1988|USA|H4N9                                0.00%    passed     97.68%
+ 233  1988|Avian|A/wigeon/Ohio/379/1988|USA|H5N2                                        0.00%    passed     94.31%
+ 234  1989|Avian|A/herring_gull/NJ/406/1989|USA|H5N3                                    0.00%    passed     95.87%
+ 235  1989|Avian|A/mallard/Ohio/129/1989|USA|H4N6                                       0.00%    passed     95.45%
+ 236  1989|Avian|A/red_knot/NJ/325/1989|USA|H7N7                                        0.00%    passed     95.61%
+ 237  1990|Avian|A/herring_gull/New_Jersey/159/1990|USA|H3N6                            0.00%    passed     97.79%
+ 238  1990|Avian|A/ruddy_turnstone/New_Jersey/138/1990|USA|H3N6                         0.00%    passed     95.87%
+ 239  1990|Avian|A/semi-palmated_sandpiper/New_Jersey/237/1990|USA|H3N6                 0.00%    passed     96.87%
+ 240  1991|Avian|A/turkey/Colorado/13356/1991|USA|H7N3                                  0.00%    passed     73.34%
+ 241  1991|Avian|A/ruddy_turnstone/Delaware_Bay/231/1991|USA|H6N8                       0.00%    passed     99.82%
+ 242  1991|Avian|A/mallard/Alberta/126/1991|Canada|H11N9                                0.00%    passed     93.26%
+ 243  1991|Avian|A/mallard/Alberta/115/1991|Canada|H3N8                                 0.00%    passed     92.27%
+ 244  1992|Avian|A/duck/Victoria/1992|Australia|H3N8                                    0.00%    passed     93.98%
+ 245  1992|Avian|A/chicken/Victoria/224/1992|Australia|H7N3                             0.00%    passed     98.18%
+ 246  1993|Avian|A/ruddy_turnstone/Delaware/34/1993|USA|H2N1                            0.00%    passed     98.62%
+ 247  1993|Avian|A/mallard/Ohio/94/1993|USA|H11N3                                       0.00%    passed     95.27%
+ 248  1994|Avian|A/ruddy_turnstone/Delaware_Bay/168/1994|USA|mixed                      0.00%    passed     99.31%
+ 249  1994|Avian|A/duck/Victoria/D23/1994|Australia|H4N2                                0.00%    passed     97.66%
+ 250  1994|Avian|A/chicken/Queensland/1994|Australia|H7N3                               0.00%    passed     99.14%
+ 251  1994|Avian|A/Chicken/Beijing/1/94|China|H9N2                                      1.00%    passed     96.03%
+ 252  1995|Avian|A/lesser_scaup/Alberta/206/1995|Canada|H3N8                            0.00%    passed     85.71%
+ 253  1995|Avian|A/chicken/NY/13833-7/1995|USA|H7N2                                     0.00%    passed     93.21%
+ 254  1996|Avian|A/ruddy_turnstone/Delaware_Bay/215/1996|USA|mixed                      0.00%    passed     97.61%
+ 255  1996|Avian|A/ruddy_turnstone/Delaware_Bay/135/1996|USA|H7N3                       0.00%    passed     90.51%
+ 256  1996|Avian|A/chicken/Shandong/7/96|China|H9N2                                     0.00%    passed     97.33%
+ 257  1997|Avian|A/emu/NSW/1742/1997|Australia|H7N4                                     0.00%    passed     99.81%
+ 258  1997|Avian|A/chicken/PA/11767/1997|USA|H7N2                                       0.00%    passed     95.77%
+ 259  1997|Avian|A/chicken/Guangdong/5/97|China|H9N2                                    0.00%    passed     95.78%
+ 260  1998|Avian|A/duck/Hokkaido/49/98|Japan|H9N2                                       0.00%    passed     89.50%
+ 261  1998|Avian|A/mallard/MN/14/1998|USA|H2N3                                          0.00%    passed     93.79%
+ 262  1998|Avian|A/mallard/Alberta/167/1998|Canada|H3N8                                 0.00%    passed     98.55%
+ 263  1998|Avian|A/goose/NY/8600-3/1998|USA|H7N2                                        0.00%    passed     91.62%
+ 264  1999|Avian|A/mallard/Netherlands/5/1999|Netherlands|H2N9                          0.00%    passed     94.40%
+ 265  1999|Avian|A/chicken/Hubei/01/1999|China|H9N2                                     0.00%    passed     99.93%
+ 266  2000|Avian|A/semipalmated_sandpiper/Delaware/2109/2000|USA|H11N6                  0.00%    passed     90.41%
+ 267  2001|Avian|A/cinnamon_teal/Bolivia/4537/2001|Bolivia|H7N3                         0.07%    passed     63.20%
+ 268  2001|Avian|A/chicken/Shantou/1126/2001|China|H9N2                                 0.00%    passed     73.95%
+ 269  2001|Avian|A/chicken/PA/143586/2001|USA|H7N2                                      0.00%    passed     96.02%
+ 270  2002|Avian|A/redhead/Alberta/192/2002|Canada|H3N6                                 0.00%    passed     97.85%
+ 271  2002|Avian|A/chicken/Jilin/hf/2002|China|H5N1                                     0.00%    passed     75.28%
+ 272  2002|Avian|A/chicken/Guangdong/21/02|China|H9N2                                   0.00%    passed     84.47%
+ 273  2002|Avian|A/chicken/Chile/176822/02|Chile|H7N3                                   0.00%    passed     74.25%
+ 274  2002|Avian|A/blue-winged_teal/Ohio/908/2002|USA|H3N2                              0.00%    passed     88.81%
+ 275  2003|Avian|A/mallard/Maryland/210/2003|USA|H10N7                                  0.00%    passed     87.21%
+ 276  2003|Avian|A/goose/Jilin/hb/2003|China|H5N1                                       0.00%    passed     77.44%
+ 277  2003|Avian|A/chicken/HongKong/FY23/03|Hong_Kong|H9N2                              0.00%    passed     92.00%
+ 278  2004|Avian|A/red-necked_stint/Australia/2/2004|Australia|H4N8                     0.00%    passed     72.52%
+ 279  2004|Avian|A/duck/Korea/GJ54/2004|South_Korea|H5N2                                0.60%    passed     42.31%
+ 280  2004|Avian|A/chicken/zz/02/2004|China|H5N1                                        0.00%    passed     85.19%
+ 281  2004|Avian|A/chicken/MD/MinhMa/2004|USA|H7N2                                      0.00%    passed     99.48%
+ 282  2005|Avian|A/Muscovy_duck/New_York/11646-4/2005|USA|H7N2                          0.00%    passed     96.56%
+ 283  2005|Avian|A/mallard/Missouri/MO130/2005|USA|H11N3                                0.00%    passed     96.84%
+ 284  2005|Avian|A/mallard/Alberta/11393/2005|Canada|H1N1                               0.00%    passed     94.45%
+ 285  2006|Avian|A/slaty-backed_gull/Japan/6KS0191/2006|Japan|H4N8                      0.00%    passed     67.82%
+ 286  2006|Avian|A/pekin_duck/California/P30/2006|USA|H4N2                              0.00%    passed     43.06%
+ 287  2006|Avian|A/chicken/New_York/8391-2/2006|USA|H7N2                                0.00%    passed     89.64%
+ 288  2006|Avian|A/American_wigeon/Iowa/463998/2006|USA|H5N2                            0.00%    passed     91.03%
+ 289  2007|Avian|A/rosy-billed_pochard/Argentina/CIP051-575/2007|Argentina|H6N8         0.00%    passed     51.84%
+ 290  2007|Avian|A/rosy-billed_pochard/Argentina/CIP051-557/2007|Argentina|H6N2         0.00%    passed     79.08%
+ 291  2007|Avian|A/northern_pintail/Saskatchewan/22910/2007|Canada|H3N2                 0.00%    passed     99.14%
+ 292  2007|Avian|A/duck/Hunan/3/2007|China|H5N1                                         0.00%    passed     82.48%
+ 293  2007|Avian|A/blue-winged_teal/Texas/Sg-00208/2007|USA|mixed                       0.00%    passed     91.60%
+ 294  2007|Avian|A/rosy-billed_pochard/Argentina/CIP051-559/2007|Argentina|H9N2         0.00%    passed     79.21%
+ 295  2008|Avian|A/whooper_swan/Hokkaido/1/2008|Japan|H5N1                              0.00%    passed     85.95%
+ 296  2008|Avian|A/Stellers_eider/Alaska/44422-107/2008|USA|H1N1                        0.00%    passed     94.54%
+ 297  2008|Avian|A/rosy-billed_pochard/Argentina/CIP051-925/2008|Argentina|H6N2         0.00%    passed     43.44%
+ 298  2009|Avian|A/whooper_swan/Mongolia/6/2009|Mongolia|H5N1                           0.00%    passed     79.70%
+ 299  2009|Avian|A/mallard/Ohio/1688/2009|USA|H12N5                                     0.00%    passed     91.44%
+ 300  2009|Avian|A/American_coot/Illinois/3405/2009|USA|H10N3                           0.00%    passed     59.05%
+ 301  2010|Avian|A/northern_shoveler/Mississippi/252/2010|USA|H10N7                     0.00%    passed     95.51%
+ 302  2010|Avian|A/rosy-billed_pochard/Argentina/CIP051-1977/2010|Argentina|H6N2        0.00%    passed     46.52%
+ 303  2010|Avian|A/mallard/Mississippi/354/2010|USA|H3N8                                0.00%    passed     50.04%
+ 304  2010|Avian|A/duck/Hokkaido/WZ83/2010|Japan|H5N1                                   0.00%    passed     83.49%
+ 305  2011|Avian|A/peregrine_falcon/Tochigi/15/2011|Japan|H5N1                          0.00%    passed     79.10%
+ 306  2009|Bat|A/bat/Guatemala/153/2009|Guatemala|H17N10                                0.40%    passed      9.88%
+ 307  2009|Bat|A/bat/Guatemala/164/2009|Guatemala|H17N10                                0.40%    passed      9.88%
+ 308  2010|Bat|A/bat/Guatemala/060/2010|Guatemala|H17N10                                0.40%    passed     35.89%
+ 309  1963|Equine|A/equine/Uruguay/1/1963|Uruguay|H3N8                                  0.00%    passed     95.55%
+ 310  1971|Equine|A/equine/Sachiyama/1/1971|Japan|H3N8                                  0.00%    passed     96.54%
+ 311  1972|Equine|A/equine/Algiers/1/1972|Algeria|H3N8                                  0.00%    passed     97.01%
+ 312  1973|Equine|A/equine/New_York/49/1973|USA|H7N7                                    0.00%    passed     91.03%
+ 313  1973|Equine|A/equine/London/1416/1973|United_Kingdom|H7N7                         0.00%    passed     91.55%
+ 314  1975|Equine|A/equine/Kentucky/1a/1975|USA|H7N7                                    0.00%    passed     93.90%
+ 315  1976|Equine|A/equine/Sao_Paulo/4/1976|Brazil|H7N7                                 0.00%    passed     96.01%
+ 316  1977|Equine|A/equine/Argentina/1/1977|Argentina|H7N7                              0.00%    passed     96.95%
+ 317  1978|Equine|A/equine/Kentucky/1/1978|USA|H3N8                                     0.00%    passed     94.21%
+ 318  1979|Equine|A/equine/Switzerland/1118/1979|Switzerland|H3N8                       0.00%    passed     95.55%
+ 319  1980|Equine|A/equine/Kentucky/4/1980|USA|H3N8                                     0.00%    passed     94.64%
+ 320  1981|Equine|A/equine/Kentucky/1/1981|USA|H3N8                                     0.00%    passed     94.21%
+ 321  1985|Equine|A/equine/Santiago/1/1985|Chile|H3N8                                   0.00%    passed     97.59%
+ 322  1986|Equine|A/equine/Tennessee/5/1986|USA|H3N8                                    0.00%    passed     97.50%
+ 323  1986|Equine|A/equine/Johannesburg/1/1986|South_Africa|H3N8                        0.00%    passed     98.21%
+ 324  1987|Equine|A/equine/Kentucky/1/1987|USA|H3N8                                     0.00%    passed     98.95%
+ 325  1988|Equine|A/equine/Kentucky/694/1988|USA|H3N8                                   0.00%    passed     96.74%
+ 326  1989|Equine|A/equine/Rook/93753/1989|United_Kingdom|H3N8                          0.00%    passed     91.25%
+ 327  1990|Equine|A/equine/Kentucky/1277/1990|USA|H3N8                                  0.00%    passed     94.77%
+ 328  1991|Equine|A/equine/Rome/5/1991|Italy|H3N8                                       0.00%    passed     88.65%
+ 329  1991|Equine|A/equine/Kentucky/1/1991|USA|H3N8                                     0.00%    passed     86.77%
+ 330  1992|Equine|A/equine/Kentucky/1/1992|USA|H3N8                                     0.00%    passed     88.94%
+ 331  1992|Equine|A/equine/Austria/421/1992|Austria|H3N8                                0.00%    passed     93.37%
+ 332  1993|Equine|A/equine/Newmarket/2/1993|United_Kingdom|H3N8                         0.00%    passed     94.83%
+ 333  1993|Equine|A/equine/Newmarket/1/1993|United_Kingdom|H3N8                         0.00%    passed     90.92%
+ 334  1994|Equine|A/equine/Qinghai/1/1994|China|H3N8                                    0.00%    passed     89.56%
+ 335  1997|Equine|A/equine/California/4537/1997|USA|H3N8                                0.00%    passed     83.98%
+ 336  2003|Equine|A/equine/Wisconsin/1/03|USA|H3N8                                      0.00%    passed     71.21%
+ 337  2003|Equine|A/equine/Newmarket/5/2003|United_Kingdom|H3N8                         0.00%    passed     69.92%
+ 338  2005|Equine|A/equine/Virginia/131054-3/2005|USA|H3N8                              0.00%    passed     64.60%
+ 339  2007|Equine|A/equine/Montana/9233/2007|USA|H3N8                                   0.00%    passed     55.57%
+ 340  2007|Equine|A/donkey/Xinjiang/5/2007|China|H3N8                                   0.00%    passed     78.82%
+ 341  2008|Equine|A/equine/Inner_Mongolia/8/2008|China|H3N8                             0.00%    passed     79.01%
+ 342  1998|Avian|A/duck/Siberia/272/1998|Russia|H13N6                                   0.00%    passed     75.89%
+ 343  1999|Avian|A/black-headed_gull/Sweden/5/99|Sweden|H16N3                           0.20%    passed     86.18%
+ 344  2000|Avian|A/black-headed_gull/Netherlands/1/00|Netherlands|H13N8                 0.73%    passed     66.41%
+ 345  2004|Avian|A/great_black-headed_gull/Atyrau/743/2004|Kazakhstan|H13N6             0.13%    passed     77.13%
+ 346  2006|Avian|A/black_headed_gull/Mongolia/1766/2006|Mongolia|H13N6                  0.00%    passed     75.77%
+ 347  2008|Avian|A/herring_gull/Mongolia/454/2008|Mongolia|H13N8                        0.00%    passed     58.70%
+ 348  2009|Avian|A/glaucous-winged_gull/Southcentral_Alaska/9JR0783R0/2009|USA|H16N3    1.80%    passed     58.89%
+ 349  1977|Avian|A/gull/Maryland/5/1977|USA|H11N9                                       0.00%    passed     94.54%
+ 350  1990|Avian|A/turkey/Minnesota/1012/1990|USA|H13N2                                 0.00%    passed     54.01%
+ 351  1986|Avian|A/herring_gull/DE/475/1986|USA|H13N2                                   0.00%    passed     59.87%
+ 352  1987|Avian|A/laughing_gull/Delaware_Bay/2838/1987|USA|H13N2                       0.00%    passed     70.89%
+ 353  1980|Avian|A/gull/Minnesota/945/1980|USA|H13N6                                    0.00%    passed     80.83%
+ 354  1978|Avian|A/gull/Maryland/1824/1978|USA|H13N9                                    0.00%    passed     80.61%
+ 355  1979|Avian|A/gull/Maryland/1815/1979|USA|H13N6                                    0.00%    passed     77.34%
+****  TOTAL                                                                             0.02%  3 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: 2009|Bat|A/bat/Guatemala/164/2009|Guatemala|H17N10 is identical to 2009|Bat|A/bat/Guatemala/153/2009|Guatemala|H17N10 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.00273267 secs using 98.29% CPU
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.518 seconds, parsimony score: 8004 (based on 863 sites)
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 1.76882 secs using 97.72% CPU
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -41506.431
+2. Current log-likelihood: -41504.294
+Optimal log-likelihood: -41503.141
+Rate parameters:  A-C: 1.62905  A-G: 11.52194  A-T: 1.18199  C-G: 0.19947  C-T: 14.39410  G-T: 1.00000
+Base frequencies:  A: 0.320  C: 0.199  G: 0.270  T: 0.212
+Proportion of invariable sites: 0.342
+Gamma shape alpha: 0.649
+Parameters optimization took 2 rounds (1.259 sec)
+Time for fast ML tree search: 7.633 seconds
+
+NOTE: ModelFinder requires 93 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 1497) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         47465.072    715 96360.143    97671.129    100157.664
+  2  GTR+F+I       43756.117    716 88944.234    90260.573    92747.067
+  3  GTR+F+G4      41598.514    716 84629.028    85945.366    88431.860
+  4  GTR+F+I+G4    41501.777    717 84437.555    85759.265    88245.699
+  5  GTR+F+R2      42232.792    717 85899.584    87221.294    89707.728
+  6  GTR+F+R3      41677.109    719 84792.219    86124.728    88610.985
+  7  GTR+F+R4      41535.586    721 84513.173    85856.559    88342.561
+  8  GTR+F+R5      41483.154    723 84412.308    85766.647    88252.319
+  9  GTR+F+R6      41444.053    725 84338.106    85703.475    88188.739
+ 10  GTR+F+R7      41440.669    727 84335.339    85711.817    88196.594
+ 14  GTR+F+I+I+R2  41684.279    718 84804.558    86131.658    88618.013
+ 15  GTR+F+I+I+R3  41469.281    720 84378.563    85716.501    88202.640
+ 16  GTR+F+I+I+R4  41443.807    722 84331.613    85680.466    88166.313
+ 17  GTR+F+I+I+R5  41438.873    724 84325.746    85685.591    88171.069
+ 38  SYM+I+I+R4    41585.692    719 84609.384    85941.894    88428.150
+ 39  SYM+I+I+R5    41582.326    721 84606.651    85950.037    88436.040
+ 60  TVM+F+I+I+R4  41459.889    721 84361.778    85705.163    88191.166
+ 61  TVM+F+I+I+R5  41453.921    723 84353.842    85708.181    88193.853
+ 82  TVMe+I+I+R4   41601.392    718 84638.783    85965.884    88452.238
+ 83  TVMe+I+I+R5   41597.792    720 84635.584    85973.522    88459.661
+104  TIM3+F+I+I+R4 41571.932    720 84583.865    85921.803    88407.942
+105  TIM3+F+I+I+R5 41565.968    722 84575.936    85924.789    88410.636
+126  TIM3e+I+I+R4  41732.950    717 84899.900    86221.610    88708.044
+127  TIM3e+I+I+R5  41727.773    719 84893.546    86226.055    88712.312
+148  TIM2+F+I+I+R4 41499.743    720 84439.486    85777.425    88263.564
+149  TIM2+F+I+I+R5 41494.902    722 84433.805    85782.657    88268.504
+170  TIM2e+I+I+R4  41642.258    717 84718.517    86040.226    88526.660
+171  TIM2e+I+I+R5  41638.949    719 84715.899    86048.408    88534.665
+192  TIM+F+I+I+R4  41539.794    720 84519.587    85857.525    88343.665
+193  TIM+F+I+I+R5  41533.789    722 84511.579    85860.431    88346.278
+214  TIMe+I+I+R4   41703.529    717 84841.057    86162.767    88649.201
+215  TIMe+I+I+R5   41698.343    719 84834.687    86167.197    88653.453
+236  TPM3u+F+I+I+R4 41587.471    719 84612.942    85945.451    88431.708
+237  TPM3u+F+I+I+R5 41580.396    721 84602.792    85946.178    88432.181
+258  TPM3+I+I+R4   41748.295    716 84928.591    86244.929    88731.423
+259  TPM3+I+I+R5   41744.096    718 84924.192    86251.292    88737.646
+280  TPM2u+F+I+I+R4 41515.904    719 84469.808    85802.318    88288.574
+281  TPM2u+F+I+I+R5 41509.668    721 84461.336    85804.722    88290.724
+302  TPM2+I+I+R4   41658.180    716 84748.360    86064.698    88551.192
+303  TPM2+I+I+R5   41654.439    718 84744.878    86071.978    88558.333
+324  K3Pu+F+I+I+R4 41555.544    719 84549.089    85881.598    88367.855
+325  K3Pu+F+I+I+R5 41548.451    721 84538.902    85882.288    88368.290
+346  K3P+I+I+R4    41718.791    716 84869.582    86185.921    88672.414
+347  K3P+I+I+R5    41714.499    718 84864.998    86192.098    88678.453
+368  TN+F+I+I+R4   41572.890    719 84583.781    85916.290    88402.547
+369  TN+F+I+I+R5   41566.913    721 84575.826    85919.212    88405.214
+390  TNe+I+I+R4    41735.389    716 84902.777    86219.116    88705.610
+391  TNe+I+I+R5    41730.212    718 84896.425    86223.525    88709.879
+412  HKY+F+I+I+R4  41588.617    718 84613.235    85940.335    88426.690
+413  HKY+F+I+I+R5  41581.538    720 84603.077    85941.015    88427.154
+434  K2P+I+I+R4    41750.633    715 84931.265    86242.251    88728.786
+435  K2P+I+I+R5    41746.351    717 84926.701    86248.411    88734.845
+456  F81+F+I+I+R4  45898.475    717 93230.951    94552.661    97039.094
+457  F81+F+I+I+R5  45893.271    719 93224.542    94557.052    97043.308
+478  JC+I+I+R4     46170.672    714 93769.344    95074.996    97561.554
+479  JC+I+I+R5     46165.897    716 93763.795    95080.133    97566.627
+Akaike Information Criterion:           GTR+F+I+I+R5
+Corrected Akaike Information Criterion: GTR+F+I+I+R4
+Bayesian Information Criterion:         GTR+F+I+I+R4
+Best-fit model: GTR+F+I+I+R4 chosen according to BIC
+
+All model information printed to worobey_2014d.nex.model.gz
+CPU time for ModelFinder: 955.301 seconds (0h:15m:55s)
+Wall-clock time for ModelFinder: 959.041 seconds (0h:15m:59s)
+
+NOTE: 37 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -41443.807
+Optimal log-likelihood: -41443.676
+Rate parameters:  A-C: 1.67066  A-G: 11.71063  A-T: 1.20921  C-G: 0.20043  C-T: 14.52216  G-T: 1.00000
+Base frequencies:  A: 0.320  C: 0.199  G: 0.270  T: 0.212
+Proportion of invariable sites: 0.368
+Site proportion and rates:  (0.269,0.191) (0.125,1.159) (0.152,2.727) (0.085,4.543)
+Parameters optimization took 1 rounds (0.764 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.724519 secs using 99.98% CPU
+Computing ML distances took 0.725956 sec (of wall-clock time) 0.725842 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.00373437 secs using 77.2% CPU
+Constructing RapidNJ tree: done in 0.0114803 secs using 205.9% CPU
+Computing RapidNJ tree took 0.015288 sec (of wall-clock time) 0.026597 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -42226.959
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 91.070 second
+Computing log-likelihood of 98 initial trees ... 9.190 seconds
+Current best score: -41443.676
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 0.690248 secs using 98.79% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -41440.176
+Optimizing NNI: done in 1.5455 secs using 98.67% CPU
+Optimizing NNI: done in 1.4869 secs using 96.2% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -41436.981
+Optimizing NNI: done in 1.485 secs using 97.01% CPU
+Optimizing NNI: done in 1.65079 secs using 96.11% CPU
+Optimizing NNI: done in 1.42124 secs using 96.32% CPU
+Optimizing NNI: done in 1.62543 secs using 97.24% CPU
+Optimizing NNI: done in 1.51345 secs using 98.14% CPU
+Optimizing NNI: done in 1.36178 secs using 96.75% CPU
+Optimizing NNI: done in 1.51662 secs using 97.35% CPU
+Iteration 10 / LogL: -41460.057 / Time: 0h:2m:0s
+Optimizing NNI: done in 1.36597 secs using 98.53% CPU
+Optimizing NNI: done in 1.4862 secs using 97.29% CPU
+Optimizing NNI: done in 1.42797 secs using 96.05% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 13: -41427.995
+Optimizing NNI: done in 1.3927 secs using 97.36% CPU
+Optimizing NNI: done in 1.56543 secs using 97.93% CPU
+Optimizing NNI: done in 1.54209 secs using 97.91% CPU
+Optimizing NNI: done in 1.82804 secs using 96.72% CPU
+Optimizing NNI: done in 1.63276 secs using 96.55% CPU
+Optimizing NNI: done in 1.45232 secs using 96.38% CPU
+Optimizing NNI: done in 1.48749 secs using 98.08% CPU
+Iteration 20 / LogL: -41436.332 / Time: 0h:2m:16s
+Finish initializing candidate tree set (20)
+Current best tree score: -41427.995 / CPU time: 133.633
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 2.19795 secs using 96.71% CPU
+Optimizing NNI: done in 2.0395 secs using 96.66% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 22: -41426.047
+Optimizing NNI: done in 2.30207 secs using 97.55% CPU
+Optimizing NNI: done in 2.18952 secs using 97.22% CPU
+Optimizing NNI: done in 1.92966 secs using 97.27% CPU
+Optimizing NNI: done in 2.2687 secs using 98.02% CPU
+Optimizing NNI: done in 2.15405 secs using 98.29% CPU
+Optimizing NNI: done in 1.95032 secs using 95.88% CPU
+Optimizing NNI: done in 2.01282 secs using 97.16% CPU
+Optimizing NNI: done in 2.17836 secs using 96.67% CPU
+Iteration 30 / LogL: -41427.863 / Time: 0h:2m:39s (0h:8m:26s left)
+Optimizing NNI: done in 2.27096 secs using 97.51% CPU
+Optimizing NNI: done in 2.21065 secs using 97.08% CPU
+Optimizing NNI: done in 2.07803 secs using 98.25% CPU
+Optimizing NNI: done in 2.44574 secs using 97.84% CPU
+Optimizing NNI: done in 1.93144 secs using 96.23% CPU
+Optimizing NNI: done in 2.09937 secs using 97.51% CPU
+Optimizing NNI: done in 2.2403 secs using 97.66% CPU
+Optimizing NNI: done in 1.89179 secs using 97.45% CPU
+Optimizing NNI: done in 1.80327 secs using 97.76% CPU
+Optimizing NNI: done in 2.33659 secs using 96.74% CPU
+Iteration 40 / LogL: -41429.366 / Time: 0h:3m:1s (0h:6m:21s left)
+Optimizing NNI: done in 2.24425 secs using 97.13% CPU
+Optimizing NNI: done in 2.3274 secs using 98.27% CPU
+Optimizing NNI: done in 2.08814 secs using 96.92% CPU
+Optimizing NNI: done in 2.19041 secs using 97.07% CPU
+Optimizing NNI: done in 2.13562 secs using 96.81% CPU
+Optimizing NNI: done in 2.1789 secs using 96.85% CPU
+Optimizing NNI: done in 2.3337 secs using 96.54% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 47: -41425.951
+Optimizing NNI: done in 2.03638 secs using 98.02% CPU
+Optimizing NNI: done in 2.1438 secs using 97.36% CPU
+Optimizing NNI: done in 2.37068 secs using 97.12% CPU
+Iteration 50 / LogL: -41432.458 / Time: 0h:3m:24s (0h:6m:45s left)
+Optimizing NNI: done in 2.14171 secs using 96.45% CPU
+Optimizing NNI: done in 2.07976 secs using 95.95% CPU
+Optimizing NNI: done in 2.02468 secs using 96.24% CPU
+Optimizing NNI: done in 2.08626 secs using 96.92% CPU
+Optimizing NNI: done in 2.24449 secs using 97.32% CPU
+Optimizing NNI: done in 1.95449 secs using 97.92% CPU
+Optimizing NNI: done in 2.10754 secs using 96.77% CPU
+Optimizing NNI: done in 2.05196 secs using 98.23% CPU
+Optimizing NNI: done in 2.06748 secs using 96.87% CPU
+Optimizing NNI: done in 2.1402 secs using 96.26% CPU
+Iteration 60 / LogL: -41437.536 / Time: 0h:3m:45s (0h:5m:33s left)
+Optimizing NNI: done in 2.10739 secs using 97.71% CPU
+Optimizing NNI: done in 1.88957 secs using 96.61% CPU
+Optimizing NNI: done in 2.08866 secs using 96.73% CPU
+Optimizing NNI: done in 2.13748 secs using 96.81% CPU
+Optimizing NNI: done in 2.23618 secs using 97.31% CPU
+Optimizing NNI: done in 1.93352 secs using 96.89% CPU
+Optimizing NNI: done in 1.99609 secs using 96.79% CPU
+Optimizing NNI: done in 2.09859 secs using 97.89% CPU
+Optimizing NNI: done in 1.87736 secs using 98.5% CPU
+Optimizing NNI: done in 1.78836 secs using 97.08% CPU
+Iteration 70 / LogL: -41427.825 / Time: 0h:4m:6s (0h:4m:34s left)
+Optimizing NNI: done in 2.09484 secs using 97.3% CPU
+Optimizing NNI: done in 2.12601 secs using 96.78% CPU
+Optimizing NNI: done in 2.41047 secs using 97.47% CPU
+Optimizing NNI: done in 1.94 secs using 96.69% CPU
+Optimizing NNI: done in 1.93524 secs using 95.66% CPU
+Optimizing NNI: done in 2.32864 secs using 97.4% CPU
+Optimizing NNI: done in 2.09416 secs using 97.32% CPU
+Optimizing NNI: done in 2.07074 secs using 95.16% CPU
+Optimizing NNI: done in 2.24101 secs using 96.78% CPU
+UPDATE BEST LOG-LIKELIHOOD: -41425.949
+Optimizing NNI: done in 1.92476 secs using 96.86% CPU
+Iteration 80 / LogL: -41425.954 / Time: 0h:4m:27s (0h:3m:47s left)
+Optimizing NNI: done in 2.0247 secs using 97.23% CPU
+Optimizing NNI: done in 2.37997 secs using 96.97% CPU
+Optimizing NNI: done in 2.14036 secs using 97% CPU
+Optimizing NNI: done in 2.07756 secs using 97.47% CPU
+Optimizing NNI: done in 2.07375 secs using 96.9% CPU
+Optimizing NNI: done in 2.25915 secs using 97.87% CPU
+Optimizing NNI: done in 1.90817 secs using 97.27% CPU
+Optimizing NNI: done in 2.0663 secs using 95.9% CPU
+Optimizing NNI: done in 2.24733 secs using 97.48% CPU
+Optimizing NNI: done in 2.55385 secs using 97.33% CPU
+Iteration 90 / LogL: -41431.365 / Time: 0h:4m:50s (0h:3m:5s left)
+Optimizing NNI: done in 2.10091 secs using 97.9% CPU
+Optimizing NNI: done in 2.35556 secs using 97.11% CPU
+Optimizing NNI: done in 2.20114 secs using 97.24% CPU
+Optimizing NNI: done in 2.19551 secs using 97.62% CPU
+Optimizing NNI: done in 2.05484 secs using 97.08% CPU
+Optimizing NNI: done in 1.94321 secs using 97.32% CPU
+Optimizing NNI: done in 2.22132 secs using 97.29% CPU
+Optimizing NNI: done in 2.99987 secs using 97.06% CPU
+Optimizing NNI: done in 2.69089 secs using 97.61% CPU
+Optimizing NNI: done in 2.3366 secs using 97.42% CPU
+Iteration 100 / LogL: -41430.411 / Time: 0h:5m:13s (0h:2m:28s left)
+Optimizing NNI: done in 2.59253 secs using 96.14% CPU
+Optimizing NNI: done in 2.54225 secs using 97.47% CPU
+Optimizing NNI: done in 2.3767 secs using 97.78% CPU
+Optimizing NNI: done in 2.36638 secs using 95.77% CPU
+Optimizing NNI: done in 2.7669 secs using 98.11% CPU
+Optimizing NNI: done in 2.8343 secs using 96.32% CPU
+Optimizing NNI: done in 2.49384 secs using 97.75% CPU
+Optimizing NNI: done in 2.24206 secs using 96.6% CPU
+Optimizing NNI: done in 2.06285 secs using 97.26% CPU
+Optimizing NNI: done in 2.28724 secs using 97% CPU
+Iteration 110 / LogL: -41427.661 / Time: 0h:5m:38s (0h:1m:54s left)
+Optimizing NNI: done in 2.38049 secs using 96.96% CPU
+Optimizing NNI: done in 2.68109 secs using 97.89% CPU
+Optimizing NNI: done in 2.38227 secs using 96.28% CPU
+Optimizing NNI: done in 2.44445 secs using 98.16% CPU
+Optimizing NNI: done in 2.6243 secs using 96.73% CPU
+Optimizing NNI: done in 2.27215 secs using 97.84% CPU
+Optimizing NNI: done in 2.21017 secs using 97.1% CPU
+Optimizing NNI: done in 2.08878 secs using 97.12% CPU
+Optimizing NNI: done in 2.3381 secs using 97.26% CPU
+Optimizing NNI: done in 2.38293 secs using 96.11% CPU
+Iteration 120 / LogL: -41425.951 / Time: 0h:6m:2s (0h:1m:22s left)
+Optimizing NNI: done in 2.43943 secs using 95.89% CPU
+Optimizing NNI: done in 2.2516 secs using 96.97% CPU
+Optimizing NNI: done in 2.11988 secs using 97.54% CPU
+Optimizing NNI: done in 1.95524 secs using 97.53% CPU
+Optimizing NNI: done in 2.21444 secs using 97.28% CPU
+Optimizing NNI: done in 1.94532 secs using 95.88% CPU
+Optimizing NNI: done in 1.82738 secs using 96.27% CPU
+Optimizing NNI: done in 2.00423 secs using 97.8% CPU
+Optimizing NNI: done in 1.99857 secs using 97.79% CPU
+Optimizing NNI: done in 1.78637 secs using 96.83% CPU
+Iteration 130 / LogL: -41428.086 / Time: 0h:6m:23s (0h:0m:50s left)
+Optimizing NNI: done in 2.0861 secs using 97.5% CPU
+Optimizing NNI: done in 1.93583 secs using 97.3% CPU
+Optimizing NNI: done in 2.09639 secs using 97.87% CPU
+Optimizing NNI: done in 2.17995 secs using 96.32% CPU
+Optimizing NNI: done in 2.02162 secs using 97.02% CPU
+Optimizing NNI: done in 1.98941 secs using 96.97% CPU
+Optimizing NNI: done in 2.24212 secs using 97.14% CPU
+Optimizing NNI: done in 2.06282 secs using 97.09% CPU
+Optimizing NNI: done in 2.1077 secs using 96.39% CPU
+Optimizing NNI: done in 2.38445 secs using 98.31% CPU
+Iteration 140 / LogL: -41432.648 / Time: 0h:6m:45s (0h:0m:20s left)
+Optimizing NNI: done in 2.02591 secs using 95.45% CPU
+Optimizing NNI: done in 1.97382 secs using 97.96% CPU
+Optimizing NNI: done in 1.92448 secs using 96.87% CPU
+Optimizing NNI: done in 2.01727 secs using 96.22% CPU
+Optimizing NNI: done in 2.53409 secs using 97.15% CPU
+Optimizing NNI: done in 2.23698 secs using 97.48% CPU
+Optimizing NNI: done in 2.34674 secs using 96.75% CPU
+Optimizing NNI: done in 2.18102 secs using 97.61% CPU
+TREE SEARCH COMPLETED AFTER 148 ITERATIONS / Time: 0h:7m:2s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -41425.949
+2. Current log-likelihood: -41425.889
+3. Current log-likelihood: -41425.823
+4. Current log-likelihood: -41425.757
+5. Current log-likelihood: -41425.697
+6. Current log-likelihood: -41425.645
+7. Current log-likelihood: -41425.596
+8. Current log-likelihood: -41425.549
+9. Current log-likelihood: -41425.504
+10. Current log-likelihood: -41425.464
+11. Current log-likelihood: -41425.425
+12. Current log-likelihood: -41425.386
+13. Current log-likelihood: -41425.350
+14. Current log-likelihood: -41425.314
+15. Current log-likelihood: -41425.281
+16. Current log-likelihood: -41425.250
+17. Current log-likelihood: -41425.219
+18. Current log-likelihood: -41425.190
+19. Current log-likelihood: -41425.163
+20. Current log-likelihood: -41425.136
+21. Current log-likelihood: -41425.119
+22. Current log-likelihood: -41425.093
+23. Current log-likelihood: -41425.081
+24. Current log-likelihood: -41425.069
+25. Current log-likelihood: -41425.055
+26. Current log-likelihood: -41425.043
+27. Current log-likelihood: -41425.031
+28. Current log-likelihood: -41425.020
+29. Current log-likelihood: -41425.009
+30. Current log-likelihood: -41424.998
+31. Current log-likelihood: -41424.987
+32. Current log-likelihood: -41424.977
+33. Current log-likelihood: -41424.967
+Optimal log-likelihood: -41424.952
+Rate parameters:  A-C: 1.66488  A-G: 11.67959  A-T: 1.21226  C-G: 0.20687  C-T: 14.54146  G-T: 1.00000
+Base frequencies:  A: 0.320  C: 0.199  G: 0.270  T: 0.212
+Proportion of invariable sites: 0.355
+Site proportion and rates:  (0.274,0.167) (0.129,1.104) (0.161,2.735) (0.080,4.620)
+Parameters optimization took 33 rounds (22.039 sec)
+BEST SCORE FOUND : -41424.952
+Total tree length: 8.916
+
+Total number of iterations: 148
+CPU time used for tree search: 376.461 sec (0h:6m:16s)
+Wall-clock time used for tree search: 419.412 sec (0h:6m:59s)
+Total CPU time used: 401.639 sec (0h:6m:41s)
+Total wall-clock time used: 444.654 sec (0h:7m:24s)
+
+Analysis results written to: 
+  IQ-TREE report:                worobey_2014d.nex.iqtree
+  Maximum-likelihood tree:       worobey_2014d.nex.treefile
+  Likelihood distances:          worobey_2014d.nex.mldist
+  Screen log file:               worobey_2014d.nex.log
+
+Date and Time: Tue Mar 14 01:24:31 2023
