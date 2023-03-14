@@ -98,13 +98,14 @@ echo "...Calculating test statistics..."
 #touch ./results_$alignment_name/${alignment_name}_tests.csv;
 echo "Computation done!"
 
-
-#R Script - Analysis & Visualisation
-echo "-------------------------------------"
-echo "...Running R Script..."
-Rscript ./bin/analysis_visualisation_biological.R $treefile results_$alignment_name/results_raw_${alignment_name}.csv $s >> results_$alignment_name/r_log.log 2> >(tee results_$alignment_name/r_log.log >&2);
-#touch ./results_$alignment_name/${alignment_name}_tests.pdf;
-echo "Computation done!"
+if [ -n "$treefile" ]; then
+	#R Script - Analysis & Visualisation
+	echo "-------------------------------------"
+	echo "...Running R Script..."
+	Rscript ./bin/analysis_visualisation_biological.R $treefile results_$alignment_name/results_raw_${alignment_name}.csv $s >> results_$alignment_name/r_log.log 2> >(tee results_$alignment_name/r_log.log >&2);
+	#touch ./results_$alignment_name/${alignment_name}_tests.pdf;
+	echo "Computation done!"
+fi
 
 
 rm -f Rplots.pdf;
