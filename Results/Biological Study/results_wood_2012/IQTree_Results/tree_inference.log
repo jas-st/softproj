@@ -1,0 +1,78 @@
+IQ-TREE multicore version 2.2.0 COVID-edition for Linux 64-bit built Jun  1 2022
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    scotty-ThinkPad-T460 (AVX2, FMA3, 15 GB RAM)
+Command: ../../iqtree2 -s wood_2012.nex --redo-tree
+Seed:    561873 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Mar 13 23:15:58 2023
+Kernel:  AVX+FMA - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file wood_2012.nex ... Nexus format detected
+Skipping unknown block (SETS)...
+WARNING: 10 sites contain only gaps or ambiguous characters.
+Alignment has 37 sequences with 5185 columns, 2727 distinct patterns
+1792 parsimony-informative, 901 singleton sites, 2492 constant sites
+                                 Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000385051 secs using 98.17% CPU
+   1  Hypochilus_pococki                56.28%    passed     36.61%
+   2  Hickmania_troglodytes             33.11%    passed     33.05%
+   3  Lycosidae_sp                      39.56%    passed     43.31%
+   4  Araneus_sp                        40.85%    failed      0.40%
+   5  Badumna_longinqua                 39.65%    passed      8.65%
+   6  Dysdera_sp                        33.44%    passed     71.74%
+   7  Holarchaea_sp                     38.44%    failed      0.00%
+   8  Kukulcania_hibernalis_hw          38.75%    passed     55.79%
+   9  Loxosceles_sp                     29.35%    passed     40.59%
+  10  Mimetus_sp                        43.84%    passed     87.38%
+  11  Pararchaeidae_sp                  57.72%    passed     47.54%
+  12  Stegodyphus_sp_hwSteg42           37.13%    failed      0.00%
+  13  Uroctea_sp                        31.61%    passed     73.71%
+  14  Gnaphosidae_sp                    39.90%    passed     10.16%
+  15  Palpimanus_sp_hw0082              22.99%    failed      0.00%
+  16  Stenochilus_sp_hw0081             37.11%    failed      0.02%
+  17  Huttonia_sp_hwHutt41              37.01%    passed     18.80%
+  18  Aotearoa_magna_hw0050             20.46%    passed     77.10%
+  19  Mesarchaea_bell_hw0040_20A        29.12%    passed      9.97%
+  20  Mecysmauchenius_segmentatus_hw    21.93%    failed      1.95%
+  21  Chilarchaea_quellon_hw0029        22.70%    passed     23.26%
+  22  Zearchaea_sp_hw0051               29.41%    failed      4.93%
+  23  NewGenus_lavatenda_hw0003AB       32.59%    failed      0.15%
+  24  NewGenus_jeanneli_hw0057          31.90%    passed     54.32%
+  25  NewGenus_legendrei_hw0014         32.92%    failed      1.52%
+  26  Eriauchenius_workmani_hw0006      27.91%    failed      0.00%
+  27  Eriauchenius_bourgini_hw0061      74.08%    failed      0.02%
+  28  Afrarchaea_pilgrimsrest_hw59Af3   31.82%    passed     15.56%
+  29  Afrarchaea_woodae_hw57Af1         26.42%    passed     30.84%
+  30  Austrarchaea_nodosa_hw0074        35.06%    passed     31.79%
+  31  Austrarchaea_davisae_hwAu066      16.16%    failed      0.00%
+  32  Austrarchaea_mainae_hw0075        43.55%    passed     61.09%
+  33  Archaea_paradoxa                 100.00%    passed      -nan%
+  34  Afrarchaea_grimaldii             100.00%    passed      -nan%
+  35  Myrmecarchaea_sp                 100.00%    passed      -nan%
+  36  Baltarchaea_conica               100.00%    passed      -nan%
+  37  Patarchaea_muralis               100.00%    passed      -nan%
+WARNING: 8 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                             44.13%  12 sequences failed composition chi2 test (p-value<5%; df=3)
+WARNING: Sequence Archaea_paradoxa contains only gaps or missing data
+WARNING: Sequence Afrarchaea_grimaldii contains only gaps or missing data
+WARNING: Sequence Myrmecarchaea_sp contains only gaps or missing data
+WARNING: Sequence Baltarchaea_conica contains only gaps or missing data
+WARNING: Sequence Patarchaea_muralis contains only gaps or missing data
+IQ-TREE multicore version 2.2.0 COVID-edition for Linux 64-bit built Jun  1 2022
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    scotty-ThinkPad-T460 (AVX2, FMA3, 15 GB RAM)
+Command: ../../iqtree2 -s wood_2012.nex --redo-tree
+Seed:    565046 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Mar 13 23:38:18 2023
+Kernel:  AVX+FMA - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file wood_2012.nex ... Nexus format detected

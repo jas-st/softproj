@@ -1,0 +1,363 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fermat (AVX2, FMA3, 1009 GB RAM)
+Command: ../../iqtree -s sharanowski_2011.nex -m TEST -bb 1000 -alrt 1000
+Seed:    664875 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Mar 13 22:21:19 2023
+Kernel:  AVX+FMA - 1 threads (128 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 128 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file sharanowski_2011.nex ... Nexus format detected
+Skipping unknown block (SETS)...
+WARNING: 30 sites contain only gaps or ambiguous characters.
+Alignment has 139 sequences with 3982 columns, 2717 distinct patterns
+1674 parsimony-informative, 492 singleton sites, 1816 constant sites
+        Gap/Ambiguity  Composition  p-value
+   1  BJS001    7.68%    passed     71.69%
+   2  BJS003   27.52%    passed     23.39%
+   3  BJS007   50.73%    passed     79.15%
+   4  BJS008   11.07%    failed      1.22%
+   5  BJS010    7.71%    passed     13.34%
+   6  BJS011    9.17%    passed     18.75%
+   7  BJS012    5.55%    passed     11.85%
+   8  BJS013   18.73%    passed     27.53%
+   9  BJS014   41.94%    passed     82.82%
+  10  BJS015   54.75%    failed      0.00%
+  11  BJS017    8.26%    passed     74.95%
+  12  BJS018    5.30%    passed     41.16%
+  13  BJS019    9.92%    failed      3.11%
+  14  BJS020    7.28%    passed     98.32%
+  15  BJS021    7.79%    failed      4.77%
+  16  BJS022    9.09%    passed     57.86%
+  17  BJS023   23.36%    passed      7.60%
+  18  BJS024    6.08%    passed     81.62%
+  19  BJS025    7.06%    failed      0.98%
+  20  BJS026    7.23%    failed      4.48%
+  21  BJS027   45.55%    passed     38.84%
+  22  BJS029   15.65%    passed     54.63%
+  23  BJS030    7.43%    passed     85.93%
+  24  BJS034   22.80%    passed     47.24%
+  25  BJS035   13.08%    passed     83.27%
+  26  BJS036   20.92%    passed     64.51%
+  27  BJS037   11.23%    passed      5.32%
+  28  BJS040   27.35%    failed      0.49%
+  29  BJS043    6.81%    passed     23.47%
+  30  BJS044   21.30%    passed     34.60%
+  31  BJS045   11.02%    passed     16.05%
+  32  BJS046   45.35%    passed     90.89%
+  33  BJS048   12.08%    passed     11.19%
+  34  BJS085    5.90%    passed     53.60%
+  35  BJS086   23.81%    passed     26.73%
+  36  BJS087    5.50%    passed     80.26%
+  37  BJS089   21.27%    passed     78.38%
+  38  BJS093    4.77%    passed     73.16%
+  39  BJS095    5.22%    passed     55.23%
+  40  BJS098    5.50%    failed      0.01%
+  41  BJS099   33.17%    passed     87.60%
+  42  BJS100   15.44%    passed     10.43%
+  43  BJS101   24.89%    passed     78.36%
+  44  BJS102   20.09%    passed     33.79%
+  45  BJS103   20.42%    passed      8.40%
+  46  BJS104   10.77%    passed     55.61%
+  47  BJS105   15.87%    passed     16.00%
+  48  BJS107   15.77%    failed      0.43%
+  49  BJS108   24.28%    failed      0.02%
+  50  BJS110    6.08%    failed      0.01%
+  51  BJS111   13.81%    failed      0.16%
+  52  BJS112    8.86%    passed     97.09%
+  53  BJS113   12.81%    passed     96.17%
+  54  BJS114   29.26%    passed     79.61%
+  55  BJS115   26.62%    passed     87.22%
+  56  BJS116   21.02%    passed     95.13%
+  57  BJS117   45.53%    passed     99.03%
+  58  DM011    12.10%    passed     81.52%
+  59  DM037    33.10%    passed     11.97%
+  60  DM054    24.66%    failed      0.02%
+  61  DM057    51.56%    failed      0.00%
+  62  DM059    37.82%    failed      0.00%
+  63  DM070     5.95%    failed      0.02%
+  64  DM071    11.00%    failed      0.00%
+  65  DM072    24.56%    passed     68.13%
+  66  DM073    12.48%    failed      0.40%
+  67  DM074     8.66%    failed      0.50%
+  68  DM081    21.60%    passed     20.81%
+  69  DM084     7.58%    passed     98.65%
+  70  DM086    12.41%    passed     47.46%
+  71  DM087    22.28%    passed     67.59%
+  72  DM089    13.79%    passed     52.52%
+  73  DM090     6.60%    passed      9.14%
+  74  DM094    30.39%    failed      0.00%
+  75  DM095    17.18%    failed      0.00%
+  76  DM100    31.49%    passed     79.12%
+  77  DM103    41.81%    failed      0.00%
+  78  JS001     6.86%    passed     23.21%
+  79  JS003    15.87%    passed     39.37%
+  80  JS005    52.66%    passed      6.23%
+  81  JS007    37.49%    passed      8.35%
+  82  JS008    11.95%    passed     41.70%
+  83  JS010    21.82%    passed     41.28%
+  84  JS012     7.43%    passed     18.10%
+  85  JS017    13.13%    failed      0.00%
+  86  JS020    25.14%    passed     38.64%
+  87  JS023     5.63%    passed     12.67%
+  88  JS024     6.43%    passed     53.12%
+  89  JS025    23.51%    failed      0.03%
+  90  JS027    31.01%    passed     60.10%
+  91  JS029     5.55%    passed     15.98%
+  92  JS031     5.90%    failed      0.04%
+  93  JS034    13.51%    failed      0.00%
+  94  JS042     4.95%    failed      2.04%
+  95  JS046     6.98%    failed      0.00%
+  96  JS054    12.53%    passed     77.72%
+  97  JS058    21.45%    passed     20.53%
+  98  JS059    39.53%    passed     31.49%
+  99  JS068     6.50%    failed      0.09%
+ 100  JS069     5.32%    failed      0.00%
+ 101  JS078    19.89%    failed      3.81%
+ 102  JS079     5.80%    failed      0.00%
+ 103  JS081     6.35%    passed     47.51%
+ 104  JS082    29.56%    passed     88.98%
+ 105  JS086    39.55%    passed     65.08%
+ 106  JS091     5.35%    failed      0.98%
+ 107  JS093     7.61%    passed     68.91%
+ 108  JS094    26.14%    passed     16.05%
+ 109  JS102    23.08%    passed     49.94%
+ 110  JS106     5.95%    failed      0.00%
+ 111  JS124    45.25%    passed     37.80%
+ 112  JS147     7.11%    failed      0.05%
+ 113  JS165    25.51%    passed      8.84%
+ 114  JS195    29.83%    passed     75.72%
+ 115  JS202    24.49%    passed     96.07%
+ 116  JS207    24.31%    failed      0.97%
+ 117  JS208     7.01%    failed      0.00%
+ 118  JS209    24.54%    failed      1.63%
+ 119  JS211    18.81%    passed     91.87%
+ 120  JS214    38.45%    passed     33.44%
+ 121  JS220    53.06%    passed      6.72%
+ 122  JS222    34.66%    failed      0.00%
+ 123  JS223    41.64%    passed      8.69%
+ 124  JS225     5.17%    failed      0.00%
+ 125  JS228    18.81%    passed     14.28%
+ 126  JS243    20.74%    passed      9.99%
+ 127  JS252     6.13%    failed      0.21%
+ 128  JS261    16.42%    failed      2.61%
+ 129  JS272     8.41%    failed      0.02%
+ 130  JS276    13.79%    passed      5.12%
+ 131  KP       13.61%    failed      0.01%
+ 132  ZOO11    38.10%    failed      0.00%
+ 133  ZOO12     5.90%    passed     96.28%
+ 134  ZOO18     8.34%    failed      0.00%
+ 135  ZOO20     5.63%    passed     67.08%
+ 136  ZOO23    40.28%    passed     52.21%
+ 137  ZOO27     8.84%    failed      0.00%
+ 138  ZOO35     5.15%    passed     67.73%
+ 139  ZOO8     21.02%    passed     24.59%
+WARNING: 5 sequences contain more than 50% gaps/ambiguity
+****  TOTAL    18.65%  47 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.048 seconds
+NOTE: ModelFinder requires 59 MB RAM!
+ModelFinder will test 88 DNA models (sample size: 3982) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            137251.995   275 275053.989   275094.950   276783.612
+  2  JC+I          123714.295   276 247980.590   248021.859   249716.503
+  3  JC+G4         114176.950   276 228905.899   228947.169   230641.812
+  4  JC+I+G4       113632.540   277 227819.081   227860.661   229561.283
+  5  F81+F         137363.810   278 275283.621   275325.512   277032.113
+  6  F81+F+I       123870.722   279 248299.444   248341.648   250054.225
+  7  F81+F+G4      114216.693   279 228991.385   229033.589   230746.167
+  8  F81+F+I+G4    113656.359   280 227872.718   227915.236   229633.789
+  9  K2P           133015.570   276 266583.140   266624.410   268319.053
+ 10  K2P+I         119309.156   277 239172.312   239213.892   240914.514
+ 11  K2P+G4        109366.654   277 219287.308   219328.888   221029.511
+ 12  K2P+I+G4      108695.293   278 217946.586   217988.477   219695.078
+ 13  HKY+F         133131.943   279 266821.887   266864.091   268576.668
+ 14  HKY+F+I       119404.185   280 239368.371   239410.889   241129.442
+ 15  HKY+F+G4      109168.931   280 218897.863   218940.381   220658.934
+ 16  HKY+F+I+G4    108447.553   281 217457.105   217499.939   219224.466
+ 17  TNe           132894.493   277 266342.985   266384.565   268085.188
+ 18  TNe+I         119283.741   278 239123.483   239165.374   240871.974
+ 19  TNe+G4        109350.942   278 219257.884   219299.775   221006.376
+ 20  TNe+I+G4      108673.866   279 217905.733   217947.937   219660.514
+ 21  TN+F          132802.863   280 266165.726   266208.245   267926.797
+ 22  TN+F+I        119265.727   281 239093.453   239136.287   240860.814
+ 23  TN+F+G4       109043.654   281 218649.308   218692.142   220416.669
+ 24  TN+F+I+G4     108306.146   282 217176.291   217219.441   218949.941
+ 25  K3P           132891.555   277 266337.110   266378.690   268079.312
+ 26  K3P+I         119177.575   278 238911.149   238953.041   240659.641
+ 27  K3P+G4        109244.481   278 219044.963   219086.854   220793.455
+ 28  K3P+I+G4      108588.383   279 217734.765   217776.969   219489.547
+ 29  K3Pu+F        133021.453   280 266602.905   266645.424   268363.977
+ 30  K3Pu+F+I      119286.970   281 239135.940   239178.773   240903.300
+ 31  K3Pu+F+G4     109087.648   281 218737.297   218780.131   220504.658
+ 32  K3Pu+F+I+G4   108382.714   282 217329.428   217372.578   219103.078
+ 33  TPM2+F        132410.552   280 265381.105   265423.623   267142.176
+ 34  TPM2+F+I      118702.554   281 237967.108   238009.942   239734.469
+ 35  TPM2+F+G4     108753.746   281 218069.492   218112.326   219836.853
+ 36  TPM2+F+I+G4   108062.412   282 216688.823   216731.973   218462.474
+ 37  TPM2u+F       132410.542   280 265381.084   265423.603   267142.155
+ 38  TPM2u+F+I     118702.554   281 237967.107   238009.941   239734.468
+ 39  TPM2u+F+G4    108753.744   281 218069.488   218112.321   219836.848
+ 40  TPM2u+F+I+G4  108062.418   282 216688.837   216731.987   218462.487
+ 41  TPM3+F        133006.564   280 266573.128   266615.647   268334.199
+ 42  TPM3+F+I      119230.920   281 239023.841   239066.674   240791.201
+ 43  TPM3+F+G4     109117.104   281 218796.207   218839.041   220563.568
+ 44  TPM3+F+I+G4   108413.923   282 217391.846   217434.996   219165.496
+ 45  TPM3u+F       133006.564   280 266573.128   266615.646   268334.199
+ 46  TPM3u+F+I     119230.922   281 239023.845   239066.678   240791.205
+ 47  TPM3u+F+G4    109117.106   281 218796.211   218839.045   220563.572
+ 48  TPM3u+F+I+G4  108413.920   282 217391.840   217434.990   219165.490
+ 49  TIMe          132770.459   278 266096.918   266138.809   267845.410
+ 50  TIMe+I        119152.215   279 238862.430   238904.634   240617.211
+ 51  TIMe+G4       109229.123   279 219016.245   219058.450   220771.027
+ 52  TIMe+I+G4     108567.017   280 217694.033   217736.551   219455.104
+ 53  TIM+F         132692.023   281 265946.045   265988.879   267713.406
+ 54  TIM+F+I       119148.214   282 238860.427   238903.577   240634.077
+ 55  TIM+F+G4      108962.638   282 218489.275   218532.425   220262.926
+ 56  TIM+F+I+G4    108238.898   283 217043.797   217087.265   218823.737
+ 57  TIM2e         132095.069   278 264746.138   264788.030   266494.630
+ 58  TIM2e+I       118499.786   279 237557.572   237599.777   239312.354
+ 59  TIM2e+G4      108865.058   279 218288.117   218330.321   220042.898
+ 60  TIM2e+I+G4    108206.689   280 216973.378   217015.896   218734.449
+ 61  TIM2+F        132096.801   281 264755.601   264798.435   266522.962
+ 62  TIM2+F+I      118575.358   282 237714.716   237757.866   239488.366
+ 63  TIM2+F+G4     108631.049   282 217826.099   217869.249   219599.749
+ 64  TIM2+F+I+G4   107911.198   283 216388.396   216431.864   218168.336
+ 65  TIM3e         132622.801   278 265801.601   265843.493   267550.093
+ 66  TIM3e+I       118966.036   279 238490.073   238532.277   240244.854
+ 67  TIM3e+G4      109177.483   279 218912.965   218955.169   220667.747
+ 68  TIM3e+I+G4    108525.733   280 217611.465   217653.984   219372.537
+ 69  TIM3+F        132673.649   281 265909.297   265952.131   267676.658
+ 70  TIM3+F+I      119088.539   282 238741.079   238784.229   240514.729
+ 71  TIM3+F+G4     108995.738   282 218555.476   218598.626   220329.126
+ 72  TIM3+F+I+G4   108274.375   283 217114.750   217158.218   218894.690
+ 73  TVMe          131933.449   279 264424.899   264467.103   266179.680
+ 74  TVMe+I        118196.961   280 236953.922   236996.441   238714.993
+ 75  TVMe+G4       108679.531   280 217919.062   217961.580   219680.133
+ 76  TVMe+I+G4     108045.993   281 216653.986   216696.819   218421.346
+ 77  TVM+F         132281.172   282 265126.344   265169.495   266899.995
+ 78  TVM+F+I       118523.935   283 237613.871   237657.338   239393.810
+ 79  TVM+F+G4      108690.737   283 217947.474   217990.941   219727.413
+ 80  TVM+F+I+G4    108012.784   284 216593.569   216637.356   218379.798
+ 81  SYM           131819.003   280 264198.007   264240.525   265959.078
+ 82  SYM+I         118174.577   281 236911.154   236953.987   238678.514
+ 83  SYM+G4        108665.032   281 217892.064   217934.897   219659.424
+ 84  SYM+I+G4      108025.204   282 216614.408   216657.558   218388.058
+ 85  GTR+F         131963.394   283 264492.788   264536.256   266272.727
+ 86  GTR+F+I       118392.848   284 237353.696   237397.483   239139.925
+ 87  GTR+F+G4      108570.951   284 217709.902   217753.688   219496.131
+ 88  GTR+F+I+G4    107865.475   285 216300.950   216345.057   218093.469
+Akaike Information Criterion:           GTR+F+I+G4
+Corrected Akaike Information Criterion: GTR+F+I+G4
+Bayesian Information Criterion:         GTR+F+I+G4
+Best-fit model: GTR+F+I+G4 chosen according to BIC
+
+All model information printed to sharanowski_2011.nex.model.gz
+CPU time for ModelFinder: 117.712 seconds (0h:1m:57s)
+Wall-clock time for ModelFinder: 118.712 seconds (0h:1m:58s)
+Generating 1000 samples for ultrafast bootstrap (seed: 664875)...
+
+NOTE: 59 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.325 / LogL: -108570.896
+Init pinv, alpha: 0.051, 1.000 / Estimate: 0.405, 0.714 / LogL: -107865.447
+Init pinv, alpha: 0.101, 1.000 / Estimate: 0.406, 0.714 / LogL: -107865.440
+Init pinv, alpha: 0.152, 1.000 / Estimate: 0.405, 0.713 / LogL: -107865.457
+Init pinv, alpha: 0.203, 1.000 / Estimate: 0.406, 0.714 / LogL: -107865.457
+Init pinv, alpha: 0.253, 1.000 / Estimate: 0.405, 0.713 / LogL: -107865.447
+Init pinv, alpha: 0.304, 1.000 / Estimate: 0.406, 0.714 / LogL: -107865.438
+Init pinv, alpha: 0.355, 1.000 / Estimate: 0.405, 0.713 / LogL: -107865.455
+Init pinv, alpha: 0.405, 1.000 / Estimate: 0.406, 0.714 / LogL: -107865.452
+Init pinv, alpha: 0.456, 1.000 / Estimate: 0.406, 0.714 / LogL: -107865.449
+Optimal pinv,alpha: 0.406, 0.714 / LogL: -107865.438
+
+Parameters optimization took 52.466 sec
+Computing ML distances based on estimated model parameters... 0.524 sec
+Computing BIONJ tree...
+0.039 seconds
+Log-likelihood of BIONJ tree: -109933.416
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 5.372 second
+Computing log-likelihood of 98 initial trees ... 17.103 seconds
+Current best score: -107841.630
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -107713.827
+Iteration 10 / LogL: -107728.905 / Time: 0h:1m:44s
+Iteration 20 / LogL: -107751.030 / Time: 0h:2m:10s
+Finish initializing candidate tree set (20)
+Current best tree score: -107713.827 / CPU time: 76.530
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 22: -107706.356
+Iteration 30 / LogL: -107709.942 / Time: 0h:2m:31s (0h:8m:0s left)
+Iteration 40 / LogL: -107707.522 / Time: 0h:2m:52s (0h:6m:3s left)
+Iteration 50 / LogL: -107707.161 / Time: 0h:3m:13s (0h:4m:44s left)
+Log-likelihood cutoff on original alignment: -107793.394
+Iteration 60 / LogL: -107706.544 / Time: 0h:3m:34s (0h:3m:45s left)
+Iteration 70 / LogL: -107706.895 / Time: 0h:3m:56s (0h:2m:58s left)
+Iteration 80 / LogL: -107725.237 / Time: 0h:4m:16s (0h:2m:16s left)
+Iteration 90 / LogL: -107710.059 / Time: 0h:4m:37s (0h:1m:39s left)
+Iteration 100 / LogL: -107707.522 / Time: 0h:4m:56s (0h:1m:5s left)
+Log-likelihood cutoff on original alignment: -107793.394
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Iteration 110 / LogL: -107755.789 / Time: 0h:5m:19s (0h:4m:23s left)
+Iteration 120 / LogL: -107711.935 / Time: 0h:5m:40s (0h:3m:48s left)
+TREE SEARCH COMPLETED AFTER 123 ITERATIONS / Time: 0h:5m:46s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -107706.356
+Optimal log-likelihood: -107706.348
+Rate parameters:  A-C: 1.86692  A-G: 6.18630  A-T: 2.66715  C-G: 0.94924  C-T: 9.57015  G-T: 1.00000
+Base frequencies:  A: 0.280  C: 0.203  G: 0.256  T: 0.261
+Proportion of invariable sites: 0.405
+Gamma shape alpha: 0.708
+Parameters optimization took 1 rounds (0.450 sec)
+BEST SCORE FOUND : -107706.348
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+13.415 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file sharanowski_2011.nex.splits.nex
+Total tree length: 13.460
+
+Total number of iterations: 123
+CPU time used for tree search: 290.476 sec (0h:4m:50s)
+Wall-clock time used for tree search: 291.907 sec (0h:4m:51s)
+Total CPU time used: 358.684 sec (0h:5m:58s)
+Total wall-clock time used: 360.477 sec (0h:6m:0s)
+
+Computing bootstrap consensus tree...
+Reading input file sharanowski_2011.nex.splits.nex...
+139 taxa and 562 splits.
+Consensus tree written to sharanowski_2011.nex.contree
+Reading input trees file sharanowski_2011.nex.contree
+Log-likelihood of consensus tree: -107707.257
+
+Analysis results written to: 
+  IQ-TREE report:                sharanowski_2011.nex.iqtree
+  Maximum-likelihood tree:       sharanowski_2011.nex.treefile
+  Likelihood distances:          sharanowski_2011.nex.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          sharanowski_2011.nex.splits.nex
+  Consensus tree:                sharanowski_2011.nex.contree
+  Screen log file:               sharanowski_2011.nex.log
+
+Date and Time: Mon Mar 13 22:29:20 2023

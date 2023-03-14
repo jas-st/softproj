@@ -1,0 +1,291 @@
+#NEXUS
+[R-package treeio, Tue Mar 14 00:23:53 2023]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 139;
+	TAXLABELS
+		M._australis_II
+		M._australis_I
+		M._duboulayi_I
+		M._duboulayi_II
+		M._utcheensis
+		M._s._tatei_S7
+		M._rubrostriatus_II_S7
+		M._s._splendida_S7
+		M._s._inornata_MT
+		M._fluviatilis
+		M._trifasciata_I_S7
+		M._goldiei_II
+		M._oktediensis
+		M._trifasciata_III
+		M._goldiei_VII
+		M._trifasciata_IV
+		M._trifasciata_II
+		M._goldiei_VIII
+		M._goldiei_IX
+		M._herbertaxelrodi_AS
+		M._kamaka
+		M._lakamora
+		M._pierucciae
+		M._goldiei_IV
+		M._goldiei_V
+		M._goldiei_VI
+		M._goldiei_I
+		M._goldiei_III
+		M._goldiei_XI
+		M._goldiei_X_AS
+		M._mubiensis
+		M._lacustrisAS
+		M._monticola
+		C._lorentzi_MT
+		M._affinis_I_AS
+		G._maculosus_AS
+		G._ramuensis
+		M._affinis_II
+		M._iris
+		M._sp_Pianfon_MT
+		C._lorentzi_S7
+		M._japenensis
+		M._sp._Pianfon_S7
+		M._vanheurni_S7
+		G._dorityi
+		G._incisus
+		G._pseudoincisus
+		G._kabia_I
+		G._kabia_II
+		G._wanamensis_AS
+		G._kabia_III
+		G._sp._Gidomen_S7
+		G._leggetti
+		G._multisquamata
+		M._rubripinnis
+		C._alleni
+		C._bleheri
+		C._fasciata_I
+		C._pricei
+		C._fasciata_IV
+		C._fasciata_III
+		C._sentaniensis
+		M._vanheurni_MT
+		C._fasciata_II
+		M._praecox
+		C._axelrodi_AS
+		C._campsi
+		C._sp._Sepik
+		C._bulolo
+		C._crassispinosa
+		C._sp._Gidomen
+		M._ammeri
+		M._kokasensis
+		M._angfa_AS
+		M._parva_AS
+		M._irianjaya_AS_S7
+		M._sp._Rawarra
+		M._arfakensis_AS
+		M._boesemani_AS
+		M._sp._Suswa
+		M._batanta
+		M._irianjaya_AS_MT
+		M._misoolensis_I
+		M._misoolensis_II
+		M._fredericki_II_AS
+		M._fredericki_I_AS
+		M._salaweti
+		M._catherinae_I
+		M._catherinae_II
+		M._synergos_I
+		M._synergos_II_AS
+		I._werneri_II
+		I._werneri_I
+		R._ornatus_I
+		R._ornatus_II
+		R._ornatus_III
+		R._ornatus_IV
+		C._rhombosomoides
+		B._madagascariensis
+		B._leucopteron
+		B._marojejy
+		B._longianalis
+		B._sp._Namorona
+		B._sp._Ankavia
+		R._vatosoa
+		R._alaotrensis
+		R._wrightae
+		Hypoatherina.tsurugae
+		Marosatherina.ladigesi
+		Pseudomugil.gertrudae
+		M._s._inornata_S7
+		M._s._splendida_MT
+		M._s._tatei_MT
+		M._rubrostriatus_II_MT
+		M._parkinsoni_I_AS_MT
+		M._maccullochi_II
+		M._maccullochi_I_AS
+		M._sexlineata_I
+		M._sexlineata_II
+		M._caerulea
+		M._maccullochi_III
+		M._sp._NT
+		M._sp._Dekai
+		M._sylvatica
+		M._papuae
+		M._ogilbyi
+		M._sp._Bindoola_S7
+		M._gracilis
+		M._exquisita
+		M._australis_III_MT
+		M._pygmaea
+		M._nigrans_I
+		M._nigrans_II
+		M._rubrostriatus_III
+		M._parkinsoni_I_AS_S7
+		M._parkinsoni_II_AS
+		M._rubrostriatus_I
+		M._trifasciata_I_MT
+		M._eachamensis
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	M._australis_II,
+		2	M._australis_I,
+		3	M._duboulayi_I,
+		4	M._duboulayi_II,
+		5	M._utcheensis,
+		6	M._s._tatei_S7,
+		7	M._rubrostriatus_II_S7,
+		8	M._s._splendida_S7,
+		9	M._s._inornata_MT,
+		10	M._fluviatilis,
+		11	M._trifasciata_I_S7,
+		12	M._goldiei_II,
+		13	M._oktediensis,
+		14	M._trifasciata_III,
+		15	M._goldiei_VII,
+		16	M._trifasciata_IV,
+		17	M._trifasciata_II,
+		18	M._goldiei_VIII,
+		19	M._goldiei_IX,
+		20	M._herbertaxelrodi_AS,
+		21	M._kamaka,
+		22	M._lakamora,
+		23	M._pierucciae,
+		24	M._goldiei_IV,
+		25	M._goldiei_V,
+		26	M._goldiei_VI,
+		27	M._goldiei_I,
+		28	M._goldiei_III,
+		29	M._goldiei_XI,
+		30	M._goldiei_X_AS,
+		31	M._mubiensis,
+		32	M._lacustrisAS,
+		33	M._monticola,
+		34	C._lorentzi_MT,
+		35	M._affinis_I_AS,
+		36	G._maculosus_AS,
+		37	G._ramuensis,
+		38	M._affinis_II,
+		39	M._iris,
+		40	M._sp_Pianfon_MT,
+		41	C._lorentzi_S7,
+		42	M._japenensis,
+		43	M._sp._Pianfon_S7,
+		44	M._vanheurni_S7,
+		45	G._dorityi,
+		46	G._incisus,
+		47	G._pseudoincisus,
+		48	G._kabia_I,
+		49	G._kabia_II,
+		50	G._wanamensis_AS,
+		51	G._kabia_III,
+		52	G._sp._Gidomen_S7,
+		53	G._leggetti,
+		54	G._multisquamata,
+		55	M._rubripinnis,
+		56	C._alleni,
+		57	C._bleheri,
+		58	C._fasciata_I,
+		59	C._pricei,
+		60	C._fasciata_IV,
+		61	C._fasciata_III,
+		62	C._sentaniensis,
+		63	M._vanheurni_MT,
+		64	C._fasciata_II,
+		65	M._praecox,
+		66	C._axelrodi_AS,
+		67	C._campsi,
+		68	C._sp._Sepik,
+		69	C._bulolo,
+		70	C._crassispinosa,
+		71	C._sp._Gidomen,
+		72	M._ammeri,
+		73	M._kokasensis,
+		74	M._angfa_AS,
+		75	M._parva_AS,
+		76	M._irianjaya_AS_S7,
+		77	M._sp._Rawarra,
+		78	M._arfakensis_AS,
+		79	M._boesemani_AS,
+		80	M._sp._Suswa,
+		81	M._batanta,
+		82	M._irianjaya_AS_MT,
+		83	M._misoolensis_I,
+		84	M._misoolensis_II,
+		85	M._fredericki_II_AS,
+		86	M._fredericki_I_AS,
+		87	M._salaweti,
+		88	M._catherinae_I,
+		89	M._catherinae_II,
+		90	M._synergos_I,
+		91	M._synergos_II_AS,
+		92	I._werneri_II,
+		93	I._werneri_I,
+		94	R._ornatus_I,
+		95	R._ornatus_II,
+		96	R._ornatus_III,
+		97	R._ornatus_IV,
+		98	C._rhombosomoides,
+		99	B._madagascariensis,
+		100	B._leucopteron,
+		101	B._marojejy,
+		102	B._longianalis,
+		103	B._sp._Namorona,
+		104	B._sp._Ankavia,
+		105	R._vatosoa,
+		106	R._alaotrensis,
+		107	R._wrightae,
+		108	Hypoatherina.tsurugae,
+		109	Marosatherina.ladigesi,
+		110	Pseudomugil.gertrudae,
+		111	M._s._inornata_S7,
+		112	M._s._splendida_MT,
+		113	M._s._tatei_MT,
+		114	M._rubrostriatus_II_MT,
+		115	M._parkinsoni_I_AS_MT,
+		116	M._maccullochi_II,
+		117	M._maccullochi_I_AS,
+		118	M._sexlineata_I,
+		119	M._sexlineata_II,
+		120	M._caerulea,
+		121	M._maccullochi_III,
+		122	M._sp._NT,
+		123	M._sp._Dekai,
+		124	M._sylvatica,
+		125	M._papuae,
+		126	M._ogilbyi,
+		127	M._sp._Bindoola_S7,
+		128	M._gracilis,
+		129	M._exquisita,
+		130	M._australis_III_MT,
+		131	M._pygmaea,
+		132	M._nigrans_I,
+		133	M._nigrans_II,
+		134	M._rubrostriatus_III,
+		135	M._parkinsoni_I_AS_S7,
+		136	M._parkinsoni_II_AS,
+		137	M._rubrostriatus_I,
+		138	M._trifasciata_I_MT,
+		139	M._eachamensis
+	;
+	TREE * UNTITLED = [&R] ((98[&Bowker_freq=1,Stuart_freq=1,IS_freq=0.05,QS_freq=0.02,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.3719865039,((((((((((137[&Bowker_freq=0.45,Stuart_freq=0.44,IS_freq=0.13,QS_freq=0.15,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.013306259,(138[&Bowker_freq=0.93,Stuart_freq=0.93,IS_freq=0.22,QS_freq=0.17,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.018175982,(139[&Bowker_freq=0.52,Stuart_freq=0.6,IS_freq=0.13,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0167270805,(1[&Bowker_freq=0.51,Stuart_freq=0.44,IS_freq=0.24,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0055957887,2[&Bowker_freq=0.59,Stuart_freq=0.59,IS_freq=0.24,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0087821699)[&Bowker_freq=0.56,Stuart_freq=0.52,IS_freq=0.24,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0189586555)[&Bowker_freq=0.55,Stuart_freq=0.55,IS_freq=0.21,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0069505791)[&Bowker_freq=0.64,Stuart_freq=0.64,IS_freq=0.21,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0016980161)[&Bowker_freq=0.6,Stuart_freq=0.6,IS_freq=0.2,QS_freq=0.15,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0042917918,(10[&Bowker_freq=0.42,Stuart_freq=0.47,IS_freq=0.12,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0204568149,(9[&Bowker_freq=0.93,Stuart_freq=0.93,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.5762e-06,((3[&Bowker_freq=0.45,Stuart_freq=0.45,IS_freq=0.13,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0091753738,4[&Bowker_freq=0.99,Stuart_freq=0.99,IS_freq=0.76,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0105650833)[&Bowker_freq=0.72,Stuart_freq=0.72,IS_freq=0.44,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.002375026,(8[&Bowker_freq=0.93,Stuart_freq=0.94,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0030267351,(7[&Bowker_freq=0.93,Stuart_freq=0.93,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.7936e-06,(5[&Bowker_freq=0.47,Stuart_freq=0.47,IS_freq=0.13,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.4103e-06,6[&Bowker_freq=0.93,Stuart_freq=0.93,IS_freq=0.07,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.5762e-06)[&Bowker_freq=0.66,Stuart_freq=0.66,IS_freq=0.1,QS_freq=0.07,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0037374824)[&Bowker_freq=0.74,Stuart_freq=0.74,IS_freq=0.1,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.003675027)[&Bowker_freq=0.78,Stuart_freq=0.79,IS_freq=0.09,QS_freq=0.04,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0036720915)[&Bowker_freq=0.76,Stuart_freq=0.76,IS_freq=0.23,QS_freq=0.07,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.036e-06)[&Bowker_freq=0.78,Stuart_freq=0.78,IS_freq=0.21,QS_freq=0.06,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0085247104)[&Bowker_freq=0.73,Stuart_freq=0.74,IS_freq=0.2,QS_freq=0.07,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0015486133)[&Bowker_freq=0.69,Stuart_freq=0.69,IS_freq=0.2,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0086402455,(134[&Bowker_freq=0.44,Stuart_freq=0.44,IS_freq=0.13,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0120653019,(135[&Bowker_freq=0.93,Stuart_freq=0.96,IS_freq=0.11,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.5762e-06,136[&Bowker_freq=0.45,Stuart_freq=0.48,IS_freq=0.13,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0179786145)[&Bowker_freq=0.65,Stuart_freq=0.68,IS_freq=0.12,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.2376e-06)[&Bowker_freq=0.58,Stuart_freq=0.6,IS_freq=0.12,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0058043997)[&Bowker_freq=0.67,Stuart_freq=0.68,IS_freq=0.19,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0281118872,((131[&Bowker_freq=0.44,Stuart_freq=0.46,IS_freq=0.13,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0239737713,((127[&Bowker_freq=0.9,Stuart_freq=0.9,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0156780707,128[&Bowker_freq=0.48,Stuart_freq=0.5,IS_freq=0.18,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0018469908)[&Bowker_freq=0.67,Stuart_freq=0.68,IS_freq=0.1,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0137162726,(129[&Bowker_freq=0.43,Stuart_freq=0.55,IS_freq=0.15,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.009725032,130[&Bowker_freq=0.94,Stuart_freq=0.94,IS_freq=0.12,QS_freq=0.27,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0092755882)[&Bowker_freq=0.68,Stuart_freq=0.74,IS_freq=0.14,QS_freq=0.18,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0028328524)[&Bowker_freq=0.67,Stuart_freq=0.71,IS_freq=0.12,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0081994367)[&Bowker_freq=0.63,Stuart_freq=0.66,IS_freq=0.13,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0046710271,(132[&Bowker_freq=0.44,Stuart_freq=0.54,IS_freq=0.11,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0074799037,133[&Bowker_freq=0.46,Stuart_freq=0.56,IS_freq=0.17,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.008213707)[&Bowker_freq=0.45,Stuart_freq=0.55,IS_freq=0.14,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.015496462)[&Bowker_freq=0.58,Stuart_freq=0.63,IS_freq=0.13,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.035701908)[&Bowker_freq=0.65,Stuart_freq=0.67,IS_freq=0.17,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0036650926,(126[&Bowker_freq=0.49,Stuart_freq=0.53,IS_freq=0.11,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0357608335,(125[&Bowker_freq=0.53,Stuart_freq=0.51,IS_freq=0.16,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0182738814,(124[&Bowker_freq=0.55,Stuart_freq=0.62,IS_freq=0.13,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0174222564,(123[&Bowker_freq=0.54,Stuart_freq=0.67,IS_freq=0.14,QS_freq=0.15,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.014571775,(122[&Bowker_freq=0.49,Stuart_freq=0.49,IS_freq=0.17,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0254584712,(121[&Bowker_freq=0.79,Stuart_freq=0.94,IS_freq=0.14,QS_freq=0.03,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0195550768,(120[&Bowker_freq=0.5,Stuart_freq=0.52,IS_freq=0.16,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.014675949,(((113[&Bowker_freq=0.96,Stuart_freq=0.98,IS_freq=0.35,QS_freq=0.59,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0081592226,(111[&Bowker_freq=0.96,Stuart_freq=0.96,IS_freq=0.37,QS_freq=0.58,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0029273415,112[&Bowker_freq=0.97,Stuart_freq=0.98,IS_freq=0.3,QS_freq=0.58,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0018267449)[&Bowker_freq=0.96,Stuart_freq=0.97,IS_freq=0.33,QS_freq=0.58,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0028168281)[&Bowker_freq=0.96,Stuart_freq=0.97,IS_freq=0.34,QS_freq=0.58,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0059223726,(114[&Bowker_freq=0.96,Stuart_freq=0.96,IS_freq=0.17,QS_freq=0.41,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0071052292,115[&Bowker_freq=0.94,Stuart_freq=0.94,IS_freq=0.28,QS_freq=0.19,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0093666184)[&Bowker_freq=0.95,Stuart_freq=0.96,IS_freq=0.23,QS_freq=0.3,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0044191612)[&Bowker_freq=0.97,Stuart_freq=0.97,IS_freq=0.3,QS_freq=0.47,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.003341642,((116[&Bowker_freq=0.5,Stuart_freq=0.53,IS_freq=0.11,QS_freq=0.07,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040553579,117[&Bowker_freq=0.47,Stuart_freq=0.48,IS_freq=0.11,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0050180252)[&Bowker_freq=0.48,Stuart_freq=0.5,IS_freq=0.11,QS_freq=0.06,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0084478767,(118[&Bowker_freq=0.52,Stuart_freq=0.55,IS_freq=0.16,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0061627866,119[&Bowker_freq=0.47,Stuart_freq=0.51,IS_freq=0.16,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0067530079)[&Bowker_freq=0.5,Stuart_freq=0.53,IS_freq=0.16,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006414254)[&Bowker_freq=0.49,Stuart_freq=0.52,IS_freq=0.14,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0006542617)[&Bowker_freq=0.74,Stuart_freq=0.76,IS_freq=0.23,QS_freq=0.29,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0030769396)[&Bowker_freq=0.71,Stuart_freq=0.73,IS_freq=0.22,QS_freq=0.27,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0005756834)[&Bowker_freq=0.72,Stuart_freq=0.75,IS_freq=0.22,QS_freq=0.25,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0064047929)[&Bowker_freq=0.7,Stuart_freq=0.73,IS_freq=0.21,QS_freq=0.24,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0009416914)[&Bowker_freq=0.69,Stuart_freq=0.72,IS_freq=0.21,QS_freq=0.24,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.001546404)[&Bowker_freq=0.68,Stuart_freq=0.72,IS_freq=0.21,QS_freq=0.23,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0057831324)[&Bowker_freq=0.67,Stuart_freq=0.71,IS_freq=0.2,QS_freq=0.22,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0159054822)[&Bowker_freq=0.66,Stuart_freq=0.7,IS_freq=0.2,QS_freq=0.21,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.00538086)[&Bowker_freq=0.66,Stuart_freq=0.69,IS_freq=0.18,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0337852314,((31[&Bowker_freq=0.56,Stuart_freq=0.65,IS_freq=0.15,QS_freq=0.15,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0163709103,((((20[&Bowker_freq=0.5,Stuart_freq=0.56,IS_freq=0.13,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0107268501,((11[&Bowker_freq=0.88,Stuart_freq=0.89,IS_freq=0.03,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0087596313,(17[&Bowker_freq=0.47,Stuart_freq=0.54,IS_freq=0.12,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0071307252,(12[&Bowker_freq=0.52,Stuart_freq=0.58,IS_freq=0.18,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0054135012,(16[&Bowker_freq=0.5,Stuart_freq=0.51,IS_freq=0.17,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0079662963,(13[&Bowker_freq=0.56,Stuart_freq=0.63,IS_freq=0.16,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040920905,(14[&Bowker_freq=0.53,Stuart_freq=0.57,IS_freq=0.17,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0024082448,15[&Bowker_freq=0.6,Stuart_freq=0.65,IS_freq=0.16,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0019762038)[&Bowker_freq=0.56,Stuart_freq=0.61,IS_freq=0.16,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0012858293)[&Bowker_freq=0.56,Stuart_freq=0.62,IS_freq=0.16,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0008245885)[&Bowker_freq=0.55,Stuart_freq=0.59,IS_freq=0.17,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0011100671)[&Bowker_freq=0.54,Stuart_freq=0.59,IS_freq=0.17,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0003805538)[&Bowker_freq=0.54,Stuart_freq=0.59,IS_freq=0.16,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0046009881)[&Bowker_freq=0.57,Stuart_freq=0.62,IS_freq=0.15,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.6229e-06,(18[&Bowker_freq=0.48,Stuart_freq=0.52,IS_freq=0.16,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027843121,19[&Bowker_freq=0.5,Stuart_freq=0.55,IS_freq=0.17,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0017804673)[&Bowker_freq=0.49,Stuart_freq=0.54,IS_freq=0.16,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0099660275)[&Bowker_freq=0.56,Stuart_freq=0.61,IS_freq=0.15,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0021626806)[&Bowker_freq=0.56,Stuart_freq=0.61,IS_freq=0.15,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0001456852,(21[&Bowker_freq=0.53,Stuart_freq=0.59,IS_freq=0.13,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0003508246,(22[&Bowker_freq=0.51,Stuart_freq=0.56,IS_freq=0.15,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0003341778,23[&Bowker_freq=0.52,Stuart_freq=0.56,IS_freq=0.15,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0001678535)[&Bowker_freq=0.51,Stuart_freq=0.56,IS_freq=0.15,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0009904456)[&Bowker_freq=0.52,Stuart_freq=0.57,IS_freq=0.14,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0196024997)[&Bowker_freq=0.57,Stuart_freq=0.62,IS_freq=0.16,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0002854605,(28[&Bowker_freq=0.5,Stuart_freq=0.57,IS_freq=0.15,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0116993685,(27[&Bowker_freq=0.51,Stuart_freq=0.58,IS_freq=0.13,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0064715826,(24[&Bowker_freq=0.51,Stuart_freq=0.57,IS_freq=0.14,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0036433739,(25[&Bowker_freq=0.49,Stuart_freq=0.53,IS_freq=0.15,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033868328,26[&Bowker_freq=0.5,Stuart_freq=0.53,IS_freq=0.14,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0026943353)[&Bowker_freq=0.49,Stuart_freq=0.53,IS_freq=0.14,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0015811928)[&Bowker_freq=0.5,Stuart_freq=0.54,IS_freq=0.14,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0012885166)[&Bowker_freq=0.5,Stuart_freq=0.55,IS_freq=0.14,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0067978423)[&Bowker_freq=0.51,Stuart_freq=0.56,IS_freq=0.14,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.76693e-05)[&Bowker_freq=0.58,Stuart_freq=0.63,IS_freq=0.16,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0022505573,(29[&Bowker_freq=0.55,Stuart_freq=0.61,IS_freq=0.1,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0040790245,30[&Bowker_freq=0.47,Stuart_freq=0.54,IS_freq=0.1,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0032239475)[&Bowker_freq=0.51,Stuart_freq=0.57,IS_freq=0.1,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0119808103)[&Bowker_freq=0.58,Stuart_freq=0.63,IS_freq=0.16,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.00536158)[&Bowker_freq=0.58,Stuart_freq=0.63,IS_freq=0.16,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.008203296,(32[&Bowker_freq=0.62,Stuart_freq=0.74,IS_freq=0.15,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014283426,33[&Bowker_freq=0.72,Stuart_freq=0.79,IS_freq=0.15,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0014395447)[&Bowker_freq=0.67,Stuart_freq=0.76,IS_freq=0.15,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0231134669)[&Bowker_freq=0.6,Stuart_freq=0.66,IS_freq=0.16,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0228897426)[&Bowker_freq=0.71,Stuart_freq=0.74,IS_freq=0.21,QS_freq=0.18,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0269303942,((40[&Bowker_freq=0.94,Stuart_freq=0.94,IS_freq=0.46,QS_freq=0.05,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0364244929,((34[&Bowker_freq=0.95,Stuart_freq=0.96,IS_freq=0.44,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0187387332,35[&Bowker_freq=0.37,Stuart_freq=0.5,IS_freq=0.11,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0163430376)[&Bowker_freq=0.65,Stuart_freq=0.72,IS_freq=0.28,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033738184,((36[&Bowker_freq=0.66,Stuart_freq=0.67,IS_freq=0.22,QS_freq=0.24,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.004842108,37[&Bowker_freq=0.69,Stuart_freq=0.71,IS_freq=0.13,QS_freq=0.18,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0043150844)[&Bowker_freq=0.68,Stuart_freq=0.7,IS_freq=0.18,QS_freq=0.21,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0144824941,(38[&Bowker_freq=0.52,Stuart_freq=0.58,IS_freq=0.24,QS_freq=0.18,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0056604407,39[&Bowker_freq=0.67,Stuart_freq=0.75,IS_freq=0.19,QS_freq=0.19,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0048592872)[&Bowker_freq=0.6,Stuart_freq=0.67,IS_freq=0.22,QS_freq=0.19,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0067939394)[&Bowker_freq=0.64,Stuart_freq=0.69,IS_freq=0.2,QS_freq=0.2,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0072016906)[&Bowker_freq=0.65,Stuart_freq=0.7,IS_freq=0.23,QS_freq=0.18,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0210583764)[&Bowker_freq=0.69,Stuart_freq=0.73,IS_freq=0.25,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0457975532,(((41[&Bowker_freq=0.91,Stuart_freq=0.94,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0059298471,42[&Bowker_freq=0.43,Stuart_freq=0.44,IS_freq=0.15,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0225890017)[&Bowker_freq=0.63,Stuart_freq=0.64,IS_freq=0.1,QS_freq=0.07,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0042829429,(43[&Bowker_freq=0.91,Stuart_freq=0.94,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0214420162,(44[&Bowker_freq=0.91,Stuart_freq=0.92,IS_freq=0.08,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0213536577,(55[&Bowker_freq=0.5,Stuart_freq=0.5,IS_freq=0.13,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0141791923,((52[&Bowker_freq=0.91,Stuart_freq=0.91,IS_freq=0.02,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0030290476,((47[&Bowker_freq=0.45,Stuart_freq=0.48,IS_freq=0.14,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0007490183,(45[&Bowker_freq=0.45,Stuart_freq=0.47,IS_freq=0.14,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0001674436,46[&Bowker_freq=0.45,Stuart_freq=0.48,IS_freq=0.14,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0008342914)[&Bowker_freq=0.45,Stuart_freq=0.47,IS_freq=0.14,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0007575789)[&Bowker_freq=0.45,Stuart_freq=0.47,IS_freq=0.14,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0104026111,(48[&Bowker_freq=0.47,Stuart_freq=0.46,IS_freq=0.2,QS_freq=0.15,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0039518172,(49[&Bowker_freq=0.56,Stuart_freq=0.56,IS_freq=0.22,QS_freq=0.2,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0015500792,(50[&Bowker_freq=0.5,Stuart_freq=0.5,IS_freq=0.22,QS_freq=0.19,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0002747163,51[&Bowker_freq=0.53,Stuart_freq=0.5,IS_freq=0.24,QS_freq=0.21,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.000728405)[&Bowker_freq=0.52,Stuart_freq=0.5,IS_freq=0.23,QS_freq=0.2,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0013656178)[&Bowker_freq=0.53,Stuart_freq=0.52,IS_freq=0.23,QS_freq=0.2,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0043167213)[&Bowker_freq=0.52,Stuart_freq=0.5,IS_freq=0.22,QS_freq=0.19,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0102308319)[&Bowker_freq=0.5,Stuart_freq=0.5,IS_freq=0.19,QS_freq=0.17,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0015688074)[&Bowker_freq=0.54,Stuart_freq=0.54,IS_freq=0.17,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0015826406,(53[&Bowker_freq=0.46,Stuart_freq=0.47,IS_freq=0.14,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0012242735,54[&Bowker_freq=0.45,Stuart_freq=0.47,IS_freq=0.15,QS_freq=0.21,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0019651153)[&Bowker_freq=0.45,Stuart_freq=0.47,IS_freq=0.15,QS_freq=0.17,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0122073899)[&Bowker_freq=0.53,Stuart_freq=0.54,IS_freq=0.17,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0121712506)[&Bowker_freq=0.53,Stuart_freq=0.53,IS_freq=0.17,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0085899485)[&Bowker_freq=0.55,Stuart_freq=0.56,IS_freq=0.16,QS_freq=0.15,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:2.2528e-06)[&Bowker_freq=0.58,Stuart_freq=0.58,IS_freq=0.16,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0043069964)[&Bowker_freq=0.59,Stuart_freq=0.59,IS_freq=0.15,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0374289207,((65[&Bowker_freq=0.65,Stuart_freq=0.73,IS_freq=0.21,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0671832385,(56[&Bowker_freq=0.44,Stuart_freq=0.49,IS_freq=0.13,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0182042234,(64[&Bowker_freq=0.5,Stuart_freq=0.51,IS_freq=0.13,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0124137968,(63[&Bowker_freq=0.93,Stuart_freq=0.95,IS_freq=0.4,QS_freq=0.24,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0077912305,((60[&Bowker_freq=0.46,Stuart_freq=0.48,IS_freq=0.14,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0076154186,(57[&Bowker_freq=0.44,Stuart_freq=0.47,IS_freq=0.11,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0035169991,(58[&Bowker_freq=0.48,Stuart_freq=0.48,IS_freq=0.13,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0028538879,59[&Bowker_freq=0.45,Stuart_freq=0.47,IS_freq=0.16,QS_freq=0.08,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0019899567)[&Bowker_freq=0.47,Stuart_freq=0.48,IS_freq=0.14,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0002049006)[&Bowker_freq=0.46,Stuart_freq=0.48,IS_freq=0.13,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027251237)[&Bowker_freq=0.46,Stuart_freq=0.48,IS_freq=0.14,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0026712526,(61[&Bowker_freq=0.45,Stuart_freq=0.5,IS_freq=0.14,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0033939169,62[&Bowker_freq=0.52,Stuart_freq=0.63,IS_freq=0.12,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0055862905)[&Bowker_freq=0.49,Stuart_freq=0.56,IS_freq=0.13,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0048705738)[&Bowker_freq=0.47,Stuart_freq=0.51,IS_freq=0.13,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0004533562)[&Bowker_freq=0.53,Stuart_freq=0.57,IS_freq=0.17,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0036588307)[&Bowker_freq=0.53,Stuart_freq=0.57,IS_freq=0.16,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0027380628)[&Bowker_freq=0.52,Stuart_freq=0.56,IS_freq=0.16,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0236100759)[&Bowker_freq=0.53,Stuart_freq=0.58,IS_freq=0.17,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0035843151,(71[&Bowker_freq=0.47,Stuart_freq=0.53,IS_freq=0.19,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0524354263,((68[&Bowker_freq=0.49,Stuart_freq=0.49,IS_freq=0.23,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.019496376,(66[&Bowker_freq=0.99,Stuart_freq=0.99,IS_freq=0.54,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0130757629,67[&Bowker_freq=0.47,Stuart_freq=0.49,IS_freq=0.19,QS_freq=0.22,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0198788899)[&Bowker_freq=0.73,Stuart_freq=0.74,IS_freq=0.37,QS_freq=0.18,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0045805864)[&Bowker_freq=0.65,Stuart_freq=0.66,IS_freq=0.33,QS_freq=0.15,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0043504149,(69[&Bowker_freq=0.69,Stuart_freq=0.74,IS_freq=0.19,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0098021069,70[&Bowker_freq=0.67,Stuart_freq=0.75,IS_freq=0.17,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0106212352)[&Bowker_freq=0.68,Stuart_freq=0.75,IS_freq=0.18,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0287517881)[&Bowker_freq=0.67,Stuart_freq=0.69,IS_freq=0.27,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0121274076)[&Bowker_freq=0.64,Stuart_freq=0.67,IS_freq=0.26,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0049387627)[&Bowker_freq=0.58,Stuart_freq=0.63,IS_freq=0.19,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.017466327)[&Bowker_freq=0.62,Stuart_freq=0.65,IS_freq=0.18,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0204015885)[&Bowker_freq=0.64,Stuart_freq=0.68,IS_freq=0.18,QS_freq=0.15,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0403592439)[&Bowker_freq=0.93,Stuart_freq=0.95,IS_freq=0.32,QS_freq=0.26,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0235499654,(((((72[&Bowker_freq=0.82,Stuart_freq=0.85,IS_freq=0.1,QS_freq=0.15,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0141067472,73[&Bowker_freq=0.73,Stuart_freq=0.8,IS_freq=0.1,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0143768973)[&Bowker_freq=0.77,Stuart_freq=0.82,IS_freq=0.1,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0158162599,(74[&Bowker_freq=0.79,Stuart_freq=0.85,IS_freq=0.09,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0001668637,75[&Bowker_freq=0.77,Stuart_freq=0.85,IS_freq=0.1,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:1.5762e-06)[&Bowker_freq=0.78,Stuart_freq=0.85,IS_freq=0.09,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0379310007)[&Bowker_freq=0.79,Stuart_freq=0.85,IS_freq=0.1,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0095906926,(76[&Bowker_freq=0.89,Stuart_freq=0.89,IS_freq=0.04,QS_freq=0,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0088090527,77[&Bowker_freq=0.77,Stuart_freq=0.82,IS_freq=0.09,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0130295538)[&Bowker_freq=0.82,Stuart_freq=0.85,IS_freq=0.07,QS_freq=0.06,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0227822917)[&Bowker_freq=0.81,Stuart_freq=0.86,IS_freq=0.09,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0371532471,((78[&Bowker_freq=0.74,Stuart_freq=0.82,IS_freq=0.08,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0257074659,(79[&Bowker_freq=0.84,Stuart_freq=0.85,IS_freq=0.09,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0099119628,80[&Bowker_freq=0.82,Stuart_freq=0.84,IS_freq=0.1,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0116005385)[&Bowker_freq=0.83,Stuart_freq=0.84,IS_freq=0.09,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0092676435)[&Bowker_freq=0.81,Stuart_freq=0.84,IS_freq=0.09,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0167026589,(87[&Bowker_freq=0.8,Stuart_freq=0.85,IS_freq=0.14,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0132476582,((84[&Bowker_freq=0.82,Stuart_freq=0.84,IS_freq=0.15,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0117776803,(81[&Bowker_freq=0.82,Stuart_freq=0.86,IS_freq=0.18,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0137622461,(82[&Bowker_freq=0.96,Stuart_freq=0.97,IS_freq=0.56,QS_freq=0.2,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0111737208,83[&Bowker_freq=0.84,Stuart_freq=0.85,IS_freq=0.12,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0032913169)[&Bowker_freq=0.9,Stuart_freq=0.91,IS_freq=0.33,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0090143866)[&Bowker_freq=0.87,Stuart_freq=0.9,IS_freq=0.28,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:7.35751e-05)[&Bowker_freq=0.86,Stuart_freq=0.88,IS_freq=0.25,QS_freq=0.15,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0001361713,(85[&Bowker_freq=0.82,Stuart_freq=0.88,IS_freq=0.18,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0041720418,86[&Bowker_freq=0.8,Stuart_freq=0.88,IS_freq=0.16,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0032187223)[&Bowker_freq=0.82,Stuart_freq=0.88,IS_freq=0.17,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0045560041)[&Bowker_freq=0.86,Stuart_freq=0.89,IS_freq=0.23,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0015743975)[&Bowker_freq=0.86,Stuart_freq=0.9,IS_freq=0.22,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0253951317)[&Bowker_freq=0.86,Stuart_freq=0.9,IS_freq=0.18,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.021593263)[&Bowker_freq=0.88,Stuart_freq=0.93,IS_freq=0.16,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0208707311,((88[&Bowker_freq=0.86,Stuart_freq=0.88,IS_freq=0.12,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0030114563,89[&Bowker_freq=0.88,Stuart_freq=0.89,IS_freq=0.11,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.002761035)[&Bowker_freq=0.87,Stuart_freq=0.88,IS_freq=0.11,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0105341723,(90[&Bowker_freq=0.83,Stuart_freq=0.88,IS_freq=0.09,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.00459628,91[&Bowker_freq=0.83,Stuart_freq=0.87,IS_freq=0.12,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0058461699)[&Bowker_freq=0.84,Stuart_freq=0.88,IS_freq=0.11,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0052413058)[&Bowker_freq=0.87,Stuart_freq=0.89,IS_freq=0.11,QS_freq=0.11,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0819555738)[&Bowker_freq=0.91,Stuart_freq=0.95,IS_freq=0.15,QS_freq=0.13,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0434452732)[&Bowker_freq=0.89,Stuart_freq=0.9,IS_freq=0.57,QS_freq=0.48,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0757457984,(92[&Bowker_freq=0.37,Stuart_freq=0.38,IS_freq=0.21,QS_freq=0.23,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0187634618,93[&Bowker_freq=0.35,Stuart_freq=0.38,IS_freq=0.17,QS_freq=0.09,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0256353999)[&Bowker_freq=0.36,Stuart_freq=0.38,IS_freq=0.19,QS_freq=0.16,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.2038947235)[&Bowker_freq=0.97,Stuart_freq=0.98,IS_freq=0.62,QS_freq=0.53,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.1194104425,((94[&Bowker_freq=0.85,Stuart_freq=0.88,IS_freq=0.08,QS_freq=0.14,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0282652426,95[&Bowker_freq=0.86,Stuart_freq=0.91,IS_freq=0.05,QS_freq=0.1,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0236519595)[&Bowker_freq=0.86,Stuart_freq=0.9,IS_freq=0.07,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0178821493,(96[&Bowker_freq=0.95,Stuart_freq=0.94,IS_freq=0.09,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0237888648,97[&Bowker_freq=0.91,Stuart_freq=0.95,IS_freq=0.07,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0281337389)[&Bowker_freq=0.94,Stuart_freq=0.95,IS_freq=0.08,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0203515097)[&Bowker_freq=0.91,Stuart_freq=0.94,IS_freq=0.08,QS_freq=0.12,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.3534868649)[&Bowker_freq=1,Stuart_freq=1,IS_freq=0.82,QS_freq=0.69,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.2667759675)[&Bowker_freq=1,Stuart_freq=1,IS_freq=0.89,QS_freq=0.74,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.02370441035,(((105[&Bowker_freq=0.98,Stuart_freq=0.98,IS_freq=0.87,QS_freq=0.79,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.1400006053,((101[&Bowker_freq=0.97,Stuart_freq=0.97,IS_freq=0.85,QS_freq=0.71,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0429555608,(99[&Bowker_freq=0.99,Stuart_freq=0.99,IS_freq=0.86,QS_freq=0.76,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0106643564,100[&Bowker_freq=0.98,Stuart_freq=0.98,IS_freq=0.82,QS_freq=0.77,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0110821773)[&Bowker_freq=0.99,Stuart_freq=0.99,IS_freq=0.84,QS_freq=0.76,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0308233701)[&Bowker_freq=0.98,Stuart_freq=0.98,IS_freq=0.85,QS_freq=0.76,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0266872795,(104[&Bowker_freq=1,Stuart_freq=1,IS_freq=0.88,QS_freq=0.77,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0213947708,(102[&Bowker_freq=0.96,Stuart_freq=0.94,IS_freq=0.85,QS_freq=0.63,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0096416156,103[&Bowker_freq=0.94,Stuart_freq=0.95,IS_freq=0.88,QS_freq=0.8,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0133384497)[&Bowker_freq=0.96,Stuart_freq=0.96,IS_freq=0.87,QS_freq=0.72,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0115751141)[&Bowker_freq=0.97,Stuart_freq=0.97,IS_freq=0.87,QS_freq=0.74,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0391100237)[&Bowker_freq=0.99,Stuart_freq=0.99,IS_freq=0.88,QS_freq=0.77,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0517951227)[&Bowker_freq=0.99,Stuart_freq=0.99,IS_freq=0.88,QS_freq=0.78,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0642060263,(106[&Bowker_freq=0.98,Stuart_freq=0.97,IS_freq=0.85,QS_freq=0.7,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.067272066,107[&Bowker_freq=0.97,Stuart_freq=0.96,IS_freq=0.85,QS_freq=0.78,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0527348923)[&Bowker_freq=0.97,Stuart_freq=0.97,IS_freq=0.86,QS_freq=0.74,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.1004444234)[&Bowker_freq=1,Stuart_freq=1,IS_freq=0.9,QS_freq=0.79,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.1424626945,(108[&Bowker_freq=0.98,Stuart_freq=0.98,IS_freq=0.74,QS_freq=0.48,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.2714501562,(109[&Bowker_freq=0.99,Stuart_freq=0.99,IS_freq=0.66,QS_freq=0.42,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.5651415564,110[&Bowker_freq=1,Stuart_freq=1,IS_freq=0.9,QS_freq=0.54,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.4568622949)[&Bowker_freq=1,Stuart_freq=1,IS_freq=0.78,QS_freq=0.48,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0795434873)[&Bowker_freq=0.99,Stuart_freq=0.99,IS_freq=0.78,QS_freq=0.49,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.0217018479)[&Bowker_freq=1,Stuart_freq=1,IS_freq=0.89,QS_freq=0.74,Sat1_req=1,Sat2_freq=1,Chi_rej=1]:0.02606559975);
+END;
