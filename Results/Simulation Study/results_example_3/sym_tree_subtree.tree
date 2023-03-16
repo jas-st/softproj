@@ -1,0 +1,29 @@
+#NEXUS
+[R-package treeio, Tue Feb 28 18:42:31 2023]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 8;
+	TAXLABELS
+		S1
+		S2
+		S3
+		S4
+		S5
+		S6
+		S7
+		S8
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	S1,
+		2	S2,
+		3	S3,
+		4	S4,
+		5	S5,
+		6	S6,
+		7	S7,
+		8	S8
+	;
+	TREE * UNTITLED = [&R] (((1[&Bowker_freq=0.29,Stuart_freq=0.29,IS_freq=0,QS_freq=0]:0.01,2[&Bowker_freq=0.29,Stuart_freq=0.29,IS_freq=0,QS_freq=0]:0.05)[&Bowker_freq=0.33,Stuart_freq=0.33,IS_freq=0,QS_freq=0]:0.02,(3[&Bowker_freq=0.29,Stuart_freq=0.29,IS_freq=0,QS_freq=0]:0.08,4[&Bowker_freq=0.29,Stuart_freq=0.29,IS_freq=0,QS_freq=0]:0.06)[&Bowker_freq=0.33,Stuart_freq=0.33,IS_freq=0,QS_freq=0]:0.03)[&Bowker_freq=0.5,Stuart_freq=0.5,IS_freq=0,QS_freq=0]:0.02,((5[&Bowker_freq=0.29,Stuart_freq=0.29,IS_freq=0,QS_freq=0]:0.09,6[&Bowker_freq=0.29,Stuart_freq=0.29,IS_freq=0,QS_freq=0]:0.04)[&Bowker_freq=0.33,Stuart_freq=0.33,IS_freq=0,QS_freq=0]:0.03,(7[&Bowker_freq=0.86,Stuart_freq=0.86,IS_freq=0,QS_freq=0]:0.01,8[&Bowker_freq=0.86,Stuart_freq=0.86,IS_freq=0,QS_freq=0]:0.05)[&Bowker_freq=1,Stuart_freq=1,IS_freq=0,QS_freq=0]:0.05)[&Bowker_freq=0.5,Stuart_freq=0.5,IS_freq=0,QS_freq=0]:0.05);
+END;

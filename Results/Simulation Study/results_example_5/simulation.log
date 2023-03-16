@@ -1,0 +1,3527 @@
+IQ-TREE multicore version 2.2.0 COVID-edition for Mac OS X 64-bit built Jun  1 2022
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    56-1F-A2-3D-28-CE (SSE4.2, 16 GB RAM)
+Command: iqtree2 --alisim tree_small-alignment -m F81 -t tree_small.nwk --length 10000 --num-alignments 100 -seed 123 --seqtype DNA
+Seed:    123 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Feb 28 22:26:52 2023
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+[Alignment Simulator] Executing
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+ - Tree filepath: tree_small.nwk
+ - Length of output sequences: 10000
+ - Model: F81
+ - Number of output datasets: 100
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.295  G: 0.303  T: 0.151
+An alignment has just been exported to tree_small-alignment_1.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1.000
+  A-G: 1.000
+  A-T: 1.000
+  C-G: 1.000
+  C-T: 1.000
+  G-T: 1.000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.224
+  pi(C) = 0.185
+  pi(G) = 0.263
+  pi(T) = 0.329
+
+Rate matrix Q:
+
+  A     -1.05      0.25     0.355     0.445
+  C     0.303      -1.1     0.355     0.445
+  G     0.303      0.25    -0.998     0.445
+  T     0.303      0.25     0.355    -0.908
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.337  C: 0.307  G: 0.129  T: 0.227
+An alignment has just been exported to tree_small-alignment_2.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.206
+  pi(C) = 0.224
+  pi(G) = 0.32
+  pi(T) = 0.25
+
+Rate matrix Q:
+
+  A     -1.07     0.301     0.432     0.337
+  C     0.277     -1.05     0.432     0.337
+  G     0.277     0.301    -0.915     0.337
+  T     0.277     0.301     0.432     -1.01
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.233  C: 0.23  G: 0.227  T: 0.31
+An alignment has just been exported to tree_small-alignment_3.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.307
+  pi(C) = 0.173
+  pi(G) = 0.256
+  pi(T) = 0.263
+
+Rate matrix Q:
+
+  A    -0.935     0.234     0.346     0.355
+  C     0.415     -1.12     0.346     0.355
+  G     0.415     0.234        -1     0.355
+  T     0.415     0.234     0.346    -0.995
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.339  C: 0.273  G: 0.227  T: 0.161
+An alignment has just been exported to tree_small-alignment_4.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.316
+  pi(C) = 0.207
+  pi(G) = 0.239
+  pi(T) = 0.237
+
+Rate matrix Q:
+
+  A     -0.92     0.279     0.322     0.319
+  C     0.425     -1.07     0.322     0.319
+  G     0.425     0.279     -1.02     0.319
+  T     0.425     0.279     0.322     -1.03
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.251  C: 0.176  G: 0.192  T: 0.381
+An alignment has just been exported to tree_small-alignment_5.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.329
+  pi(C) = 0.241
+  pi(G) = 0.271
+  pi(T) = 0.159
+
+Rate matrix Q:
+
+  A    -0.913     0.328     0.369     0.217
+  C     0.448     -1.03     0.369     0.217
+  G     0.448     0.328    -0.992     0.217
+  T     0.448     0.328     0.369     -1.14
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.371  C: 0.2  G: 0.161  T: 0.268
+An alignment has just been exported to tree_small-alignment_6.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.308
+  pi(C) = 0.227
+  pi(G) = 0.129
+  pi(T) = 0.336
+
+Rate matrix Q:
+
+  A    -0.955     0.313     0.178     0.464
+  C     0.426     -1.07     0.178     0.464
+  G     0.426     0.313      -1.2     0.464
+  T     0.426     0.313     0.178    -0.917
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.272  C: 0.214  G: 0.255  T: 0.259
+An alignment has just been exported to tree_small-alignment_7.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.274
+  pi(C) = 0.2
+  pi(G) = 0.267
+  pi(T) = 0.258
+
+Rate matrix Q:
+
+  A    -0.973     0.268     0.358     0.346
+  C     0.367     -1.07     0.358     0.346
+  G     0.367     0.268    -0.981     0.346
+  T     0.367     0.268     0.358    -0.993
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.356  C: 0.199  G: 0.171  T: 0.273
+An alignment has just been exported to tree_small-alignment_8.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.329
+  pi(C) = 0.234
+  pi(G) = 0.243
+  pi(T) = 0.194
+
+Rate matrix Q:
+
+  A    -0.906     0.316     0.328     0.262
+  C     0.445     -1.03     0.328     0.262
+  G     0.445     0.316     -1.02     0.262
+  T     0.445     0.316     0.328     -1.09
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.313  C: 0.299  G: 0.157  T: 0.231
+An alignment has just been exported to tree_small-alignment_9.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.302
+  pi(C) = 0.374
+  pi(G) = 0.185
+  pi(T) = 0.139
+
+Rate matrix Q:
+
+  A    -0.976     0.523     0.258     0.195
+  C     0.422    -0.875     0.258     0.195
+  G     0.422     0.523     -1.14     0.195
+  T     0.422     0.523     0.258      -1.2
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.346  C: 0.135  G: 0.294  T: 0.224
+An alignment has just been exported to tree_small-alignment_10.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.357
+  pi(C) = 0.286
+  pi(G) = 0.237
+  pi(T) = 0.119
+
+Rate matrix Q:
+
+  A    -0.893     0.398      0.33     0.165
+  C     0.497    -0.991      0.33     0.165
+  G     0.497     0.398     -1.06     0.165
+  T     0.497     0.398      0.33     -1.22
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.199  C: 0.329  G: 0.152  T: 0.32
+An alignment has just been exported to tree_small-alignment_11.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.265
+  pi(C) = 0.195
+  pi(G) = 0.286
+  pi(T) = 0.253
+
+Rate matrix Q:
+
+  A    -0.986     0.262     0.384      0.34
+  C     0.356     -1.08     0.384      0.34
+  G     0.356     0.262    -0.958      0.34
+  T     0.356     0.262     0.384        -1
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.296  C: 0.245  G: 0.239  T: 0.22
+An alignment has just been exported to tree_small-alignment_12.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.339
+  pi(C) = 0.183
+  pi(G) = 0.185
+  pi(T) = 0.293
+
+Rate matrix Q:
+
+  A    -0.903      0.25     0.253       0.4
+  C     0.464     -1.12     0.253       0.4
+  G     0.464      0.25     -1.11       0.4
+  T     0.464      0.25     0.253    -0.967
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.237  C: 0.177  G: 0.344  T: 0.242
+An alignment has just been exported to tree_small-alignment_13.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.317
+  pi(C) = 0.216
+  pi(G) = 0.231
+  pi(T) = 0.236
+
+Rate matrix Q:
+
+  A    -0.918      0.29     0.311     0.317
+  C     0.426     -1.05     0.311     0.317
+  G     0.426      0.29     -1.03     0.317
+  T     0.426      0.29     0.311     -1.03
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.305  C: 0.148  G: 0.232  T: 0.314
+An alignment has just been exported to tree_small-alignment_14.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.352
+  pi(C) = 0.201
+  pi(G) = 0.229
+  pi(T) = 0.218
+
+Rate matrix Q:
+
+  A    -0.881     0.273     0.311     0.296
+  C     0.478     -1.09     0.311     0.296
+  G     0.478     0.273     -1.05     0.296
+  T     0.478     0.273     0.311     -1.06
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.214  C: 0.191  G: 0.365  T: 0.23
+An alignment has just been exported to tree_small-alignment_15.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.279
+  pi(C) = 0.233
+  pi(G) = 0.217
+  pi(T) = 0.27
+
+Rate matrix Q:
+
+  A    -0.964     0.312     0.291     0.362
+  C     0.374     -1.03     0.291     0.362
+  G     0.374     0.312     -1.05     0.362
+  T     0.374     0.312     0.291    -0.976
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.288  C: 0.209  G: 0.211  T: 0.292
+An alignment has just been exported to tree_small-alignment_16.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.282
+  pi(C) = 0.202
+  pi(G) = 0.204
+  pi(T) = 0.312
+
+Rate matrix Q:
+
+  A     -0.97     0.272     0.276     0.422
+  C      0.38     -1.08     0.276     0.422
+  G      0.38     0.272     -1.07     0.422
+  T      0.38     0.272     0.276    -0.928
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.288  C: 0.227  G: 0.159  T: 0.326
+An alignment has just been exported to tree_small-alignment_17.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3
+  pi(C) = 0.195
+  pi(G) = 0.224
+  pi(T) = 0.281
+
+Rate matrix Q:
+
+  A    -0.942     0.262     0.302     0.378
+  C     0.405     -1.08     0.302     0.378
+  G     0.405     0.262     -1.04     0.378
+  T     0.405     0.262     0.302    -0.968
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.271  C: 0.232  G: 0.33  T: 0.167
+An alignment has just been exported to tree_small-alignment_18.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.266
+  pi(C) = 0.245
+  pi(G) = 0.198
+  pi(T) = 0.291
+
+Rate matrix Q:
+
+  A    -0.985     0.328     0.266     0.391
+  C     0.357     -1.01     0.266     0.391
+  G     0.357     0.328     -1.08     0.391
+  T     0.357     0.328     0.266    -0.951
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.324  C: 0.216  G: 0.32  T: 0.139
+An alignment has just been exported to tree_small-alignment_19.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.309
+  pi(C) = 0.133
+  pi(G) = 0.336
+  pi(T) = 0.223
+
+Rate matrix Q:
+
+  A    -0.954     0.183     0.463     0.308
+  C     0.426      -1.2     0.463     0.308
+  G     0.426     0.183    -0.917     0.308
+  T     0.426     0.183     0.463     -1.07
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.294  C: 0.242  G: 0.284  T: 0.18
+An alignment has just been exported to tree_small-alignment_20.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.294
+  pi(C) = 0.225
+  pi(G) = 0.193
+  pi(T) = 0.288
+
+Rate matrix Q:
+
+  A    -0.951     0.304      0.26     0.387
+  C     0.396     -1.04      0.26     0.387
+  G     0.396     0.304     -1.09     0.387
+  T     0.396     0.304      0.26    -0.959
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.269  C: 0.226  G: 0.169  T: 0.337
+An alignment has just been exported to tree_small-alignment_21.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.269
+  pi(C) = 0.283
+  pi(G) = 0.191
+  pi(T) = 0.257
+
+Rate matrix Q:
+
+  A    -0.981      0.38     0.256     0.345
+  C     0.362    -0.963     0.256     0.345
+  G     0.362      0.38     -1.09     0.345
+  T     0.362      0.38     0.256    -0.998
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.348  C: 0.206  G: 0.172  T: 0.274
+An alignment has just been exported to tree_small-alignment_22.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.267
+  pi(C) = 0.206
+  pi(G) = 0.187
+  pi(T) = 0.34
+
+Rate matrix Q:
+
+  A    -0.996      0.28     0.254     0.462
+  C     0.363     -1.08     0.254     0.462
+  G     0.363      0.28     -1.11     0.462
+  T     0.363      0.28     0.254    -0.897
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.307  C: 0.171  G: 0.221  T: 0.3
+An alignment has just been exported to tree_small-alignment_23.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.339
+  pi(C) = 0.172
+  pi(G) = 0.205
+  pi(T) = 0.284
+
+Rate matrix Q:
+
+  A    -0.902     0.235      0.28     0.387
+  C     0.462     -1.13      0.28     0.387
+  G     0.462     0.235     -1.08     0.387
+  T     0.462     0.235      0.28    -0.977
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.303  C: 0.176  G: 0.239  T: 0.281
+An alignment has just been exported to tree_small-alignment_24.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.341
+  pi(C) = 0.21
+  pi(G) = 0.234
+  pi(T) = 0.215
+
+Rate matrix Q:
+
+  A    -0.892     0.285     0.316     0.291
+  C     0.461     -1.07     0.316     0.291
+  G     0.461     0.285     -1.04     0.291
+  T     0.461     0.285     0.316     -1.06
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.268  C: 0.216  G: 0.226  T: 0.289
+An alignment has just been exported to tree_small-alignment_25.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.352
+  pi(C) = 0.165
+  pi(G) = 0.201
+  pi(T) = 0.283
+
+Rate matrix Q:
+
+  A    -0.889     0.226     0.275     0.388
+  C     0.483     -1.15     0.275     0.388
+  G     0.483     0.226      -1.1     0.388
+  T     0.483     0.226     0.275    -0.984
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.211  C: 0.217  G: 0.293  T: 0.279
+An alignment has just been exported to tree_small-alignment_26.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.377
+  pi(C) = 0.281
+  pi(G) = 0.138
+  pi(T) = 0.204
+
+Rate matrix Q:
+
+  A    -0.868     0.392     0.192     0.284
+  C     0.524        -1     0.192     0.284
+  G     0.524     0.392      -1.2     0.284
+  T     0.524     0.392     0.192     -1.11
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.333  C: 0.323  G: 0.18  T: 0.165
+An alignment has just been exported to tree_small-alignment_27.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.335
+  pi(C) = 0.159
+  pi(G) = 0.244
+  pi(T) = 0.262
+
+Rate matrix Q:
+
+  A    -0.906     0.217     0.332     0.356
+  C     0.456     -1.14     0.332     0.356
+  G     0.456     0.217     -1.03     0.356
+  T     0.456     0.217     0.332     -1.01
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.0785  C: 0.234  G: 0.311  T: 0.377
+An alignment has just been exported to tree_small-alignment_28.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.323
+  pi(C) = 0.199
+  pi(G) = 0.18
+  pi(T) = 0.298
+
+Rate matrix Q:
+
+  A    -0.921      0.27     0.245     0.406
+  C      0.44     -1.09     0.245     0.406
+  G      0.44      0.27     -1.12     0.406
+  T      0.44      0.27     0.245    -0.955
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.403  C: 0.22  G: 0.276  T: 0.101
+An alignment has just been exported to tree_small-alignment_29.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.241
+  pi(C) = 0.365
+  pi(G) = 0.19
+  pi(T) = 0.204
+
+Rate matrix Q:
+
+  A     -1.04       0.5     0.259     0.279
+  C      0.33    -0.869     0.259     0.279
+  G      0.33       0.5     -1.11     0.279
+  T      0.33       0.5     0.259     -1.09
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.318  C: 0.286  G: 0.24  T: 0.157
+An alignment has just been exported to tree_small-alignment_30.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.266
+  pi(C) = 0.288
+  pi(G) = 0.141
+  pi(T) = 0.305
+
+Rate matrix Q:
+
+  A        -1     0.393     0.192     0.416
+  C     0.363    -0.971     0.192     0.416
+  G     0.363     0.393     -1.17     0.416
+  T     0.363     0.393     0.192    -0.948
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.313  C: 0.252  G: 0.299  T: 0.136
+An alignment has just been exported to tree_small-alignment_31.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.291
+  pi(C) = 0.229
+  pi(G) = 0.263
+  pi(T) = 0.216
+
+Rate matrix Q:
+
+  A    -0.949     0.307     0.353      0.29
+  C      0.39     -1.03     0.353      0.29
+  G      0.39     0.307    -0.987      0.29
+  T      0.39     0.307     0.353     -1.05
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.279  C: 0.198  G: 0.231  T: 0.292
+An alignment has just been exported to tree_small-alignment_32.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.282
+  pi(C) = 0.154
+  pi(G) = 0.362
+  pi(T) = 0.202
+
+Rate matrix Q:
+
+  A     -0.99     0.212     0.499     0.279
+  C      0.39     -1.17     0.499     0.279
+  G      0.39     0.212    -0.881     0.279
+  T      0.39     0.212     0.499      -1.1
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.331  C: 0.216  G: 0.177  T: 0.276
+An alignment has just been exported to tree_small-alignment_33.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.366
+  pi(C) = 0.293
+  pi(G) = 0.202
+  pi(T) = 0.139
+
+Rate matrix Q:
+
+  A     -0.88     0.406      0.28     0.193
+  C     0.509    -0.983      0.28     0.193
+  G     0.509     0.406     -1.11     0.193
+  T     0.509     0.406      0.28      -1.2
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.309  C: 0.196  G: 0.249  T: 0.245
+An alignment has just been exported to tree_small-alignment_34.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.374
+  pi(C) = 0.203
+  pi(G) = 0.205
+  pi(T) = 0.218
+
+Rate matrix Q:
+
+  A    -0.858     0.278     0.281     0.299
+  C     0.514     -1.09     0.281     0.299
+  G     0.514     0.278     -1.09     0.299
+  T     0.514     0.278     0.281     -1.07
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.32  C: 0.199  G: 0.263  T: 0.218
+An alignment has just been exported to tree_small-alignment_35.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.269
+  pi(C) = 0.183
+  pi(G) = 0.294
+  pi(T) = 0.254
+
+Rate matrix Q:
+
+  A    -0.984     0.246     0.396     0.342
+  C     0.362      -1.1     0.396     0.342
+  G     0.362     0.246     -0.95     0.342
+  T     0.362     0.246     0.396        -1
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.302  C: 0.231  G: 0.221  T: 0.246
+An alignment has just been exported to tree_small-alignment_36.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.323
+  pi(C) = 0.185
+  pi(G) = 0.193
+  pi(T) = 0.298
+
+Rate matrix Q:
+
+  A    -0.921     0.252     0.263     0.406
+  C      0.44     -1.11     0.263     0.406
+  G      0.44     0.252      -1.1     0.406
+  T      0.44     0.252     0.263    -0.955
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.301  C: 0.185  G: 0.224  T: 0.291
+An alignment has just been exported to tree_small-alignment_37.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.264
+  pi(C) = 0.229
+  pi(G) = 0.237
+  pi(T) = 0.27
+
+Rate matrix Q:
+
+  A    -0.983     0.306     0.316     0.361
+  C     0.353     -1.03     0.316     0.361
+  G     0.353     0.306     -1.02     0.361
+  T     0.353     0.306     0.316    -0.975
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.35  C: 0.181  G: 0.202  T: 0.268
+An alignment has just been exported to tree_small-alignment_38.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.255
+  pi(C) = 0.176
+  pi(G) = 0.301
+  pi(T) = 0.268
+
+Rate matrix Q:
+
+  A        -1     0.237     0.406     0.361
+  C     0.344     -1.11     0.406     0.361
+  G     0.344     0.237    -0.943     0.361
+  T     0.344     0.237     0.406    -0.987
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.296  C: 0.154  G: 0.225  T: 0.326
+An alignment has just been exported to tree_small-alignment_39.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.32
+  pi(C) = 0.286
+  pi(G) = 0.271
+  pi(T) = 0.123
+
+Rate matrix Q:
+
+  A    -0.935     0.393     0.373     0.169
+  C      0.44    -0.982     0.373     0.169
+  G      0.44     0.393        -1     0.169
+  T      0.44     0.393     0.373     -1.21
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.23  C: 0.241  G: 0.199  T: 0.329
+An alignment has just been exported to tree_small-alignment_40.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.362
+  pi(C) = 0.16
+  pi(G) = 0.212
+  pi(T) = 0.266
+
+Rate matrix Q:
+
+  A    -0.877      0.22     0.292     0.366
+  C     0.497     -1.15     0.292     0.366
+  G     0.497      0.22     -1.08     0.366
+  T     0.497      0.22     0.292     -1.01
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.4  C: 0.234  G: 0.154  T: 0.213
+An alignment has just been exported to tree_small-alignment_41.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.279
+  pi(C) = 0.222
+  pi(G) = 0.282
+  pi(T) = 0.217
+
+Rate matrix Q:
+
+  A    -0.966     0.298     0.378     0.291
+  C     0.374     -1.04     0.378     0.291
+  G     0.374     0.298    -0.962     0.291
+  T     0.374     0.298     0.378     -1.05
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.311  C: 0.179  G: 0.176  T: 0.334
+An alignment has just been exported to tree_small-alignment_42.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.31
+  pi(C) = 0.29
+  pi(G) = 0.201
+  pi(T) = 0.199
+
+Rate matrix Q:
+
+  A    -0.933     0.393     0.272     0.269
+  C     0.419    -0.959     0.272     0.269
+  G     0.419     0.393     -1.08     0.269
+  T     0.419     0.393     0.272     -1.08
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.327  C: 0.2  G: 0.187  T: 0.285
+An alignment has just been exported to tree_small-alignment_43.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.295
+  pi(C) = 0.193
+  pi(G) = 0.286
+  pi(T) = 0.227
+
+Rate matrix Q:
+
+  A    -0.949     0.259     0.385     0.305
+  C     0.397     -1.09     0.385     0.305
+  G     0.397     0.259    -0.962     0.305
+  T     0.397     0.259     0.385     -1.04
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.361  C: 0.238  G: 0.203  T: 0.197
+An alignment has just been exported to tree_small-alignment_44.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.247
+  pi(C) = 0.294
+  pi(G) = 0.172
+  pi(T) = 0.286
+
+Rate matrix Q:
+
+  A     -1.02     0.397     0.233     0.386
+  C     0.334    -0.953     0.233     0.386
+  G     0.334     0.397     -1.12     0.386
+  T     0.334     0.397     0.233    -0.964
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.274  C: 0.228  G: 0.269  T: 0.229
+An alignment has just been exported to tree_small-alignment_45.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.265
+  pi(C) = 0.316
+  pi(G) = 0.129
+  pi(T) = 0.289
+
+Rate matrix Q:
+
+  A     -1.01     0.434     0.177     0.397
+  C     0.364    -0.938     0.177     0.397
+  G     0.364     0.434     -1.19     0.397
+  T     0.364     0.434     0.177    -0.975
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.323  C: 0.316  G: 0.196  T: 0.165
+An alignment has just been exported to tree_small-alignment_46.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.244
+  pi(C) = 0.234
+  pi(G) = 0.234
+  pi(T) = 0.288
+
+Rate matrix Q:
+
+  A     -1.01     0.313     0.313     0.385
+  C     0.326     -1.02     0.313     0.385
+  G     0.326     0.313     -1.02     0.385
+  T     0.326     0.313     0.313    -0.952
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.256  C: 0.199  G: 0.226  T: 0.319
+An alignment has just been exported to tree_small-alignment_47.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.256
+  pi(C) = 0.299
+  pi(G) = 0.163
+  pi(T) = 0.282
+
+Rate matrix Q:
+
+  A     -1.01     0.404     0.221     0.381
+  C     0.347    -0.949     0.221     0.381
+  G     0.347     0.404     -1.13     0.381
+  T     0.347     0.404     0.221    -0.972
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.23  C: 0.201  G: 0.288  T: 0.28
+An alignment has just been exported to tree_small-alignment_48.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.304
+  pi(C) = 0.17
+  pi(G) = 0.309
+  pi(T) = 0.217
+
+Rate matrix Q:
+
+  A    -0.946      0.23     0.421     0.295
+  C     0.413     -1.13     0.421     0.295
+  G     0.413      0.23    -0.938     0.295
+  T     0.413      0.23     0.421     -1.06
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.243  C: 0.215  G: 0.173  T: 0.369
+An alignment has just been exported to tree_small-alignment_49.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.307
+  pi(C) = 0.219
+  pi(G) = 0.3
+  pi(T) = 0.173
+
+Rate matrix Q:
+
+  A    -0.939     0.297     0.407     0.235
+  C     0.417     -1.06     0.407     0.235
+  G     0.417     0.297    -0.949     0.235
+  T     0.417     0.297     0.407     -1.12
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.273  C: 0.183  G: 0.285  T: 0.259
+An alignment has just been exported to tree_small-alignment_50.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.281
+  pi(C) = 0.201
+  pi(G) = 0.224
+  pi(T) = 0.294
+
+Rate matrix Q:
+
+  A    -0.966     0.271       0.3     0.395
+  C     0.378     -1.07       0.3     0.395
+  G     0.378     0.271     -1.04     0.395
+  T     0.378     0.271       0.3    -0.949
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.311  C: 0.235  G: 0.226  T: 0.228
+An alignment has just been exported to tree_small-alignment_51.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.267
+  pi(C) = 0.184
+  pi(G) = 0.28
+  pi(T) = 0.269
+
+Rate matrix Q:
+
+  A    -0.985     0.247     0.376     0.361
+  C     0.359      -1.1     0.376     0.361
+  G     0.359     0.247    -0.968     0.361
+  T     0.359     0.247     0.376    -0.982
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.127  C: 0.214  G: 0.338  T: 0.321
+An alignment has just been exported to tree_small-alignment_52.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.335
+  pi(C) = 0.206
+  pi(G) = 0.194
+  pi(T) = 0.265
+
+Rate matrix Q:
+
+  A    -0.902     0.279     0.263     0.359
+  C     0.454     -1.08     0.263     0.359
+  G     0.454     0.279     -1.09     0.359
+  T     0.454     0.279     0.263    -0.997
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.277  C: 0.191  G: 0.268  T: 0.263
+An alignment has just been exported to tree_small-alignment_53.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.206
+  pi(C) = 0.216
+  pi(G) = 0.283
+  pi(T) = 0.295
+
+Rate matrix Q:
+
+  A     -1.07      0.29      0.38     0.396
+  C     0.278     -1.05      0.38     0.396
+  G     0.278      0.29    -0.964     0.396
+  T     0.278      0.29      0.38    -0.948
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.344  C: 0.191  G: 0.164  T: 0.301
+An alignment has just been exported to tree_small-alignment_54.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.259
+  pi(C) = 0.225
+  pi(G) = 0.219
+  pi(T) = 0.296
+
+Rate matrix Q:
+
+  A    -0.992     0.302     0.294     0.397
+  C     0.348     -1.04     0.294     0.397
+  G     0.348     0.302     -1.05     0.397
+  T     0.348     0.302     0.294    -0.943
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.238  C: 0.217  G: 0.252  T: 0.292
+An alignment has just been exported to tree_small-alignment_55.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.265
+  pi(C) = 0.139
+  pi(G) = 0.318
+  pi(T) = 0.278
+
+Rate matrix Q:
+
+  A        -1      0.19     0.435      0.38
+  C     0.362     -1.18     0.435      0.38
+  G     0.362      0.19    -0.932      0.38
+  T     0.362      0.19     0.435    -0.986
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.293  C: 0.23  G: 0.194  T: 0.283
+An alignment has just been exported to tree_small-alignment_56.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.229
+  pi(C) = 0.33
+  pi(G) = 0.251
+  pi(T) = 0.19
+
+Rate matrix Q:
+
+  A     -1.04     0.446     0.339     0.257
+  C     0.309    -0.906     0.339     0.257
+  G     0.309     0.446     -1.01     0.257
+  T     0.309     0.446     0.339     -1.09
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.336  C: 0.139  G: 0.264  T: 0.261
+An alignment has just been exported to tree_small-alignment_57.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.212
+  pi(C) = 0.238
+  pi(G) = 0.245
+  pi(T) = 0.304
+
+Rate matrix Q:
+
+  A     -1.06      0.32     0.329     0.408
+  C     0.285     -1.02     0.329     0.408
+  G     0.285      0.32     -1.01     0.408
+  T     0.285      0.32     0.329    -0.933
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.185  C: 0.399  G: 0.138  T: 0.278
+An alignment has just been exported to tree_small-alignment_58.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.246
+  pi(C) = 0.219
+  pi(G) = 0.244
+  pi(T) = 0.291
+
+Rate matrix Q:
+
+  A     -1.01     0.293     0.326      0.39
+  C      0.33     -1.05     0.326      0.39
+  G      0.33     0.293     -1.01      0.39
+  T      0.33     0.293     0.326    -0.948
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.26  C: 0.257  G: 0.245  T: 0.239
+An alignment has just been exported to tree_small-alignment_59.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.239
+  pi(C) = 0.175
+  pi(G) = 0.343
+  pi(T) = 0.243
+
+Rate matrix Q:
+
+  A     -1.03     0.238     0.467      0.33
+  C     0.325     -1.12     0.467      0.33
+  G     0.325     0.238    -0.893      0.33
+  T     0.325     0.238     0.467     -1.03
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.278  C: 0.319  G: 0.128  T: 0.275
+An alignment has just been exported to tree_small-alignment_60.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.289
+  pi(C) = 0.152
+  pi(G) = 0.229
+  pi(T) = 0.33
+
+Rate matrix Q:
+
+  A    -0.971     0.207     0.313     0.451
+  C     0.395     -1.16     0.313     0.451
+  G     0.395     0.207     -1.05     0.451
+  T     0.395     0.207     0.313    -0.915
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.277  C: 0.225  G: 0.182  T: 0.316
+An alignment has just been exported to tree_small-alignment_61.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.215
+  pi(C) = 0.26
+  pi(G) = 0.292
+  pi(T) = 0.233
+
+Rate matrix Q:
+
+  A     -1.05     0.349     0.391     0.312
+  C     0.288    -0.991     0.391     0.312
+  G     0.288     0.349    -0.948     0.312
+  T     0.288     0.349     0.391     -1.03
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.242  C: 0.231  G: 0.259  T: 0.268
+An alignment has just been exported to tree_small-alignment_62.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.347
+  pi(C) = 0.184
+  pi(G) = 0.216
+  pi(T) = 0.253
+
+Rate matrix Q:
+
+  A    -0.889      0.25     0.294     0.345
+  C     0.472     -1.11     0.294     0.345
+  G     0.472      0.25     -1.07     0.345
+  T     0.472      0.25     0.294     -1.02
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.231  C: 0.291  G: 0.227  T: 0.251
+An alignment has just been exported to tree_small-alignment_63.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.27
+  pi(C) = 0.336
+  pi(G) = 0.167
+  pi(T) = 0.226
+
+Rate matrix Q:
+
+  A    -0.994     0.458     0.227     0.308
+  C     0.368    -0.903     0.227     0.308
+  G     0.368     0.458     -1.13     0.308
+  T     0.368     0.458     0.227     -1.05
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.292  C: 0.228  G: 0.251  T: 0.228
+An alignment has just been exported to tree_small-alignment_64.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.337
+  pi(C) = 0.227
+  pi(G) = 0.193
+  pi(T) = 0.243
+
+Rate matrix Q:
+
+  A    -0.898     0.307     0.262     0.329
+  C     0.456     -1.05     0.262     0.329
+  G     0.456     0.307     -1.09     0.329
+  T     0.456     0.307     0.262     -1.02
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.323  C: 0.216  G: 0.206  T: 0.255
+An alignment has just been exported to tree_small-alignment_65.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.234
+  pi(C) = 0.266
+  pi(G) = 0.187
+  pi(T) = 0.313
+
+Rate matrix Q:
+
+  A     -1.03     0.359     0.252     0.423
+  C     0.315     -0.99     0.252     0.423
+  G     0.315     0.359      -1.1     0.423
+  T     0.315     0.359     0.252    -0.926
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.328  C: 0.226  G: 0.183  T: 0.262
+An alignment has just been exported to tree_small-alignment_66.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.259
+  pi(C) = 0.24
+  pi(G) = 0.265
+  pi(T) = 0.236
+
+Rate matrix Q:
+
+  A    -0.989      0.32     0.354     0.315
+  C     0.345     -1.01     0.354     0.315
+  G     0.345      0.32     -0.98     0.315
+  T     0.345      0.32     0.354     -1.02
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.331  C: 0.231  G: 0.272  T: 0.167
+An alignment has just been exported to tree_small-alignment_67.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3
+  pi(C) = 0.253
+  pi(G) = 0.173
+  pi(T) = 0.274
+
+Rate matrix Q:
+
+  A    -0.944     0.342     0.233     0.369
+  C     0.405     -1.01     0.233     0.369
+  G     0.405     0.342     -1.12     0.369
+  T     0.405     0.342     0.233     -0.98
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.262  C: 0.3  G: 0.12  T: 0.318
+An alignment has just been exported to tree_small-alignment_68.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.261
+  pi(C) = 0.238
+  pi(G) = 0.243
+  pi(T) = 0.257
+
+Rate matrix Q:
+
+  A    -0.985     0.318     0.324     0.343
+  C     0.349     -1.02     0.324     0.343
+  G     0.349     0.318     -1.01     0.343
+  T     0.349     0.318     0.324    -0.991
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.216  C: 0.344  G: 0.185  T: 0.254
+An alignment has just been exported to tree_small-alignment_69.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.284
+  pi(C) = 0.196
+  pi(G) = 0.15
+  pi(T) = 0.371
+
+Rate matrix Q:
+
+  A    -0.993     0.271     0.208     0.514
+  C     0.394     -1.12     0.208     0.514
+  G     0.394     0.271     -1.18     0.514
+  T     0.394     0.271     0.208    -0.872
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.319  C: 0.171  G: 0.226  T: 0.285
+An alignment has just been exported to tree_small-alignment_70.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.24
+  pi(C) = 0.266
+  pi(G) = 0.219
+  pi(T) = 0.275
+
+Rate matrix Q:
+
+  A     -1.02     0.355     0.293     0.367
+  C     0.321    -0.982     0.293     0.367
+  G     0.321     0.355     -1.04     0.367
+  T     0.321     0.355     0.293     -0.97
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.326  C: 0.22  G: 0.191  T: 0.263
+An alignment has just been exported to tree_small-alignment_71.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.215
+  pi(C) = 0.237
+  pi(G) = 0.264
+  pi(T) = 0.283
+
+Rate matrix Q:
+
+  A     -1.05     0.317     0.354     0.379
+  C     0.288     -1.02     0.354     0.379
+  G     0.288     0.317    -0.984     0.379
+  T     0.288     0.317     0.354     -0.96
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.3  C: 0.163  G: 0.292  T: 0.244
+An alignment has just been exported to tree_small-alignment_72.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.238
+  pi(C) = 0.241
+  pi(G) = 0.358
+  pi(T) = 0.164
+
+Rate matrix Q:
+
+  A     -1.04      0.33      0.49     0.224
+  C     0.325     -1.04      0.49     0.224
+  G     0.325      0.33    -0.879     0.224
+  T     0.325      0.33      0.49     -1.14
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.199  C: 0.257  G: 0.18  T: 0.364
+An alignment has just been exported to tree_small-alignment_73.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.276
+  pi(C) = 0.206
+  pi(G) = 0.179
+  pi(T) = 0.339
+
+Rate matrix Q:
+
+  A    -0.985     0.281     0.244     0.461
+  C     0.376     -1.08     0.244     0.461
+  G     0.376     0.281     -1.12     0.461
+  T     0.376     0.281     0.244      -0.9
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.211  C: 0.155  G: 0.242  T: 0.392
+An alignment has just been exported to tree_small-alignment_74.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.299
+  pi(C) = 0.258
+  pi(G) = 0.189
+  pi(T) = 0.255
+
+Rate matrix Q:
+
+  A    -0.943     0.347     0.254     0.342
+  C     0.401    -0.997     0.254     0.342
+  G     0.401     0.347     -1.09     0.342
+  T     0.401     0.347     0.254        -1
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.265  C: 0.224  G: 0.188  T: 0.323
+An alignment has just been exported to tree_small-alignment_75.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.324
+  pi(C) = 0.212
+  pi(G) = 0.171
+  pi(T) = 0.293
+
+Rate matrix Q:
+
+  A    -0.919     0.288     0.233     0.398
+  C     0.441     -1.07     0.233     0.398
+  G     0.441     0.288     -1.13     0.398
+  T     0.441     0.288     0.233    -0.962
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.324  C: 0.265  G: 0.172  T: 0.239
+An alignment has just been exported to tree_small-alignment_76.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.276
+  pi(C) = 0.212
+  pi(G) = 0.232
+  pi(T) = 0.28
+
+Rate matrix Q:
+
+  A    -0.969     0.284      0.31     0.375
+  C      0.37     -1.06      0.31     0.375
+  G      0.37     0.284     -1.03     0.375
+  T      0.37     0.284      0.31    -0.964
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.298  C: 0.147  G: 0.288  T: 0.267
+An alignment has just been exported to tree_small-alignment_77.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.191
+  pi(C) = 0.316
+  pi(G) = 0.242
+  pi(T) = 0.251
+
+Rate matrix Q:
+
+  A     -1.09     0.425     0.326     0.338
+  C     0.258    -0.922     0.326     0.338
+  G     0.258     0.425     -1.02     0.338
+  T     0.258     0.425     0.326     -1.01
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.126  C: 0.249  G: 0.29  T: 0.334
+An alignment has just been exported to tree_small-alignment_78.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.251
+  pi(C) = 0.167
+  pi(G) = 0.269
+  pi(T) = 0.313
+
+Rate matrix Q:
+
+  A     -1.01     0.226     0.364     0.424
+  C     0.339     -1.13     0.364     0.424
+  G     0.339     0.226    -0.989     0.424
+  T     0.339     0.226     0.364     -0.93
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.393  C: 0.246  G: 0.181  T: 0.18
+An alignment has just been exported to tree_small-alignment_79.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.344
+  pi(C) = 0.248
+  pi(G) = 0.118
+  pi(T) = 0.29
+
+Rate matrix Q:
+
+  A    -0.909     0.343     0.164     0.402
+  C     0.476     -1.04     0.164     0.402
+  G     0.476     0.343     -1.22     0.402
+  T     0.476     0.343     0.164    -0.983
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.234  C: 0.34  G: 0.229  T: 0.197
+An alignment has just been exported to tree_small-alignment_80.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.438
+  pi(C) = 0.211
+  pi(G) = 0.175
+  pi(T) = 0.176
+
+Rate matrix Q:
+
+  A    -0.801     0.301     0.249     0.251
+  C     0.624     -1.12     0.249     0.251
+  G     0.624     0.301     -1.18     0.251
+  T     0.624     0.301     0.249     -1.17
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.289  C: 0.199  G: 0.242  T: 0.27
+An alignment has just been exported to tree_small-alignment_81.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.133
+  pi(C) = 0.254
+  pi(G) = 0.364
+  pi(T) = 0.249
+
+Rate matrix Q:
+
+  A      -1.2     0.351     0.503     0.345
+  C     0.184     -1.03     0.503     0.345
+  G     0.184     0.351    -0.879     0.345
+  T     0.184     0.351     0.503     -1.04
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.191  C: 0.331  G: 0.167  T: 0.311
+An alignment has just been exported to tree_small-alignment_82.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.299
+  pi(C) = 0.172
+  pi(G) = 0.322
+  pi(T) = 0.207
+
+Rate matrix Q:
+
+  A    -0.954     0.234     0.439     0.281
+  C     0.408     -1.13     0.439     0.281
+  G     0.408     0.234    -0.923     0.281
+  T     0.408     0.234     0.439     -1.08
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.293  C: 0.155  G: 0.299  T: 0.253
+An alignment has just been exported to tree_small-alignment_83.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.298
+  pi(C) = 0.202
+  pi(G) = 0.231
+  pi(T) = 0.269
+
+Rate matrix Q:
+
+  A    -0.943     0.271      0.31     0.362
+  C       0.4     -1.07      0.31     0.362
+  G       0.4     0.271     -1.03     0.362
+  T       0.4     0.271      0.31    -0.981
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.274  C: 0.173  G: 0.19  T: 0.363
+An alignment has just been exported to tree_small-alignment_84.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.277
+  pi(C) = 0.282
+  pi(G) = 0.2
+  pi(T) = 0.241
+
+Rate matrix Q:
+
+  A     -0.97     0.379     0.268     0.323
+  C     0.372    -0.963     0.268     0.323
+  G     0.372     0.379     -1.07     0.323
+  T     0.372     0.379     0.268     -1.02
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.272  C: 0.299  G: 0.339  T: 0.0904
+An alignment has just been exported to tree_small-alignment_85.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.238
+  pi(C) = 0.248
+  pi(G) = 0.222
+  pi(T) = 0.292
+
+Rate matrix Q:
+
+  A     -1.02     0.332     0.297     0.391
+  C     0.318     -1.01     0.297     0.391
+  G     0.318     0.332     -1.04     0.391
+  T     0.318     0.332     0.297    -0.948
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.193  C: 0.161  G: 0.438  T: 0.208
+An alignment has just been exported to tree_small-alignment_86.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.273
+  pi(C) = 0.171
+  pi(G) = 0.28
+  pi(T) = 0.276
+
+Rate matrix Q:
+
+  A     -0.98     0.231     0.377     0.372
+  C     0.368     -1.12     0.377     0.372
+  G     0.368     0.231    -0.971     0.372
+  T     0.368     0.231     0.377    -0.976
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.272  C: 0.28  G: 0.128  T: 0.32
+An alignment has just been exported to tree_small-alignment_87.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.285
+  pi(C) = 0.232
+  pi(G) = 0.281
+  pi(T) = 0.202
+
+Rate matrix Q:
+
+  A     -0.96     0.311     0.377     0.271
+  C     0.382     -1.03     0.377     0.271
+  G     0.382     0.311    -0.964     0.271
+  T     0.382     0.311     0.377     -1.07
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.309  C: 0.207  G: 0.18  T: 0.304
+An alignment has just been exported to tree_small-alignment_88.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.356
+  pi(C) = 0.22
+  pi(G) = 0.145
+  pi(T) = 0.28
+
+Rate matrix Q:
+
+  A    -0.888     0.303       0.2     0.386
+  C      0.49     -1.07       0.2     0.386
+  G      0.49     0.303     -1.18     0.386
+  T      0.49     0.303       0.2    -0.992
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.378  C: 0.227  G: 0.218  T: 0.177
+An alignment has just been exported to tree_small-alignment_89.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.333
+  pi(C) = 0.166
+  pi(G) = 0.175
+  pi(T) = 0.325
+
+Rate matrix Q:
+
+  A     -0.92      0.23     0.242     0.448
+  C     0.459     -1.15     0.242     0.448
+  G     0.459      0.23     -1.14     0.448
+  T     0.459      0.23     0.242    -0.931
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.301  C: 0.274  G: 0.198  T: 0.227
+An alignment has just been exported to tree_small-alignment_90.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.281
+  pi(C) = 0.19
+  pi(G) = 0.27
+  pi(T) = 0.259
+
+Rate matrix Q:
+
+  A    -0.965     0.254     0.363     0.348
+  C     0.378     -1.09     0.363     0.348
+  G     0.378     0.254     -0.98     0.348
+  T     0.378     0.254     0.363    -0.995
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.305  C: 0.169  G: 0.184  T: 0.342
+An alignment has just been exported to tree_small-alignment_91.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.321
+  pi(C) = 0.147
+  pi(G) = 0.235
+  pi(T) = 0.296
+
+Rate matrix Q:
+
+  A    -0.927     0.201     0.322     0.404
+  C     0.439     -1.16     0.322     0.404
+  G     0.439     0.201     -1.04     0.404
+  T     0.439     0.201     0.322    -0.962
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.191  C: 0.333  G: 0.163  T: 0.313
+An alignment has just been exported to tree_small-alignment_92.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.286
+  pi(C) = 0.149
+  pi(G) = 0.314
+  pi(T) = 0.251
+
+Rate matrix Q:
+
+  A    -0.972     0.203     0.428     0.342
+  C     0.389     -1.16     0.428     0.342
+  G     0.389     0.203    -0.934     0.342
+  T     0.389     0.203     0.428     -1.02
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.279  C: 0.35  G: 0.188  T: 0.183
+An alignment has just been exported to tree_small-alignment_93.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.29
+  pi(C) = 0.165
+  pi(G) = 0.263
+  pi(T) = 0.282
+
+Rate matrix Q:
+
+  A     -0.96     0.223     0.355     0.381
+  C     0.392     -1.13     0.355     0.381
+  G     0.392     0.223    -0.996     0.381
+  T     0.392     0.223     0.355     -0.97
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.303  C: 0.216  G: 0.251  T: 0.23
+An alignment has just been exported to tree_small-alignment_94.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.294
+  pi(C) = 0.173
+  pi(G) = 0.228
+  pi(T) = 0.305
+
+Rate matrix Q:
+
+  A    -0.956     0.234     0.308     0.413
+  C     0.398     -1.12     0.308     0.413
+  G     0.398     0.234     -1.05     0.413
+  T     0.398     0.234     0.308    -0.941
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.276  C: 0.272  G: 0.202  T: 0.25
+An alignment has just been exported to tree_small-alignment_95.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.213
+  pi(C) = 0.205
+  pi(G) = 0.324
+  pi(T) = 0.258
+
+Rate matrix Q:
+
+  A     -1.06     0.277     0.437     0.349
+  C     0.287     -1.07     0.437     0.349
+  G     0.287     0.277    -0.912     0.349
+  T     0.287     0.277     0.437        -1
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.301  C: 0.229  G: 0.295  T: 0.175
+An alignment has just been exported to tree_small-alignment_96.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.106
+  pi(C) = 0.306
+  pi(G) = 0.252
+  pi(T) = 0.336
+
+Rate matrix Q:
+
+  A     -1.24     0.425      0.35     0.468
+  C     0.148    -0.966      0.35     0.468
+  G     0.148     0.425     -1.04     0.468
+  T     0.148     0.425      0.35    -0.923
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.249  C: 0.225  G: 0.209  T: 0.317
+An alignment has just been exported to tree_small-alignment_97.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.268
+  pi(C) = 0.295
+  pi(G) = 0.173
+  pi(T) = 0.264
+
+Rate matrix Q:
+
+  A    -0.987     0.398     0.234     0.355
+  C     0.361    -0.951     0.234     0.355
+  G     0.361     0.398     -1.11     0.355
+  T     0.361     0.398     0.234    -0.993
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.298  C: 0.257  G: 0.227  T: 0.218
+An alignment has just been exported to tree_small-alignment_98.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.272
+  pi(C) = 0.143
+  pi(G) = 0.3
+  pi(T) = 0.285
+
+Rate matrix Q:
+
+  A    -0.991     0.194     0.409     0.388
+  C     0.371     -1.17     0.409     0.388
+  G     0.371     0.194    -0.953     0.388
+  T     0.371     0.194     0.409    -0.974
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.194  C: 0.207  G: 0.206  T: 0.393
+An alignment has just been exported to tree_small-alignment_99.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.218
+  pi(C) = 0.279
+  pi(G) = 0.266
+  pi(T) = 0.237
+
+Rate matrix Q:
+
+  A     -1.05     0.373     0.356     0.317
+  C     0.292    -0.965     0.356     0.317
+  G     0.292     0.373    -0.982     0.317
+  T     0.292     0.373     0.356     -1.02
+
+Model of rate heterogeneity: Uniform
+
+WARNING: F81 must have unequal base frequencies. The base frequencies could be randomly generated if users do not provide them. However, we strongly recommend users specify the base frequencies by using +F{freq1/.../freqN} for better simulation accuracy.
+Simulating a sequence with branch-specific model named F81+F
+Rate parameters:  A-C: 1  A-G: 1  A-T: 1  C-G: 1  C-T: 1  G-T: 1
+Base frequencies:  A: 0.177  C: 0.197  G: 0.34  T: 0.287
+An alignment has just been exported to tree_small-alignment_100.phy
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1
+  A-G: 1
+  A-T: 1
+  C-G: 1
+  C-T: 1
+  G-T: 1
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.271
+  pi(C) = 0.222
+  pi(G) = 0.199
+  pi(T) = 0.308
+
+Rate matrix Q:
+
+  A    -0.982     0.299     0.268     0.415
+  C     0.364     -1.05     0.268     0.415
+  G     0.364     0.299     -1.08     0.415
+  T     0.364     0.299     0.268    -0.932
+
+Model of rate heterogeneity: Uniform
+
+[Alignment Simulator] Done
+Simulation time: 6.26s
+Date and Time: Tue Feb 28 22:26:58 2023
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 

@@ -1,0 +1,15 @@
+Example 1 (reversible and stationary):
+bash analysis_simulation.sh -t sym_tree_nequal.nwk -m F81 -n 100000 -k 500 -s true
+
+Example 2 (reversible and not stationary):
+bash analysis_simulation.sh -t sym_tree_nequal_nstationary.nwk -m F81 -n 100000 -k 100 -s false
+
+Example 3 (reversible and not stationary subtree):
+bash analysis_simulation.sh -t sym_tree_subtree.nwk -m F81 -n 100000 -k 500 -s false
+
+Example 4 (not reversible and stationary):
+bash analysis_simulation.sh -t sym_tree_nequal.nwk -m "9.20b{0.2,-0.3,0.4,-0.5,0.6,-0.7,0.8,-0.9}"
+ -n 100000 -k 500 -s false
+
+Example 5 (reversible, not stationary and saturated)
+bash analysis_simulation.sh -t tree_small.nwk -m F81 -n 100000 -k 100 -s true
